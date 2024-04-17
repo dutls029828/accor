@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/accor.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="alx">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="accor">
+                </a>
+            </h1>
+            <div>
+                <ul class="btn M512">
+                    <li><input class="alxM512" type="button" value="SIGN IN OR JOIN"></li>
+                    <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
+                    <li><a href="account_not_yet_member.html">JOIN IN ACCOR</a></li>
+                </ul> 
+                <div class="menuBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="M513">
+                <ul>
+                    <li>ACCOMMODATION</li>
+                    <li>LOYALTY PROGRAM</li>
+                    <li>OFFER &amp; PACKAGE</li>
+                    <li>DINING SERVICE</li>
+                    <li>BUSINESS EVENT</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="fnbPanel">
+            <div>
+                <div class="M513">
+                    <b class="mui">ACCOMMODATION</b>
+                    <ul class="R413">
+                        <li><a href="accom_hotel_Resort.html">Hotel &amp; Resorts</a></li>
+                        <li><a href="accom_aparthotels.html">Aparthotels &amp; Villas</a></li>
+                        <li><a href="accom_private_home.html">Luxury Private Home</a></li>
+                        <li><a href="accom_all_our_brand.html">ALL Accor Brand</a></li>
+                        <li><a href="map.html" class="mapBtn">FIND A HOTEL</a></li>
+                    </ul>
+                    <b class="mui">LOYALTY PROGRAM</b>
+                    <ul class="R413">
+                        <li><a href="loyalty.html">Discover the Program</a></li>
+                        <li><a href="loyalty_benefits.html">Benefits and Status</a></li>
+                        <li><a href="loyalty_earn_rewards.html">Earn Rewards Points</a></li>
+                        <li><a href="loyalty_use_rewards.html">Use Your Points</a></li>
+                    </ul>
+                    <b class="mui">OFFER &amp; PACKAGE</b>
+                    <ul class="R413">
+                        <li><a href="offers_all_member.html">For All Member</a></li>
+                        <li><a href="offers_latest.html">The Latest Offers</a></li>
+                        <li><a href="offers_all_year.html">All Year Offers</a></li>
+                    </ul>
+                    <b class="mui">DINING SERVICE</b>
+                    <ul class="R413">
+                        <li><a href="dining_world_of_flavours.html">World of Flavours</a></li>
+                        <li><a href="dining_service.html">Popular Cities</a></li>
+                        <li><a href="dining_service.html?scroll=diningSeasonFestive">Season Festive</a></li>
+                    </ul>
+                    <b class="mui">BUSINESS EVENT</b>
+                    <ul class="R413">
+                        <li><a href="business_tailored_events.html">Tailored Events</a></li>
+                        <li><a href="business_meeting_planning.html">Meeting Planning</a></li>
+                        <li><a href="detail_business_private.html">Private Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="reservation">
+                <form action="checkout.html">
+                    <fieldset>
+                        <legend class="M522">BOOK WITH ALL</legend>
+                        <div class="11">
+                            <ul>
+                                <li>
+                                    <label for="destination" class="M5">Where do you want to travel ?</label>
+                                    <input type="text" class="alxL311" id="destination" placeholder="Destination, hotel name">
+                                    <label for="travellers" class="M5">
+                                        Travellers
+                                        <small class="R410">Loyalty or subscription</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="travellers" placeholder="0000 0000 0000 0000">
+                                </li>
+                                <li>
+                                    <label for="check-in-date" class="M5">
+                                        Dates
+                                        <div>
+                                            <span>1</span>
+                                            <span>Night</span>
+                                        </div>
+                                    </label>
+                                    <div>
+                                        <input type="date" class="alxL311" id="check-in-date">
+                                        <span>-</span>
+                                        <input type="date" class="alxL311" id="check-out-date">
+                                    </div>
+                                    <label for="profTravellers" class="M5">
+                                        Professional Travellers
+                                        <small class="R410">Business client with contract</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="profTravellers" placeholder="Client code (SC, AC...)">
+                                </li>
+                                <li>
+                                    <div class="roomSelect">
+                                        <label for="roomCount" class="M5">Rooms &amp; Guests</label>
+                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect">
+                                            <ol>
+                                                <li>
+                                                    <label for="roomCount" class="L310">Room(s)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="roomCount">
+                                                        <span class="L3">Room(s)</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="adultsCount">
+                                                        <span class="L3">Adult Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="childCount">
+                                                        <span class="L3">Children Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <input type="reset" class="btn alxL310" value="Reset">
+                                        </div>
+                                    </div>
+                                    <label for="promotionSelect" class="M5">
+                                        Special Rates or Promotion Code
+                                        <small class="R410">Choose a rate</small>
+                                    </label>
+                                    <span class="selectComponent">
+                                        <select id="promotionSelect" class="alxL311">
+                                            <option>None</option>
+                                            <option>AAA / CAA Member</option>
+                                            <option>Military &amp; Veteran</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="submit" class="alxM513" value="RESERVE NOW">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="alx termsContainer general">
+        <h2 class="E234">
+            GENERAL TERMS OF SERVICE
+        </h2>
+        <span class="L315">Click here for the 
+            <a href="terms_adagio.html">Adagio Terms and Conditions </a>
+        </span>
+        <ol class="accordionBox">
+            <li>
+                <strong>1. Professional</strong>
+                <div class="L316">
+                    <p>These General Terms and Conditions (the " General Terms ") govern Accor’s customers (the " Customers ") how and under what conditions to use the services available on this 
+                        site, including reservations, and which will be described in more detail below (the " Services "). is to define it.Prior to making a reservation on the Site, the Customer must.</p>
+                    <ol class="roman">
+                        <li>
+                            (i) represent that it will not engage in any personal commercial, industrial, handicraft, freelance or agricultural activity and
+                        </li>
+                        <li>
+                            (ii) be a person of full legal capacity to abide by these General Terms and Conditions. .Customers should read these General Terms and Conditions carefully, which must be 
+                            pre-accepted in order to book services offered on the site. All customers are encouraged to save and print out these General Terms and Conditions using the normal 
+                           functions of a computer and browser.
+                        </li>
+                    </ol>
+                    <p>Accor reserves the right to amend or supplement any or all of these General Terms and Conditions at any time. In this case, a new version of the General Terms and Conditions 
+                        will be posted on the Site with the effective date. Customers are advised to check the General Terms and Conditions regularly to be aware of any changes. In any case, the 
+                        general terms and conditions in effect at the time the customer made the reservation apply.Customer pays for all technical means to access the Site, if necessary.</p>
+                </div>
+            </li>
+            <li>
+                <strong>2. Service</strong>
+                <ul class="L316">
+                    <li>
+                        <b class="M516">1. Accor Services</b>
+                        <p>ACCOR makes reservations on the Site for (i) hotel rooms or other types of accommodation (" Accommodation Services ") (2.1.1) and (ii) services 
+                            complementary to said services (" Additional Services ") (2.1.2). service. [U+200E] Accommodation services and additional services together are collectively 
+                            referred to as " Accor Services ".</p>
+                    </li>
+                    <li>
+                        <b class="M516">2. Accommodation Services</b>
+                        <p>Through the Site , you may reserve rooms within hotels or other types of accommodation (collectively, " Facilities ") operated under the Accor brand. Validity period of the 
+                            proposed facility, rates, options offered, terms of payment and specific terms and conditions of sale applicable to the selected rate (guarantee policy, cancellation conditions, 
+                            check-in time, member rate conditions, etc.) as described in paragraph 3 below at the booking stage. presented. In this regard, it sets out its own terms and conditions of sale 
+                            applicable to the select rates available (hereinafter referred to as " Special Terms "), which each establishment must inform its customers prior to making a reservation on the 
+                            site. For example, check-in and check-out times, warranty policy, cancellation deadlines, Wifi access, special conditions applicable to children, permission to enter animals on 
+                            leashes or in cages in public facilities (for hygiene reasons, animals are not allowed in places where food and beverages are sold). Absolutely not permitted may be detailed 
+                            in the special terms and conditions. Finally, in accordance with regulations in force in some countries, customers may be asked to complete police paperwork upon arrival at 
+                            the facility. To do this, there is a possibility that you will be asked to show your ID to check whether you need to fill out police papers.
+                            </p>
+                    </li>
+                    <li>
+                        <b class="M516">3. Additional Services</b>
+                        <p>On site, it is also possible to book additional services, such as breakfast, champagne, etc., as well as upgrades to the welcome service upon arrival. Additional services also 
+                            include travel services in accordance with Article 3.1 of Directive (EU) 2015/2302 of 25 November 2015 in relation to package tours and travel-related services, including 
+                            accommodation services in accordance with the Directive specified above. It can be made into a travel link service" or a "package tour". This information will be 
+                            communicated to the customer prior to making a reservation for the service under the special terms and conditions associated with each service.
+                            </p>
+                    </li>
+                    <li>
+                        <b class="M516">4. Partner Services</b>
+                        <p>ACCOR enters into a partnership and distribution agreement with the partner company's website ("Partner") to enable Customers to search, select and reserve rooms in 
+                            facilities of various brands distributed by ACCOR on the partner company's website ("Partner" ) . service". The terms and conditions of sale applicable to partner services can 
+                            be found on the partner's website.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>3. Booking Step</strong>
+                <div class="L316">
+                    <p>The Customer selects the Services offered on the Site or on the Partner's Site by following the steps provided for this purpose.</p>
+                    <b class="M516">1. Reservation of Accor services</b>
+                    <small class="R416">Reservations for Accor services are made by the customer on the site. 
+                        The booking steps may vary depending on the browser and customer request, and include the following steps:</small>
+                    <ol>
+                        <li>
+                            Step 1 : Enter your destination, facility and, in some cases, one or more additional services into your search criteria.
+                        </li>
+                        <li>
+                            Step 2 : Results and facilities, and in some cases one or more additional services, are displayed as results.
+                        </li>
+                        <li>
+                            Step 3 : Details and characteristics of the chosen service, especially if it is an accommodation service, characteristics of the accommodation (location, room size, TV, 
+                            minibar, etc.), length of stay, options provided (e.g. breakfast, wifi access, etc.); The total amount of the reservation including details of applicable taxes, legal 
+                            information documents and all applicable special terms and conditions (guarantee policy, cancellation conditions, check-in time, etc.) are presented in the 
+                            case of travel arrangements or package tours.
+                        </li>
+                        <li>
+                            Step 4 : Completion of the customer's service reservation, including:
+                            <ul class="roman">
+                                <li>
+                                    (i) Registration of payment method information in the case of partial or full advance payment for reservations prior to stay, or when requesting a reservation 
+                                    guarantee for accommodation services.
+                                </li>
+                                <li>
+                                    (ii) Consultation and agreement of general terms and conditions related to reservations and special terms and conditions prior to customer payment.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Step 5 : Consider booking services from Accor and related facilities.
+                        </li>
+                        <li>
+                            Step 6 : An email confirming the service reservation is sent to the customer. This includes the service booked, the amount, the special terms and conditions accepted by 
+                            the customer, the date of the reservation request, information regarding after-sales service and access to the general terms and conditions, as well as the 
+                            address of the facility where the customer can lodge a claim.
+                        </li>
+                    </ol>
+                    <div>
+                        All reservations are considered complete when the customer receives a confirmation email. A customer may make a reservation for Accor services as an agent for one or 
+                        more other persons, limited to a maximum of 7 (seven) rooms. In addition, customers must make reservations in accordance with the group-specific terms and 
+                        onditions set forth on meetings.accor.com. Reservations related to business groups, meetings, seminars, etc. should be directed to the Accor Solutions PRO section of the 
+                        <a href="index.html">all.accor.com</a> site.                    
+                    </div>
+                    <b class="M516">2. Reservation of Partner Services</b>
+                    <p>Customer reservations made through partner services are made through each partner company's website and mobile service. Reservations are made directly between the 
+                        customer and the partner according to the steps of the partner company's website and mobile service.</p>
+                </div>
+            </li>
+            <li>
+                <strong>4. Fees and Payments</strong>
+                <ul class="L316">
+                    <li>
+                        <b class="M516">1. Charges</b>
+                        <p>Charges related to service reservations are displayed prior to reservation, during reservation process, and after reservation. For accommodation services, rates shown are per 
+                            room for number of people and selected dates. When confirming a reservation for a service, the total amount will be quoted in the Facility's transaction currency (which, in 
+                            some cases, may be different from the Facility's local currency) and is valid only for the period indicated on the Site. If the total sales of service reservations processed by the 
+                            facility are in a currency other than the currency confirmed at the time of reservation, the customer will bear the cost of conversion. If the currency confirmed in the 
+                            reservation is converted to another currency and displayed on the site, it is for informational purposes only and not for contractual purposes. Please note that there may be 
+                            differences, especially if there are exchange rate fluctuations between the date of reservation and the date of stay at the facility. Unless otherwise stated on the site, options 
+                            not indicated when booking the service (e.g. breakfast, half board, full board, etc.) are not included in the price. Accommodation tax presented at the service reservation 
+                            stage must be paid directly at the property, except in the case of online prepayment where this amount may be included. Rates are inclusive of VAT applicable on the date of 
+                            booking and any changes in applicable VAT will be automatically reflected in the rate displayed on the date of invoice. Any statutory or regulatory taxation amended or newly 
+                            enacted by the competent authority will be automatically reflected in the rate stated on the invoice on the same day. Finally, some promotional offers that are only offered on 
+                            the site are sold only over the Internet and in no case are sold at the reception of a property.</p>
+                    </li>
+                    <li>
+                        <b class="M516">2. Payment</b>
+                        <small>Customers will</small>
+                        <ol class="roman">
+                            <li>
+                                (i) make prepayment prior to their stay,
+                            </li>
+                            <li>
+                                (ii) guarantee a reservation, or
+                            </li>
+                            <li>
+                                (iii) provide payment details as part of the online checkout process paid by you.
+                            </li>
+                        </ol>
+                        <p>This is part of the welcome service, as specified in section 4.3 below, credit card, credit card number without spaces between digits, expiry date (you must use a valid credit 
+                            card at the time of your stay) and time password to the payment platforms mentioned below. It is available as part of an upfront payment via . Accor securely processes 
+                            online payments using credit cards via OGONE / Ingenico Payment Services (e.g. Payment Service Provider) / Cybersource / Adyen / Stripe / Banque Casino / Silkpay / 
+                            Sharegroop / Asiapay / FirstData. The cards customers use for payment are validated by our partners and may be rejected for a variety of reasons: stolen or blocked cards, limit 
+                            reached, input errors, etc. In case of problems, customers should contact their bank and facility or other entity, while at the same time confirming the service reservation and 
+                            payment method. Online payments (card, wallet, etc.) are available and are listed on the payment page of the website. Visa and Mastercard cards, American Express, JCB, 
+                            Diners, China UnionPay, Post Finance, ELO, Bancontact, Sofort, iDeal, Przelewy24, PayPal, Alipay, WeChat, Sharegroop and Banque Casino are currently accepted. This list is 
+                            subject to change. When paying to the establishment or other vendor, the establishment or other vendor may accept other payment methods, but guests must present a 
+                            credit card to the establishment that guarantees or prepays the reservation. In addition, establishments may ask for identification to help prevent credit card fraud. If the 
+                            guest has not prepaid for the stay online, the facility may request a deposit or authorization to debit the credit card upon arrival to secure an amount commensurate with 
+                            the amount spent at the facility. Accor Loyalty Program Members may use Points to book some or all Accor Services on the Site, subject to the terms and conditions described 
+                            in the Loyalty Program. In the event of a "no-show" for reservations of lodging services (for example, when the customer does not visit the facility for accommodation and does 
+                            not cancel the reservation), the facility will pay the customer a lump sum for the first night of stay as a reservation guarantee. and the remaining reservations will be canceled 
+                            free of charge, unless otherwise stated in the special terms and conditions. Amounts withdrawn at the time of prepayment include the total amount specified at the time of 
+                            booking the service (including all applicable taxes) and, if applicable, the cost of options selected by the customer as set forth in item</p>
+                    </li>
+                    <li>
+                        <b class="M516">3. Welcome service (online check-in and check-out)</b>
+                        <p>In order to use the welcome service, the customer must comply with the contents of the applicable item without exception. To make check-out of facility customers simple 
+                            and fast, Accor provides a welcome service. This is a digital process that allows you to digitally process your check-in and/or check-out prior to your stay, and if this service is 
+                            suitable for your reservation, you can use it. The customer will receive a response from the facility within 2 days of requesting the availability of this service. In some cases, 
+                            online check-in is only possible where online check-out is available. In this case, the customer can refuse online check-out (also called "fast check-out"). In this case, the check
+                            -in request received online will also be canceled and, more broadly, the welcome service will be cancelled. If online check-out is not mandatory, guests may check-in online 
+                            and have check-out handled at the facility. When using online checkout, an authorization request (also called "pre-authorization") is issued by the customer's bank. This 
+                            procedure provides a valid deposit for an amount expected to incur during the stay and authorization for payment to the facility up to the maximum amount authorized by 
+                            the bank to the customer based on the customer's actual usage costs. The facility will only charge the actual amount of the bill from the time the guest leaves the stay, and 
+                            the guest does not require physical presence at the facility or additional authorization to make payment. The amount requested for authorization includes the amount of the 
+                            reservation (or the remaining amount to be paid if partial prepayment was made at the time of booking) and a fixed amount to cover the guest's consumption or expenses 
+                            on site (if not included in the rate, breakfast, restaurant, bar, Accommodation tax, etc.) are included. This fixed amount is determined by the property based on the number of 
+                            people booked and the number of nights. Example: 2 nights at 130 euros per night + 40 euros for an extra = 300 euros authorization request. Authorization requests are not 
+                            intended for immediate payment, but rather as a reserve for future payments at the customer's bank, which temporarily reduces the credit card's limit to secure future 
+                            transfers. However, in some cases, the authorization request may be marked as debit pending on the bank account of the card used. Once the authorization request is 
+                            activated and confirmed by the bank, at the end of the stay, the facility will send a payment request for the amount of the invoice to the guest's bank.</p>
+                        <ul class="disc">
+                            <li>
+                                If the charge is less than the amount requested for authorization, the actual amount owed by the customer equals the actual charge on the card. The card limit will be 
+                                readjusted (released) by the customer's bank to account for this difference (there may be some delay depending on the bank).
+                            </li>
+                            <li>
+                                If the charge is greater than the amount requested for approval, the facility will use all acceptable amounts. Any remaining charges will be charged to the same card. 
+                                Therefore, two withdrawals will be processed to the customer's account. One is the requested authorization amount, and the other is an additional amount. Separately, we 
+                                recommend that you go to reception to adjust the amount requested for authorization or to pay directly.                            </li>
+                            <li>
+                                If a reservation is canceled after the authorization request has been activated, the authorization request cancellation will automatically be sent to the bank of the cardholder 
+                                used. In rare cases, this cancellation may be treated as a refund.                            </li>
+                            <li>
+                                If the customer's bank uses a so-called "3D Secure" security system, the bank may send an SMS to the customer when a charge is mentioned in the customer's account. This 
+                                is never an immediate charge.                            
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>5. Cancellation and change of service reservation</strong>
+                <div class="L316">
+                    <p>In the case of accommodation services (reservation of rooms or other types of accommodation within the establishment), the customer does not have the right of withdrawal 
+                        as provided for in Article L. 221-18 of the Consumer Law and is provided on a specific date or for a fixed period pursuant to Article L. 221-28 of the Consumer Law We remind 
+                        you that you are excluded from the right to contracts related to the provision of accommodation services that must be provided. For each reservation of the service, special 
+                        terms and conditions stipulate the cancellation and/or modification of the reservation. Reservations with prepayment cannot be changed and/or canceled. The reservation 
+                        deposit (amount paid in advance) is non-refundable. In this case, the relevant contents are mentioned in the special terms and conditions.</p>
+                    <b class="M516">Where special terms and conditions permit:</b>
+                    <ul class="disc">
+                        <li>
+                            Cancellation of service reservations can be handled directly on the site by going to the "Confirm or Cancel Reservation" section.
+                        </li>
+                        <li>
+                            Amendments to service reservations can be made directly at the facility or by contacting the phone number specified on the emailed reservation confirmation.
+                        </li>
+                    </ul>
+                    <p>In case of service interruption by the customer, all agreed amounts will be cashed out. Reservations where prepayment is made prior to stay are non-refundable. For 
+                        accommodation services, unless otherwise specified in the special terms and conditions, guests must leave the Facility's room before the specified time, which is generally 
+                        12:00 noon on the last day of the Facility reservation. Otherwise, an extra night will be charged.</p>
+                </div>
+            </li>
+            <li>
+                <strong>6. Customer Promises and Responsibilities</strong>
+                <div class="L316">
+                    <p>You are solely responsible for the services you choose on the site and their suitability for your needs, and Accor disclaims any liability in this regard. Similarly, Customer is solely 
+                        responsible for the information provided when creating an account and/or booking a service. Accor accepts no responsibility for information misrepresented or fraudulently 
+                        communicated by the customer. In addition, unless a fraudulent use proves that there is no responsibility and negligence on the part of the customer, if a third party, 
+                        including a minor, uses or reserves an account in the customer's name, the customer is fully responsible for it. In this regard, as set out in item 9, you must immediately notify 
+                        Accor via customer service of any hacking or fraudulent use of your email address. Customer agrees to use the Site and the services provided through it in compliance with 
+                        applicable regulations and as set forth in these General Terms and Conditions. In the event of a breach of the customer's obligations under these General Terms and 
+                        Conditions, the customer will be liable for damages incurred by Accor or a third party. Accordingly, Customer agrees to indemnify Accor against any damages, costs or related 
+                        losses resulting from any claims, actions or claims that may arise as a result. Customer specifically agrees to abide by the final reservation, payment of fees and related special 
+                        terms and conditions for the Services. Indeed,</p>
+                    <ul class="disc">
+                        <li>
+                            Without prejudice to any action Accor may have against the customer in the event of an out-of-rules, invalid, incomplete or fraudulent reservation or payment due to reasons 
+                            attributable to the customer, cancellation of the service reservation at the customer's expense. will do                        </li>
+                        <li>
+                            Acts that violate public morals and public order or do not comply with the internal regulations of the facility inside the facility will cause the facility manager and/or other 
+                            service providers to compensate the customer and/or to vacate the place without refund if payment has already been made. You can ask to leave. If payment is not made, 
+                            the customer must pay for the services consumed before leaving the venue.                            
+                        </li>
+                        <li>
+                            The customer agrees not to use information and communication resources (typically Wifi networks) available in the facility for reproduction, performance, public disclosure 
+                            or communication purposes. This includes texts, images, photographs, musical works, audiovisual works, software and video games, which are protected by copyright or 
+                            related rights and, where separate permission is required, without the prior permission of the rights holders, Article I of the Intellectual Property Act and Follow the 
+                            instructions in Section II. Customers must comply with the security policies of the facility's Internet access provider, including security measures to prevent unlawful use of 
+                            information material and refraining from taking any action that violates such measures.                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>7. Accor's Promises and Responsibilities</strong>
+                <div class="L316">
+                    <b class="M516">Discounts - all can be combined with ALL member rates:</b>
+                    <p>As part of its obligation to provide its services in compliance with the Site Access and General Terms and Conditions, Accor undertakes in good faith and responsibly, to the 
+                        extent reasonable, to make every effort to correct any malfunctions it becomes aware of. However, Accor may need to suspend the site without prior notice for technical 
+                        reasons for maintenance, for which Accor assumes no responsibility. The Customer acknowledges and agrees that Accor is not liable for any inconvenience or damage related 
+                        to the use of the Internet network, including but not limited to the following: - Poor transmission of any data and/or information on the Internet. and/or reception status.</p>
+                    <ul class="disc">
+                        <li>
+                            Failure of receiving equipment or communication lines.
+                        </li>
+                        <li>
+                            Malfunctions of the Internet network that prevent the normal functioning of the site and/or the reservation of services.
+                        </li>
+                    </ul>
+                    <p>The Site may transmit hypertext links to websites edited and maintained by third parties for which Accor is not responsible for the content of the Website and the services 
+                        provided. In this regard, Partners are responsible for the promotions they offer on their websites. Therefore, the customer's sole responsibility is to make decisions regarding 
+                        inquiries from third party websites. Accor is an intermediary between each Facility and the Customer, and the Customer acknowledges and expressly agrees to this. 
+                        Accordingly, Accor has been entrusted with activities related to negotiation, training and marketing of Accor services within the facility. The facility is operated by a separate 
+                        legal entity from Accor Corporation. The customer agrees that in the event of any lawsuit and/or claim arising out of or in connection with a stay at the facility or a reservation 
+                        for Accor services, the facility's operating company will handle it exclusively, and therefore the customer is liable to Accor or Accor for damages incurred at the facility. Affiliates 
+                        cannot be held liable in any way.</p>
+                </div>
+            </li>
+            <li>
+                <strong>8. Force Majeure</strong>
+                <p class="L316">Neither party may demand liability from the other party if it fails to perform its obligations due to the occurrence of force majeure. Each party expressly agrees to bear the cost 
+                    of performance of obligations between the parties to each other due to force majeure. In general, cases recognized by a court are considered force majeure circumstances. If 
+                    force majeure circumstances persist for more than thirty (30) days, these General Terms and Conditions shall be dissolved without any claim by the parties against each other 
+                    for damages. In case of force majeure circumstances or exceptional circumstances that prevent the realization of services, and in particular in which the customer is unable 
+                    to use the facility's rooms, the facility may, with the prior agreement of the client, provide facilities of the same class or the same type of service to the client wholly or in part. 
+                    may be presented or provided.</p>
+            </li>
+            <li>
+                <strong>9. Customer Service and Claims</strong>
+                <div class="L316">
+                    <small>If you have any complaints about booking services on the site, you can use customer service.</small>
+                    <ul class="disc">
+                        <li>Visit our support page.</li>
+                        <li>Our mailing address is:</li>
+                        <li>Service Clientèle Réservation</li>
+                        <li>2 rue de la Mare Neuve</li>
+                        <li>91021 Evry - FRANCE</li>
+                    </ul>
+                    <p>Customer service for inadequate or unsatisfactory service within eight (8) days of service completion, to facilitate handling of complaints. We recommend that you submit in 
+                        writing.</p>
+                </div>
+            </li>
+            <li>
+                <strong>10. Respect for Privacy and Privacy</strong>
+                <div class="L316">
+                    When a customer uses our site or mobile services, for example to make a reservation, Accor SA and the Group Accor hotel business process personally identifiable information 
+                    in accordance with the conditions set out in the <a href="privacy+policy.html">"Privacy Policy"</a>. Accordingly, the information collected in connection with your contract will be transmitted to Accor SA and 
+                    its businesses, partners, service providers (such as online payment service providers) and hotels for processing your reservation or for pre-contractual action. As soon as 
+                    applicable regulations fulfill this guarantee, your data will be transferred from Europe to countries that do not offer an equivalent level of data protection from the point of 
+                    view of the European Union. Group Accor Hotels businesses are implementing personal data processing to define the level of fraud risk associated with each transaction in 
+                    order to protect the payment process. In this case, Accor SA and Hotels may use the services provided by Group Accor Hotels' Hazard Prevention Services to improve their 
+                    analysis. Based on the results of the analysis, Group Accor Hotels may take security measures by asking guests to use other booking channels or payment methods. These 
+                    actions may stop the execution of the reservation or, if the analysis results do not guarantee the security of the order, cancel the reservation. Fraudulent use of payment 
+                    methods that result in payment errors may result in the customer being registered in Group Accor Hotels' incident file, which may result in Group Accor Hotels blocking 
+                    future payments or implementing additional controls. Customers may exercise their rights under the Privacy Policy at any time. All information useful for this purpose is 
+                    <a href="privacy_policy.html">"Privacy Policy"</a>.                    
+                </div>
+            </li>
+            <li>
+                <strong>11. Other</strong>
+                <p class="L316">By entering bank information and accepting these General Terms and Conditions electronically, it constitutes an electronic contract between the parties, which can prove 
+                    the suitability of the person booking the service and the sum for said booking. All obligations between the parties are set forth in the applicable General Terms and 
+                    Conditions and in the Special Terms and Conditions. No other terms communicated by the Customer may be incorporated herein. In the event of a conflict between the 
+                    Special Terms and the General Terms, the Special Terms will govern the obligations solely. In the event of a contradiction between the General Terms and Conditions on the 
+                    one hand and, for example, on the part of the Partners, on the other hand, these General Terms and Conditions shall exclusively apply to the respective obligations. If one or 
+                    more of the General Terms and Conditions are invalid or declared invalid by law, regulation or judgment of a court of competent jurisdiction, all other provisions shall remain 
+                    in force and scope. The original language is French. If the General Terms and Conditions are translated into a foreign language, the French original shall prevail over any other 
+                    translation in case of disputes, litigation, interpretation or performance of the Terms and the general relationship between the parties. Customer acknowledges and agrees 
+                    that Accor may assign these General Terms and Conditions and its rights and obligations to any third party without Customer's prior written consent. Customer agrees that 
+                    Accor may make such assignments in the future. Customer may not assign the General Terms or the rights and obligations contained therein to any third party without 
+                    Accor's prior written consent.</p>
+            </li>
+            <li>
+                <strong>12. Governing Law and Dispute Handling</strong>
+                <div class="L316">
+                    <p>The General Terms and Conditions are governed by French law, without prejudice to any mandatory protection treaties that may apply in the consumer's country of residence.
+                        Customers have been advised by Accor that in the event of a dispute arising out of or in connection with these General Terms and Conditions, existing arbitration proceedings 
+                        or other dispute resolution methods may be dealt with pursuant to subheading I of Article VI of the Consumer Law. In the event of no response or negative response within 
+                        sixty (60) days after the customer service or facility intervenes to resolve the dispute amicably, the Accor Group affiliates and hotels and franchise hotels managed by the 
+                        Accor Group may If you decide to resort to the Center for Tourism and Travel Arbitration, you can inform the Center for Tourism and Travel Arbitration (Médiateur du Tourisme 
+                        et du Voyage) - BP 80303 - 75823 Paris Cedex 17.</p>
+                    <p>If a dispute arises from a facility located in Portugal that cannot be resolved through the facility or its customer service, the customer may file such a complaint on the claims 
+                        platform provided for that purpose, available on the facility's introduction page and via the following link: A: www.livroreclamacoes.pt. In addition, Accor is introducing the 
+                        European Online Dispute Resolution Platform ("RLL") where customers can seek help.</p>
+                </div>
+            </li>
+        </ol>
+        <div class="L315">
+            Accor is a public limited company registered in the Commercial and Enterprise Register of Nanterre under number 602 036 444, with its headquarters at 82, rue Henri Farman CS20077 - 92445 
+            Issy-les-Moulineaux - France, tax number FR 93 602 036 444 (hereinafter referred to as  "Accor "). Accor is registered with Travel Agency and Other Accommodation No. IM091100035, the 
+            guarantee company is WHITE ROCK INSURANCE (Europe) PCC Limited Vision Exchange Building - Triq it-Territorjals, Zone 1, Central Business District - Birkirkara CBD1070 – MALTA, and 
+            the insurance company is : CHUBB - 31 place des Corolles - 92400 Courbevoie - France. Accor  publishes and operates a website and a hotel reservation site and other additional services 
+            <a href="index.html">all.accor.com</a> You may <a href="helpCenter_call.html">contact us</a> through: Contact Tel: +33 (0)1 45 38 86 00.            
+        </div>
+    </section>
+
+    <footer class="alx">
+        <div>
+            <div>
+                <h2 class="E232">EXCLUSIVE OFFERS</h2>
+                <p class="L313">Subscribe to our newsletter and receive special offers</p>
+                <form action="subscribe_accor.html">
+                    <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
+                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                </form>
+            </div>
+            <div>
+                <h2 class="E232">NEED HELP ?</h2>
+                <span class="L313"> 
+                    <a href="map.html">Reservation Management</a>
+                    <a href="helpCenter.html">Support and Inquiries</a>
+                </span>
+                <mark class="btn alxL313">
+                    Do you want to ask for questions ?
+                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                </mark>
+                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="M510">
+            <strong>ABOUT US</strong> 
+            <ul>
+                <li><a href="https://group.accor.com" target="_blank">ACCOR GROUP</a></li>
+                <li><a href="https://group.accor.com/hotel-development" target="_blank">MANAGEMENT &amp; FRANCHISES</a></li>
+                <li><a href="https://careers.accor.com" target="_blank">CAREERS</a></li>
+                <li><a href="https://all.accor.com/ko/sustainable-development/index.shtml" target="_blank">SUSTAINABLE DEVELOPMENT</a></li>
+                <li><a href="https://all.accor.com/affiliate/index.en.shtml" target="_blank">AFFILIATE PROGRAM</a></li>
+            </ul>
+            <strong>CUSTOMER SERVICE</strong>
+            <ul>
+                <li><a href="terms_general.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookies.html">COOKIES</a></li>
+                <li>
+                    <span>STAY CONNECTED</span>
+                    <a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a>
+                    <a href="https://www.instagram.com/all/" target="_blank">instagram</a>
+                    <a href="https://twitter.com/all" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a>
+                    <em>tripadvisor</em>
+                </li>
+            </ul>
+            <b>STAY CONNECTED</b>
+            <ul>
+                <li><a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/all/" target="_blank">instagram</a></li>
+                <li><a href="https://twitter.com/all" target="_blank">twitter</a></li>
+                <li><a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a></li>
+                <li>tripadvisor</li>
+            </ul>
+            <div>
+                <h3 class="M510">MOBILE APPLICATIONS</h3>
+                <span>
+                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=ko&referrer=mat_click_id%3Dfa12181839af409492a34c2659248cb6-20190912-14012%26link_click_id%3D700704422598298176&mat_click_id=fa12181839af409492a34c2659248cb6-20190912-14012">Google Play</a>
+                    <a href="https://apps.apple.com/kr/app/accor-all-%ED%98%B8%ED%85%94-%EC%98%88%EC%95%BD/id489472613?mat_click_id=870794f4e4534593891b7c4ad7b95593-20190912-14012&mt=tr&referrer=mat_click_id%3D870794f4e4534593891b7c4ad7b95593-20190912-14012%26link_click_id%3D700704503900740601">App Store</a>
+                </span>
+            </div>
+            <div class="L311">
+                <p>
+                    *Prices start from, based on a one night stay in a standard double room for two guests. Supplementary services, breakfast and tourist/city tax are not included. Price observed on all.accor.com within the past 24 hours, for a one night stay within the next eight days, starting tomorrow. Price subject to the hotel conditions, period and availability. Depending on the country, these prices may not include taxes, may include VAT only or may include all taxes (VAT and tourist/city tax). When prices do not include all taxes, the relevant taxes (VAT and tourist/city tax) will be stated in the forthcoming stages of the reservation process. The price is only guaranteed at the time of reservation.
+                </p>
+                <span>** Note 2Available 24/7. Calls to this number will cost 13 pence per minute plus your providers access charge (only for Accor hotels).</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

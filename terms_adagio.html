@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/accor.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="alx">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="accor">
+                </a>
+            </h1>
+            <div>
+                <ul class="btn M512">
+                    <li><input class="alxM512" type="button" value="SIGN IN OR JOIN"></li>
+                    <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
+                    <li><a href="account_not_yet_member.html">JOIN IN ACCOR</a></li>
+                </ul> 
+                <div class="menuBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="M513">
+                <ul>
+                    <li>ACCOMMODATION</li>
+                    <li>LOYALTY PROGRAM</li>
+                    <li>OFFER &amp; PACKAGE</li>
+                    <li>DINING SERVICE</li>
+                    <li>BUSINESS EVENT</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="fnbPanel">
+            <div>
+                <div class="M513">
+                    <b class="mui">ACCOMMODATION</b>
+                    <ul class="R413">
+                        <li><a href="accom_hotel_Resort.html">Hotel &amp; Resorts</a></li>
+                        <li><a href="accom_aparthotels.html">Aparthotels &amp; Villas</a></li>
+                        <li><a href="accom_private_home.html">Luxury Private Home</a></li>
+                        <li><a href="accom_all_our_brand.html">ALL Accor Brand</a></li>
+                        <li><a href="map.html" class="mapBtn">FIND A HOTEL</a></li>
+                    </ul>
+                    <b class="mui">LOYALTY PROGRAM</b>
+                    <ul class="R413">
+                        <li><a href="loyalty.html">Discover the Program</a></li>
+                        <li><a href="loyalty_benefits.html">Benefits and Status</a></li>
+                        <li><a href="loyalty_earn_rewards.html">Earn Rewards Points</a></li>
+                        <li><a href="loyalty_use_rewards.html">Use Your Points</a></li>
+                    </ul>
+                    <b class="mui">OFFER &amp; PACKAGE</b>
+                    <ul class="R413">
+                        <li><a href="offers_all_member.html">For All Member</a></li>
+                        <li><a href="offers_latest.html">The Latest Offers</a></li>
+                        <li><a href="offers_all_year.html">All Year Offers</a></li>
+                    </ul>
+                    <b class="mui">DINING SERVICE</b>
+                    <ul class="R413">
+                        <li><a href="dining_world_of_flavours.html">World of Flavours</a></li>
+                        <li><a href="dining_service.html">Popular Cities</a></li>
+                        <li><a href="dining_service.html?scroll=diningSeasonFestive">Season Festive</a></li>
+                    </ul>
+                    <b class="mui">BUSINESS EVENT</b>
+                    <ul class="R413">
+                        <li><a href="business_tailored_events.html">Tailored Events</a></li>
+                        <li><a href="business_meeting_planning.html">Meeting Planning</a></li>
+                        <li><a href="detail_business_private.html">Private Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="reservation">
+                <form action="checkout.html">
+                    <fieldset>
+                        <legend class="M522">BOOK WITH ALL</legend>
+                        <div class="11">
+                            <ul>
+                                <li>
+                                    <label for="destination" class="M5">Where do you want to travel ?</label>
+                                    <input type="text" class="alxL311" id="destination" placeholder="Destination, hotel name">
+                                    <label for="travellers" class="M5">
+                                        Travellers
+                                        <small class="R410">Loyalty or subscription</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="travellers" placeholder="0000 0000 0000 0000">
+                                </li>
+                                <li>
+                                    <label for="check-in-date" class="M5">
+                                        Dates
+                                        <div>
+                                            <span>1</span>
+                                            <span>Night</span>
+                                        </div>
+                                    </label>
+                                    <div>
+                                        <input type="date" class="alxL311" id="check-in-date">
+                                        <span>-</span>
+                                        <input type="date" class="alxL311" id="check-out-date">
+                                    </div>
+                                    <label for="profTravellers" class="M5">
+                                        Professional Travellers
+                                        <small class="R410">Business client with contract</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="profTravellers" placeholder="Client code (SC, AC...)">
+                                </li>
+                                <li>
+                                    <div class="roomSelect">
+                                        <label for="roomCount" class="M5">Rooms &amp; Guests</label>
+                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect">
+                                            <ol>
+                                                <li>
+                                                    <label for="roomCount" class="L310">Room(s)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="roomCount">
+                                                        <span class="L3">Room(s)</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="adultsCount">
+                                                        <span class="L3">Adult Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="childCount">
+                                                        <span class="L3">Children Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <input type="reset" class="btn alxL310" value="Reset">
+                                        </div>
+                                    </div>
+                                    <label for="promotionSelect" class="M5">
+                                        Special Rates or Promotion Code
+                                        <small class="R410">Choose a rate</small>
+                                    </label>
+                                    <span class="selectComponent">
+                                        <select id="promotionSelect" class="alxL311">
+                                            <option>None</option>
+                                            <option>AAA / CAA Member</option>
+                                            <option>Military &amp; Veteran</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="submit" class="alxM513" value="RESERVE NOW">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="alx termsContainer adagio">
+        <h2 class="E234">
+            ADAGIO TERMS AND CONDITIONS
+        </h2>
+        <span class="L315">Accor  publishes and operates a website 
+            <a href="index.html">all.accor.com</a>
+        </span>    
+        <ol class="accordionBox">
+            <li>
+                <strong>1. Booking</strong>
+                <ul class="L316">
+                    <li>
+                        An Apartment booking is only valid after confirmed written approval by ADAGIO sent by email to the customer and that summarises the conditions of the stay booked.
+                    </li>
+                    <li>
+                        A multiple booking is a reservation of seven (7) Apartments or more, in the same Aparthotel and made by the same individual or corporation. In the event of a multiple 
+                        booking, a special group contract will be concluded that will take precedence over the GTCS provisions if there is any discrepancy.
+                    </li>
+                    <li>
+                        The Customer declares that the booking of these services is for their personal needs:
+                        <ol class="roman">
+                            <li>
+                                (i) The Customer's booking shall be strictly personal and cannot be transferred to a third party, whether for financial reward or not.</li>
+                            <li>
+                                (ii) The choice of the services booked is their sole responsibility.</li>
+                            <li>
+                                (iii)The Customer is prohibited from engaging in any business, craft or professional activity in the Apartments.</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>2. Rates</strong>
+                <ul class="L316">
+                    <li>
+                        <b class="M516">Accommodation service</b>
+                        <p>The accommodation service rates are per apartment and per night, and include utilities (water, electricity, heating). The rates shall vary according to the booking date, the 
+                            arrival date, length of the stay, type of Apartment (studio, two bedrooms, etc.), the number of people occupying the Apartment (within the maximum limit allowed per 
+                            Apartment) and the type of rate (Flexible, Semi-Flexible, Non-Flexible).</p>
+                    </li>
+                    <li>
+                        <b class="M516">ADAGIO offers three types of rates:</b>
+                        <ul class="disc">
+                            <li>
+                                Flexible rates: these rates require a booking deposit (see Article 3 below) with full payment of the balance on arrival to the Aparthotel (see Article 4 below), and allows full 
+                                cancellation without charge subject to conditions (see Article 5 below).                                                              
+                            </li>
+                            <li>
+                                Semi-Flexible rates: these rates require full payment in advance when booking (see Articles 3 and 4 below), and allows full cancellation without charge subject to conditions 
+                                (see Article 5 below).                                
+                            </li>
+                            <li>
+                                Semi-Flexible rates: these rates require full payment in advance when booking (see Articles 3 and 4 below), and allows full cancellation without charge subject to conditions 
+                                (see Article 5 below).                                
+                            </li>
+                            <li>
+                                Non-Flexible rates: these rates require full payment in advance when booking (see Article 4 below), and does not allow cancellation (see Article 6 below).
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b class="M516">ADAGIO shall apply a tiered pricing system in relation to the length of stay:</b>
+                        <ul class="disc">
+                            <li>
+                                For stays of four nights or more, the price of the accommodation service is reduced from the first night in all Aparthotels and across all periods (except for special conditions 
+                                that are specified at the time of booking).                  
+                            </li>
+                            <li>
+                                All bookings, regardless of their origin, are payable in the local currency of the Aparthotel.
+                            </li>
+                            <li>
+                                In the event of a discrepancy between the number of peoples indicated in the reservation and the number of people on the day of arrival, a fixed-rate supplement of €15 
+                                per additional person and per night will be applied on arrival, the accommodation of the extra individuals being conditional to the capacity of the booked Apartment(s).
+                            </li>
+                            <li>
+                                Additional products and services are not included in the price of the accommodation service.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b class="M516">Housekeeping:</b>
+                        <ul class="disc">
+                            <li>
+                                Prices for stays of eight nights or more include a daily housekeeping service that covers cleaning of the Apartment (except the kitchen and dishes), a change of bed linen 
+                                and towels and cleaning at the end of the stay.                              
+                            </li>
+                            <li>
+                                Prices for stays shorter than eight nights do not include a housekeeping service. This service can be requested directly at the reception of the Aparthotel and charged as an 
+                                additional cost.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b class="M516">Breakfast service:</b>
+                        <ul class="disc">
+                            <li>
+                                Some rates include a breakfast service. In this case, breakfast is included for the entire duration of the stay and for all the people included in the booking.
+                            </li>
+                            <li>
+                                For all other rates, breakfast is not included and is payable at the location. Breakfast is free for children up to the day before their third birthday, subject to a minimum 
+                                Breakfast charge.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b class="M516">Additional services:</b>
+                        <ul class="disc">
+                            <li>
+                                Additional services (parking, on-site shop, late check-in etc.) will be charged as an additional cost unless expressly included in an offer.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b class="M516">Promotional offers:</b>
+                        <ul class="disc">
+                            <li>
+                                Promotional offers are subject to the special conditions communicated with the offer. Promotional offers may not be combined.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b class="M516">Rate changes:</b>
+                        <ul class="disc">
+                            <li>
+                                ADAGIO reserves the right to adjust rates in the event of legislative and/or regulative changes likely to cause a fluctuation in prices (particularly the modification or creation 
+                                of taxes). Any modification or creation of new legal or regulatory fees imposed by the competent authorities will automatically be reflected in the price indicated on the 
+                                billing date.                                
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b class="M516">Tourist tax:</b>
+                        <ul class="disc">
+                            <li>
+                                Tourist tax is not included in the rates. The tourist tax amount shall be determined per person and per day and shall vary according to local regulations and current residence 
+                                classifications. This is payable either on site or when booking, depending on the circumstances.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b class="M516">“Starting from” prices:</b>
+                        <ul class="disc">
+                            <li>
+                                The prices indicated in any communication material and on the website in close connection with the reference “STARTING FROM” are indicative of offers made for specific 
+                                lengths of stay, time periods and cities.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b class="M516">Baby policy:</b>
+                        <ul class="disc">
+                            <li>
+                                Accomodation is free for all children under three (3) years old, provided that this has been indicated at the time of booking. Baby kits (chair and cot) are available to 
+                                customers through booking at reception and while supplies last.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>3. Guarantees</strong>
+                <div class="L316">
+                    <b class="M516">Accommodation service:</b>
+                    <p>All bookings must be approved using a valid credit card number for the duration of the stay.</p>
+                    <b class="M516">For reservations with Flexible rates, a deposit will be taken from the credit card when booking:</b>
+                    <ul class="disc">
+                        <li>
+                            For all stays between one and three nights: a bank pre-authorisation (PLBS) corresponding to the price of the first night.
+                        </li>
+                        <li>
+                            For all stays between four and nine nights: a bank pre-authorisation (PLBS) corresponding to the price of the first two nights.
+                        </li>
+                        <li>
+                            For all stays between ten and 27 nights: a deposit that is four times the amount for the first night.
+                        </li>
+                        <li>
+                            For all stays lasting 28 nights or more: a deposit that is eight times the amount for the first night.
+                        </li>
+                        <li>
+                            For reservations with Semi-Flexible rates, the deposit taken from the credit card shall correspond to the total amount paid for the booking.
+                        </li>
+                    </ul>
+                    <p>
+                        The guarantee may be used by ADAGIO in the event of non-payment by the occupant of the amount due to ADAGIO for the accommodation service and/or additional 
+                        services used on site (breakfast, telephone, parking, etc.).
+                    </p>
+                    <p>
+                        A seasonal rental contract shall be concluded between the Aparthotel and the occupant for stays within the French territory lasting more than 28 days. The occupant must 
+                        provide the following documentation: Three most recent payslips and/or last tax assessment notice, an up-to-date proof of address, bank statement, a copy of a valid identity 
+                        document and a bank guarantee in the form of a credit card number under the name of the booking party that is valid until the end of the stay. Neither the booking nor the 
+                        extended stay will be confirmed unless all of the documentation is available at the time of signing the accommodation contract.                        
+                    </p>
+                    <p>
+                        Under no circumstances can the customer make the rented premises their primary residence for any reason. The Customer agrees to have an effective primary residence 
+                        throughout the rental period. A joint inventory will be drawn up between ADAGIO and the Customer on arrival and departure from the Apartment.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <strong>4. Payment of booking</strong>
+                <div class="L316">
+                    <b class="M516">Payment period:</b>
+                    <small class="R416">For reservations with Flexible rates, payment shall vary depending on the length of stay and the brand concerned:</small>
+                    <ul class="disc">
+                        <li>
+                            For all stays between one and 14 nights: the balance of the full stay must be paid on arrival, less the deposit.                            
+                        </li>
+                        <li>
+                            For all stays between 15 and 27 nights: payment for the first 15 nights is due on arrival, less the deposit. The balance must be settled before the end of the first fortnight.
+                        </li>
+                        <li>
+                            For all stays lasting 28 nights or more: payment for the first 15 nights is due on arrival, less the deposit. Each fortnight must be paid in advance during the stay.
+                        </li>
+                    </ul>
+                    <b class="M516">Payment methods:</b>
+                    <ul class="L3 disc 16">
+                        <li>
+                            For payments via the ADAGIO website: payment by credit card (Mastercard, Visa, AMEX) for all Aparthotels and PayPal (UK), Diners Club and Accor Business Account for 
+                            certain Aparthotels.                            
+                        </li>
+                        <li>
+                            For payments via the ALL website: payment by credit card (Mastercard, Visa, AMEX) for all Aparthotels and PayPal (UK), Diners Club, Accor Business Account, Mister Cash, 
+                            iDeal, SOFORT Banking, JCB, Alipay, UnionPay card, bank transfer and WeChat Pay for certain Aparthotels.
+                        </li>
+                        <li>
+                            For payments via an external partner website: please refer to the possible payment methods on their website.
+                        </li>
+                        <li>
+                            For payments at an Aparthotel: by cash (in compliance with the regulations in force on the date of payment), credit card (Mastercard, Visa, AMEX) or bank transfer.
+                        </li>
+                    </ul>
+                    <small class="R416">Late payment:</small>
+                    <p>In the event of non-compliance with the above-mentioned payment times, late payment interest may be applied by ADAGIO. This late payment interest shall be due the day 
+                        after the invoice due date at a rate that is three times the legal interest rate in force on the invoice is due, applied to the total outstanding amount on said invoice, inclusive of 
+                        tax. Payments made via the ADAGIO website and ALL websites are PCI-DSS certified.</p>
+                </div>
+            </li>
+            <li>
+                <strong>5. Changing / cancelling a booking</strong>
+                <div class="L316">
+                    <b class="M516">Conditions for total cancellation of the booking:</b>
+                    <small class="R416">For reservations with Flexible rates, the time limit for free booking cancellation shall depend on the total duration of the stay initially booked. Free cancellation:</small>
+                    <ul class="disc">
+                        <li>
+                            For all stays between one and three nights: up to 6:00 p.m. on the day of arrival.
+                        </li>
+                        <li>
+                            For all stays between four and nine nights: up to 12 noon the day before arrival.
+                        </li>
+                        <li>
+                            For all stays between ten and 27 nights: up to 12 noon, 3 (three) days before arrival.
+                        </li>
+                        <li>
+                            For all stays lasting 28 nights or more: up to 12 noon, five (5) days before arrival.
+                        </li>
+                    </ul>
+                    <small class="R416">Beyond these time periods and in the event that the occupant fails to arrive on the scheduled date, ADAGIO reserves the right, except where required by specific local 
+                        regulations, to apply the following cancellation fees:</small>
+                    <ul class="disc">
+                        <li>
+                            A deduction to the value of 1 night at the booked rate, for all stays between one and three nights.
+                        </li>
+                        <li>
+                            A deduction to the value of two nights at the booked rate, for all stays between four and nine nights.
+                        </li>
+                        <li>
+                            Non-repayment of accommodation deposit for stays of 10 nights or more.
+                        </li>
+                    </ul>
+                    <small class="R416">For reservations with Semi-Flexible rates, the time limit for free booking cancellation shall depend on the total duration of the stay initially booked. Free cancellation:</small>
+                    <ul class="disc">
+                        <li>
+                            For all stays between one and three nights: up to 12 noon, 3 (three) days before arrival.
+                        </li>
+                        <li>
+                            For all stays between one and three nights: up to 12 noon, 3 (three) days before arrival.
+                        </li>
+                        <li>
+                            For all stays between ten and 27 nights: up to 12 noon, 7 (seven) days before arrival.
+                        </li>
+                    </ul>
+                    <b class="M516">Conditions for changing a booking:</b>
+                    <p>Any changes to the date, length of stay, type of Apartment or stay location in the booking initially confirmed by ADAGIO shall be considered a partial cancellation of the 
+                        booking. If the partial cancellation of a booking corresponds to a change in the length of stay, this is likely to result in a change in the rate, given that ADAGIO's tiered pricing 
+                        system is in relation to the length of a stay. If the length of stay is shorter than that initially booked, the rate change will be retroactive up to the day of arrival. Subject to 
+                        availability and at ADAGIO's discretion, the length of the stay may also be changed with no obligation to stay in the same Apartment or for the same price.
+                    </p>
+                    <small>For reservations with Flexible rates, in addition to a change of rate, any partial cancellation of a booking may result in payment of the following cancellation fees:</small>
+                    <ol class="decimal">
+                        <li>
+                            1. In the event of partial cancellation of a booking before the arrival date, no charge will be applied: 
+                            <ul class="dash">
+                                <li>
+                                    For all stays between one and three nights: up to 6:00 p.m. on the day of arrival.
+                                </li>
+                                <li>
+                                    For all stays between four and nine nights: up to 12 noon the day before arrival.
+                                </li>
+                                <li>
+                                    For all stays between ten and 27 nights: up to 12 noon, 3 (three) days before arrival.
+                                </li>
+                                <li>
+                                    For all stays lasting 28 nights or more: up to 12 noon, five (5) days before arrival.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            2. In the event of partial cancellation of a booking after the arrival date (early departure), no charge will be applied:
+                            <ul class="dash">
+                                <li>
+                                    For all stays between one and nine nights: up to 12 noon the day of early departure
+                                </li>
+                                <li>
+                                    For all stays between ten and 27 nights: up to 12 noon, 3 (three) days prior early departure.
+                                </li>
+                                <li>
+                                    For all stays lasting 28 nights or more: up to 12 noon, 5 (five) days early departure.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            3. Beyond these time periods, ADAGIO reserves the right to apply the following cancellation fees and is entitled to charge:
+                            <ul class="dash">
+                                <li>
+                                    One night for all stays between one and nine nights.
+                                </li>
+                                <li>
+                                    The nights cancelled (up to a limit of four nights) for all stays between ten and 27 nights.
+                                </li>
+                                <li>
+                                    The nights cancelled (up to a limit of eight nights) for all stays lasting 28 nights or more.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <small class="R416">For reservations with Semi-Flexible rates, in addition to a change of rate, any partial cancellation of a booking may result in payment of the following cancellation fees:</small>
+                    <ol class="decimal">
+                        <li>
+                            1. In the event of partial cancellation of a booking before the arrival date, no charge will be applied:
+                            <ul class="dash">
+                                <li>
+                                    For all stays between one and three nights: up to 12 noon, 3 (three) days before.
+                                </li>
+                                <li>
+                                    For all stays between four and nine nights: up to 12 noon, 3 (three) days before.
+                                </li>
+                                <li>
+                                    For all stays between ten and 27 nights: up to 12 noon, 7 (seven) days before arrival.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            2. In the event of partial cancellation of a booking after the arrival date (early departure), ADAGIO shall apply a cancellation fee that is equivalent to the full stay and therefore shall not refund the deposit.
+                        </li>
+                    </ol>
+                    <b class="M516">Notification:</b>
+                    <small class="R416">To ensure that all changes (full or partial cancellations and extensions) are accepted, notification should be sent:</small>
+                    <ul class="disc">
+                        <li>
+                            Directly by email to the Aparthotels or via the booking system (booking cancellations can be carried out directly on <a href="https://www.adagio-city.com/" target="_blank">www.adagio-city.com</a> in "My bookings" under "My 
+                            account") where the booking has been made directly with ADAGIO.
+                        </li>
+                        <li>
+                            To the service provider used when booking the Apartment for all other cases.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>6. Non-cancellable / non-refundable / non-exchangeable / non-changeable stays and offers</strong>
+                <div class="L316">
+                    <b class="M516">Bookings made with Non-Flexible rates (e.g. "Prepaid", "Early" or "Weekend" rates and current promotional offers) are NON-EXCHANGEABLE and NON-REFUNDABLE.
+                        For such stays, the following conditions cancel and supersede the abovementioned terms for cancellation and changes:</b>
+                    <small class="R416">Pre-payment of the full cost of the stay:</small>
+                    <p>All bookings must be made with payment covering the total price of the stay. Otherwise, the booking will not be guaranteed.</p>
+                    <small class="R416">Non-cancellable, non-refundable, non-exchangeable and non-changeable offers:</small>
+                    <p>Given the preferential rate granted by ADAGIO, bookings involving offers and/or stays of this nature cannot be cancelled, refunded, exchanged or changed. No requests for 
+                        changes or cancellation shall be considered. The provisions set out in Article 5 are therefore not applicable. Regardless of the date on which the booking is cancelled, ADAGIO 
+                        shall apply a cancellation fee that is equivalent to the full stay. No reimbursement shall be issued for optional services that are booked or billed.</p>
+                    <small class="R416">Failure to arrive at the place of stay:</small>
+                    <p>In the event that the occupant fails to arrive on the scheduled date, ADAGIO shall withhold any reimbursement.</p>
+                </div>
+            </li>
+            <li>
+                <strong>7. Arrival and departure</strong>
+                <div class="L316">
+                    <p>The credit card used to make the booking, as well as a valid identity document in the same name as the credit card, must be presented at the time of arrival. Otherwise, 
+                        access to the accommodation may be refused by ADAGIO.</p>
+                    <b class="M516">For France:</b>
+                    <p>In accordance with that provided for in the Code of Entry and Residence of Foreigners and the Right to Asylum, each customer of foreign nationality, including nationals 
+                        from the European Union, will be asked to complete an individual policy form that may already be pre-filled by ADAGIO. This file shall be retained for six months and may be 
+                        sent to the police or gendarmerie by request. Refusal to complete or sign this form is considered legitimate grounds for refusal to sell. A valid identity document must be 
+                        presented on arrival by each occupant over the age of fifteen. With regard to customers who are French nationals, an individual stay form must be completed on site, 
+                        accompanied by a valid proof of identity.</p>
+                    <b class="M516">For France:</b>
+                    <p>The local provisions in force on the date of the Customer's arrival shall be applied by ADAGIO. The accommodation shall be available from 3:00 p.m. (local time) on the day of 
+                        arrival. Customers must leave the accommodation before 11:00 a.m. (local time) on the day of departure. An additional night will be charged after this time.. These times are 
+                        for indicative purposes only and may be different for some Aparthotels.</p>
+                </div>
+            </li>
+            <li>
+                <strong>8. Security deposit</strong>
+                <div class="L316">
+                    <b class="M516">A security deposit may be requested on arrival to the Aparthotel. This amount may vary according to the Aparthotel, type of accommodation and length of your stay.
+                        The deposit shall be returned to you at the end of your stay; deductions may include:</b>
+                    <ul class="disc">
+                        <li>
+                            Indemnities retained for repairs to any damage caused by the occupants and/or their pets (namely any damage and/or disturbances of any kind within both the private 
+                            areas and common areas of the Aparthotel).                            
+                        </li>
+                        <li>
+                            Unpaid services including optional services used on site (breakfast, parking, etc.).
+                        </li>
+                        <li>
+                            Costs incurred for loss of keys to the Apartment that were given on the day of arrival.
+                        </li>
+                        <li>
+                            Detailed information is available from each Aparthotel.
+                        </li>
+                    </ul>
+                    <span>* A security deposit may also be requested where an object is loaned from the library or objects are loaned from Aparthotels with a "Le Cercle" area.</span>
+                </div>
+            </li>
+            <li>
+                <strong>9. Occupation</strong>
+                <p class="L316">
+                    The number of occupants shall not exceed the designed capacity of the booked Apartment. All children aged three and above are considered to be individual occupants.
+                    ADAGIO hereby informs you that is not possible to equip Apartments with additional beds (it is possible to add a cot for a baby by request and subject to availability).
+                </p>
+            </li>
+            <li>
+                <strong>10. Minors</strong>
+                <p class="L316">
+                    ADAGIO Aparthotels cannot accommodate minors under the age of 18 that are not accompanied by their legal guardians. As such, ADAGIO may request any supporting 
+                    documentation to verify that this provision is properly applied. In the event that this provision is infringed and as soon as this is established, ADAGIO shall proceed to cancel 
+                    the booking or end the stay immediately.
+                </p>
+            </li>
+            <li>
+                <strong>11. Personal data</strong>
+                <div class="L316">
+                    <div>By booking a stay at an Aparthotel, the personal data of customers shall be collected in the distribution and management systems of Accor SA and Adagio SAS for the 
+                        establishment and fulfilment of the contract. These data are gathered to record the booking and enable billing, payment and customer satisfaction analysis. With the 
+                        Customer's consent, personal data may also be used for personalised communications for products and services offered by ACCOR and PIERRE &amp; VACANCES groups.</div>
+                    <div>The personal data collected as part of the Customer's booking are intended for: ACCOR, PIERRE &amp; VACANCES and ADAGIO, their entities, partners, service providers 
+                        (including online payment providers) and Aparthotels for the purpose of carrying out the booking or for any pre-contractual measures. Once the guarantees provided for in 
+                        the applicable rules have been implemented, the Customer's data may be transferred from Europe to countries that do not guarantee, from the perspective of the European 
+                        Union, an equivalent level of protection of the data.</div>
+                    <div>In accordance with Regulation (EU) 2016/679 with regard to the processing of personal data, you have the right to access, query, amend, erase, move or file an objection with 
+                        Accor SA and Adagio SAS, as well as the right to define guidelines for the processing of your data in the event of your death. This right can be exercised by using the unique 
+                        address: <a href="mailto:data.privacy@adagio-city.com">data.privacy@adagio-city.com</a> or by post to Adagio SAS - Data Protection Officer - L’Artois, Espace Pont de Flandre - 11 rue de Cambrai - 75 947 Paris Cedex 19. A copy 
+                        of an identity document may be requested.
+                        </div>
+                </div>
+            </li>
+            <li>
+                <strong>12. Cards and membership</strong>
+                <p class="L316">
+                    Any benefits, discounts and booking guarantees linked to ACCOR membership cards or loyalty cards (ALL, Business Plus) are only applicable to bookings made with 
+                    participating Aparthotels, and cannot be combined with any other type of offer. The applicable terms for awarding of ALL points are governed by the general terms and 
+                    conditions of the ALL loyalty programme. Please note that no points are awarded for bookings made at Aparthotels that are not affiliated with the loyalty programme.
+                </p>
+            </li>
+            <li>
+                <strong>13. Internal regulations</strong>
+                <div class="L316">
+                    <p>Internal regulations are displayed at each Aparthotel and/or Apartment. All occupants are presumed to have taken these regulations into account. The occupant agrees to 
+                        keep the movable property made available to them in the Apartment in a good general condition and to report any defects or malfunction to reception. The Customer is also 
+                        reminded that they must close all means of access to the apartment (partition openings, window(s) and front door) before leaving the property.
+                        ADAGIO shall not be held responsible in the event of non-compliance with the above internal regulations.</p>
+                    <p>ADAGIO reserves the right to enter the Apartments to perform housekeeping services, check the general condition, carry out technical maintenance and ensure that the 
+                        safety conditions are upheld.</p>
+                    <b class="M516">Pets:</b>
+                    <p>In most cases (please check with the Aparthotel) and provided that the property are informed, only dogs and cats are allowed in Aparthotels; a rabies vaccination certificate 
+                        and a certificate of ownership must be presented for dogs if the category that they belong to requires it. A daily fixed rates must be paid and will be collected on site. Service 
+                        dogs and guide dogs for the blind are allowed free of charge. Category 1 and 2 dogs classified as dangerous are prohibited throughout our properties. Pets that are allowed 
+                        shall not interfere with the safety and tranquillity of other persons on site. Their owners must respect the basic hygiene regulations and integrity of the facilities. Animals are 
+                        not allowed to roam freely throughout the property and must be kept on a leash in common areas. They are not allowed near swimming pools or in breakfast rooms. In any 
+                        event, pets shall remain under the full responsibility of their owner.
+                    </p>
+                    <b class="M516">WiFi:</b>
+                    <p>ADAGIO Aparthotels offer free WiFi access so customers can connect to the Internet. The Customer also undertakes to ensure that the computer resources made available by 
+                        ADAGIO are not used in any way to reproduce, represent, make available or communicate to the public works or objects protected by copyright or related intellectual 
+                        property rights, such as text, images, photographs, musical works, audiovisual works, software and video games, without the authorisation of the right holders provided for in 
+                        Books I and II of the Intellectual Property Code when such authorisation is required. The Customer is also required to comply with the security policy of the Internet access 
+                        provider of the Aparthotel, including the rules governing the use of security measures put in place to prevent the illicit use of computer resources [or another term used in 
+                        the company's IT charter] and to refrain from any act undermining the effectiveness of such measures. If the Customer does not comply with the aforementioned obligations, 
+                        they may be accused of infringement within the meaning of Article L.335-3 of the Intellectual Property Code, punishable by a fine of 300,000 euros and three (3) years in 
+                        prison.</p>
+                    <p>If the Customer does not comply with any of the Internal Regulation provisions, or in the event of behaviour contrary to good morality and public order, ADAGIO may request 
+                        the Customer to leave the property without any compensation and/or without any refund if payment has already been made. In the event where payment is still outstanding, 
+                        or where a partial payment was made, the Customer must pay the cost of the services used before leaving the property. ADAGIO also reserves the right to lodge a complaint 
+                        or report any incidents to the competent authorities.</p>
+                </div>
+            </li>
+            <li>
+                <strong>14. Liability - Applicable regulations</strong>
+                <div class="L316">
+                    <p>The status of ADAGIO Aparthotels varies depending on the country. The status of the properties is indicated on ADAGIO’s website and on all communication material. 
+                        Regulations relating to the country and status of the property shall apply. We therefore wish to reiterate that the renting of Tourist Residences is not covered by the liability 
+                        regulations applicable to hotel operators. As a consequence, ADAGIO does not accept any liability in the event of loss, theft or damage to personal effects at its properties 
+                        that are classified as Tourist Residences, either in the Apartments themselves or throughout car parks or common areas. The statute of limitations for amounts owed in 
+                        connection with services sold by ADAGIO does not fall within the scope for applying the hotel industry's statute of limitations (Article 2272 of the Civil Code). As an exception 
+                        to Article 2244 of the French Civil Code, a registered letter with acknowledgment of receipt sent by ADAGIO to a customer debtor shall interrupt the applicable statute of 
+                        limitations. </p>
+                    <p>The occupant may not invoke the legal provisions applicable to residential leases, including those related to security of tenure. The occupant agrees not to provide the 
+                        property’s address as their residential address for tax or professional purposes, nor lend or sublet the Apartment to a third party, in any capacity. The GTCS are governed by 
+                        French law, without prejudice to the governing law applicable under international private law. This applies to both substantive rules and procedural rules.</p>
+                    <p>The photographs presented on the website and/or in the catalogue aren’t contractua. Although every effort is made to ensure that any photographs, graphic representations 
+                        and texts reproduced for the purpose of illustrating the Aparthotels provide as accurate an impression as possible of the accommodation services offered, variations may 
+                        occur, notably as a result of changes to furniture or any possible renovation work. The Customer is not entitled to make any claim on these grounds.</p>
+                </div>
+            </li>
+            <li>
+                <strong>15. After - Sales service</strong>
+                <div class="L316">
+                    <p>On-site teams are at the Customer's disposal during their stay to respond to any complaints, resolve any reported issues and to allow them to fully enjoy their stay. Please 
+                        contact them with any enquiries.</p>
+                    <b class="M516">Any complaints following the customer's stay must be submitted within two months after the departure date:</b>
+                    <ul class="disc">
+                        <li>
+                            by registered letter with acknowledgment of receipt to Adagio SAS - Customer Care Service - 11, rue de Cambrai - 75947 Paris cedex 19
+                        </li>
+                        <li>
+                            by sending an email to: <a href="mailto:contact.adagio@adagio-city.com">contact.adagio@adagio-city.com</a>
+                        </li>
+                    </ul>
+                    <div>In the event of a complaint, the following items must be communicated: the booking number, place and dates of stay, type of Apartment booked, reason for the complaint 
+                        and any supporting documents useful for processing the request. If the dispute cannot be resolved amicably by the Customer Care Service in writing, mediation proceedings 
+                        can be initiated by applying to FEVAD [Fédération du e-commerce et de la vente à distance (Federation of e-Commerce and Mail-Order Selling)] whose contact details are as 
+                        follows: 60 rue La Boétie - 75008 Paris - <a href="https://www.mediateurfevad.fr/" target="_blank">https://www.mediateurfevad.fr.</a></div>
+                </div>
+            </li>
+            <li>
+                <strong>16. Alternative accommodation</strong>
+                <p class="L316">
+                    If an exceptional event occurs, or if it is impossible to make the booked Apartment available to the Customer or in the event of force majeure, ADAGIO may offer alternative 
+                    accommodation for the entire stay or part of it, in accommodation of an equivalent category that provides the same kind of service, subject to the Customer's prior 
+                    agreement.                    
+                </p>
+            </li>
+            <li>
+                <strong>17. Enforceability of GTCS</strong>
+                <div class="L316">
+                    Booking a stay with ADAGIO generally implies the acceptance of the GTCS. These terms and conditions apply for the duration that they are published online at <a href="https://www.adagio-city.com/" target="_blank">www.adagio-
+                    city.com</a> and can be amended and/or added to at any time by ADAGIO. The new version of the General Terms and Conditions of Sale will automatically apply as soon as it is 
+                    posted online. In the event of a discrepancy between the GTCS and the special terms and conditions of a particular rate (public rates that cannot be changed or are non-
+                    refundable) or contract (Corporate, Leisure, Group contracts, etc.), the latter shall prevail. The completion of the booking by the Customer shall constitute their agreement 
+                    regarding the GTCS and the Conditions of Sale applicable to the reserved rate at the time of booking. The Customer has the ability to save and print out these GTCS using the 
+                    standard features of their browser or computer.
+                                        
+                </div>
+            </li>
+            <li>
+                <strong>18. Subsidiaries and operating companiesv</strong>
+                <ul class="L316">
+                    <li>
+                        These GTCS apply to all members of the ADAGIO network, namely: ADAGIO SAS, a Simplified Joint-Stock Company with capital of €1,000,000; Registered office: L’Artois - 
+                        Espace Pont de Flandre, 11 rue de Cambrai - 75947 PARIS CEDEX 19, France - 503 938 110 Paris RCS [Trade and Companies Register] - SIRET 503 938 110 00015 - APE [activity 
+                        code] 5520Z - Intra-Community VAT identification number: FR 84 503 938 110. Financial guarantee: Schneider Securities Ltd - 4/4A Bloomsbury Square - London - WC1A 2RP 
+                        - UK Public liability insurance: RSA - 153 RUE SAINT HONORE - 75001 PARIS
+                    </li>
+                    <li>
+                        Subsidiaries
+                    </li>
+                    <li>
+                        Contracted companies for sites operating under the Aparthotel Adagio, Aparthotel Adagio Access and Aparthotel Adagio Premium brands.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>19. Intellectual property</strong>
+                <p class="L316">
+                    ADAGIO is and remains the sole owner of all intellectual property rights on studies, designs, models, prototypes, etc. carried out for the provision of the service to the 
+                    Customer. The Customer is therefore prohibited from reproducing or make use of said studies, designs, models, prototypes, etc. without the express prior written approval of 
+                    ADAGIO which may lead to financial compensation.                    
+                </p>
+            </li>
+        </ol>
+    </section>
+
+    <footer class="alx">
+        <div>
+            <div>
+                <h2 class="E232">EXCLUSIVE OFFERS</h2>
+                <p class="L313">Subscribe to our newsletter and receive special offers</p>
+                <form action="subscribe_accor.html">
+                    <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
+                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                </form>
+            </div>
+            <div>
+                <h2 class="E232">NEED HELP ?</h2>
+                <span class="L313"> 
+                    <a href="map.html">Reservation Management</a>
+                    <a href="helpCenter.html">Support and Inquiries</a>
+                </span>
+                <mark class="btn alxL313">
+                    Do you want to ask for questions ?
+                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                </mark>
+                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="M510">
+            <strong>ABOUT US</strong> 
+            <ul>
+                <li><a href="https://group.accor.com" target="_blank">ACCOR GROUP</a></li>
+                <li><a href="https://group.accor.com/hotel-development" target="_blank">MANAGEMENT &amp; FRANCHISES</a></li>
+                <li><a href="https://careers.accor.com" target="_blank">CAREERS</a></li>
+                <li><a href="https://all.accor.com/ko/sustainable-development/index.shtml" target="_blank">SUSTAINABLE DEVELOPMENT</a></li>
+                <li><a href="https://all.accor.com/affiliate/index.en.shtml" target="_blank">AFFILIATE PROGRAM</a></li>
+            </ul>
+            <strong>CUSTOMER SERVICE</strong>
+            <ul>
+                <li><a href="terms_general.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookies.html">COOKIES</a></li>
+                <li>
+                    <span>STAY CONNECTED</span>
+                    <a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a>
+                    <a href="https://www.instagram.com/all/" target="_blank">instagram</a>
+                    <a href="https://twitter.com/all" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a>
+                    <em>tripadvisor</em>
+                </li>
+            </ul>
+            <b>STAY CONNECTED</b>
+            <ul>
+                <li><a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/all/" target="_blank">instagram</a></li>
+                <li><a href="https://twitter.com/all" target="_blank">twitter</a></li>
+                <li><a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a></li>
+                <li>tripadvisor</li>
+            </ul>
+            <div>
+                <h3 class="M510">MOBILE APPLICATIONS</h3>
+                <span>
+                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=ko&referrer=mat_click_id%3Dfa12181839af409492a34c2659248cb6-20190912-14012%26link_click_id%3D700704422598298176&mat_click_id=fa12181839af409492a34c2659248cb6-20190912-14012">Google Play</a>
+                    <a href="https://apps.apple.com/kr/app/accor-all-%ED%98%B8%ED%85%94-%EC%98%88%EC%95%BD/id489472613?mat_click_id=870794f4e4534593891b7c4ad7b95593-20190912-14012&mt=tr&referrer=mat_click_id%3D870794f4e4534593891b7c4ad7b95593-20190912-14012%26link_click_id%3D700704503900740601">App Store</a>
+                </span>
+            </div>
+            <div class="L311">
+                <p>
+                    *Prices start from, based on a one night stay in a standard double room for two guests. Supplementary services, breakfast and tourist/city tax are not included. Price observed on all.accor.com within the past 24 hours, for a one night stay within the next eight days, starting tomorrow. Price subject to the hotel conditions, period and availability. Depending on the country, these prices may not include taxes, may include VAT only or may include all taxes (VAT and tourist/city tax). When prices do not include all taxes, the relevant taxes (VAT and tourist/city tax) will be stated in the forthcoming stages of the reservation process. The price is only guaranteed at the time of reservation.
+                </p>
+                <span>** Note 2Available 24/7. Calls to this number will cost 13 pence per minute plus your providers access charge (only for Accor hotels).</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

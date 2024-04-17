@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/accor.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="alx">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="accor">
+                </a>
+            </h1>
+            <div>
+                <ul class="btn M512">
+                    <li><input class="alxM512" type="button" value="SIGN IN OR JOIN"></li>
+                    <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
+                    <li><a href="account_not_yet_member.html">JOIN IN ACCOR</a></li>
+                </ul> 
+                <div class="menuBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="M513">
+                <ul>
+                    <li>ACCOMMODATION</li>
+                    <li>LOYALTY PROGRAM</li>
+                    <li>OFFER &amp; PACKAGE</li>
+                    <li>DINING SERVICE</li>
+                    <li>BUSINESS EVENT</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="fnbPanel">
+            <div>
+                <div class="M513">
+                    <b class="mui">ACCOMMODATION</b>
+                    <ul class="R413">
+                        <li><a href="accom_hotel_Resort.html">Hotel &amp; Resorts</a></li>
+                        <li><a href="accom_aparthotels.html">Aparthotels &amp; Villas</a></li>
+                        <li><a href="accom_private_home.html">Luxury Private Home</a></li>
+                        <li><a href="accom_all_our_brand.html">ALL Accor Brand</a></li>
+                        <li><a href="map.html" class="mapBtn">FIND A HOTEL</a></li>
+                    </ul>
+                    <b class="mui">LOYALTY PROGRAM</b>
+                    <ul class="R413">
+                        <li><a href="loyalty.html">Discover the Program</a></li>
+                        <li><a href="loyalty_benefits.html">Benefits and Status</a></li>
+                        <li><a href="loyalty_earn_rewards.html">Earn Rewards Points</a></li>
+                        <li><a href="loyalty_use_rewards.html">Use Your Points</a></li>
+                    </ul>
+                    <b class="mui">OFFER &amp; PACKAGE</b>
+                    <ul class="R413">
+                        <li><a href="offers_all_member.html">For All Member</a></li>
+                        <li><a href="offers_latest.html">The Latest Offers</a></li>
+                        <li><a href="offers_all_year.html">All Year Offers</a></li>
+                    </ul>
+                    <b class="mui">DINING SERVICE</b>
+                    <ul class="R413">
+                        <li><a href="dining_world_of_flavours.html">World of Flavours</a></li>
+                        <li><a href="dining_service.html">Popular Cities</a></li>
+                        <li><a href="dining_service.html?scroll=diningSeasonFestive">Season Festive</a></li>
+                    </ul>
+                    <b class="mui">BUSINESS EVENT</b>
+                    <ul class="R413">
+                        <li><a href="business_tailored_events.html">Tailored Events</a></li>
+                        <li><a href="business_meeting_planning.html">Meeting Planning</a></li>
+                        <li><a href="detail_business_private.html">Private Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="reservation">
+                <form action="checkout.html">
+                    <fieldset>
+                        <legend class="M522">BOOK WITH ALL</legend>
+                        <div class="11">
+                            <ul>
+                                <li>
+                                    <label for="destination" class="M5">Where do you want to travel ?</label>
+                                    <input type="text" class="alxL311" id="destination" placeholder="Destination, hotel name">
+                                    <label for="travellers" class="M5">
+                                        Travellers
+                                        <small class="R410">Loyalty or subscription</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="travellers" placeholder="0000 0000 0000 0000">
+                                </li>
+                                <li>
+                                    <label for="check-in-date" class="M5">
+                                        Dates
+                                        <div>
+                                            <span>1</span>
+                                            <span>Night</span>
+                                        </div>
+                                    </label>
+                                    <div>
+                                        <input type="date" class="alxL311" id="check-in-date">
+                                        <span>-</span>
+                                        <input type="date" class="alxL311" id="check-out-date">
+                                    </div>
+                                    <label for="profTravellers" class="M5">
+                                        Professional Travellers
+                                        <small class="R410">Business client with contract</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="profTravellers" placeholder="Client code (SC, AC...)">
+                                </li>
+                                <li>
+                                    <div class="roomSelect">
+                                        <label for="roomCount" class="M5">Rooms &amp; Guests</label>
+                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect">
+                                            <ol>
+                                                <li>
+                                                    <label for="roomCount" class="L310">Room(s)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="roomCount">
+                                                        <span class="L3">Room(s)</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="adultsCount">
+                                                        <span class="L3">Adult Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="childCount">
+                                                        <span class="L3">Children Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <input type="reset" class="btn alxL310" value="Reset">
+                                        </div>
+                                    </div>
+                                    <label for="promotionSelect" class="M5">
+                                        Special Rates or Promotion Code
+                                        <small class="R410">Choose a rate</small>
+                                    </label>
+                                    <span class="selectComponent">
+                                        <select id="promotionSelect" class="alxL311">
+                                            <option>None</option>
+                                            <option>AAA / CAA Member</option>
+                                            <option>Military &amp; Veteran</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="submit" class="alxM513" value="RESERVE NOW">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="alx offersYearContainer">
+        <figure class="offersHeadline">
+            <img src="images/index_headline_02.png" alt="Save Up To 25% Off Your Stay">
+            <figcaption>
+                <dl>
+                    <dt class="55">Save Up To 25% Off Your Stay</dt>
+                    <dd class="L322">MEMBERS OF ALL - ACCOR LIVE LIMITLESS</dd>
+                    <dd class="R422">Plan your stay between 17 October 2022 and 19 April 2023</dd>
+                </dl>
+                <a href="index_detail_02.html" class="R414">LEARN MORE</a>
+            </figcaption>
+        </figure>
+
+        <div class="horiCardslotBox">
+            <h2 class="symbolTitle">
+                THE BEST RATE DEALS
+            </h2>
+            <div id="advancePopup" class="termsPopup">
+                <div class="gs3">
+                    <input type="button" value="close" class="btn_close">
+                    <h3 class="ebg24">CONDITIONS OF SALE</h3>
+                    <p class="L314">The ADVANCE RATE is the price (including tax) displayed at the time of booking and is valid for one room (for up to 
+                        the number of guests permitted in the room).The reservation must be made via internet, call centre or direct contact 
+                        with the hotel. The rate is subject to availability and restricted to the number of available rooms allocated to the offer
+                        on the date of the stay at the hotel selected by the guest. Payment must be made in full at the time of booking. 
+                        Payments are non refundable, including in the case of cancellation. The offer may also be available with breakfast 
+                        included at participating hotels. Please refer to the terms and conditions for the rate at the hotel.</p>
+                    </div>
+            </div>
+            <div id="stayPopup" class="termsPopup">
+                <div class="gs3">
+                    <input type="button" value="close" class="btn_close">
+                    <h3 class="ebg24">CONDITIONS OF SALE</h3>
+                    <p class="L314">*Customers who book the "Stay Longer" offer agree to have read and accepted the following terms and conditions: 
+                        The offer is valid for varying lengths of stay depending on the hotel selected. See the hotel’s terms and conditions for 
+                        the offer in question. This offer enables members to earn loyalty points in participating hotels. 
+                        Payment must be made online by credit/debit card at the time of booking. The cost of the stay will be debited from 
+                        the card  in full at the time of booking. Bookings made using this offer cannot be amended, cancelled or exchanged 
+                        and cannot be combined with other discounts or special offers. 
+                        Offer valid in the hotels of the Accor Group participating hotels subject to availability of rooms allocated to this 
+                        promotion. Breakfast may be included at some hotels. See the hotel’s terms and conditions for the offer in question. 
+                        Available in more than 2,100 hotels including Mercure, Novotel, Delano, Fairmont, ibis budget, ibis, ibis Styles, Grand 
+                        Mercure, MGallery, Mondrian, Mövenpick, Mantra, Mantis, Pullman, Rixos, The Sebel, SLS, Sofitel, Sofitel Legend, 
+                        So Sofitel, Novotel Suites and Swissôtel.</p>
+                    </div>
+            </div>
+            <ul>
+                <li class="fullImgDesc">
+                    <img src="images/cardContent_38.png" alt="ADVANCE SAVER RATE">
+                    <div class="pt5">
+                        <h3 class="L332">
+                            <small class="L315">OFFER &amp; PACKAGE</small>
+                            ADVANCE SAVER RATE
+                        </h3>
+                        <p class="L315">
+                            Book in advance to save up to 25% on your stay. Live now, do more, 
+                            and experience more of what you like. Life styled your way.
+                        </p>
+                        <span>
+                            <input type="button" value="CONDITIONS OF SALE" data-popup="advancePopup" class="alx M413">
+                        </span>
+                    </div>
+                </li>
+                <li class="fullDescImg">
+                    <div class="sc3">
+                        <h3 class="L332">
+                            <small class="L315">OFFER &amp; PACKAGE</small>
+                            STAY LONGER AND SAVE</h3>
+                        <p class="L315">There’s something about amazing hotels that demands just a little more.
+                            And whay not, when you can stay loger and save?</p>
+                        <span>
+                            <input type="button" value="CONDITIONS OF SALE" data-popup="stayPopup" class="alx M413">
+                        </span>
+                    </div>
+                    <img src="images/cardContent_39.png" alt="STAY LONGER AND SAVE">
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="symbolTitle">
+                FREQUENT TRAVELLER MEMBERSHIP CARDS
+            </h2>
+            <div>
+                <div class="businessCardBg">
+                    <mark class="lBottomLabel">Fairmont Taghazout Bay Morocco</mark>
+                    <a href="https://ibisbusiness.accor.com/" target="_blank">
+                        <img src="images/ibisBusiness.png" alt="ibis business card">
+                    </a>
+                    <a href="https://businessplus.accor.com/" target="_blank">
+                        <img src="images/accorBusiness.png" alt="accor business card">
+                    </a>
+                </div>
+                <div class="bannerBoxR">
+                    <div class="gs1">
+                        <dl>
+                            <dt class="E232">
+                                <small class="L315">Membership Cards</small>
+                                BUSINESS CARD IN ALL
+                            </dt>
+                            <dd class="L315">Do you stay at the hotel more than 8 nights a year? Our membership cards
+                                gurantee discounts and benefits on your holidays or business trips. You can
+                                be combined with benefits from the ALL - Accor Live Limitless loyalty
+                                program.</dd>
+                        </dl>
+                        <a href="https://ibisbusiness.accor.com/" target="_blank" title="ibis business card">Discover More</a>
+                        <a href="https://businessplus.accor.com/" target="_blank" title="accor business card">Discover More</a>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="vertiCardslotBox">
+                <li class="tImgDesc">
+                    <div>
+                        <img src="images/cardContent_41.png" alt="Sofitel Paris Le Faubourg (FR)">
+                        <mark class="lBottomLabel">Sofitel Paris Le Faubourg (FR)</mark>
+                    </div>
+                    <dl class="pt6">
+                        <dt class="L332">
+                            <small class="L315">Business Plus Card</small>
+                            5-STAR ROMANTIC
+                            WEEKEND
+                        </dt>
+                        <dd class="L315">Take advantage of exclusive benefits as soon as 
+                            you join. And with every stay, you get closer to a 
+                            higher status level and enhanced benefits.</dd>
+                    </dl>
+                </li>
+                <li class="tImgDesc">
+                    <div>
+                        <img src="images/cardContent_42.png" alt="Novotel Thalassa Le Touquet (FR)">
+                        <mark class="lBottomLabel">Novotel Thalassa Le Touquet (FR)</mark>
+                    </div>
+                    <dl class="sc3">
+                        <dt class="L332">
+                            <small class="L315">Business Plus Card</small>
+                            A WEEK BY THE SEA
+                            WITH FAMILY
+                        </dt>
+                        <dd class="L315">EUR 229 saved on a 5-night stay, 2.5 hours from
+                            Paris, 1 minute from the sea.</dd>
+                    </dl>
+                </li>
+                <li class="tImgDesc">
+                    <div>
+                        <img src="images/cardContent_43.png" alt="A YEAR OF BUSINESS & PERSONAL TRAVEL">
+                    </div>
+                    <dl class="pt4">
+                        <dt class="L332">
+                            <small class="L315">ibis Business Card</small>
+                            A YEAR OF BUSINESS
+                            &amp; PERSONAL TRAVEL
+                        </dt>
+                        <dd class="L315">EUR 139 saved on 9 stays in ibis and ibis  budget
+                            hotels across Italy, France and Germany.</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="tickerBox">
+            <h2 class="symbolTitle">
+                INSPIRED BY ALL ACCOR BRANDS
+                <span>The Accor group's brands welcome you to over 100 countries throughout the world, in over 5,100 hotels for the most unforgettable stays.</span>
+            </h2>
+            <ul class="tickerSlider">
+                <li><a href="detail_accom_banyantree.html"><img src="images/luxuryBrand_01.png" alt="banyantree"></a></li>
+                <li><a href="detail_accom_delano.html"><img src="images/luxuryBrand_02.png" alt="delano"></a></li>
+                <li><a href="detail_accom_onefinestay.html"><img src="images/luxuryBrand_03.png" alt="onefinestay"></a></li>
+                <li><a href="detail_accom_fairmont.html"><img src="images/luxuryBrand_04.png" alt="fairmont"></a></li>
+                <li><a href="detail_accom_so.html"><img src="images/luxuryBrand_05.png" alt="so/"></a></li>
+                <li><a href="detail_accom_orient_express.html"><img src="images/luxuryBrand_06.png" alt="orient-express"></a></li>
+                <li><a href="detail_accom_sofitel.html"><img src="images/luxuryBrand_07.png" alt="sofitel"></a></li>
+                <li><a href="detail_accom_faena.html"><img src="images/luxuryBrand_08.png" alt="faena"></a></li>
+                <li><a href="detail_accom_raffles.html"><img src="images/luxuryBrand_09.png" alt="raffles"></a></li>
+                <li><a href="detail_accom_rixos.html"><img src="images/luxuryBrand_10.png" alt="rixos"></a></li>
+                <li><a href="detail_accom_sls.html"><img src="images/luxuryBrand_11.png" alt="sls"></a></li>
+                <li><a href="detail_accom_sofitel_legend.html"><img src="images/luxuryBrand_12.png" alt="sofitel-legend"></a></li>
+                <li><a href="detail_accom_emblems_collection.html"><img src="images/luxuryBrand_13.png" alt="emblems-collection"></a></li>
+                <li><a href="detail_accom_25h.html"><img src="images/premiumBrand_01.png" alt="25h"></a></li>
+                <li><a href="detail_accom_angsana.html"><img src="images/premiumBrand_02.png" alt="angsana"></a></li>
+                <li><a href="detail_accom_pullman.html"><img src="images/premiumBrand_03.png" alt="pullman"></a></li>
+                <li><a href="detail_accom_grand_mercure.html"><img src="images/premiumBrand_04.png" alt="grand-mercure"></a></li>
+                <li><a href="detail_accom_peppers.html"><img src="images/premiumBrand_05.png" alt="peppers"></a></li>
+                <li><a href="detail_accom_mondrian.html"><img src="images/premiumBrand_06.png" alt="mondrian"></a></li>
+                <li><a href="detail_accom_movenpick.html"><img src="images/premiumBrand_07.png" alt="movenpick"></a></li>
+                <li><a href="detail_accom_art_series.html"><img src="images/premiumBrand_08.png" alt="art-series"></a></li>
+                <li><a href="detail_accom_m_gallery.html"><img src="images/premiumBrand_09.png" alt="m-gallery"></a></li>
+                <li><a href="detail_accom_mantis.html"><img src="images/premiumBrand_10.png" alt="mantis"></a></li>
+                <li><a href="detail_accom_swissotel.html"><img src="images/premiumBrand_11.png" alt="swissotel"></a></li>
+                <li><a href="detail_accom_the_sebel.html"><img src="images/premiumBrand_12.png" alt="the-sebel"></a></li>
+                <li><a href="detail_accom_museum_hotel.html"><img src="images/premiumBrand_13.png" alt="museum-hotel"></a></li>
+                <li><a href="detail_accom_adagio_premium.html"><img src="images/premiumBrand_14.png" alt="adagio-premium"></a></li>
+                <li><a href="detail_accom_mantra.html"><img src="images/midscaleBrand_01.png" alt="mantra"></a></li>
+                <li><a href="detail_accom_novotel.html"><img src="images/midscaleBrand_02.png" alt="novotel"></a></li>
+                <li><a href="detail_accom_mercure.html"><img src="images/midscaleBrand_03.png" alt="mercure"></a></li>
+                <li><a href="detail_accom_adagio.html"><img src="images/midscaleBrand_04.png" alt="adagio"></a></li>
+                <li><a href="detail_accom_mama_shelter.html"><img src="images/midscaleBrand_05.png" alt="mama-shelter"></a></li>
+                <li><a href="detail_accom_tribe.html"><img src="images/midscaleBrand_06.png" alt="tribe"></a></li>
+                <li><a href="detail_accom_breakfree.html"><img src="images/economyBrand_01.png" alt="breakfree"></a></li>
+                <li><a href="detail_accom_ibis_budget.html"><img src="images/economyBrand_02.png" alt="ibis-budget"></a></li>
+                <li><a href="detail_accom_ibis_style.html"><img src="images/economyBrand_03.png" alt="ibis-style"></a></li>
+                <li><a href="detail_accom_ibis.html"><img src="images/economyBrand_04.png" alt="ibis"></a></li>
+                <li><a href="detail_accom_greet.html"><img src="images/economyBrand_05.png" alt="greet"></a></li>
+                <li><a href="detail_accom_hotel_f1.html"><img src="images/economyBrand_06.png" alt="hotel-f1"></a></li>
+                <li><a href="detail_accom_jo&joe.html"><img src="images/economyBrand_07.png" alt="jo&joe"></a></li>
+                <li><a href="detail_accom_thalassa.html"><img src="images/economyBrand_08.png" alt="thalassa"></a></li>
+                <li><a href="detail_accom_adagio_access.html"><img src="images/economyBrand_09.png" alt="adagio-access"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="alx">
+        <div>
+            <div>
+                <h2 class="E232">EXCLUSIVE OFFERS</h2>
+                <p class="L313">Subscribe to our newsletter and receive special offers</p>
+                <form action="subscribe_accor.html">
+                    <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
+                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                </form>
+            </div>
+            <div>
+                <h2 class="E232">NEED HELP ?</h2>
+                <span class="L313"> 
+                    <a href="map.html">Reservation Management</a>
+                    <a href="helpCenter.html">Support and Inquiries</a>
+                </span>
+                <mark class="btn alxL313">
+                    Do you want to ask for questions ?
+                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                </mark>
+                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="M510">
+            <strong>ABOUT US</strong> 
+            <ul>
+                <li><a href="https://group.accor.com" target="_blank">ACCOR GROUP</a></li>
+                <li><a href="https://group.accor.com/hotel-development" target="_blank">MANAGEMENT &amp; FRANCHISES</a></li>
+                <li><a href="https://careers.accor.com" target="_blank">CAREERS</a></li>
+                <li><a href="https://all.accor.com/ko/sustainable-development/index.shtml" target="_blank">SUSTAINABLE DEVELOPMENT</a></li>
+                <li><a href="https://all.accor.com/affiliate/index.en.shtml" target="_blank">AFFILIATE PROGRAM</a></li>
+            </ul>
+            <strong>CUSTOMER SERVICE</strong>
+            <ul>
+                <li><a href="terms_general.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookies.html">COOKIES</a></li>
+                <li>
+                    <span>STAY CONNECTED</span>
+                    <a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a>
+                    <a href="https://www.instagram.com/all/" target="_blank">instagram</a>
+                    <a href="https://twitter.com/all" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a>
+                    <em>tripadvisor</em>
+                </li>
+            </ul>
+            <b>STAY CONNECTED</b>
+            <ul>
+                <li><a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/all/" target="_blank">instagram</a></li>
+                <li><a href="https://twitter.com/all" target="_blank">twitter</a></li>
+                <li><a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a></li>
+                <li>tripadvisor</li>
+            </ul>
+            <div>
+                <h3 class="M510">MOBILE APPLICATIONS</h3>
+                <span>
+                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=ko&referrer=mat_click_id%3Dfa12181839af409492a34c2659248cb6-20190912-14012%26link_click_id%3D700704422598298176&mat_click_id=fa12181839af409492a34c2659248cb6-20190912-14012">Google Play</a>
+                    <a href="https://apps.apple.com/kr/app/accor-all-%ED%98%B8%ED%85%94-%EC%98%88%EC%95%BD/id489472613?mat_click_id=870794f4e4534593891b7c4ad7b95593-20190912-14012&mt=tr&referrer=mat_click_id%3D870794f4e4534593891b7c4ad7b95593-20190912-14012%26link_click_id%3D700704503900740601">App Store</a>
+                </span>
+            </div>
+            <div class="L311">
+                <p>
+                    *Prices start from, based on a one night stay in a standard double room for two guests. Supplementary services, breakfast and tourist/city tax are not included. Price observed on all.accor.com within the past 24 hours, for a one night stay within the next eight days, starting tomorrow. Price subject to the hotel conditions, period and availability. Depending on the country, these prices may not include taxes, may include VAT only or may include all taxes (VAT and tourist/city tax). When prices do not include all taxes, the relevant taxes (VAT and tourist/city tax) will be stated in the forthcoming stages of the reservation process. The price is only guaranteed at the time of reservation.
+                </p>
+                <span>** Note 2Available 24/7. Calls to this number will cost 13 pence per minute plus your providers access charge (only for Accor hotels).</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

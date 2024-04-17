@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/accor.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="alx">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="accor">
+                </a>
+            </h1>
+            <div>
+                <ul class="btn M512">
+                    <li><input class="alxM512" type="button" value="SIGN IN OR JOIN"></li>
+                    <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
+                    <li><a href="account_not_yet_member.html">JOIN IN ACCOR</a></li>
+                </ul> 
+                <div class="menuBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="M513">
+                <ul>
+                    <li>ACCOMMODATION</li>
+                    <li>LOYALTY PROGRAM</li>
+                    <li>OFFER &amp; PACKAGE</li>
+                    <li>DINING SERVICE</li>
+                    <li>BUSINESS EVENT</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="fnbPanel">
+            <div>
+                <div class="M513">
+                    <b class="mui">ACCOMMODATION</b>
+                    <ul class="R413">
+                        <li><a href="accom_hotel_Resort.html">Hotel &amp; Resorts</a></li>
+                        <li><a href="accom_aparthotels.html">Aparthotels &amp; Villas</a></li>
+                        <li><a href="accom_private_home.html">Luxury Private Home</a></li>
+                        <li><a href="accom_all_our_brand.html">ALL Accor Brand</a></li>
+                        <li><a href="map.html" class="mapBtn">FIND A HOTEL</a></li>
+                    </ul>
+                    <b class="mui">LOYALTY PROGRAM</b>
+                    <ul class="R413">
+                        <li><a href="loyalty.html">Discover the Program</a></li>
+                        <li><a href="loyalty_benefits.html">Benefits and Status</a></li>
+                        <li><a href="loyalty_earn_rewards.html">Earn Rewards Points</a></li>
+                        <li><a href="loyalty_use_rewards.html">Use Your Points</a></li>
+                    </ul>
+                    <b class="mui">OFFER &amp; PACKAGE</b>
+                    <ul class="R413">
+                        <li><a href="offers_all_member.html">For All Member</a></li>
+                        <li><a href="offers_latest.html">The Latest Offers</a></li>
+                        <li><a href="offers_all_year.html">All Year Offers</a></li>
+                    </ul>
+                    <b class="mui">DINING SERVICE</b>
+                    <ul class="R413">
+                        <li><a href="dining_world_of_flavours.html">World of Flavours</a></li>
+                        <li><a href="dining_service.html">Popular Cities</a></li>
+                        <li><a href="dining_service.html?scroll=diningSeasonFestive">Season Festive</a></li>
+                    </ul>
+                    <b class="mui">BUSINESS EVENT</b>
+                    <ul class="R413">
+                        <li><a href="business_tailored_events.html">Tailored Events</a></li>
+                        <li><a href="business_meeting_planning.html">Meeting Planning</a></li>
+                        <li><a href="detail_business_private.html">Private Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="reservation">
+                <form action="checkout.html">
+                    <fieldset>
+                        <legend class="M522">BOOK WITH ALL</legend>
+                        <div class="11">
+                            <ul>
+                                <li>
+                                    <label for="destination" class="M5">Where do you want to travel ?</label>
+                                    <input type="text" class="alxL311" id="destination" placeholder="Destination, hotel name">
+                                    <label for="travellers" class="M5">
+                                        Travellers
+                                        <small class="R410">Loyalty or subscription</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="travellers" placeholder="0000 0000 0000 0000">
+                                </li>
+                                <li>
+                                    <label for="check-in-date" class="M5">
+                                        Dates
+                                        <div>
+                                            <span>1</span>
+                                            <span>Night</span>
+                                        </div>
+                                    </label>
+                                    <div>
+                                        <input type="date" class="alxL311" id="check-in-date">
+                                        <span>-</span>
+                                        <input type="date" class="alxL311" id="check-out-date">
+                                    </div>
+                                    <label for="profTravellers" class="M5">
+                                        Professional Travellers
+                                        <small class="R410">Business client with contract</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="profTravellers" placeholder="Client code (SC, AC...)">
+                                </li>
+                                <li>
+                                    <div class="roomSelect">
+                                        <label for="roomCount" class="M5">Rooms &amp; Guests</label>
+                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect">
+                                            <ol>
+                                                <li>
+                                                    <label for="roomCount" class="L310">Room(s)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="roomCount">
+                                                        <span class="L3">Room(s)</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="adultsCount">
+                                                        <span class="L3">Adult Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="childCount">
+                                                        <span class="L3">Children Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <input type="reset" class="btn alxL310" value="Reset">
+                                        </div>
+                                    </div>
+                                    <label for="promotionSelect" class="M5">
+                                        Special Rates or Promotion Code
+                                        <small class="R410">Choose a rate</small>
+                                    </label>
+                                    <span class="selectComponent">
+                                        <select id="promotionSelect" class="alxL311">
+                                            <option>None</option>
+                                            <option>AAA / CAA Member</option>
+                                            <option>Military &amp; Veteran</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="submit" class="alxM513" value="RESERVE NOW">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="alx diningDetailContainer qatar">
+        <h2 class="imgCenterTitle 55">
+            <small class=" L334">DISCOVER A WORLD OF FLAVOURS</small>
+            QATAR
+        </h2>
+        <ul class="textSlotBox">
+            <li class="bTextDesc pt6">
+                <h4 class="L332">ENDLIESS CUISINE</h4>
+                <p class="L315">A compact country lapped by the Arabian Gulf, it 
+                    offers a wealth of attractions, from iconic art and 
+                    culture to historic heritage sites and souqs, as well 
+                    as family fun at theme parks. This confident, rapidly 
+                    developing destination is also becoming a global 
+                    centre for gastronomy, where you can savour time
+                    -honoured Middle Eastern food alongside Medite-
+                    rranean flavours as well as Indian, Japanese, Leba-
+                    nese and Thai.</p>
+            </li>
+            <li class="bTextDesc sc3">
+                <h4 class="L332">SOPHISTICATED
+                    RESTAURANTS</h4>
+                <p class="L315">Sample a portfolio of sophisticated restaurants 
+                    when you come to Qatar. From sunup to sun down, 
+                    and late into the night, come for big breakfasts, 
+                    long lunches, casual dinners or even fine dining for 
+                    a business event. Curl up with a book in one of the 
+                    many coffee shops or strike up a conversation with 
+                    a stranger.</p>
+            </li>
+            <li class="bTextDesc gs9">
+                <h4 class="L332">BLENDING CULTURAL
+                    HERITAGE</h4>
+                <p class="L315">When the evening draws in, watch Bahrain change 
+                    from a sun-soaked island into a cool, thrumming 
+                    destination. Bars and pubs turn the music up, and 
+                    the lights down low. Dance the night away on a 
+                    romantic rooftop venue, listen to the live music or 
+                    stroll along the sandy beaches and count the stars. </p>
+            </li>
+        </ul>
+        <div class="imgHoverList">
+            <h3 class="symbolTitle">
+                RESTAURANTS IN OR NEAR QATAR
+            </h3>
+            <ul class="L316">
+                <li>
+                    <img src="images/diningQatar_01.png" alt="SAFFRON THAI RESTAURANT">
+                    <strong class="R416">SAFFRON THAI RESTAURANT</strong>
+                    <span>Thai, Exceptional View</span>
+                    <span>Average meal price 220 QAR*</span>
+                </li>
+                <li>
+                    <img src="images/diningQatar_02.png" alt="RASA">
+                    <strong class="R416">RASA</strong>
+                    <span>Indian, Musical Atmosphère</span>
+                    <span>Average meal price 150 QAR*</span>
+                </li>
+                <li>
+                    <img src="images/diningQatar_03.png" alt="Il GALANTE">
+                    <strong class="R416">Il GALANTE</strong>
+                    <span>Italian, Brunch</span>
+                    <span>Average meal price 180 QAR*</span>
+                </li>
+                <li>
+                    <img src="images/diningQatar_04.png" alt="DOME FAIRMONT LOUNGE">
+                    <strong class="R416">DOME FAIRMONT LOUNGE</strong>
+                    <span>Gourmet, Terrace</span>
+                    <span>Average meal price 110 QAR*</span>
+                </li>
+                <li>
+                    <img src="images/diningQatar_05.png" alt="VAYA LATIN MERCADO">
+                    <strong class="R416">VAYA LATIN MERCADO</strong>
+                    <span>International, Brunch</span>
+                    <span>Average meal price 180 QAR*</span>
+                </li>
+                <li>
+                    <img src="images/diningQatar_06.png" alt="PROVOK ASIAN PROJECT">
+                    <strong class="R416">PROVOK ASIAN PROJECT</strong>
+                    <span>Thematic cuisine, Brunch</span>
+                    <span>Average meal price 260 QAR*</span>
+                </li>
+                <li>
+                    <img src="images/diningQatar_07.png" alt="MALAKI">
+                    <strong class="R416">MALAKI</strong>
+                    <span>Gourmet, Terrace</span>
+                    <span>Average meal price 0 QAR*</span>
+                </li>
+                <li>
+                    <img src="images/diningQatar_08.png" alt="CILA RESTAURANT">
+                    <strong class="R416">CILA RESTAURANT</strong>
+                    <span>Regional, Terrace</span>
+                    <span>Average meal price 180 QAR*</span>
+                </li>
+                <li>
+                    <img src="images/diningQatar_09.png" alt="LE COLONIAL RESTAURANT">
+                    <strong class="R416">LE COLONIAL RESTAURANT</strong>
+                    <span>International, Terrace</span>
+                    <span>Average meal price 80 QAR*</span>
+                </li>
+            </ul>
+        </div>
+        <div id="diningSeasonFestive" class="diningSeasonFancy">
+            <h2 class="symbolTitle">
+                DISCOVER A WORLD OF SEASONAL FESTIVE
+            </h2>
+            <ul>
+                <li data-popup="fancyPopup01">
+                    <img src="images/diningContent_01.png" alt="Eat, Drink and Make Merry this Festive Season">
+                    <div class="gs1">
+                        <h4 class="E232">Eat, Drink and Make Merry this Festive Season</h4>
+                        <p class="L322">From glorious buffet or semi-buffet spreads, exquisite set meals and indulgent brunches, 
+                            to elegant afternoon tea and jolly festive cocktails, we're giving you limitless reasons to feast 
+                            and make merry.</p>
+                    </div>
+                </li>
+                <li data-popup="fancyPopup02">
+                    <img src="images/diningContent_02.png" alt="Experience the transformed JAAN by Kirk Westaway">
+                    <div class="gs1">
+                        <h4 class="E232">Experience the transformed JAAN by Kirk Westaway</h4>
+                        <p class="L322">Accor Plus member exclusive! Be amongst the first to experience the transformed JAAN by 
+                            Kirk Westaway with a debut of the ‘Reinventing British’ menu at Swissôtel The Stamford 
+                            before the lauded two-Michelin-starred restaurant repeos in March 2023.</p>
+                    </div>
+                </li>
+                <li data-popup="fancyPopup03">
+                    <img src="images/diningContent_03.png" alt="ALL x Mastercard® Singapore Gastronomical Voyage">
+                    <div class="gs1">
+                        <h4 class="E232">ALL x Mastercard® Singapore Gastronomical Voyage</h4>
+                        <p class="L322">Members of ALL stand a chance to win dining experiences worth up to S$1,000! Simply 
+                            spend S$200 or more on a single receipt at participating restaurants between now and 
+                            1 March 2023, with your Mastercard. Plus, continue to earn Reward points as you feast.</p>
+                    </div>
+                </li>
+                <li data-popup="fancyPopup04">
+                    <img src="images/diningContent_04.png" alt="Blissful Brunches is Singapore">
+                    <div class="gs1">
+                        <h4 class="E232">Blissful Brunches is Singapore</h4>
+                        <p class="L322">Seafood on ice, flowing champagne, and Singapore’s most iconic views. Enjoy it all and 
+                            more every weekend with our selection of positively bissful brunches.</p>
+                    </div>
+                </li>
+                <li data-popup="fancyPopup05">
+                    <img src="images/diningContent_05.png" alt="Afternoon Tea Indulgence in ACCOR">
+                    <div class="gs1">
+                        <h4 class="E232">Afternoon Tea Indulgence in ACCOR</h4>
+                        <p class="L322">Indulge in some decadent sweet treats during the weekend, or simply jazz up your
+                            weekdays with a scrumptions high tea at these restaurants.</p>
+                    </div>
+                </li>
+                <li data-popup="fancyPopup06">
+                    <img src="images/diningContent_06.png" alt="It’s 5 o’clock somewhere!">
+                    <div class="gs1">
+                        <h4 class="E232">It’s 5 o’clock somewhere!</h4>
+                        <p class="L322">So let your hair down and discover some of Singapore’s most exciting happy hour offering,
+                            from one-for-one cocktails and soaring skyline views to free-flow wine and more.</p>
+                    </div>
+                </li>
+            </ul>
+            <div id="fancyPopup01" class="termsPopup">
+                <img src="images/diningContent_01.png" alt="Eat, Drink and Make Merry this Festive Season">
+                <div class="gs9">
+                    <input type="button" value="close" class="btn_close">
+                    <h4 class="E232">Eat, Drink and Make Merry this Festive Season</h4>
+                    <p class="L322">It's the most wonderful time of the year! From glorious buffet or semi-buffet spreads, hearty set meals and indulgent 
+                        brunches, to elegant afternoon tea and jolly festive cocktails, we're giving you many reasons to feast and make merry. 
+                        These restaurants and bars are bound to delight with their curated offering of festive treats perfect for your yuletide 
+                        celebrations.</p>
+                    <p class="L322">What's more? Members of ALL - Accor Limitless have the exclusive chance to win dining experiences worth up to 
+                        S$1,000! To enter, simply spend S$200 or more on a single receipt at participating restaurants between now and 
+                        1 February 2023, and pay with your Mastercard. Plus, continue to earn Reward points as you feast.</p>
+                </div>
+            </div>
+            <div id="fancyPopup02" class="termsPopup">
+                <img src="images/diningContent_02.png" alt="Experience the transformed JAAN by Kirk Westaway">
+                <div class="gs9">
+                    <input type="button" value="close" class="btn_close">
+                    <h4 class="E232">Experience the transformed JAAN by Kirk Westaway</h4>
+                    <p class="L322">Accor Plus member exclusive! Be amongst the first to experience the transformed JAAN by Kirk Westaway with a debut
+                        of the ‘Reinventing British’ menu at Swissôtel The Stamford before the lauded two-Michelin-starred restaurant repeos 
+                        in March 2023.</p>
+                    <p class="L322">Exclusive to members of Accor Plus and ALL, you and your guests are invited to grace the refreshed interiors with a 
+                        3-day only dining preview, featuring a new menu with an elevated reinterpretation of British gastronomy through a 
+                        modern and innovative culinary lens.</p>
+                </div>
+            </div>
+            <div id="fancyPopup03" class="termsPopup">
+                <img src="images/diningContent_03.png" alt="ALL x Mastercard® Singapore Gastronomical Voyage">
+                <div class="gs9">
+                    <input type="button" value="close" class="btn_close">
+                    <h4 class="E232">ALL x Mastercard® Singapore Gastronomical Voyage</h4>
+                    <p class="L322">Members of ALL stand a chance to win dining experiences worth up to S$1,000! Simply spend S$200 or more on a 
+                        single receipt at participating restaurants between now and 1 February 2023, with your Mastercard. Plus, continue to 
+                        earn Reward points as you feast.</p>
+                    <p class="L322">The sky's the limit when it comes to gastronomic adventures with ALL in Singapore. Satisfy your every whim at our bars 
+                        and restaurants — from 2 Michelin-starred affairs at JAAN to casual gatherings at Winestone.</p>
+                </div>
+            </div>
+            <div id="fancyPopup04" class="termsPopup">
+                <img src="images/diningContent_04.png" alt="Blissful Brunches is Singapore">
+                <div class="gs9">
+                    <input type="button" value="close" class="btn_close">
+                    <h4 class="E232">Blissful Brunches is Singapore</h4>
+                    <p class="L322">There’s nothing better than sleeping in on weekends and waking up to a sumptuous brunch.
+                        Even better than that is enjoying Brunch with the family in picture-perfect venues, and tucking into a spread that is 
+                        Instagram worthy. Seafood on ice, flowing champagne, and Singapore's most iconic views. Enjoy it all and more during 
+                        weekends with our selection of positively blissful brunches. What's more, Accor Plus members enjoy great savings. </p>
+                    <p class="L322">Have a great time with your friends and family over our weekend brunch specialties like Smoked Salmon Eggs Benedict, 
+                        French Toast with Salted Caramel, Croque Madame with Cheese Fondue, and Korean BBQ Sando in addition to the 
+                        regular a la carte menu.
+                        </p>
+                </div>
+            </div>
+            <div id="fancyPopup05" class="termsPopup">
+                <img src="images/diningContent_05.png" alt="Afternoon Tea Indulgence in ACCOR">
+                <div class="gs9">
+                    <input type="button" value="close" class="btn_close">
+                    <h4 class="E232">Afternoon Tea Indulgence in ACCOR</h4>
+                    <p class="L322">Scrumptious high tea experiences that jazz up your weekdays and weekends. Indulge in some decadent sweet treats 
+                        during your staycation or weekend, or simply jazz up your weekdays with a scrumptious high tea at our hotel 
+                        restaurants. Tantalise your taste buds with delightful and artful selections of sweet and savoury afternoon tea 
+                        experiences and enjoy a quiet tête-à-tête with your loved ones.
+                        </p>
+                    <p class="L322">End your leisurely afternoon on a sweet note with less-sweet treats including the Asian gula melaka tiramisu, Aussie 
+                        cranberry scones with homemade berries jam and cream, durian profiteroles with green crusted almond nibs, and 
+                        more. Available daily from 2pm to 5pm. Accor Plus members enjoy 35% off afternoon tea set at Royale.</p>
+                </div>
+            </div>
+            <div id="fancyPopup06" class="termsPopup">
+                <img src="images/diningContent_06.png" alt="It’s 5 o’clock somewhere!">
+                <div class="gs9">
+                    <input type="button" value="close" class="btn_close">
+                    <h4 class="E232">It’s 5 o’clock somewhere!</h4>
+                    <p class="L322">One-for-one cocktails, soaring skyline views, free-flow wine and more... as the song goes, it's 5 o'clock somewhere. So let 
+                        your hair down and discover some of Singapore's most exciting happy hour offerings.
+                        </p>
+                    <p class="L322">Because happiness has no limit, TASTE believes happy hour should not be limited to an hour! A crowd pleaser, diners 
+                        get to enjoy $5++ house pour red and white wines and beer 3pm to 7pm daily with this promotion. Light bites to go 
+                        with your beverage are 20% off. Whether it's to wind down after a long day or to get the night started, indulge in 1-for-1 
+                        cocktails for your thirsty Thursdays. Savour unlimited cocktails with a choice of Mimosa, Negroni, Classic Dry Martini, 
+                        White Lady, Red Queen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="alx">
+        <div>
+            <div>
+                <h2 class="E232">EXCLUSIVE OFFERS</h2>
+                <p class="L313">Subscribe to our newsletter and receive special offers</p>
+                <form action="subscribe_accor.html">
+                    <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
+                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                </form>
+            </div>
+            <div>
+                <h2 class="E232">NEED HELP ?</h2>
+                <span class="L313"> 
+                    <a href="map.html">Reservation Management</a>
+                    <a href="helpCenter.html">Support and Inquiries</a>
+                </span>
+                <mark class="btn alxL313">
+                    Do you want to ask for questions ?
+                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                </mark>
+                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="M510">
+            <strong>ABOUT US</strong> 
+            <ul>
+                <li><a href="https://group.accor.com" target="_blank">ACCOR GROUP</a></li>
+                <li><a href="https://group.accor.com/hotel-development" target="_blank">MANAGEMENT &amp; FRANCHISES</a></li>
+                <li><a href="https://careers.accor.com" target="_blank">CAREERS</a></li>
+                <li><a href="https://all.accor.com/ko/sustainable-development/index.shtml" target="_blank">SUSTAINABLE DEVELOPMENT</a></li>
+                <li><a href="https://all.accor.com/affiliate/index.en.shtml" target="_blank">AFFILIATE PROGRAM</a></li>
+            </ul>
+            <strong>CUSTOMER SERVICE</strong>
+            <ul>
+                <li><a href="terms_general.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookies.html">COOKIES</a></li>
+                <li>
+                    <span>STAY CONNECTED</span>
+                    <a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a>
+                    <a href="https://www.instagram.com/all/" target="_blank">instagram</a>
+                    <a href="https://twitter.com/all" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a>
+                    <em>tripadvisor</em>
+                </li>
+            </ul>
+            <b>STAY CONNECTED</b>
+            <ul>
+                <li><a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/all/" target="_blank">instagram</a></li>
+                <li><a href="https://twitter.com/all" target="_blank">twitter</a></li>
+                <li><a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a></li>
+                <li>tripadvisor</li>
+            </ul>
+            <div>
+                <h3 class="M510">MOBILE APPLICATIONS</h3>
+                <span>
+                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=ko&referrer=mat_click_id%3Dfa12181839af409492a34c2659248cb6-20190912-14012%26link_click_id%3D700704422598298176&mat_click_id=fa12181839af409492a34c2659248cb6-20190912-14012">Google Play</a>
+                    <a href="https://apps.apple.com/kr/app/accor-all-%ED%98%B8%ED%85%94-%EC%98%88%EC%95%BD/id489472613?mat_click_id=870794f4e4534593891b7c4ad7b95593-20190912-14012&mt=tr&referrer=mat_click_id%3D870794f4e4534593891b7c4ad7b95593-20190912-14012%26link_click_id%3D700704503900740601">App Store</a>
+                </span>
+            </div>
+            <div class="L311">
+                <p>
+                    *Prices start from, based on a one night stay in a standard double room for two guests. Supplementary services, breakfast and tourist/city tax are not included. Price observed on all.accor.com within the past 24 hours, for a one night stay within the next eight days, starting tomorrow. Price subject to the hotel conditions, period and availability. Depending on the country, these prices may not include taxes, may include VAT only or may include all taxes (VAT and tourist/city tax). When prices do not include all taxes, the relevant taxes (VAT and tourist/city tax) will be stated in the forthcoming stages of the reservation process. The price is only guaranteed at the time of reservation.
+                </p>
+                <span>** Note 2Available 24/7. Calls to this number will cost 13 pence per minute plus your providers access charge (only for Accor hotels).</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

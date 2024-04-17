@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/accor.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="alx">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="accor">
+                </a>
+            </h1>
+            <div>
+                <ul class="btn M512">
+                    <li><input class="alxM512" type="button" value="SIGN IN OR JOIN"></li>
+                    <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
+                    <li><a href="account_not_yet_member.html">JOIN IN ACCOR</a></li>
+                </ul> 
+                <div class="menuBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="M513">
+                <ul>
+                    <li>ACCOMMODATION</li>
+                    <li>LOYALTY PROGRAM</li>
+                    <li>OFFER &amp; PACKAGE</li>
+                    <li>DINING SERVICE</li>
+                    <li>BUSINESS EVENT</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="fnbPanel">
+            <div>
+                <div class="M513">
+                    <b class="mui">ACCOMMODATION</b>
+                    <ul class="R413">
+                        <li><a href="accom_hotel_Resort.html">Hotel &amp; Resorts</a></li>
+                        <li><a href="accom_aparthotels.html">Aparthotels &amp; Villas</a></li>
+                        <li><a href="accom_private_home.html">Luxury Private Home</a></li>
+                        <li><a href="accom_all_our_brand.html">ALL Accor Brand</a></li>
+                        <li><a href="map.html" class="mapBtn">FIND A HOTEL</a></li>
+                    </ul>
+                    <b class="mui">LOYALTY PROGRAM</b>
+                    <ul class="R413">
+                        <li><a href="loyalty.html">Discover the Program</a></li>
+                        <li><a href="loyalty_benefits.html">Benefits and Status</a></li>
+                        <li><a href="loyalty_earn_rewards.html">Earn Rewards Points</a></li>
+                        <li><a href="loyalty_use_rewards.html">Use Your Points</a></li>
+                    </ul>
+                    <b class="mui">OFFER &amp; PACKAGE</b>
+                    <ul class="R413">
+                        <li><a href="offers_all_member.html">For All Member</a></li>
+                        <li><a href="offers_latest.html">The Latest Offers</a></li>
+                        <li><a href="offers_all_year.html">All Year Offers</a></li>
+                    </ul>
+                    <b class="mui">DINING SERVICE</b>
+                    <ul class="R413">
+                        <li><a href="dining_world_of_flavours.html">World of Flavours</a></li>
+                        <li><a href="dining_service.html">Popular Cities</a></li>
+                        <li><a href="dining_service.html?scroll=diningSeasonFestive">Season Festive</a></li>
+                    </ul>
+                    <b class="mui">BUSINESS EVENT</b>
+                    <ul class="R413">
+                        <li><a href="business_tailored_events.html">Tailored Events</a></li>
+                        <li><a href="business_meeting_planning.html">Meeting Planning</a></li>
+                        <li><a href="detail_business_private.html">Private Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="reservation">
+                <form action="checkout.html">
+                    <fieldset>
+                        <legend class="M522">BOOK WITH ALL</legend>
+                        <div class="11">
+                            <ul>
+                                <li>
+                                    <label for="destination" class="M5">Where do you want to travel ?</label>
+                                    <input type="text" class="alxL311" id="destination" placeholder="Destination, hotel name">
+                                    <label for="travellers" class="M5">
+                                        Travellers
+                                        <small class="R410">Loyalty or subscription</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="travellers" placeholder="0000 0000 0000 0000">
+                                </li>
+                                <li>
+                                    <label for="check-in-date" class="M5">
+                                        Dates
+                                        <div>
+                                            <span>1</span>
+                                            <span>Night</span>
+                                        </div>
+                                    </label>
+                                    <div>
+                                        <input type="date" class="alxL311" id="check-in-date">
+                                        <span>-</span>
+                                        <input type="date" class="alxL311" id="check-out-date">
+                                    </div>
+                                    <label for="profTravellers" class="M5">
+                                        Professional Travellers
+                                        <small class="R410">Business client with contract</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="profTravellers" placeholder="Client code (SC, AC...)">
+                                </li>
+                                <li>
+                                    <div class="roomSelect">
+                                        <label for="roomCount" class="M5">Rooms &amp; Guests</label>
+                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect">
+                                            <ol>
+                                                <li>
+                                                    <label for="roomCount" class="L310">Room(s)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="roomCount">
+                                                        <span class="L3">Room(s)</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="adultsCount">
+                                                        <span class="L3">Adult Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="childCount">
+                                                        <span class="L3">Children Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <input type="reset" class="btn alxL310" value="Reset">
+                                        </div>
+                                    </div>
+                                    <label for="promotionSelect" class="M5">
+                                        Special Rates or Promotion Code
+                                        <small class="R410">Choose a rate</small>
+                                    </label>
+                                    <span class="selectComponent">
+                                        <select id="promotionSelect" class="alxL311">
+                                            <option>None</option>
+                                            <option>AAA / CAA Member</option>
+                                            <option>Military &amp; Veteran</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="submit" class="alxM513" value="RESERVE NOW">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="alx termsContainer cookies">
+        <h2 class="E234">
+            ACCOR &amp; YOUR DIGITAL FOOTPRONT
+        </h2>
+        <span class="L315">
+            Accor  publishes and operates a website
+            <a href="index.html">all.accor.com</a>
+        </span>
+        <ol class="accordionBox">
+            <li>
+                <strong>1. Let's go!</strong>
+                <div class="L316">
+                    <p>The Mercure Les Arcs 1800 Hotel is located in the heart of the Les Arcs ski resort in the French Alps. When you stay here you will find this hotel is ideally located at the base of 
+                        the slopes. If you walk from the lobby to the lift in the middle of winter, you'll most likely leave footprints in the snow. If someone follows you down the same path, they won't 
+                        know whose shoe made the footprints. An experienced tracker, on the other hand, will already know a lot about you based on your footprints: the type of shoes you wore, the 
+                        direction you went, the length of time you were walking, and so on.
+                        </p>
+                    <p>Browsing the internet is somewhat like walking on snow. It leaves traces when browsing multiple websites. Like footprints in the snow, the footprints you leave on the Internet 
+                        cannot be used to directly identify you. But they do give some clues about you: your computer's configuration, your region, your most spoken languages, your interests, and 
+                        more. Accor includes the websites you visit, browsing or reading, as well as keeping track of any traces you may have already left when booking a stay at the Mercure Les Arcs 
+                        1800 Hotel or one of Accor's other 5,100 hotels worldwide. Publish your website.</p>
+                    <b class="M516">Accor's responsibility and the purpose of the document you are currently reading is to:</b>
+                    <ul class="disc">
+                        <li>
+                            Inform you of existing traces
+                        </li>
+                        <li>
+                            Tells you how we use this information
+                        </li>
+                        <li>
+                            Describes how you can stop or delete these traces.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>2. What is Tracer?</strong>
+                <div class="L316">
+                    <p>Cookies are the most common form of tracking programs. A tracer is data that a server uses to send information to a web browser or mobile application, which then returns 
+                        that information to the originating server. Information can be, for example, session ID, language, expiration date, match field, etc. When active, tracers are used to store 
+                        information when a user accesses various pages of a website or mobile application, or when this user returns to this website or mobile application at a later time.
+                        </p>
+                    <b class="M516">There are different types of tracers on the Internet:</b>
+                    <ul class="disc">
+                        <li>
+                            Session tracers, which are deleted as soon as you leave your browser or website
+                        </li>
+                        <li>
+                            Persistent tracers, which remain on your device until they expire or until you delete them by changing the settings in your browser.
+                        </li>
+                    </ul>
+                    <p>On our website, we use cookies set by us and called "first-party cookies" and "third-party cookies", which are cookies from a different domain than the domain of the website 
+                        you are visiting.</p>
+                </div>
+            </li>
+            <li>
+                <strong>3. Use our Tracer</strong>
+                <div class="L316">
+                    <p>On the ALL, hotelF1, ibis, Pullman, Novotel, Mercure, MGallery, Business Travel, Meetings, Travelpros, Restaurants, Apartments & Villas, and Sofitel websites, we primarily 
+                        use cookies and other tracers for the following purposes:</p>
+                    <b class="M516">Essential Cookies</b>
+                    <p>These cookies are essential for the functioning of the website and cannot be turned off within the company system. These cookies are primarily set only based on your privacy 
+                        preferences, your actions that correspond to service requests, such as logging in or filling out forms. You may block these cookies in your browser or set notification settings for 
+                        cookies, but in this case some features of the site may not work.</p>
+                    <b class="M516">Functional Cookies</b>
+                    <p>This cookie allows personalization and advanced features such as video and live chat. Cookies may be set by companies or third-party service providers added to company 
+                        pages. Some features may not work properly if cookies are not accepted.</p>
+                    <b class="M516">Performance Related Cookies</b>
+                    <p>These cookies enable us to measure and improve the performance of our site by identifying the number of visitors and data traffic information. It also checks which pages are 
+                        most popular or least popular, and lets you see how your visitors are moving through your site. All information collected by cookies is cumulative and anonymous. If you do 
+                        not allow cookies, we cannot know when you visit our site.</p>
+                    <b class="M516">Advertising Cookies</b>
+                    <p>These cookies are set on the Company's site by the Company's advertising partners. These partners use these cookies to create a profile about your interests and display 
+                        relevant advertisements on other sites as well. This cookie works by identifying your browser and device. If you do not allow these cookies, you will not be able to experience 
+                        personalized advertising provided by us on other websites.</p>
+                    <b class="M516">Social Media Cookies</b>
+                    <p>These cookies are set by some social media services added to the site to allow you to share our content with your friends and networks. These cookies can track your browser 
+                        across multiple sites and profile your areas of interest. This may affect the content and messages you see on other websites you visit. If you do not accept these cookies, you 
+                        may not be able to use or view these sharing tools.</p>
+                </div>
+            </li>
+            <li>
+                <strong>4. Accepting, Rejecting or Deleting Tracers</strong>
+                <div class="L316">
+                    <p>To manage your consent to the use of Tracer on the ALL - Accor Live Limitless mobile application, please refer to the "Legal Notices" section accessible from the home screen 
+                        of the mobile application. On our website, you can manage your consent or refusal to use Tracer on your terminal by clicking </p>
+                    <a href="https://all.accor.com/information/legal/legal-conditions.ko.shtml" target="_blank">here.</a>
+                    <p>Regardless of your choice, your browser allows you to delete Tracer from your device at any time. The steps to manage and delete tracers vary from browser to browser. These 
+                        steps are documented in your browser's Help menu. Do not forget to configure all browsers on different devices (tablets, smartphones, computers, etc.). Here are the steps to 
+                        manage tracers in most common browsers:</p>
+                    <ul class="disc">
+                        <li>
+                            For Internet Explorer™: <a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank">https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies</a>
+                        </li>
+                        <li>
+                            For Safari™: <a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac" target="_blank">https://support.apple.com/en-gb/guide/safari/sfri11471/mac</a>
+                        </li>
+                        <li>
+                            For Chrome™: <a href="https://support.google.com/chrome/bin/answer.py?hl=en&hlrm=en&answer=95647" target="_blank">https://support.google.com/chrome/bin/answer.py?hl=en&hlrm=en&answer=95647</a>
+                        </li>
+                        <li>
+                            For Opera™: <a href="https://www.opera.com/help/tutorials/security/privacy" target="_blank">https://www.opera.com/help/tutorials/security/privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <footer class="alx">
+        <div>
+            <div>
+                <h2 class="E232">EXCLUSIVE OFFERS</h2>
+                <p class="L313">Subscribe to our newsletter and receive special offers</p>
+                <form action="subscribe_accor.html">
+                    <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
+                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                </form>
+            </div>
+            <div>
+                <h2 class="E232">NEED HELP ?</h2>
+                <span class="L313"> 
+                    <a href="map.html">Reservation Management</a>
+                    <a href="helpCenter.html">Support and Inquiries</a>
+                </span>
+                <mark class="btn alxL313">
+                    Do you want to ask for questions ?
+                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                </mark>
+                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="M510">
+            <strong>ABOUT US</strong> 
+            <ul>
+                <li><a href="https://group.accor.com" target="_blank">ACCOR GROUP</a></li>
+                <li><a href="https://group.accor.com/hotel-development" target="_blank">MANAGEMENT &amp; FRANCHISES</a></li>
+                <li><a href="https://careers.accor.com" target="_blank">CAREERS</a></li>
+                <li><a href="https://all.accor.com/ko/sustainable-development/index.shtml" target="_blank">SUSTAINABLE DEVELOPMENT</a></li>
+                <li><a href="https://all.accor.com/affiliate/index.en.shtml" target="_blank">AFFILIATE PROGRAM</a></li>
+            </ul>
+            <strong>CUSTOMER SERVICE</strong>
+            <ul>
+                <li><a href="terms_general.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookies.html">COOKIES</a></li>
+                <li>
+                    <span>STAY CONNECTED</span>
+                    <a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a>
+                    <a href="https://www.instagram.com/all/" target="_blank">instagram</a>
+                    <a href="https://twitter.com/all" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a>
+                    <em>tripadvisor</em>
+                </li>
+            </ul>
+            <b>STAY CONNECTED</b>
+            <ul>
+                <li><a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/all/" target="_blank">instagram</a></li>
+                <li><a href="https://twitter.com/all" target="_blank">twitter</a></li>
+                <li><a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a></li>
+                <li>tripadvisor</li>
+            </ul>
+            <div>
+                <h3 class="M510">MOBILE APPLICATIONS</h3>
+                <span>
+                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=ko&referrer=mat_click_id%3Dfa12181839af409492a34c2659248cb6-20190912-14012%26link_click_id%3D700704422598298176&mat_click_id=fa12181839af409492a34c2659248cb6-20190912-14012">Google Play</a>
+                    <a href="https://apps.apple.com/kr/app/accor-all-%ED%98%B8%ED%85%94-%EC%98%88%EC%95%BD/id489472613?mat_click_id=870794f4e4534593891b7c4ad7b95593-20190912-14012&mt=tr&referrer=mat_click_id%3D870794f4e4534593891b7c4ad7b95593-20190912-14012%26link_click_id%3D700704503900740601">App Store</a>
+                </span>
+            </div>
+            <div class="L311">
+                <p>
+                    *Prices start from, based on a one night stay in a standard double room for two guests. Supplementary services, breakfast and tourist/city tax are not included. Price observed on all.accor.com within the past 24 hours, for a one night stay within the next eight days, starting tomorrow. Price subject to the hotel conditions, period and availability. Depending on the country, these prices may not include taxes, may include VAT only or may include all taxes (VAT and tourist/city tax). When prices do not include all taxes, the relevant taxes (VAT and tourist/city tax) will be stated in the forthcoming stages of the reservation process. The price is only guaranteed at the time of reservation.
+                </p>
+                <span>** Note 2Available 24/7. Calls to this number will cost 13 pence per minute plus your providers access charge (only for Accor hotels).</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

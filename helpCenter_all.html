@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/accor.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="alx">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="accor">
+                </a>
+            </h1>
+            <div>
+                <ul class="btn M512">
+                    <li><input class="alxM512" type="button" value="SIGN IN OR JOIN"></li>
+                    <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
+                    <li><a href="account_not_yet_member.html">JOIN IN ACCOR</a></li>
+                </ul> 
+                <div class="menuBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="M513">
+                <ul>
+                    <li>ACCOMMODATION</li>
+                    <li>LOYALTY PROGRAM</li>
+                    <li>OFFER &amp; PACKAGE</li>
+                    <li>DINING SERVICE</li>
+                    <li>BUSINESS EVENT</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="fnbPanel">
+            <div>
+                <div class="M513">
+                    <b class="mui">ACCOMMODATION</b>
+                    <ul class="R413">
+                        <li><a href="accom_hotel_Resort.html">Hotel &amp; Resorts</a></li>
+                        <li><a href="accom_aparthotels.html">Aparthotels &amp; Villas</a></li>
+                        <li><a href="accom_private_home.html">Luxury Private Home</a></li>
+                        <li><a href="accom_all_our_brand.html">ALL Accor Brand</a></li>
+                        <li><a href="map.html" class="mapBtn">FIND A HOTEL</a></li>
+                    </ul>
+                    <b class="mui">LOYALTY PROGRAM</b>
+                    <ul class="R413">
+                        <li><a href="loyalty.html">Discover the Program</a></li>
+                        <li><a href="loyalty_benefits.html">Benefits and Status</a></li>
+                        <li><a href="loyalty_earn_rewards.html">Earn Rewards Points</a></li>
+                        <li><a href="loyalty_use_rewards.html">Use Your Points</a></li>
+                    </ul>
+                    <b class="mui">OFFER &amp; PACKAGE</b>
+                    <ul class="R413">
+                        <li><a href="offers_all_member.html">For All Member</a></li>
+                        <li><a href="offers_latest.html">The Latest Offers</a></li>
+                        <li><a href="offers_all_year.html">All Year Offers</a></li>
+                    </ul>
+                    <b class="mui">DINING SERVICE</b>
+                    <ul class="R413">
+                        <li><a href="dining_world_of_flavours.html">World of Flavours</a></li>
+                        <li><a href="dining_service.html">Popular Cities</a></li>
+                        <li><a href="dining_service.html?scroll=diningSeasonFestive">Season Festive</a></li>
+                    </ul>
+                    <b class="mui">BUSINESS EVENT</b>
+                    <ul class="R413">
+                        <li><a href="business_tailored_events.html">Tailored Events</a></li>
+                        <li><a href="business_meeting_planning.html">Meeting Planning</a></li>
+                        <li><a href="detail_business_private.html">Private Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="reservation">
+                <form action="checkout.html">
+                    <fieldset>
+                        <legend class="M522">BOOK WITH ALL</legend>
+                        <div class="11">
+                            <ul>
+                                <li>
+                                    <label for="destination" class="M5">Where do you want to travel ?</label>
+                                    <input type="text" class="alxL311" id="destination" placeholder="Destination, hotel name">
+                                    <label for="travellers" class="M5">
+                                        Travellers
+                                        <small class="R410">Loyalty or subscription</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="travellers" placeholder="0000 0000 0000 0000">
+                                </li>
+                                <li>
+                                    <label for="check-in-date" class="M5">
+                                        Dates
+                                        <div>
+                                            <span>1</span>
+                                            <span>Night</span>
+                                        </div>
+                                    </label>
+                                    <div>
+                                        <input type="date" class="alxL311" id="check-in-date">
+                                        <span>-</span>
+                                        <input type="date" class="alxL311" id="check-out-date">
+                                    </div>
+                                    <label for="profTravellers" class="M5">
+                                        Professional Travellers
+                                        <small class="R410">Business client with contract</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="profTravellers" placeholder="Client code (SC, AC...)">
+                                </li>
+                                <li>
+                                    <div class="roomSelect">
+                                        <label for="roomCount" class="M5">Rooms &amp; Guests</label>
+                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect">
+                                            <ol>
+                                                <li>
+                                                    <label for="roomCount" class="L310">Room(s)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="roomCount">
+                                                        <span class="L3">Room(s)</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="adultsCount">
+                                                        <span class="L3">Adult Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="childCount">
+                                                        <span class="L3">Children Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <input type="reset" class="btn alxL310" value="Reset">
+                                        </div>
+                                    </div>
+                                    <label for="promotionSelect" class="M5">
+                                        Special Rates or Promotion Code
+                                        <small class="R410">Choose a rate</small>
+                                    </label>
+                                    <span class="selectComponent">
+                                        <select id="promotionSelect" class="alxL311">
+                                            <option>None</option>
+                                            <option>AAA / CAA Member</option>
+                                            <option>Military &amp; Veteran</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="submit" class="alxM513" value="RESERVE NOW">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="alx helpFaqContainer all">
+        <div class="helpMainField">
+            <h2 class="imgCenterTitle 55">Frequently Asked Questions</h2>
+            <div class="searchField">
+                <form>
+                    <input type="search" title="Search a keyword for questions or answers" placeholder="Search a keyword for questions or answers" class="alx L320">
+                    <input type="submit" value="SEARCH" class="L316">
+                </form>
+            </div>
+        </div>
+        <div>
+            <h3 class="E234">ALL - ACCOR LIVE LIMITLESS</h3>
+            <div class="accordionBox">
+                <ul class="R422">
+                    <li data-tab="joinMembership">JOIN THE ALL MEMBER</li>
+                    <li data-tab="statusBenefits">STATUS &amp; BENEFITS</li>
+                    <li data-tab="rewardsPoints">REWARDS POINTS</li>
+                </ul>
+                <ol id="joinMembership">
+                    <li>
+                        <strong>What are the terms and conditions for benefiting from the ALL - Accor Live Limitless program?</strong>
+                        <div class="L316">
+                            <div>Free ALL - Members of the Accor Live Limitless loyalty program have access to 4 tiers assigned according to the number of nights stayed or the number of tier 
+                                points earned during the year (January - December). Classic, Silver, Gold, Platinum. Members of the ALL Loyalty Program at each tier are entitled to special 
+                                offers at Accor hotels* participating in the programme. A detailed list of benefits can be found at the <a href="loyalty.html">« ALL Loyalty Program »</a>.</div>
+                            <ul class="disc">
+                                <li>
+                                    For more information, please refer to the <a href="loyalty_benefits.html">« Class Comparison » page.</a>
+                                </li>
+                                <li>
+                                    Select a tier to view special offers, then click on an offer for details. Some benefits are subject to availability and may vary by brand.
+                                </li>
+                            </ul>   
+                            <p>Program benefits are strictly reserved for members whose full name appears on the ALL loyalty card. Benefits are granted to members on the day they arrive 
+                                at the hotel and the day they stay, depending on their level. Reservations must be made under the name of the cardholder, and the member must be staying 
+                                at the hotel to receive the benefit. Members receive special offers when they spend points-earning stays.</p>    
+                            <b class="M516">In order to determine whether or not Tier and Rewards points and benefits corresponding to the membership level have been accrued, the Member 
+                                must do the following:</b>
+                            <ol class="R416">
+                                <li>
+                                    1. Book accommodations directly through :
+                                    <p class="L3 dash">
+                                        on the all.accor.com website or the websites of the Accor brands (Raffles, SLS, Orient Express, Banyan Tree, Sofitel, Delano, The House of Originals, Rixos, 
+                                        Fairmont, Mantis, Pullman, Mövenpick, MGallery, Swissôtel, Grand Mercure, Angsana , Peppers, Art Series, 25hours, the Sebel, TMondrian, Cassia, Hyde, 
+                                        Mantra, Novotel (Hotels &amp; Suites), Mercure, Adagio, Mama Shelter, Tribe, Breakfree, ibis, Adagio Access, ibis Styles, Greet, Thalassa sea &amp; spa).
+                                    </p>
+                                </li>
+                                <li>
+                                    2. Select hotels within the Accor group participating in a loyalty program and published room rates that allow you to earn Tier and Rewards points.
+                                </li>
+                                <li>
+                                    3. Upon arrival, present your card at the hotel reception desk and stay at the reserved hotel.
+                                    <p class="L3">The Tier and Rewards points earned for your stay will be credited to your ALL account within 7 days of checking out of the hotel. If after this period the points do not appear 
+                                        in the ALL account, the member has 6 months to claim reimbursement.</p>
+                                </li>
+                            </ol>
+                            <span>* Corporate fares under contracts authorized to earn points regardless of booking channel.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How do I activate my account and view the terms and conditions of the ALL - Accor Live Limitless program?</strong>
+                        <p class="L316">
+                            To activate your account and complete your membership, access all.accor.com. You will receive an automatic welcome email. To complete your membership, click « 
+                            Complete Membership » and then follow the instructions to activate your account and view the terms and conditions for using the program.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Can I lend my ALL - Accor Live Limitless card to someone else?</strong>
+                        <p class="L316">
+                            The ALL - Accor Live Limitless loyalty card is non-transferable and is the sole property of the individual. Only the member whose full name appears on the card can use the 
+                            card. Therefore, it may not be transferred, sold or leased to others. Similarly, the benefits of the ALL card can only be reserved by the member whose full name appears on the 
+                            card.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>I just signed up, when will I receive my ALL - Accor Live Limitless loyalty card?</strong>
+                        <div class="L316">
+                            <b class="M516">As soon as you sign up, you can view your ALL - Accor Live Limitless card online in the Accor app.</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Download the Accor All application on your mobile or tablet:
+                                    <a href="https://apps.apple.com/fr/app/accorhotels-reservation-dhotels/id489472613?mat_click_id=e95fbc38f949460586aa586e3e9c292d-20230327-14012&referrer=mat_click_id%3De95fbc38f949460586aa586e3e9c292d-20230327-14012%26link_click_id%3D1168867044600942028">iPhone</a> or
+                                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=fr&referrer=mat_click_id%3D3947a2528b8b4a2fb011ab125375e089-20230327-14012%26link_click_id%3D1168867342492994892&mat_click_id=3947a2528b8b4a2fb011ab125375e089-20230327-14012">Android</a>
+                                </li>
+                                <li>
+                                    2. Enter your email address or ALL card number and password to access your account
+                                </li>
+                                <li>
+                                    3. Click "My Cards"
+                                </li>
+                            </ol>
+                            <b class="M516">A virtual card is displayed. You can use it the same way you would use a physical card.</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Access your « Account » at <a href="index.html">all.accor.com.</a>
+                                </li>
+                                <li>
+                                    2. Enter your email address or ALL card number and password to access your account.
+                                </li>
+                                <li>
+                                    3. Click on «  My Account  » then « See More My Ratings ».
+                                </li>
+                                <li>
+                                    4. Card number displayed.
+                                </li>
+                                <li>
+                                    5. Request a card by clicking « Get my card in the mail »: You can press the button when all the conditions mentioned above are fulfilled.
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Do I need to present my ALL - Accor Live Limitless card for each stay?</strong>
+                        <div class="L316">
+                            <b class="M516">How to Earn Tier and Rewards Points for Qualifying Stays at Participating Hotels</b>
+                            <ul class="disc">
+                                <li>
+                                    Enter your card number when making a reservation
+                                </li>
+                                <li>
+                                    Present your card at the hotel reception desk upon arrival
+                                </li>
+                            </ul>
+                            <b class="M516">Upon check-out, Tier and Rewards points will be credited within 7 days of check-out from the hotel, based on the amount charged (excluding tax).</b>
+                            <b class="M516">How to Check Your Tier and Rewards Points Balance</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Access your « Account » on the <a href="index.html">all.accor.com</a> website
+                                </li>
+                                <li>
+                                    2. Enter your email address or ALL card number and password
+                                </li>
+                                <li>
+                                    3. Click on « My Loyalty Areas and Memberships » section and then « My Loyalty Cards »
+                                </li>
+                                <li>
+                                    4. Find transaction details in « My points history »
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How do I change the format of my ALL - Accor Live Limitless card (physical or digital)?</strong>
+                        <div class="L316">
+                            <b class="M516">How to turn digital format into physical format</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Go to your account at <a href="index.html">all.accor.com</a></li>
+                                <li>
+                                    2. Enter your email address or ALL - Accor Live Limitless card number and password</li>
+                                <li>
+                                    3. Click « My Loyalty Areas and Memberships » then « My Loyalty Cards »</li>
+                                <li>
+                                    4. Card number displayed</li>
+                                <li>
+                                    5. Click « Get My Card Mailed » to request card delivery: A button will appear once the above details have been entered</li>
+                            </ol>
+                            <b class="M516">How to turn physical form into digital form</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Download the all.accor.com application on your mobile or tablet : 
+                                    <a href="https://apps.apple.com/fr/app/accorhotels-reservation-dhotels/id489472613?mat_click_id=e95fbc38f949460586aa586e3e9c292d-20230327-14012&referrer=mat_click_id%3De95fbc38f949460586aa586e3e9c292d-20230327-14012%26link_click_id%3D1168867044600942028">iPhone</a> or
+                                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=fr&referrer=mat_click_id%3D3947a2528b8b4a2fb011ab125375e089-20230327-14012%26link_click_id%3D1168867342492994892&mat_click_id=3947a2528b8b4a2fb011ab125375e089-20230327-14012">Android</a>
+                                </li>
+                                <li>
+                                    2. Enter your email address or ALL card number and password to access your account
+                                </li>
+                                <li>
+                                    3. Click "My Cards"
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>My membership level was just upgraded or my membership level was re-evaluated at the end of my membership 
+                            period, but I did not reseive a new card.</strong>
+                        <div class="L316">
+                            <p>At the end of your membership period, if your membership level is re-evaluated or you receive a higher membership level, you will be notified by email that your membership 
+                                level has changed and you can choose the format of your ALL card. The card is available in digital format through the AccorHotels application. Also available in physical format. 
+                                You can request a physical card by clicking on the «Choose my card» link in your email. Unless you request a physical card, by default the card can only be used in digital form.</p>
+                            <b class="M516">How to view my card</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Enter your email address or ALL card number and password to access your account</li>
+                                <li>
+                                    2. Click "My Cards"
+                                    <ul class="dash">
+                                        <li>
+                                            A virtual card is displayed. You can use it the same way you would use a physical card.
+                                        </li>
+                                        <li>
+                                            You can request a physical card at any time with your online account.
+                                        </li>
+                                        <li>
+                                            First you need to make sure you have entered the correct shipping address.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <span class="L316">* When the validity period of your previous membership level ends and you receive the Classic level, you will receive your card in digital format by default. You will only be 
+                                notified by email that your membership level has changed. To request a physical card, follow the steps outlined above.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Can two people use the same ALL - Accor Live Limitless loyalty card?</strong>
+                        <p class="L316">
+                            No, two people can use the same ALL - Accor Live Limitless loyalty card. The ALL - Accor Live Limitless loyalty card is non-transferable and is the sole property of the individual. 
+                            Only the member whose full name appears on the card can use the card. Therefore, the Card cannot be transferred, sold or rented to another person, even if you are in a 
+                            romantic relationship. Similarly, the benefits of the ALL card can only be reserved by the member whose full name appears on the card.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>How long is the ALL - Accor Live Limitless card valid?</strong>
+                        <p class="L316">
+                            Once registration is complete, participation in the ALL, Accor Live Limitles program is valid for life. Participation in the Loyalty Program starts at the Classic level. The Silver, 
+                            Gold and Platinum « Elite » tiers have an expiration date displayed on the Loyalty Card. To learn more about ratings, click <a href="loyalty_benefits.html">here.</a>
+                        </p>
+                    </li>
+                    <li>
+                        <strong>What is the QR code for the ALL - Accor Live Limitless card?</strong>
+                        <p class="L316">
+                            Physical cards and digital cards (<a href="https://all.accor.com/ko/mobile/mobile-app.shtml">all.accor.com mobile app</a>) issued from Q2 2016 will have a QR code regardless of membership level. To save time, you must present your 
+                            digital or physical ALL card upon arrival at the hotel. Step by step, most hotels are installing readers that can scan QR codes, read card numbers, and provide reservation 
+                            status, so you can earn points appropriately during your earning stay. To protect your personal data, we only store your personal information in your membership card 
+                            information, we do not store it in your QR code.
+                        </p>
+                    </li>
+                </ol>
+                <ol id="statusBenefits">
+                    <li>
+                        <strong>Why have I lost my status? How can  I get it back?</strong>
+                        <div class="L316">
+                            <p>Awarding and keeping different statuses is dependent on your activity (number of Status Nights or number of Status points earned) in the ALL - Accor Live Limitless loyalty 
+                                programme. The loyalty programme offers 5 statuses awarded according to the number of Status Nights spent or the number of Status points earned over a calendar year 
+                                (from January to December). Participation in the loyalty programme starts with Classic status. Your status changes when you meet the award conditions detailed below.</p>
+                            <b class="M516">When you join the loyalty programme, the number of Status nights spent or the number of Status points earned allow you access to the Elite statuses:</b>
+                            <ul class="disc">
+                                <li>
+                                    Silver status from 10 Status Nights or 2000 Status points earned
+                                </li>
+                                <li>
+                                    Gold status from 30 Status Nights or 7,000 Status points earned
+                                </li>
+                                <li>
+                                    Platinum status from 60 Status Nights or 14,000 Status points earned
+                                </li>
+                                <li>
+                                    Diamond Status from 26,000 Status points earned
+                                </li>
+                            </ul>
+                            <p>When you are upgraded to Silver, Gold, Platinum or Diamond « Elite » status level during a year, your status is valid until 31 December of the year after they were obtained. 
+                                When your status expires, your new status is calculated according to the number of Status nights or the number of Status points earned on your account during the last 
+                                calendar year (from January to December):</p>
+                            <ul class="disc">
+                                <li>
+                                    If you meet the requirements associated to your status again, it will be retained.
+                                </li>
+                                <li>
+                                    If you no longer meet these requirements, for the following year you will be awarded the status level directly below the one you previously had. To regain your status, you will 
+                                    need to earn back the number of Status nights or Status points required.
+                                </li>
+                                <li>
+                                    You can follow your activity in Status points and in Status Nights by accessing your « Account » at <a href="index.html">all.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>What have you done to your members during the COVID-19 pandemic?</strong>
+                        <div class="L316">
+                            <b class="M516">Given the current health crisis impacting travel and travel plans, the ALL - Accor Live Limitless loyalty program wants to help its members navigate this unprecedented 
+                                situation and take advantage of the benefits available to them by:</b>
+                            <p>Tier Extension For members who received Silver Tier or higher when Tier was allocated in January 2020, 2021 this period has been extended to December 31, 2021. Tier Points 
+                                and Tier Stays Report Qualifying nights and Tier Points for stays between July 1, 2020 and December 31, 2020 were credited to the Qualifying Stay Counter and Tier Points for 
+                                2021. This will make it easier to access higher tier levels in 2022 or stay tiered. Suite Stay Upgrade: Platinum and Diamond Members in 2020 will receive an additional one-year 
+                                extension for remaining suite stays earned in 2019. The validity period will also be adjusted from December 31, 2020 to December 31, 2021 for all eligible member accounts.</p>
+                            <b class="M516">Rewards points expiry date: 
+                                All members with valid Rewards points at the time of communication sent on 18 May 2020 have extended their expiry period:</b>
+                            <ul class="disc">
+                                <li>
+                                    For Classic members, until December 15, 2020
+                                </li>
+                                <li>
+                                    Until April 30, 2021 for Silver, Gold, Platinum and Diamond members. This date has been postponed to December 15, 2021 for these members. No change for all Silver, Gold, 
+                                    Platinum and Diamond members with valid Rewards points after this date.
+                                </li>
+                            </ul>
+                            <b class="M516">The validity of your Rewards points will be automatically extended for an additional 365 days if you do the following at least 7 days before the expected expiration date:</b>
+                            <ul class="disc">
+                                <li>
+                                    A qualifying stay (unless paid in full with Rewards points)
+                                </li>
+                                <li>
+                                    When you visit one of the bars or restaurants participating in the Dining Offer.
+                                </li>
+                                <li>
+                                    This offer allows ALL members to Earn Rewards Points on drinks, meals and more in addition to eligible stays. To find a partner bar or restaurant near you, 
+                                    check out our interactive map by clicking here.
+                                </li>
+                                <li>
+                                    Rewards points will automatically expire if the eligible payment is not recorded in your account on that date.
+                                </li>
+                            </ul>
+                            <b class="M516">Double Tier Points and Tier Stays in 2021:</b>
+                            <p>In 2021, we're automatically generating double Tier Points for qualifying stays and credit for Tier Nights. Additionally, as part of the Meeting Planner benefit (for members 
+                                enrolled in this benefit), we are doubling the number of credited Tier Points for qualifying meetings and events organized in 2021. Double points will be awarded when stay 
+                                or meeting planner points are credited to your account.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Why was my membership level deleted? How do I get it back?</strong>
+                        <div class="L316">
+                            <p>The granting and maintenance of different tiers depends on how active you are in the ALL - Accor Live Limitless loyalty program (number of nights in your membership tier or 
+                                number of tier points earned). In the loyalty program, five levels are provided based on the number of nights in the membership level or the number of level points 
+                                accumulated during one year (January to December). Participation in the Loyalty Program starts at the Classic level. Your rank will change if you meet the grant conditions 
+                                detailed below. When you join the Loyalty Program, you gain access to elite tiers based on number of member tier nights or number of tier points earned.</p>
+                            <ul class="disc">
+                                <li>
+                                    Silver status from 10 Status Nights or 2000 Status points earned
+                                </li>
+                                <li>
+                                    Gold status from 30 Status Nights or 7,000 Status points earned
+                                </li>
+                                <li>
+                                    Platinum status from 60 Status Nights or 14,000 Status points earned
+                                </li>
+                                <li>
+                                    Diamond Status from 26,000 Status points earned
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>What are the benefits offered at the different membership levels of the ALL - Accor Live Limitless program?</strong>
+                        <div class="L316">
+                            <p>Depending on your tier, you can earn points and receive special offers with the ALL - Accor Live Limitless program. Receive special benefits provided according to your tier. A 
+                                detailed list of benefits can be found at all.accor.com in the « <a href="loyalty.html">ALL Loyalty Program</a> » section. Go to the « <a href="loyalty_benefits.html">Benefits and Status</a> » page, select a Tier to view special offers, then 
+                                click on an Offer for more information. Some benefits are subject to availability and may vary by brand.</p>
+                            <ul class="disc">
+                                <li>
+                                    Benefits of the program can be reserved strictly only for members whose full name appears on the ALL loyalty card. Benefits are granted to members 
+                                    according to their class on the day they arrive at the hotel and for the room they stay in.
+                                </li>
+                                <li>
+                                    In order to benefit from the program, reservations must be made under the name of the loyalty card holder and the member must be staying at the hotel to receive the 
+                                    benefits.
+                                </li>
+                                <li>
+                                    Members receive special benefits when they spend points-earning stays.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>What tiers are there in the ALL - Accor Live Limitless program and how can I access them?</strong>
+                        <div class="L316">
+                            <p>ALL - Accor Live Limitless offers four tiers that are allocated according to the number of member tier nights or the number of tier points accumulated during the year 
+                                (January to December). Classic, Silver, Gold and Platinum. If you are upgraded to Silver, Gold or Platinum « Elite » status for one year, your status is valid until December 31 of 
+                                the year in which you earned it. When a Tier expires, a new Tier will be calculated based on the number of Tier Nights or the number of Tier Points accumulated in the 
+                                account during the previous calendar year (January - December).</p>
+                            <ul class="disc">
+                                <li>
+                                    If you meet the tier requirements again, it will be held until the following December 31st.
+                                </li>
+                                <li>
+                                    If you no longer meet these conditions, you will receive a rank just below the rank you previously had.
+                                </li>
+                                <li>
+                                    Cards corresponding to the new tier will automatically appear in your account and, if you have downloaded the mobile application, on the all.accor.com mobile application.
+                                </li>
+                            </ul>
+                            <span class="L316">* For more information on the different membership tiers and the benefits each tier offers, click <a href="loyalty_benefits.html">here</a>.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Will my membership tier expire if I use my Rewards points?</strong>
+                        <p class="L316">
+                            No, your tier does not expire when you use your Rewards points. For example, you are Silver tier and have 2,500 Rewards points and 2,500 Tier points in your account. If you 
+                            use 2,000 Rewards points, your Rewards points balance will be reduced to 500 Rewards points and your Tier points will remain at 2,500 Tier points. Also, your Silver status 
+                            will remain until the expiration date.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>How to use Suite Night Upgrades</strong>
+                        <div class="L316">
+                            <b class="M516">One of the new benefits of ALL - Accor Live Limitless to its Platinum and Diamond status members is a guaranteed suite upgrade.</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Each Suite Night Upgrade can be used to upgrade one confirmed night to a suite at a participating hotel.
+                                </li>
+                                <li>
+                                    2. Earn 2 Suite Night Upgrades from 14,000 Rewards points or 60 nights. An additional Suite Night Upgrade is awarded for each additional 4,000 Tier Points earned (limited 
+                                    to 12 Suite Night Upgrades per year).
+                                </li>
+                                <li>
+                                    3. Are you ready to upgrade? Call our reservations department to reserve your Suite Night Upgrade.
+                                    <ul class="dash">
+                                        <li>
+                                            Suite Night Upgrade is available exclusively for reservations made over the phone and applies to new reservations only. Suite Night Upgrade cannot be used in addition to 
+                                            an existing reservation or redeemed directly at the hotel upon arrival. For a full list of hotels that do not offer this benefit, click <a href="loyalty_benefits.html">here.</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <span class="L316">* The full terms and conditions for acquiring and using the Suite Night Upgrade can be found in the Loyalty program's Membership Terms and Conditions.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>What are the Dining &amp; Spa Rewards?</strong>
+                        <div class="L316">
+                            <p>This benefit is offered from the Diamond status of ALL - Accor Live Limitless loyalty programme. Dining &amp; Spa Rewards are electronic vouchers / certificates worth EUR 10 each, 
+                                that can be used by a member towards their spend in bars, restaurants and spas in participating hotels during an eligible stay. When the Dining &amp; Spa Rewards were 
+                                launched at the end of 2021, those members of ALL who had previously reached 26,000 Status points at least once between 2019 and 13th December 2021 were awarded 10 
+                                Dining &amp; Spa Rewards worth 10 Euros each, valid until 31st December 2022. From 13th December 2021, when the member reaches 26,000 Status points during the calendar 
+                                year, they receive one set of 10 Rewards. These vouchers are valid until December 31st the following year. The vouchers / certificates are digital : Members can view them in the 
+                                "Rewards" section of their ALL account and follow their usage history and validity date.</p>
+                            <b class="M516">From 1st March 2022, Members will be able to redeem as many Dining &amp; Spa Rewards as they wish at the Hotel reception desk at the time of checkout, 
+                                provided that:</b>
+                            <ul class="disc">
+                                <li>
+                                    The number of Dining &amp; Spa Rewards to be used is available and valid.
+                                </li>
+                                <li>
+                                    The amount spent on food and beverage (bar, restaurant, mini-bar, in-room dining, etc...) or spa services in the hotel is at least 10 Euros (including Tax) for each voucher to be 
+                                    used.
+                                </li>
+                            </ul>
+                            <p>The use of Dining &amp; Spa Rewards is exclusively reserved for the member, is non-transferable and may only be used by the member who must be present and staying at the 
+                                hotel. In some cases, a security code (sent by SMS and/or email) may be required to validate the transaction. For full terms and conditions, please refer to ALL - Accor Live 
+                                Limitless programme's terms and conditions of membership. </p>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Why wasn't it updated during my last stay?</strong>
+                        <div class="L316">
+                            <b class="M516">Members with ALL Elite Gold or Platinum status will be offered an upgrade to a higher category room at the hotel.</b>
+                            <ul class="disc">
+                                <li>
+                                    When you arrive, there are categories of these rooms and if they are subject to availability.
+                                </li>
+                                <li>
+                                    If an upgrade cannot be booked and is not guaranteed, the hotel reserves the right to rent a higher category room on the same day of arrival.
+                                </li>
+                                <li>
+                                    A detailed list of benefits can be found at __ <a href="index.html">all.accor.com</a> __ in the « <a href="loyalty.html">ALL Loyalty Program</a> » section.
+                                </li>
+                                <li>
+                                    For more information, please refer to the « <a href="loyalty_benefits.html">Benefits and Status</a> » page.
+                                </li>
+                                <li>
+                                    Select a tier to view special offers, then click on an offer for details. Some benefits are subject to availability and may vary by brand.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How can the ALL program benefit from Accor Arena?</strong>
+                        <div class="L316">
+                            <p>The largest arena in Paris is called the Accor Arena due to a naming agreement signed between Accor hotels and Bercy Arena. Accor Arena opened in October 2015 after 18 
+                                months of construction and has become one of the world's five largest concert and sports venues.</p>
+                            <b class="M516">These partnerships mean that ALL program members will have access to special offers such as :</b>
+                            <small class="R416">1. Limitless Experiences provided by ALL</small>
+                            <p>ALL Elite Box : This first-class private area allows you to see the entire stage while experiencing a « lively » immersive situation. Reserve 2 seats at selected shows and receive 
+                                exceptional cocktail service. Reservations can only be made using Rewards Points.</p>
+                            <small class="R416">2. Benefits offered by Accor Arena</small>
+                            <ul class="disc">
+                                <li>
+                                    Priority booking availability for preview tickets : You can book some events at Accor Arena before tickets go on sale to the public. Information regarding pre- sale tickets is 
+                                    normally sent via email. To receive this information, sign up for the ALL newsletter. Only a limited number of venues are on sale for a limited time, so buy your tickets as soon 
+                                    as you receive the email.
+                                </li>
+                                <li>
+                                    Best seat reservations for all occasions : Especially suitable for frequent travelers who want to benefit from exclusive rates, privileges and recognition and enhance their 
+                                    accommodation experience.
+                                </li>
+                                <li>
+                                    Priority booking availability for preview tickets : You can book some events at Accor Arena before tickets go on sale to the public. Information regarding pre-sale tickets is 
+                                    normally sent via email. To receive this information, [Sign up for the ALL newsletter]. Only a limited number of venues are on sale for a limited  time, so buy your tickets as 
+                                    soon as you receive the email.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Where can I find information about Limitless Experiences?</strong>
+                        <p class="L316">For all questions regarding the online store, please see the FAQ on the Limitless Experiences website. For all questions regarding the portal where you can earn points by 
+                            purchasing from our partners' online stores, please see the FAQ on the Collections website, If you need assistance, please go to the <a href="">"Contact Us" page on the Limitless 
+                            Experiences.</a>
+                        </p>
+                    </li>
+                 </ol>
+                <ol id="rewardsPoints">
+                    <li>
+                        <strong>How much can I spend to earn Tier and Rewards points?</strong>
+                        <div class="L316">
+                            <b class="M516">Members can earn Tier and Rewards points if they pay during the valid stay period.</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Accommodation fees paid by the Member for different rooms on the same dates at the same hotel (i.e. up to 2 rooms charged) in the following cases:
+                                    <ul class="dash">
+                                        <li>
+                                            The member will stay in one of the rooms mentioned above and pay for both rooms.
+                                        </li>
+                                        <li>
+                                            Other members do not stay in different rooms.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    2. Non-accommodation services such as: minibar, telephone, room service, pay television, meals eaten by members in hotel restaurants and drinks consumed in hotel bars.
+                                </li>
+                                <li>
+                                    3. Expenses associated with thalassotherapy and spa treatments at the Thalassa Sea &amp; Spa center connected to the hotel, only when the member is staying at the hotel.
+                                </li>
+                            </ol>
+                            <b class="M516">The following expenses are not eligible for Tier and Rewards Points accrual:</b>
+                            <ul class="disc">
+                                <li>
+                                    Additional charges during the stay for which points cannot be earned (even if paid to the hotel)
+                                </li>
+                                <li>
+                                    Taxes (especially VAT), tips, taxi fares, transfers to and from the hotel, service charges and other related charges
+                                </li>
+                                <li>
+                                    Expense
+                                </li>
+                            </ul>
+                            <b class="M516">The validity of your Rewards points will be automatically extended for an additional 365 days if you do the following at least 7 days before the expected 
+                                expiration date:</b>
+                            <ul class="disc">
+                                <li>
+                                    A qualifying stay (unless paid in full with Rewards points)
+                                </li>
+                                <li>
+                                    When you visit one of the bars or restaurants participating in the Dining Offer.
+                                </li>
+                                <li>
+                                    This offer allows ALL members to Earn Rewards Points on drinks, meals and more in addition to eligible stays. To find a partner bar or restaurant near you, check out our 
+                                    interactive map by clicking here.
+                                </li>
+                                <li>
+                                    Rewards points will automatically expire if the eligible payment is not recorded in your account on that date.
+                                </li>
+                            </ul>
+                            <b class="M516">Double Tier Points and Tier Stays in 2021:</b>
+                            <p>In 2021, we're automatically generating double Tier Points for qualifying stays and credit for Tier Nights. Additionally, as part of the Meeting Planner benefit 
+                                (for members enrolled in this benefit), we are doubling the number of credited Tier Points for qualifying meetings and events organized in 2021. Double 
+                                points will be awarded when stay or meeting planner points are credited to your account.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How can I use my Rewards points to pay for my stay at the hotel?</strong>
+                        <div class="L316">
+                            <p>Now that you've chosen to use your Rewards points during your stay, you can get a discount when you check out. You can avail this service by presenting your ALL - Accor Live 
+                                Limitless membership card at any hotel enrolled in the loyalty programme. It's really simple and all you have to do is go to your hotel reception during your stay and tell them 
+                                how many Rewards points you want to use. After the transaction is approved by the receptionist, your Rewards points will be automatically deducted from your account. 
+                                Whenever you redeem your Rewards points at a hotel, you will automatically receive an email confirming that you have redeemed them during your stay. When you spend 
+                                4,000 points or more, your transaction is protected by a 4-digit code sent to you via SMS and/or email. You must present this code to the receptionist to complete the 
+                                transaction.</p>
+                            <b class="M516">We sincerely hope that all transactions will go smoothly by accumulating maximum Rewards points, so we recommend the following :</b>
+                            <ul class="disc">
+                                <li>
+                                    Keep your personal information related to your account up to date.
+                                </li>
+                                <li>
+                                    Please ensure that you have entered a valid mobile phone number in the «Mobile Phone» field of your account.
+                                </li>
+                                <li>
+                                    Make sure you have access to your email account and text messages when executing transactions, when you are abroad, or on a business trip or vacation.
+                                </li>
+                            </ul>
+                            <b class="M516">Once the transaction has been approved by the hotel, it cannot be canceled or refunded. The following criteria apply to this service :</b>
+                            <ul class="disc">
+                                <li>
+                                    It is the member's sole responsibility to determine when to redeem Rewards points and how much to use.
+                                </li>
+                                <li>
+                                    The name used for booking must match the name of the cardholder and the cardholder must be staying at the hotel.
+                                </li>
+                                <li>
+                                    Rewards points cannot be used for third party stays.</li>
+                                <li>
+                                    Complete your stay at an Accor participating hotel and comply with the general terms and conditions of the program.
+                                </li>
+                                <li>
+                                    The standard we use when converting points is 2,000 Rewards points = €40.
+                                </li>
+                                <li>
+                                    Rewards points cannot be used for third party stays.
+                                </li>
+                                <li>
+                                    Accommodation must be booked at a valid rate.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Will my Rewards points be deleted if I cancel or amend a stay or additional service booked with my points?</strong>
+                        <div class="L316">
+                            <b class="M516">Rewards points will be credited back to your ALL - Accor Live Limitless account if you cancel or change your booking in the following cases:</b>
+                            <small class="R416">For non-changeable, non-refundable amounts, Rewards points will not be redeposited even if you cancel or change your reservation.</small>
+                            <ul class="disc">
+                                <li>
+                                    Reservation canceled due to failure or refusal to pay.
+                                </li>
+                                <li>
+                                    If the reservation is canceled prior to the date of stay for rates subject to cancellation and change.
+                                </li>
+                                <li>
+                                    Changes to reservations where rates may be canceled and amended, including revaluation discounts against points in Rewards points redeemed during the original 
+                                    reservation period. If you have already checked in at the hotel, this provision does not apply.
+                                </li>
+                                <li>
+                                    No-shows for rates subject to cancellation and change by the hotel. However, the amount for the first night will be charged.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Can I earn points for stays prior to becoming a member?</strong>
+                        <p class="L316">
+                            Points do not apply to stays prior to membership in the ALL - Accor Live Limitless program according to our General Terms and Conditions . Therefore, stays completed prior 
+                            to membership will not be included, and nights/points will not appear in your account. Book an eligible stay directly through the Accor website. Always state your ALL card 
+                            number when making a reservation and present the card upon arrival at the hotel.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>How can I use my points to book breakfast or other services offered by the hotel?</strong>
+                        <div class="L316">
+                            <p>When booking accommodations at an Accor address registered in the ALL - Accor Live Limitless program, you can also use your Rewards points to book additional services 
+                                (e.g. breakfast, 1 bottle of champagne and 1 box of chocolates). Reservations can be made with just one call to the Accor call center or to the hotel. The types of Rewards point 
+                                redemption services that members of ALL can receive depend on the hotel: one hotel may offer a bouquet of flowers, while another may offer a message.</p>
+                            <b class="M516">To reserve additional services paid for with Rewards points, the following conditions must be followed:</b>
+                            <ul class="disc">
+                                <li>
+                                    One room must be booked, and both must be booked at the same time, in order for the member to be able to book additional services paid for with Rewards points.
+                                </li>
+                                <li>
+                                    This service can only be booked over the phone by calling the Accor call center or the hotel.
+                                </li>
+                                <li>
+                                    You do not have to pay for a room reservation with your Rewards points in order to use your Rewards points to book additional services. You may pay for your room 
+                                    reservation using any other payment method accepted by the hotel.
+                                </li>
+                                <li>
+                                    Members must have enough Rewards points to pay in full for the services they intend to book. Unlike when booking a room, there is no minimum threshold of 2,000 
+                                    Rewards points. For example, you have 1,250 Rewards points, and it costs 1,250 Rewards points to reserve breakfast. If you try to book two breakfasts, you can only book one 
+                                    using your Rewards points, but you must pay for the other breakfast using your bank card or other payment method accepted by the hotel. On the other hand, if you only 
+                                    have 700 Rewards points, you cannot use the 700 Rewards points to book a breakfast, and you must pay the rest with your bank card.
+                                </li>
+                                <li>
+                                    Rewards points cannot be redeemed for cash or credit and no change is payable.
+                                </li>
+                                <li>
+                                    Cancellation and amendment policies to room rates also apply to additional services booked.
+                                </li>
+                                <li>
+                                    An automatic email is sent to the email address linked to the member's ALL account to ensure the security of each points withdrawal transaction.
+                                </li>
+                                <li>
+                                    Only the person whose name appears on the ALL card can use Rewards points to make a reservation.
+                                </li>
+                                <li>
+                                    When making a reservation, additional details may be requested to verify the member's identity.
+                                </li>
+                                <li>
+                                    The exchange rate is as follows: 2,000 Rewards points = €40.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How do I link my payment card to 'Dining Offers'?</strong>
+                        <div class="L316">
+                            <p>As a member of the ALL loyalty program through the Dining Offer, you can Earn Rewards Points at partner bars and restaurants even when you're not staying. Click here to 
+                                learn more about our Dining Offers. In order to use dining offers at some participating outlets, you must register your payment card in the Accor All application in advance 
+                                and associate it with dining offers.</p>
+                            <b class="M516">Earn more Rewards points and link your payment card to your dining offer below.</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Download the Accor All application and access your account from the application.
+                                </li>
+                                <li>
+                                    2. Register your payment card by clicking on the credit card portion of the application.
+                                </li>
+                                <li>
+                                    3. Click 'Link your card to earn points at bars and restaurants'.
+                                </li>
+                                <li>
+                                    4. I have read and agree to the Dining Offer Terms and Conditions.
+                                </li>
+                                <li>
+                                    5. Register once more to link another card to your dining offer.
+                                </li>
+                                <li>
+                                    6. Enjoy dinner or drinks at one of our partner bars and restaurants, then pay with the card linked to your dining offer.
+                                </li>
+                                <li>
+                                    7. Rewards points can be earned within 7 business days of visiting a participating bar or restaurant.
+                                </li>
+                            </ol>
+                            <b class="M516">You can link up to 5 payment cards to a Dining Offer. Cards available:</b>
+                            <ul class="disc">
+                                <li>
+                                    VISA card
+                                </li>
+                                <li>
+                                    Mastercard card
+                                </li>
+                                <li>
+                                    American Express cards issued in the US and UK.
+                                </li>
+                            </ul>
+                            <p>In this case, please note that valid American Express cards are only accepted in the country in which they were issued. Link your payment card to your dining offer and you'll 
+                                Earn Rewards Points every time you pay with that card after visiting participating bars and restaurants. Acceptable cards may vary depending on the business, so be sure to 
+                                check with the restaurant or bar staff to see if they are affiliated with you, and ask about payment methods that will allow you to Earn Rewards Points. The same card cannot 
+                                be registered to different ALL accounts at the same time. Likewise, only expenses paid for dining offers with a payment card linked to your ALL account will count toward 
+                                earning Rewards points. Please note that Rewards points cannot be paid for when using dining offers. Nor can it be used to pay for non-accommodation charges at affiliated 
+                                bars or restaurants. You can choose to no longer receive your Dining Offer benefits at any time. To do this, delete the registered card in the application. Your use of Dining 
+                                Offers will automatically end when you delete your card. In order to use the card to pay for reservations, the application must register the card again. Re-registration does not 
+                                activate access to Dining Offers. You will need to link your payment card to the Dining Offer and double check the Terms and Conditions in order to benefit from the Dining 
+                                Offer again.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Do I earn points when I book a stay with my Rewards points?</strong>
+                        <p class="L316">class="L316"
+                            Points will not be accrued for the portion of the bill where Rewards points have been used. For the remaining charges, you may earn Tier and Rewards points according to 
+                            the rules defined in the Program's General Terms and Conditions.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>How do I earn Rewards Tier Points? </strong>
+                        <div class="L316">
+                            <b class="M516">Explore Less than a variety of opportunities to earn Tier and Rewards points based on the following criteria:</b>
+                            <ul class="disc">
+                                <li>
+                                    At hotels of the Accor group participating in the accommodation program.
+                                </li>
+                                <li>
+                                    Registration for the ALL Meeting Planner offer. Organizers of meetings and/or events will be able to earn Tier and Rewards points at the conclusion of the event held at the 
+                                    participating Accor hotels offered by the offer.
+                                </li>
+                            </ul>
+                            <b class="M516">Only rewards can be earned based on the following criteria:</b>
+                            <ul class="disc">
+                                <li>
+                                    Use of « <a href="offers_all_member.html">Featured Property »</a>
+                                </li>
+                                <li>
+                                    Earning Points/Miles. ALL Rewards points can be credited directly to your account for purchases from select partners at Partners that can be converted to your account. 
+                                    You can also reserve products that partners reserve for their members.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How do I redeem my Rewards points with onefinestay?</strong>
+                        <div class="L316">
+                            <b class="M516">If you want to use your Rewards points with onefinestay, you need to convert them into gift cards that entitle you to discounts when renting premium hotels based on the 
+                                following criteria:</b>
+                            <ul class="disc">
+                                <li>
+                                    7,200 Rewards points = €100
+                                </li>
+                                <li>
+                                    18,000 Rewards points = €250
+                                </li>
+                                <li>
+                                    36,000 Rewards points = €500
+                                </li>
+                                <li>
+                                    72,000 Rewards points = €1000
+                                </li>
+                            </ul>
+                            <p>Once you have earned enough Rewards points, you can order your gift card by calling the onefinestay central reservations office. The reservation agent will explain what you 
+                                need to complete your order by paying for your Rewards points in your account. When you are ready to use your gift card to book your hotel, simply call the same central 
+                                reservations office and provide the gift card reference number and expiration date. The card is valid for 1 year. Can only be used once and must be valid at the time of booking 
+                                to take advantage of the par value matched discount. The voucher is non-cancelable and non-transferable.For more information on this offer and the telephone number of 
+                                onefinestay's central reservation office.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How many rooms can be credited to the ALL - Accor Live Limitless card for the same stay?</strong>
+                        <div class="L316">
+                            <b class="M516">You can earn up to two points on your ALL - Accor Live Limitless card, subject to the following conditions:</b>
+                            <ul class="disc">
+                                <li>
+                                    Accommodation at the same hotel, during the same period.
+                                </li>
+                                <li>
+                                    The member stays in one of the rooms mentioned above and the other rooms are not occupied by other members.
+                                </li>
+                                <li>
+                                    Full payment for 2 rooms when checking out from the hotel.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div> 
+        </div>
+    </section>
+
+    <footer class="alx">
+        <div>
+            <div>
+                <h2 class="E232">EXCLUSIVE OFFERS</h2>
+                <p class="L313">Subscribe to our newsletter and receive special offers</p>
+                <form action="subscribe_accor.html">
+                    <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
+                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                </form>
+            </div>
+            <div>
+                <h2 class="E232">NEED HELP ?</h2>
+                <span class="L313"> 
+                    <a href="map.html">Reservation Management</a>
+                    <a href="helpCenter.html">Support and Inquiries</a>
+                </span>
+                <mark class="btn alxL313">
+                    Do you want to ask for questions ?
+                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                </mark>
+                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="M510">
+            <strong>ABOUT US</strong> 
+            <ul>
+                <li><a href="https://group.accor.com" target="_blank">ACCOR GROUP</a></li>
+                <li><a href="https://group.accor.com/hotel-development" target="_blank">MANAGEMENT &amp; FRANCHISES</a></li>
+                <li><a href="https://careers.accor.com" target="_blank">CAREERS</a></li>
+                <li><a href="https://all.accor.com/ko/sustainable-development/index.shtml" target="_blank">SUSTAINABLE DEVELOPMENT</a></li>
+                <li><a href="https://all.accor.com/affiliate/index.en.shtml" target="_blank">AFFILIATE PROGRAM</a></li>
+            </ul>
+            <strong>CUSTOMER SERVICE</strong>
+            <ul>
+                <li><a href="terms_general.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookies.html">COOKIES</a></li>
+                <li>
+                    <span>STAY CONNECTED</span>
+                    <a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a>
+                    <a href="https://www.instagram.com/all/" target="_blank">instagram</a>
+                    <a href="https://twitter.com/all" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a>
+                    <em>tripadvisor</em>
+                </li>
+            </ul>
+            <b>STAY CONNECTED</b>
+            <ul>
+                <li><a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/all/" target="_blank">instagram</a></li>
+                <li><a href="https://twitter.com/all" target="_blank">twitter</a></li>
+                <li><a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a></li>
+                <li>tripadvisor</li>
+            </ul>
+            <div>
+                <h3 class="M510">MOBILE APPLICATIONS</h3>
+                <span>
+                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=ko&referrer=mat_click_id%3Dfa12181839af409492a34c2659248cb6-20190912-14012%26link_click_id%3D700704422598298176&mat_click_id=fa12181839af409492a34c2659248cb6-20190912-14012">Google Play</a>
+                    <a href="https://apps.apple.com/kr/app/accor-all-%ED%98%B8%ED%85%94-%EC%98%88%EC%95%BD/id489472613?mat_click_id=870794f4e4534593891b7c4ad7b95593-20190912-14012&mt=tr&referrer=mat_click_id%3D870794f4e4534593891b7c4ad7b95593-20190912-14012%26link_click_id%3D700704503900740601">App Store</a>
+                </span>
+            </div>
+            <div class="L311">
+                <p>
+                    *Prices start from, based on a one night stay in a standard double room for two guests. Supplementary services, breakfast and tourist/city tax are not included. Price observed on all.accor.com within the past 24 hours, for a one night stay within the next eight days, starting tomorrow. Price subject to the hotel conditions, period and availability. Depending on the country, these prices may not include taxes, may include VAT only or may include all taxes (VAT and tourist/city tax). When prices do not include all taxes, the relevant taxes (VAT and tourist/city tax) will be stated in the forthcoming stages of the reservation process. The price is only guaranteed at the time of reservation.
+                </p>
+                <span>** Note 2Available 24/7. Calls to this number will cost 13 pence per minute plus your providers access charge (only for Accor hotels).</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

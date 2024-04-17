@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/accor.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="alx">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="accor">
+                </a>
+            </h1>
+            <div>
+                <ul class="btn M512">
+                    <li><input class="alxM512" type="button" value="SIGN IN OR JOIN"></li>
+                    <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
+                    <li><a href="account_not_yet_member.html">JOIN IN ACCOR</a></li>
+                </ul> 
+                <div class="menuBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="M513">
+                <ul>
+                    <li>ACCOMMODATION</li>
+                    <li>LOYALTY PROGRAM</li>
+                    <li>OFFER &amp; PACKAGE</li>
+                    <li>DINING SERVICE</li>
+                    <li>BUSINESS EVENT</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="fnbPanel">
+            <div>
+                <div class="M513">
+                    <b class="mui">ACCOMMODATION</b>
+                    <ul class="R413">
+                        <li><a href="accom_hotel_Resort.html">Hotel &amp; Resorts</a></li>
+                        <li><a href="accom_aparthotels.html">Aparthotels &amp; Villas</a></li>
+                        <li><a href="accom_private_home.html">Luxury Private Home</a></li>
+                        <li><a href="accom_all_our_brand.html">ALL Accor Brand</a></li>
+                        <li><a href="map.html" class="mapBtn">FIND A HOTEL</a></li>
+                    </ul>
+                    <b class="mui">LOYALTY PROGRAM</b>
+                    <ul class="R413">
+                        <li><a href="loyalty.html">Discover the Program</a></li>
+                        <li><a href="loyalty_benefits.html">Benefits and Status</a></li>
+                        <li><a href="loyalty_earn_rewards.html">Earn Rewards Points</a></li>
+                        <li><a href="loyalty_use_rewards.html">Use Your Points</a></li>
+                    </ul>
+                    <b class="mui">OFFER &amp; PACKAGE</b>
+                    <ul class="R413">
+                        <li><a href="offers_all_member.html">For All Member</a></li>
+                        <li><a href="offers_latest.html">The Latest Offers</a></li>
+                        <li><a href="offers_all_year.html">All Year Offers</a></li>
+                    </ul>
+                    <b class="mui">DINING SERVICE</b>
+                    <ul class="R413">
+                        <li><a href="dining_world_of_flavours.html">World of Flavours</a></li>
+                        <li><a href="dining_service.html">Popular Cities</a></li>
+                        <li><a href="dining_service.html?scroll=diningSeasonFestive">Season Festive</a></li>
+                    </ul>
+                    <b class="mui">BUSINESS EVENT</b>
+                    <ul class="R413">
+                        <li><a href="business_tailored_events.html">Tailored Events</a></li>
+                        <li><a href="business_meeting_planning.html">Meeting Planning</a></li>
+                        <li><a href="detail_business_private.html">Private Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="reservation">
+                <form action="checkout.html">
+                    <fieldset>
+                        <legend class="M522">BOOK WITH ALL</legend>
+                        <div class="11">
+                            <ul>
+                                <li>
+                                    <label for="destination" class="M5">Where do you want to travel ?</label>
+                                    <input type="text" class="alxL311" id="destination" placeholder="Destination, hotel name">
+                                    <label for="travellers" class="M5">
+                                        Travellers
+                                        <small class="R410">Loyalty or subscription</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="travellers" placeholder="0000 0000 0000 0000">
+                                </li>
+                                <li>
+                                    <label for="check-in-date" class="M5">
+                                        Dates
+                                        <div>
+                                            <span>1</span>
+                                            <span>Night</span>
+                                        </div>
+                                    </label>
+                                    <div>
+                                        <input type="date" class="alxL311" id="check-in-date">
+                                        <span>-</span>
+                                        <input type="date" class="alxL311" id="check-out-date">
+                                    </div>
+                                    <label for="profTravellers" class="M5">
+                                        Professional Travellers
+                                        <small class="R410">Business client with contract</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="profTravellers" placeholder="Client code (SC, AC...)">
+                                </li>
+                                <li>
+                                    <div class="roomSelect">
+                                        <label for="roomCount" class="M5">Rooms &amp; Guests</label>
+                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect">
+                                            <ol>
+                                                <li>
+                                                    <label for="roomCount" class="L310">Room(s)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="roomCount">
+                                                        <span class="L3">Room(s)</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="adultsCount">
+                                                        <span class="L3">Adult Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="childCount">
+                                                        <span class="L3">Children Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <input type="reset" class="btn alxL310" value="Reset">
+                                        </div>
+                                    </div>
+                                    <label for="promotionSelect" class="M5">
+                                        Special Rates or Promotion Code
+                                        <small class="R410">Choose a rate</small>
+                                    </label>
+                                    <span class="selectComponent">
+                                        <select id="promotionSelect" class="alxL311">
+                                            <option>None</option>
+                                            <option>AAA / CAA Member</option>
+                                            <option>Military &amp; Veteran</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="submit" class="alxM513" value="RESERVE NOW">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="alx termsContainer privacyPolicy">
+        <h2 class="E234">
+            CUSTOMER PRIVACY POLICY
+        </h2>
+        <span class="L315">Accor  publishes and operates a website 
+            <a href="index.html">all.accor.com</a></span>
+        <ol class="accordionBox">
+            <li>
+                <strong>1. Accor Group's Commitment to Privacy</strong>
+                <p class="L316">
+                    Since you are our valued customer, it is our top priority to provide you with exceptional times and lodging throughout the world. We attach great importance to your satisfacti
+                    on with Accor Hotels and your trust in Accor Hotels. Therefore, as part of our commitment to meet your expectations (and ahead of the long-awaited GDPR - General 
+                    Regulations on Data Protection ;-) we have established our Customer Privacy Policy . This policy is our promise to you and explains how Group Accor Hotels uses your 
+                    personal information.                    
+                </p>
+            </li>
+            <li>
+                <strong>2. Coverage</strong>
+                <div class="L316">
+                    <b class="M516">In this Policy "Group Accor Hotels" means:</b>
+                    <ol class="decimal">
+                        <li>
+                            1. The company Accor SA, the parent company of the Accor Hotels group, has its registered office at 82 rue Henri Farman, 92130 Issy-les-Moulineaux, France.
+                        </li>
+                        <li>
+                            2. Affiliates and subsidiaries of Accor SA participating in the hotel activities of the Group Accor Hotels
+                        </li>
+                        <li>
+                            3. Hotels operated under the Group Accor Hotels brands worldwide (Raffles, Sofitel Legend, Fairmont, SO/, Sofitel, onefinestay, Rixos, MGallery by Sofitel, Pullman, Swissôtel, 
+                            25hours Hotels, Novotel, Mercure, Mama Shelter, Adagio, JO&JOE) , ibis, ibis Styles, ibis budget, Grand Mercure, The Sebel et hotelF1). This list is updated regularly and   can 
+                            be found at all.accor.com.
+                        </li>
+                    </ol>
+                    <b class="M516">Good to know!</b>
+                    <p>As you may not know, the hotel you have booked is probably not owned by an Accor SA subsidiary or affiliate. Most of the hotels operating under one of the group's Accor 
+                        hotel brands are actually franchised or “managed” agreements between the hotel's owner and Accor SA (or one of its affiliates worldwide). This is why, if you stay at one of 
+                        these hotels, your personal data is processed by Accor Sa and the hotel, each of which is responsible for the processing of the data for its own purposes. To summarize briefly:</p>
+                    <ul class="disc">
+                        <li>As Accor SA is responsible for managing the central reservation system, Accor SA may collect data necessary for accommodation arrangements at hotels operated by one of 
+                            the Accor hotel brands, and may transfer this data to the relevant hotels. Accor SA manages the global information of customers staying at hotels operated by one of the 
+                            Accor hotel brands. Accor SA, with the help of its subsidiary Pro-Fid SAS, also manages Le Club Accor's fairness program.</li>
+                        <li>All hotels process your information to manage their contractual relationship with you (billing, payment, reservation management, etc.), to conduct marketing activities and 
+                            to comply with their legal obligations. 
+                          </li>
+                    </ul>
+                    <p>Accor SA has transferred all of the principles set out in this Policy to all hotels operating under the Accor Hotels brand and their owners. We will do everything within our 
+                        capabilities to ensure that all hotels comply with applicable laws and this policy for the protection of personal information.</p>
+                </div>
+            </li>
+            <li>
+                <strong>3. Accor's ten principles for protecting personal information</strong>
+                <div class="L316">
+                    <p>In accordance with the regulations in force, in particular the General Regulations on data protection applicable in Europe, we have established the following ten principles 
+                        for the processing of your data within Group Accor Hotels.</p>
+                    <ol class="decimal">
+                        <li class="M516">1. Legality: We only use personal information in the following cases:
+                            <ul class="L3 dash 16">
+                                <li>
+                                    Where the consent of the parties  has been obtained or
+                                </li>
+                                <li>
+                                    Where it is necessary for the performance of the contract by the contracting party  ; or
+                                </li>
+                                <li>
+                                    Where necessary to comply with a legal obligation or
+                                </li>
+                                <li>
+                                    Where it is necessary to protect the vital interests of an individual or
+                                </li>
+                                <li>
+                                    Where we  have a legitimate interest in using your personal information and this use does not affect your freedoms and interests.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="M516">2. Loyalty: Let us explain how we use the personal information we collect about you</li>
+                        <li class="M516">3. Limitation of purpose and minimization of information: We collect only the personal information we actually need. If the same result can be achieved with less 
+                            personal information, we will only use that data.</li>
+                        <li class="M516">4. Transparency: We inform you about how we use your information.</li>
+                        <li class="M516">5. We facilitate the exercise of the rights of the parties: access to data, rectification and erasure of data and objection to data processing.</li>
+                        <li class="M516">6. Retention Limitations: We only retain personal information for a limited period of time.</li>
+                        <li class="M516">7. We maintain the security of your personal information, namely its integrity and confidentiality.</li>
+                        <li class="M516">8. If a third party needs to use your personal information, we guarantee the ability to protect your personal information.</li>
+                        <li class="M516">9. If personal data is to be transferred outside the European Union,  we guarantee that this transfer is subject to lawful regulations.</li>
+                        <li class="M516">10. If personal information is leaked (lost, stolen, damaged, unavailable, etc.), and  if the leak is likely to result in a high risk to the rights and freedoms of individuals, we 
+                            notify the relevant data protection authorities and the person concerned.
+                       </li>
+                    </ol>
+                    <div>If you have any questions about the Ten Principles of Accor Data Protection, please contact our Data Privacy Department. See <a href="privacy_policy.html" target="_blank">“Your Rights”</a> for more information about our 
+                        privacy department.</div>
+                </div>
+            </li>
+            <li>
+                <strong>4. What personal information do we collect?</strong>
+                <div class="L316">
+                    <b class="M516">At various times, we collect the following information about you or your companions:</b>
+                    <ul class="disc">
+                        <li>
+                            Contact details (e.g. last name, first name, phone number, email)
+                        </li>
+                        <li>
+                            Personal information (e.g. date of birth, nationality)
+                        </li>
+                        <li>
+                            Information relating to your child (e.g. name, date of birth, age)
+                        </li>
+                        <li>
+                            Your credit card number (for transactions and reservations)
+                        </li>
+                        <li>
+                            ID-related information (e.g. ID card, passport or driver's license)
+                        </li>
+                        <li>
+                            Accor fairness program or partner program (e.g. airline's fairness program) membership number and fairness program related activity information
+                        </li>
+                        <li>
+                            Your arrival and departure date
+                        </li>
+                        <li>
+                            Preferences and interests (e.g. smoking or non-smoking rooms, preferred floor, bed type, newspaper/magazine type, sports, cultural interests, food and beve
+                            rage 
+                            preferences, etc.).</li>
+                        <li>
+                            Your questions/comments during or after your stay at a hotel belonging to the Accor Hotels brand.
+                        </li>
+                        <li>
+                            Technical and location information generated in connection with your use of our Internet sites and applications.
+                        </li>
+                    </ul>
+                    <p>For those under the age of 16, the collection of information is limited to name, nationality and date of birth, which may only be provided to us by an adult. We appreciate that 
+                        you do not allow your children to transmit personal information to us without your authorization (especially over the Internet   ) . You can delete it. In order to satisfy your 
+                        request or provide you with appropriate services (e.g. certain dietary requirements), we may need to collect sensitive information such as race and ethnicity, political opinions, 
+                        religious and philosophical beliefs, trade union membership, health information or sexual orientation. Might be. In this case, we only collect the relevant information with 
+                        your explicit prior consent.</p>
+                </div>
+            </li>
+            <li>
+                <strong>5. When do we collect personal information?</strong>
+                <div class="L316">
+                    <b class="M516">Personal information may be collected in a number of ways, such as:</b>
+                    <ol class="decimal">
+                        <li class="R416">
+                            1. Hotel activities:
+                            <ul class="L3 disc 16">
+                                <li>
+                                    Room reservation
+                                </li>
+                                <li>
+                                    Check-in and payment
+                                </li>
+                                <li>
+                                    Services provided during hotel stay and stay
+                                </li>
+                                <li>
+                                    Eating/drinking at the hotel bar or hotel restaurant during your hotel stay
+                                </li>
+                                <li>
+                                    Requests, Protests and/or Disputes
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="R416">
+                            2. Participation in marketing programs or events:
+                            <ul class="L3 disc 16">
+                                <li>
+                                    Join the Fairness Program
+                                </li>
+                                <li>
+                                    Survey participation (e.g. customer satisfaction survey)
+                                </li>
+                                <li>
+                                    Online game or contest
+                                </li>
+                                <li>
+                                    Subscribe to the hotel newsletter to receive special offers and promotions via email.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="R416">
+                            3. Transfer of information to third parties:
+                            <ul class="L3 disc 16">
+                                <li>
+                                    Tour operators, travel agencies, GDS reservation systems, and others
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="R416">
+                            4. Internet activity:
+                            <ul class="L3 disc 16">
+                                <li>
+                                    Link to the Accor Hotels site (IP address, in accordance with our  policy regarding the use of cookies)
+                                </li>
+                                <li>
+                                    Online forms (online reservations, questionnaires, Accor hotels pages on social media, connecting devices using social media identification, interactive consultation or 
+                                    contact using “chatbots”).
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <strong>6. For what purpose do we collect personal information and how long do we keep it?</strong>
+                <div class="L316">
+                    <b class="M516">Purpose or Activity</b>
+                    <ul class="disc">
+                        <li>
+                            Complying with our obligations to our customers and users of the Accor SA booking site.
+                        </li>
+                        <li>
+                            Managing room and accommodation reservation requests, in particular preparing and storing legal documents in accordance with accounting standards.
+                        </li>
+                        <li>
+                            Manage your hotel stay: Room use management and monitoring service usage (telephone, bar, pay TV, etc.)
+                        </li>
+                        <li>
+                            To manage our relationship with you before, during and after your stay:
+                            <ol class="roman">
+                                <li>
+                                    (i) Fairness program management.
+                                </li>
+                                <li>
+                                    (ii)Provide details for customer database.
+                                </li>
+                                <li>
+                                    (iii) Market segmentation analysis based on booking history and customer travel preferences in order to send targeted communications, in accordance with the 
+                                    European ePrivacy Regulation 2002/58/EC, amended in 2009.
+                                </li>
+                                <li>
+                                    (iv) Predictions and expectations of future behavior of customers.
+                                </li>
+                                <li>
+                                    (v) Statistical and commercial performance development and execution reporting.
+                                </li>
+                                <li>
+                                    (vi) Providing contextual data to marketing tools. Occurs when a customer visits or makes a reservation on the group's Internet site.
+                                </li>
+                                <li>
+                                    (vii) Identify and manage preferences of new and returning customers.
+                                </li>
+                                <li>
+                                    (viii) In accordance with the European ePrivacy Regulation (2002/58/EC, amended in 2009), newsletters, promotions and offers from tourism, hotel services or Accor SA 
+                                    are sent to customers or contacted by phone.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Improving hotel services, in particular:
+                            <ol class="roman">
+                                <li>
+                                    (i) Personalized welcome service to improve service quality and guest experience.
+                                </li>
+                                <li>
+                                    (ii) Processing of your personal data in our customer marketing programs for marketing activities, brand promotion and to better understand your needs and wishes.
+                                </li>
+                                <li>
+                                    (iii) Adaptation of our products and services to better meet your needs.
+                                </li>
+                                <li>
+                                    (iv) Personalization of commercial specials and promotions we send you.
+                                </li>
+                                <li>
+                                    (v) Notification of special products and new services developed by Accor SA or its subsidiaries.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Use of trusted third parties to cross-check, analyze, and adapt your information collected during reservations or stays to specific devices to determine your interests and 
+                            guest profile or to send you personalized specials information.
+                        </li>
+                        <li>
+                            Improvement of Accor SA services, in particular in the following areas:
+                            <ol class="roman">
+                                <li>
+                                    (i) Conducting surveys and analyzing questionnaires and customer comments.
+                                </li>
+                                <li>
+                                    (ii) Claim/Protest Management.
+                                </li>
+                                <li>
+                                    (iii) Benefit from our Fairness Program.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            To ensure and enhance your use of the Accor SA website:
+                            <ol class="roman">
+                                <li>
+                                    (i) Improve search.
+                                </li>
+                                <li>
+                                    (ii) Support and maintenance.
+                                </li>
+                                <li>
+                                    (iii) Security and Fraud Prevention.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Internal management of a list of guests who have behaved inappropriately during their stay (aggressive and antisocial behavior, hotel contract violations, stay rule violations, 
+                            theft, damage and vandalism or payment incidents).
+                        </li>
+                    </ul>
+                    <b class="M516">Storage  restrictions</b>
+                    <ul class="disc">
+                        <li>
+                            If you are not a member of the Fairness Program, three years from the date you last interacted with us in any way.
+                        </li>
+                        <li>
+                            If you are a member of the Fairness Program, six years from the date you last interacted with us in any way.
+                        </li>
+                        <li>
+                            Six years from the date of closure of the case concerning the complaint or claim.
+                        </li>
+                        <li>
+                            90 days for analysis and control, then 2 years in a separate database for system enhancements.
+                        </li>
+                        <li>
+                            If registered in the case file, two years from the date of registration or until correction of circumstances that occurred earlier.
+                        </li>
+                        <li>
+                            During the period specified by applicable local law.
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>7. Conditions for third parties to access personal information</strong>
+                <div class="L316">
+                    <b class="M516">Accor Group continues its activities in various countries and is committed to providing the same services worldwide. Therefore, you must share personal information 
+                        with internal and external recipients under the following conditions:</b>
+                    <p>In particular, your stay, preferences, satisfaction and, where applicable, fairness programs are shared by hotels operating under the Group Accor Hotels brand. This information 
+                        is used to improve the quality of service of each hotel and your experience. In this regard, your information is jointly processed by Accor SA and the hotel. In order to protect 
+                        your rights and freedoms and legally pursue your interests, the obligations and responsibilities of Accor SA and each institution are converted into special agreements for joint 
+                        responsibility. You may object to the sharing of information between the hotel and Accor SA at any time by contacting the privacy department set out in “Your Rights”. You 
+                        can also inquire about the main contents of the joint liability agreement.</p>
+                    <b class="M516">We share your information with a limited number of staff and authorized services within Group Accor Hotels to provide you with the best possible experience at our 
+                        hotels. The following teams may have access to your information:</b>
+                    <ul class="disc">
+                        <li>
+                            Hotel staff
+                        </li>
+                        <li>
+                            Reservation staff using Accor booking tools
+                        </li>
+                        <li>
+                            IT department
+                        </li>
+                        <li>
+                            Commercial Partners and Marketing Services
+                        </li>
+                        <li>
+                            Medical services (if applicable)
+                        </li>
+                        <li>
+                            Appropriate staff within the group Accor Hoten for specific categories of personal information in general.
+                        </li>
+                    </ul>
+                    <b class="M516">We share your information with a limited number of staff and authorized services within Group Accor Hotels to provide you with the best possible experience at our 
+                        hotels. The following teams may have access to your information:</b>
+                    <ul class="disc">
+                        <li>
+                            External service providers: IT subcontractors, international call centers, banks, credit card issuers, external attorneys, shipping companies, printers.
+                        </li>
+                        <li>
+                            Commercial Partners: Accor SA may share certain personal information with Accor SA's commercial partners to enhance your profile, unless you have indicated otherwise to 
+                            our Data Protection Department. In these cases, third parties trusted by Accor SA may cross-examine, analyze and apply your information to specific devices. This data 
+                            processing enables Accor SA and its contractual partners to determine your interests and customer profile and to send you tailored special offer information.
+                        </li>
+                        <li>
+                            SNS Site: Accor SA has prepared a SNS login system so that you can be identified on the website without filling out the registration form. If you log in using this system, Accor 
+                            SA may access your SNS account (eg Facebook, LinkedIn, Google, Instagram, etc.) and use the other mentioned information while using the login system of the SNS. I 
+                            expressly agree that Accor SA may send your email address to SNS in order to verify that you are a user of that SNS and, where appropriate, to post tailored and relevant 
+                            advertisements to your account.
+                        </li>
+                    </ul>
+                    <b class="M516">We share your information with a limited number of staff and authorized services within Group Accor Hotels to provide you with the best possible experience at our 
+                        hotels. The following teams may have access to your information:</b>
+                </div>
+            </li>
+            <li>
+                <strong>8. Protection of personal information during cross-border transfers</strong>
+                <div class="L316">
+                    <p>For the purposes set out in Section 6 of this Policy, we may transfer your personal information to internal or external recipients residing in countries that protect personal 
+                        information at a different level. Consequently, in addition to implementing this Policy, Accor Hotels will take appropriate steps to ensure the secure transfer of your personal 
+                        data to Accor subsidiaries or external recipients in countries that protect personal information at a different level than the country in which it was collected. take action. As 
+                        part of these activities, in particular as part of the booking process, your information may be transferred to Accor hotels and hotels not operating under the brands of the 
+                        Accor group in countries outside the European Union, such as:</p>
+                    <p>Your data may be transferred to Accor Hotels in the following countries located outside the European Union, in particular for the processing of your booking: South Africa, 
+                        Algeria, Andorra, Saudi Arabia, Argentina, Australia, Bahrain, Benin, Burma, Brazil and Cambodia. , Cameroon, Canada, Chile, China, Colombia, Ivory Coast, Cuba, Egypt, United 
+                        Arab Emirates, Ecuador, USA, Fiji, Ghana, Guatemala, Equatorial Guinea, India, Indonesia, Israel, Japan, Jordan, Kuwait, Laos, Lebanon, Madagascar, Malaysia, Morocco, 
+                        Mauritius, Mexico, Monaco, Nigeria, New Zealand, Oman, Uzbekistan, Panama, Paraguay, Peru, Philippines, Qatar, Congo, Dominican Republic, Russia, Senegal, Singapore, 
+                        Switzerland, Chad, Thailand, Togo , Tunisia, Turkmenistan, Turkey, Ukraine, Uruguay, Vietnam, Yemen, Taiwan, Hong Kong, Macau and Dubai.</p>
+                    <p>Data flow to countries with different levels of privacy protection, except for information necessary for the processing of reservations, is regulated by standard contractual 
+                        clauses regulated by the European Commission. Data flows into the United States may be made to companies under Privacy Shield.</p>
+                </div>
+            </li>
+            <li>
+                <strong>9. Data Security</strong>
+                <p class="L316">Accor SA will, in accordance with applicable legal provisions (in particular Article 32 of the GDPR - General Regulation on Data Protection), take appropriate technical and 
+                    organizational measures to destroy, lose or destroy your personal data, whether the action is illegal or accidental. or from alteration, misuse and unauthorized access, 
+                    tampering or disclosure. To this end, we take technical measures (firewalls, etc.) and organizational measures (user ID/password systems, physical protection methods, etc.) to 
+                    ensure the ongoing confidentiality, integrity, availability and resiliency of our systems and processing services. When you submit your credit card information or make a 
+                    reservation, we use SSL (Secure Socket Layer) encryption technology to ensure secure transactions. Organizational measures ensure the safety of processing.</p>
+            </li>
+            <li>
+                <strong>10. Cookies</strong>
+                <p class="L316">Accor SA uses cookies or other trackers on our online booking site. To learn more about Accor's use of cookies or to set them, please see our cookie policy via the « Cookies » 
+                    link at the bottom of the site.</p>
+            </li>
+            <li>
+                <strong>11. Your rights</strong>
+                <div class="L316">
+                    <div>You have the right to access the information Accor SA has collected and access your personal information in accordance with applicable legal provisions. You also have the 
+                        right to rectify, delete or restrict your data. Further, you may specify guidelines regarding the portability or processing of your information after your death (hopefully later!). 
+                        You may also object to the processing of your information shared between Group Accor Hotels properties, in particular your stay, preferences and satisfaction. If you wish to 
+                        exercise any of your rights, please contact Accor Group's Data Protection Department directly by emailing <a href="mailto:data.privacy@AccorHotels.com">data.privacy@AccorHotels.com</a> or writing to the address below.</div>
+                    <p>We may need to verify your identity for the purposes of maintaining confidentiality, protecting your privacy and responding to your requests. Accordingly, you may be 
+                        required to attach a copy of official identification such as a driver's license or passport to your request. A black-and-white copy of the front side of one of the documents is 
+                        sufficient for this purpose.</p>
+                    <div>You may exercise your rights regarding the quality of personal information held and processed by the hotel. You must contact the hotel directly to exercise your rights. All 
+                        information for contacting the hotel can be found on the site <a href="https://ec.europa.eu/justice/article-29/structure/data-protection-authorities/index_en.htm" target="_blank">all.accor.com.</a> To proceed, we would appreciate it if you could contact the Privacy Department at the following 
+                        address: email <a href="mailto:data.privacy@accor.com">data.privacy@accor.com</a> or at the above address Finally, you can file a complaint with <a href="">the supervisory authority</a> and accorhotels.dpo (at) accor.com 
+                        Alternatively, you may contact Accor Hotels' Data Protection Officer in writing at the above postal address. If you reside in Australia or New Zealand and have a complaint 
+                        about our collection, use or disclosure of your personal information, you  may contact us at <a href="mailto:privacy.au@accor.com">privacy.au@accor.com.</a></div>
+                </div>
+            </li>
+            <li>
+                <strong>12. Update</strong>
+                <p class="L316">We may periodically change this policy. We therefore recommend that you refer to this policy regularly and in particular when booking our hotels.</p>
+            </li>
+            <li>
+                <strong>13. Questions and Contacts</strong>
+                <div class="L316">If you have any questions about the Accor Group Privacy Policy, please contact our Data Protection Department ( see <a href="privacy_policy.html">" Your Rights "</a> ).</div>
+            </li>
+        </ol>
+    </section>
+
+    <footer class="alx">
+        <div>
+            <div>
+                <h2 class="E232">EXCLUSIVE OFFERS</h2>
+                <p class="L313">Subscribe to our newsletter and receive special offers</p>
+                <form action="subscribe_accor.html">
+                    <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
+                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                </form>
+            </div>
+            <div>
+                <h2 class="E232">NEED HELP ?</h2>
+                <span class="L313"> 
+                    <a href="map.html">Reservation Management</a>
+                    <a href="helpCenter.html">Support and Inquiries</a>
+                </span>
+                <mark class="btn alxL313">
+                    Do you want to ask for questions ?
+                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                </mark>
+                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="M510">
+            <strong>ABOUT US</strong> 
+            <ul>
+                <li><a href="https://group.accor.com" target="_blank">ACCOR GROUP</a></li>
+                <li><a href="https://group.accor.com/hotel-development" target="_blank">MANAGEMENT &amp; FRANCHISES</a></li>
+                <li><a href="https://careers.accor.com" target="_blank">CAREERS</a></li>
+                <li><a href="https://all.accor.com/ko/sustainable-development/index.shtml" target="_blank">SUSTAINABLE DEVELOPMENT</a></li>
+                <li><a href="https://all.accor.com/affiliate/index.en.shtml" target="_blank">AFFILIATE PROGRAM</a></li>
+            </ul>
+            <strong>CUSTOMER SERVICE</strong>
+            <ul>
+                <li><a href="terms_general.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookies.html">COOKIES</a></li>
+                <li>
+                    <span>STAY CONNECTED</span>
+                    <a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a>
+                    <a href="https://www.instagram.com/all/" target="_blank">instagram</a>
+                    <a href="https://twitter.com/all" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a>
+                    <em>tripadvisor</em>
+                </li>
+            </ul>
+            <b>STAY CONNECTED</b>
+            <ul>
+                <li><a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/all/" target="_blank">instagram</a></li>
+                <li><a href="https://twitter.com/all" target="_blank">twitter</a></li>
+                <li><a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a></li>
+                <li>tripadvisor</li>
+            </ul>
+            <div>
+                <h3 class="M510">MOBILE APPLICATIONS</h3>
+                <span>
+                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=ko&referrer=mat_click_id%3Dfa12181839af409492a34c2659248cb6-20190912-14012%26link_click_id%3D700704422598298176&mat_click_id=fa12181839af409492a34c2659248cb6-20190912-14012">Google Play</a>
+                    <a href="https://apps.apple.com/kr/app/accor-all-%ED%98%B8%ED%85%94-%EC%98%88%EC%95%BD/id489472613?mat_click_id=870794f4e4534593891b7c4ad7b95593-20190912-14012&mt=tr&referrer=mat_click_id%3D870794f4e4534593891b7c4ad7b95593-20190912-14012%26link_click_id%3D700704503900740601">App Store</a>
+                </span>
+            </div>
+            <div class="L311">
+                <p>
+                    *Prices start from, based on a one night stay in a standard double room for two guests. Supplementary services, breakfast and tourist/city tax are not included. Price observed on all.accor.com within the past 24 hours, for a one night stay within the next eight days, starting tomorrow. Price subject to the hotel conditions, period and availability. Depending on the country, these prices may not include taxes, may include VAT only or may include all taxes (VAT and tourist/city tax). When prices do not include all taxes, the relevant taxes (VAT and tourist/city tax) will be stated in the forthcoming stages of the reservation process. The price is only guaranteed at the time of reservation.
+                </p>
+                <span>** Note 2Available 24/7. Calls to this number will cost 13 pence per minute plus your providers access charge (only for Accor hotels).</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

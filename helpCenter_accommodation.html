@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/accor.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="alx">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="accor">
+                </a>
+            </h1>
+            <div>
+                <ul class="btn M512">
+                    <li><input class="alxM512" type="button" value="SIGN IN OR JOIN"></li>
+                    <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
+                    <li><a href="account_not_yet_member.html">JOIN IN ACCOR</a></li>
+                </ul> 
+                <div class="menuBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="M513">
+                <ul>
+                    <li>ACCOMMODATION</li>
+                    <li>LOYALTY PROGRAM</li>
+                    <li>OFFER &amp; PACKAGE</li>
+                    <li>DINING SERVICE</li>
+                    <li>BUSINESS EVENT</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="fnbPanel">
+            <div>
+                <div class="M513">
+                    <b class="mui">ACCOMMODATION</b>
+                    <ul class="R413">
+                        <li><a href="accom_hotel_Resort.html">Hotel &amp; Resorts</a></li>
+                        <li><a href="accom_aparthotels.html">Aparthotels &amp; Villas</a></li>
+                        <li><a href="accom_private_home.html">Luxury Private Home</a></li>
+                        <li><a href="accom_all_our_brand.html">ALL Accor Brand</a></li>
+                        <li><a href="map.html" class="mapBtn">FIND A HOTEL</a></li>
+                    </ul>
+                    <b class="mui">LOYALTY PROGRAM</b>
+                    <ul class="R413">
+                        <li><a href="loyalty.html">Discover the Program</a></li>
+                        <li><a href="loyalty_benefits.html">Benefits and Status</a></li>
+                        <li><a href="loyalty_earn_rewards.html">Earn Rewards Points</a></li>
+                        <li><a href="loyalty_use_rewards.html">Use Your Points</a></li>
+                    </ul>
+                    <b class="mui">OFFER &amp; PACKAGE</b>
+                    <ul class="R413">
+                        <li><a href="offers_all_member.html">For All Member</a></li>
+                        <li><a href="offers_latest.html">The Latest Offers</a></li>
+                        <li><a href="offers_all_year.html">All Year Offers</a></li>
+                    </ul>
+                    <b class="mui">DINING SERVICE</b>
+                    <ul class="R413">
+                        <li><a href="dining_world_of_flavours.html">World of Flavours</a></li>
+                        <li><a href="dining_service.html">Popular Cities</a></li>
+                        <li><a href="dining_service.html?scroll=diningSeasonFestive">Season Festive</a></li>
+                    </ul>
+                    <b class="mui">BUSINESS EVENT</b>
+                    <ul class="R413">
+                        <li><a href="business_tailored_events.html">Tailored Events</a></li>
+                        <li><a href="business_meeting_planning.html">Meeting Planning</a></li>
+                        <li><a href="detail_business_private.html">Private Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="reservation">
+                <form action="checkout.html">
+                    <fieldset>
+                        <legend class="M522">BOOK WITH ALL</legend>
+                        <div class="11">
+                            <ul>
+                                <li>
+                                    <label for="destination" class="M5">Where do you want to travel ?</label>
+                                    <input type="text" class="alxL311" id="destination" placeholder="Destination, hotel name">
+                                    <label for="travellers" class="M5">
+                                        Travellers
+                                        <small class="R410">Loyalty or subscription</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="travellers" placeholder="0000 0000 0000 0000">
+                                </li>
+                                <li>
+                                    <label for="check-in-date" class="M5">
+                                        Dates
+                                        <div>
+                                            <span>1</span>
+                                            <span>Night</span>
+                                        </div>
+                                    </label>
+                                    <div>
+                                        <input type="date" class="alxL311" id="check-in-date">
+                                        <span>-</span>
+                                        <input type="date" class="alxL311" id="check-out-date">
+                                    </div>
+                                    <label for="profTravellers" class="M5">
+                                        Professional Travellers
+                                        <small class="R410">Business client with contract</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="profTravellers" placeholder="Client code (SC, AC...)">
+                                </li>
+                                <li>
+                                    <div class="roomSelect">
+                                        <label for="roomCount" class="M5">Rooms &amp; Guests</label>
+                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect">
+                                            <ol>
+                                                <li>
+                                                    <label for="roomCount" class="L310">Room(s)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="roomCount">
+                                                        <span class="L3">Room(s)</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="adultsCount">
+                                                        <span class="L3">Adult Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="childCount">
+                                                        <span class="L3">Children Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <input type="reset" class="btn alxL310" value="Reset">
+                                        </div>
+                                    </div>
+                                    <label for="promotionSelect" class="M5">
+                                        Special Rates or Promotion Code
+                                        <small class="R410">Choose a rate</small>
+                                    </label>
+                                    <span class="selectComponent">
+                                        <select id="promotionSelect" class="alxL311">
+                                            <option>None</option>
+                                            <option>AAA / CAA Member</option>
+                                            <option>Military &amp; Veteran</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="submit" class="alxM513" value="RESERVE NOW">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="alx helpFaqContainer accom">
+        <div class="helpMainField">
+            <h2 class="imgCenterTitle 55">Frequently Asked Questions</h2>
+            <div class="searchField">
+                <form>
+                    <input type="search" title="Search a keyword for questions or answers" placeholder="Search a keyword for questions or answers" class="alx L320">
+                    <input type="submit" value="SEARCH" class="alx L316">
+                </form>
+            </div>
+        </div>
+        <div>
+            <h3 class="E234">ACCOMMODAION</h3>
+            <div class="accordionBox">
+                <ul class="R422">
+                    <li data-tab="rsvnMethod">RESERVATION METHOD</li>
+                    <li data-tab="rsvnCompletion">RESERVATION COMPLETION</li>
+                    <li data-tab="lodgementCompletion">LODGEMENT COMPLETION</li>
+                </ul>
+                <ol id="rsvnMethod">
+                    <li>
+                        <strong>What payment methods do the hotel accept?</strong>
+                        <p class="L316">
+                            Accepted payment methods are country. Depends on the hotel, and the price of the reservation. To find out if the hotel you plan to stay in accepts your payment method, 
+                            contact the hotel directly. You can find contact information on the hotel's description page.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Why do I need a debit/credit card when making a reservation?</strong>
+                        <div class="L316">
+                            <p>
+                                Bank details are required to confirm your online reservation, unless special conditions are stated at the time of booking. Bank details are required to guarantee your 
+                                reservation. The hotel will charge the indicated amount within the hotel for the length of stay. For some reservations, prepayment is required (see terms and conditions of 
+                                the reservation rate) and will be paid directly by the hotel for all or part of the stay. The reservation system is secure, so you can provide information with confidence. If you do 
+                                not wish to guarantee your reservation by providing your banking information online, you may do so through <a href="helpCenter_call.html">the Reservations Department of Accor Hotels.</a>
+                            </p>
+                            <p>
+                                Enter the card  number (leave blanks), expiration date (the card used must be valid for the time of stay) and card security code in the relevant fields (secure input using SSL 
+                                password) unless special conditions or special rates apply. We require your bank details to secure reservations using a credit or postpaid card (Visa, MasterCard, American 
+                                Express, Diners Club, etc.). Upon arrival at the hotel, guests must have the credit/gift card used to guarantee or prepay the reservation. * For more information, please refer to 
+                                the Payment Methods in Article 16 « Payment » of the <a href="terms_general.html">Terms and Conditions of Sale.</a>
+                            </p>
+                        </div>    
+                    </li>
+                    <li>
+                        <strong>Are there any special programs or regulations for children?</strong>
+                        <p class="L316">Children under 18 years of age stay free of charge when sharing a room with an adult. This offer applies to all room rates. Additional charges may apply when booking 
+                            packages with other inclusions. Children's menus are available at all Fairmont properties. Children under 5 years old enjoy free children's menu, children 6-12 years old receive 
+                            50% discount. Babysitting is available at all Fairmont facilities. Some hotels also have children's programs and activities under the supervision of a representative. For specific 
+                            details, see Guest Services in the hotel profile.</p>
+                    </li>
+                    <li>
+                        <strong>How do I search and book hotels?</strong>
+                        <div class="L316">
+                            <b class="M516">How to search for a hotel</b>
+                            <ul class="disc">
+                                <li>
+                                    If you know the exact name of the city you are traveling to, you can enter the city name in « Find Hotel ». This way, you can quickly select your travel destination and hotels 
+                                    available for the dates you specify. You can find all hotels in full without specifying the dates of your stay. When you select a hotel, you will receive booking options.                                </li>
+                                <li>
+                                    You can find hotels close to your address or traveler location on a city map. You can also search using the map search tool.
+                                </li>
+                                <li>
+                                    All hotels are displayed regardless of availability, but rooms available for reservation are displayed.
+                                </li>
+                                <li>
+                                    Always a special rate for the day at the selected hotel.
+                                </li>
+                            </ul>
+                            <b class="M516">How to book a hotel</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Search for hotels at your destination that fit your selection criteria
+                                </li>
+                                <li>
+                                    2. Select one from our list of suggested hotels to view rates
+                                </li>
+                                <li>
+                                    3. Choose from a wide range of suggested rates to meet your needs, taking into account your specific selling conditions.
+                                </li>
+                                <li>
+                                    4. Add the necessary ancillary services, then check the details of the reservation, the total price and the corresponding terms of sale
+                                </li>
+                                <li>
+                                    5. Fill in your contact information and then create an account for faster access to our online booking service.
+                                </li>
+                                <li>
+                                    6. Enter your bank details to secure your reservation
+                                </li>
+                                <li>
+                                    7. Read and accept the Terms of Sale
+                                </li>
+                                <li>
+                                    8. Reservation confirm
+                                </li>
+                                <li>
+                                    9. You will receive an immediate acknowledgment of your reservation receipt.
+                                </li>
+                                <li>
+                                    10. The website and mobile services immediately send an email outlining the contractual benefits, services booked, price, terms of sale for the selected rate, date of 
+                                    reservation, and place of stay, acknowledging receipt of the customer's reservation.
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>My company has a special rate contract with a Fairmont hotel. Can I make a special rate reservation online?</strong>
+                        <p class="L316">Yes, a special promo code is required and must be entered when checking availability. To check if your code has already been confirmed or if you would like to request a code 
+                            assignment, please contact our corporate customer service team by email. Proof of eligibility is required when checking in at this rate.</p>
+                    </li>
+                    <li>
+                        <strong>How do I reserve a room for people with reduced mobility?</strong>
+                        <p class="L316">Look for this icon on the description page of your preferred hotel (this icon indicates that the hotel has rooms that give priority to guests with reduced mobility). To find 
+                            out which facilities are available, check the hotel's « Services » section, description of the room types available for reservation at the hotel, and/or contact the hotel directly.
+                            You may also contact the hotel directly to make a reservation and discuss your specific needs. You can find the hotel's direct contact information on the hotel's description 
+                            page.</p>
+                    </li>
+                    <li>
+                        <strong>What services does the hotel provide for people with disabilities?</strong>
+                        <p class="L316">All of our locations have rooms for guests with reduced mobility. Please contact the hotel directly to request a full list of available facilities and services and to confirm 
+                            availability.</p>
+                    </li>
+                    <li>
+                        <strong>Do you pay directly when you provide your credit/debit card number or at the hotel?</strong>
+                        <p class="L316">A credit/debit card can be used to guarantee the reservation of a room for the night. Except as otherwise stated in the Rate Description and Terms of Sale, there is no charge 
+                            and you pay for your stay at the hotel. Rates cannot be changed or cancelled, provided that the immediate rate is prepaid.</p>
+                    </li>
+                    <li>
+                        <strong>Payment declined. What happened and what should I do?</strong>
+                        <div class="L316">
+                            <b class="M516">There are many reasons that can cause payment declines. The most frequent reasons are:</b>
+                            <p>
+                                <small class="M516">3-D security approval</small>
+                                When making a reservation, you may be asked for a password (3-D Security) during the payment process. This verification ensures the card user's identity and payment. If the 
+                                verification process fails, your payment will be declined. If you cannot verify your identity (SMS not received, personal information forgotten, etc.), contact your bank.
+                            </p>
+                            <b class="M516">How can I make a reservation without using the 3-D Security Authorization process?</b>
+                            <p class="L316">
+                                When you enter your bank information, your bank will either approve or disapprove the transaction. Reasons for the bank's refusal to approve include insufficient balance, 
+                                exceeding payment limit, etc.
+                            </p>
+                            <b class="M516">How do I complete my reservation?</b>
+                            <ul class="disc">
+                                <li>
+                                    Renew your order after at least 24 hours or select a different payment card.
+                                </li>
+                                <li>
+                                    While making a reservation online, select the «Pay at Hotel» option.
+                                </li>
+                                <li>
+                                    Please inquire with the hotel you wish to stay at. Check the contact information listed on the description page.
+                                </li>
+                                <li>
+                                    Please contact our <a href="helpCenter_call.html">reservations department.</a>
+                                </li>
+                            </ul>
+                            <b class="M516">How do I make a reservation?</b>
+                            <ul class="disc">
+                                <li>
+                                    Please select another valid payment card for the dates of your stay.
+                                </li>
+                                <li>
+                                    While making a reservation online, select the «Pay at Hotel» option.
+                                </li>
+                                <li>
+                                    Please inquire with the hotel you wish to stay at. Check the contact information listed on the description page.
+                                </li>
+                                <li>
+                                    Please contact our <a href="helpCenter_call.html">reservations department.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Can I book multiple rooms in one reservation?</strong>
+                        <p class="L316">Individuals may reserve between 1 and 7 rooms per reservation at the discretion of the hotel selected through the website. To request a room connection, please specify the 
+                            following in the « Message to the hotel » field in the « Accommodation arrangements » section. (Note: Do not enter requests for extra rooms in the « Message to Hotel » field.)
+                            For group bookings, please visit the «Expert Resolution» section.</p>
+                    </li>
+                    <li>
+                        <strong>Can I purchase a hotel stay as a gift for a friend or family member or to mark a special occasion?</strong>
+                        <div class="L316">
+                            <p>If you are trying to pay for an existing reservation on behalf of a third party, please proceed by following the prepayment steps on the Fairmont, Raffles or Swissotel websites. 
+                                If a hotel, date or special price has not been confirmed, it is recommended to purchase a gift certificate.</p>
+                            <a href="https://www.buyatab.com/custom/fairmont/" target="_blank">Gift Card Fairmont</a>
+                            <a href="https://www.raffles.com/offers/gift-card/" target="_blank">Gift Card Raffles</a>
+                            <a href="https://www.raffles.com/offers/gift-card/" target="_blank">Gift Card Swissotel</a>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Is there a maximum number of people that can stay in each rooms?</strong>
+                        <p class="L316">The maximum number of guests depends on the room type. When searching for availability, please indicate the number of rooms you need and the total number of guests 
+                            per room. The maximum number of guests depends on the room type. The reservation system will display a selection of rooms based on selected criteria. Please read the 
+                            terms of sale for the proposed rates carefully so that you can choose the best option for you.</p>
+                    </li>
+                    <li>
+                        <strong>Does Fairmont offer a senior citizen discount?</strong>
+                        <div class="L316">Discounted rates apply to customers aged 55 and older. Rooms are subject to availability and rates vary by hotel, room type, season and number of people. For additional 
+                            details regarding rates and availability searches, please click <a href="https://www.fairmont.com/" target="_blank">here.</a></div>
+                    </li>
+                    <li>
+                        <strong>How do I make a reservation with member-only benefits?</strong>
+                        <p class="L316">If you are not yet a member of ALL, join the ALL, Accor Live Limitless loyalty program for free by clicking <a href="account_not_yet_member.html">here.</a></p>
+                    </li>
+                    <li>
+                        <strong>What is 3-D Security Certification?</strong>
+                        <div class="L316">
+                            <p>To prevent fraud, all.accor.com has implemented 3-D secure payments. There is no set structure for authentication and the authentication process will depend on several 
+                                variables depending on the hotel and payment card selected.</p>
+                            <b class="M516">Certification process:</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. After entering your bank information on the payment page, you will be taken to a page generated by your bank to verify the identity of the cardholder.
+                                </li>
+                                <li>
+                                    2. The approval process is different for each bank. You may ask for:
+                                    <ul class="dash">
+                                        <li>
+                                            Enter your date of birth
+                                        </li>
+                                        <li>
+                                            Enter the code received by SMS
+                                        </li>
+                                        <li>
+                                            Responses to personal questions
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    3. After verification by your bank, your payment is confirmed and you can check the status of your reservation on all.accor.com page
+                                </li>
+                            </ol>
+                            <b class="M516">SIf payment declined:</b>
+                            <ul class="disc">
+                                <li>
+                                    When ordering, please confirm that you can get 3-D security authorization via SMS (operator restrictions, international order, network support/maintenance coverage, etc.)
+                                </li>
+                                <li>
+                                    Check if your bank's contact phone number is still valid.
+                                </li>
+                            </ul>
+                            <b class="M516">How do I make a reservation when I cannot receive SMS?</b>
+                            <ul class="disc">
+                                <li>
+                                    While making a reservation online, select the «Pay at Hotel» option.
+                                </li>
+                                <li>
+                                    Please inquire with the hotel you wish to stay at. Check the contact information listed on the description page.
+                                </li>
+                                <li>
+                                    Please contact our <a href="helpCenter_call.html">reservations department.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Can I book a thalassotherapy treatment?</strong>
+                        <p class="L316">To learn about and book all the treatments available at your destination, visit the Thalassa Sea & Spa website. You can also contact our reservations department on 00 33 (0) 1 
+                            72 95 00 33 for more information about accommodations.</p>
+                    </li>
+                </ol>
+                <ol id="rsvnCompletion">
+                    <li>
+                        <strong>How do I view my reservation changes or cancellations?</strong>
+                        <div class="L316">
+                            <b class="M516">You made a reservation through our reservations department or website</b>
+                            <ol class="decimal">
+                                <li class="R4">
+                                    1. You want to try to view reservations
+                                    <ul class="L3 disc">
+                                        <li>
+                                            If you have an account, <a href="account_login.html">log in</a> and view your reservation in the «Manage My Booking» section
+                                        </li>
+                                        <li>
+                                            If you do not have an account, <a href="my_booking.html">view reservations</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="R4">
+                                    2. You want to change your reservation
+                                    <ul class="L3 disc">
+                                        <li>
+                                            Check availability at the hotel of your choice and then make changes to your reservation.
+                                        </li>
+                                        <li>
+                                            Via website : original reservation must be canceled before making a new reservation
+                                        </li>
+                                        <li>
+                                            Directly through the hotel : contact information available on the hotel description page
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="R4">
+                                    3. You want to cancel your reservation
+                                    <ul class="L3 disc">
+                                        <li>
+                                            If you have an account, <a href="acount_login.html">log in</a> and view your reservation in the « My Bookings » section
+                                        </li>
+                                        <li>
+                                            If you do not have an account, see <a href="my_booking.html">the View or Cancel Reservation</a> section
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <b class="M516">You made a reservation through travel agent</b>
+                            <p class="L316">If you have booked directly through a travel agent, please contact the travel agent that made the reservation for any change or cancellation requests.</p>
+                            <b class="M516">You made reservations via Fairmont, Raffles or Swissotel websites</b>
+                            <p class="L316">To view or cancel your reservation, log in to your account. You can also view or cancel this reservation directly on the brand's website.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>I need to cancel my reservation. Can I get a refund?</strong>
+                        <div class="L316">If your plans change, you may cancel your reservation if cancellation is permitted under the terms of sale and cancellation. In other words, for all or part of the stay, you will be 
+                            charged for any non-cancelled reservations in accordance with the terms of sale of the rate booked. Depending on the rate, cancellation of the reservation may be subject to 
+                            terms and conditions. Look for the terms and conditions of sale related to the rate in the section «Cancellation Deadline». There are no refunds for prepaid reservations. For 
+                            more information, please see our <a href="terms_general.html">Terms of Sale</a>.</div>
+
+                    </li>
+                    <li>
+                        <strong>If I made a reservation online, can I change or cancel my reservation by contacting the hotel directly?</strong>
+                        <p class="L316">You can change or cancel your reservation online by contacting the hotel directly. However, as some fares are subject to change in price or cancellation under certain 
+                            conditions, you should first consult the terms of sale for the reserved fare. Please check these terms and conditions to see if you can change your reservation by contacting 
+                            the hotel.</p>
+                    </li>
+                    <li>
+                        <strong>How can I check if my reservation has been confirmed?</strong>
+                        <p class="L316">If you do not receive your reservation email or reservation number, please contact the hotel to confirm that your reservation has been confirmed. If you have an 8-character 
+                            reservation number, go to the Manage My Bookings section and enter your reservation number, last name and arrival date to access your reservation.</p>
+                    </li>
+                    <li>
+                        <strong>How do I use « Online Check-in / Express Check-out »?</strong>
+                        <div class="L316">
+                            <b class="M516">« Online check-in / fast check-out » allows ALL., Accor Live Limitless members to save time and make it even easier.</b>
+                            <ul class="disc">
+                                <li>
+                                    Before arriving at the hotel, you will receive an email to complete your online check-in. Information can be entered in advance using the ALL card. Upon arrival at the hotel, 
+                                    your keys are ready and you receive a personalized welcome.
+                                </li>
+                                <li>
+                                    Check-out time is further shortened. No waiting, just return the key, and you'll receive your bill via email.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>When can I enter my room?</strong>
+                        <p class="L316">You will find this information in the Conditions of Sale for the rate in the « Check-in time » section when making your reservation. Check-out time varies by hotel. Some hotels 
+                            offer early check-in so you can get to your room early. Reservations can be made online through the website. Simply select this service before confirming your reservation to 
+                            use it. This service is a payment service and is subject to the hotel's rate conditions.</p>
+                    </li>
+                    <li>
+                        <strong>I was charged multiple times for the same reservation. What should I do?</strong>
+                        <p class="L316">Contact a customer service representative who will assist you with your request by verifying all necessary points.</p>
+                    </li>
+                    <li>
+                        <strong>What is the Best Price Guarantee?</strong>
+                        <div class="L316">
+                            <p>If you book an Accor Group hotel on one of our websites and within 24 hours find that the same offer is offered at a lower rate on another website for the same hotel, we will 
+                                give you an additional discount of 10%.</p>
+                            <b class="M516">You made a reservation through our reservations department or website</b>
+                            <ul class="disc">
+                                <li>
+                                    Book a hotel on one of the Accor Group websites with the lowest rate and receive a booking confirmation number.
+                                </li>
+                                <li>
+                                    If you find a lower price for the same product on another website within the next 24 hours (same hotel, same date, same room type, same sale conditions, etc.), fill out the 
+                                    online form on the website and attach the required supporting documents to get the lowest price . Apply for coverage.
+                                </li>
+                                <li>
+                                    After verification of the submitted information, an additional 10% discount will be applied to the lowest confirmed rate.
+                                </li>
+                                <li>
+                                    You can stay at the lowest rate guaranteed for your room.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Can I request an extension of room occupancy on the day of departure?</strong>
+                        <p class="L316">Please refer to the « Check-out time » section of the terms of sale of the reserved rate to find out what time the room must be vacated. Some hotels offer late check-out to 
+                            extend your stay. Reservations can be made online through the website. Simply select this service before confirming your reservation to use it.This service is a payment 
+                            service and is subject to the hotel's rate conditions.</p>
+                    </li>
+                    <li>
+                        <strong>I did not receive a confirmation number while completing my reservation.</strong>
+                        <div class="L316">
+                            <b class="M516">There are four ways to get your reservation confirmation number:</b>
+                            <ul class="disc">
+                                <li>
+                                    Please check your inbox to make sure you received an email confirming your reservation. The reservation number contains 8 characters.
+                                </li>
+                                <li>
+                                    <a href="account_signin.html">Click Sign In</a> to go to your profile and email us again.
+                                </li>
+                                <li>
+                                    Please contact the hotel directly to confirm your reservation details and number and obtain a confirmation number. You can find contact information on the hotel's 
+                                    description page.
+                                </li>
+                                <li>
+                                    You can also contact our <a href="helpCenter_call.html">reservations department.</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How do I receive a new booking confirmation email?</strong>
+                        <ul class="disc">
+                            <li class="L316">
+                                If you have an account, log in and check your reservation in the «Manage My Booking» section, then resend your email.
+                            </li>
+                            <li class="L316">
+                                If you do not have an account, please go to <a href="account_login.html">Login to</a> resend your booking confirmation email.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Until when will the hotel reserve my room?</strong>
+                        <p class="L316">In case of late arrivals, we can guarantee your reservation with your credit/debit card number. This commitment guarantees reservations for rooms after the hours stipulated 
+                            in the brand's policies. Likewise, it means that the hotel promises to hold this reservation until noon the next day. If you do not arrive at the hotel and do not cancel your 
+                            reservation, the first night will be charged.</p>
+                    </li>
+                    <li>
+                        <strong>What are the hotel reception hours?</strong>
+                        <p class="L316">For information about your hotel's reception opening hours, please refer to the « Hotel Accessibility » section of « Services and Leisure Activities » on the description page of 
+                            the hotel you are trying to book.</p>
+                    </li>
+                    <li>
+                        <strong>Can I rent a car for my next trip?</strong>
+                        <div class="L316">Go to the « Arrange your stay » section and select <a href="https://all.accor.com/loyalty-program/partners/europcar/index.en.shtml" target="_blank">Car rental</a>. You can book a car with a Europcar partner for the period you need and benefit from preferential rates.</div>
+                    </li>
+                    <li>
+                        <strong>When can I cancel my online reservation?</strong>
+                        <p class="L316">To find out when you can cancel your most recent reservation, see the terms and conditions for your reservation. These terms and conditions may vary by brand, hotel or rate 
+                            booked. Depending on the rate, cancellation of reservations may be subject to terms and conditions. Please check the terms and conditions of sale related to the rate 
+                            reserved.</p>
+                    </li>
+                    <li>
+                        <strong>What are the terms of sale?</strong>
+                        <ul class="disc">
+                            <li class="L316">
+                                As displayed on the website and mobile apps with the Accor logo, Accor (Raffles, Fairmont, Sofitel Legend, So Sofitel, Sofitel, MGallery, Pullman, Swissotel, Grand Mercure, 
+                                Sebel, Novotel, Mercure, Mama Shelter, Adagio, ibis, ibis Styles, ibis budget, hotelF1, Thalassa Sea &amp; Spa and Orbis Hotels), reservations are subject exclusively to the <a href="terms_general.html">Terms 
+                                and Conditions of Sale.</a>
+                            </li>
+                            <li class="L316">
+                                Some terms and conditions vary by brand and rate. Once you have made your reservation, you will have access to these Terms and Conditions once included in your 
+                                reservation confirmation.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <ol id="lodgementCompletion">
+                    <li>
+                        <strong>If a dispute that arises during your stay is not resolved amicably, I would like to contact an arbitrator.</strong>
+                        <p class="L316">Customers should first contact their customer service representative or hotel to resolve the dispute amicably. If the response is negative or if there is no reply 
+                            within 60 days of filing a claim, the customer may contact the arbitrator. We are travel and tourism mediators for Accor Group hotels, hotels managed by 
+                            AccorHotels Group, or franchised hotels that have decided to have resources for mediators for travel and tourism. The customer may contact the arbitrator 
+                            within 12 months of filing the first claim.</p>
+                    </li>
+                    <li>
+                        <strong>I want to keep my thoughts unique during my stay.</strong>
+                        <p class="L316">Your feedback is important to us to improve our service quality, so please share your experience. Please fill out the contact form so we can hear from you as soon as possible.</p>
+                    </li>
+                    <li>
+                        <strong>I left something at the hotel.</strong>
+                        <p class="L316">If you leave personal items at the hotel, please contact the relevant hotel directly. You can find contact information on the hotel's description page.</p>
+                    </li>
+                </ol>
+            </div> 
+        </div>
+    </section>
+
+    <footer class="alx">
+        <div>
+            <div>
+                <h2 class="E232">EXCLUSIVE OFFERS</h2>
+                <p class="L313">Subscribe to our newsletter and receive special offers</p>
+                <form action="subscribe_accor.html">
+                    <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
+                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                </form>
+            </div>
+            <div>
+                <h2 class="E232">NEED HELP ?</h2>
+                <span class="L313"> 
+                    <a href="map.html">Reservation Management</a>
+                    <a href="helpCenter.html">Support and Inquiries</a>
+                </span>
+                <mark class="btn alxL313">
+                    Do you want to ask for questions ?
+                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                </mark>
+                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="M510">
+            <strong>ABOUT US</strong> 
+            <ul>
+                <li><a href="https://group.accor.com" target="_blank">ACCOR GROUP</a></li>
+                <li><a href="https://group.accor.com/hotel-development" target="_blank">MANAGEMENT &amp; FRANCHISES</a></li>
+                <li><a href="https://careers.accor.com" target="_blank">CAREERS</a></li>
+                <li><a href="https://all.accor.com/ko/sustainable-development/index.shtml" target="_blank">SUSTAINABLE DEVELOPMENT</a></li>
+                <li><a href="https://all.accor.com/affiliate/index.en.shtml" target="_blank">AFFILIATE PROGRAM</a></li>
+            </ul>
+            <strong>CUSTOMER SERVICE</strong>
+            <ul>
+                <li><a href="terms_general.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookies.html">COOKIES</a></li>
+                <li>
+                    <span>STAY CONNECTED</span>
+                    <a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a>
+                    <a href="https://www.instagram.com/all/" target="_blank">instagram</a>
+                    <a href="https://twitter.com/all" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a>
+                    <em>tripadvisor</em>
+                </li>
+            </ul>
+            <b>STAY CONNECTED</b>
+            <ul>
+                <li><a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/all/" target="_blank">instagram</a></li>
+                <li><a href="https://twitter.com/all" target="_blank">twitter</a></li>
+                <li><a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a></li>
+                <li>tripadvisor</li>
+            </ul>
+            <div>
+                <h3 class="M510">MOBILE APPLICATIONS</h3>
+                <span>
+                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=ko&referrer=mat_click_id%3Dfa12181839af409492a34c2659248cb6-20190912-14012%26link_click_id%3D700704422598298176&mat_click_id=fa12181839af409492a34c2659248cb6-20190912-14012">Google Play</a>
+                    <a href="https://apps.apple.com/kr/app/accor-all-%ED%98%B8%ED%85%94-%EC%98%88%EC%95%BD/id489472613?mat_click_id=870794f4e4534593891b7c4ad7b95593-20190912-14012&mt=tr&referrer=mat_click_id%3D870794f4e4534593891b7c4ad7b95593-20190912-14012%26link_click_id%3D700704503900740601">App Store</a>
+                </span>
+            </div>
+            <div class="L311">
+                <p>
+                    *Prices start from, based on a one night stay in a standard double room for two guests. Supplementary services, breakfast and tourist/city tax are not included. Price observed on all.accor.com within the past 24 hours, for a one night stay within the next eight days, starting tomorrow. Price subject to the hotel conditions, period and availability. Depending on the country, these prices may not include taxes, may include VAT only or may include all taxes (VAT and tourist/city tax). When prices do not include all taxes, the relevant taxes (VAT and tourist/city tax) will be stated in the forthcoming stages of the reservation process. The price is only guaranteed at the time of reservation.
+                </p>
+                <span>** Note 2Available 24/7. Calls to this number will cost 13 pence per minute plus your providers access charge (only for Accor hotels).</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

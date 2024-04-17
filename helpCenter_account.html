@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/accor.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="alx">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="accor">
+                </a>
+            </h1>
+            <div>
+                <ul class="btn M512">
+                    <li><input class="alxM512" type="button" value="SIGN IN OR JOIN"></li>
+                    <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
+                    <li><a href="account_not_yet_member.html">JOIN IN ACCOR</a></li>
+                </ul> 
+                <div class="menuBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="M513">
+                <ul>
+                    <li>ACCOMMODATION</li>
+                    <li>LOYALTY PROGRAM</li>
+                    <li>OFFER &amp; PACKAGE</li>
+                    <li>DINING SERVICE</li>
+                    <li>BUSINESS EVENT</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="fnbPanel">
+            <div>
+                <div class="M513">
+                    <b class="mui">ACCOMMODATION</b>
+                    <ul class="R413">
+                        <li><a href="accom_hotel_Resort.html">Hotel &amp; Resorts</a></li>
+                        <li><a href="accom_aparthotels.html">Aparthotels &amp; Villas</a></li>
+                        <li><a href="accom_private_home.html">Luxury Private Home</a></li>
+                        <li><a href="accom_all_our_brand.html">ALL Accor Brand</a></li>
+                        <li><a href="map.html" class="mapBtn">FIND A HOTEL</a></li>
+                    </ul>
+                    <b class="mui">LOYALTY PROGRAM</b>
+                    <ul class="R413">
+                        <li><a href="loyalty.html">Discover the Program</a></li>
+                        <li><a href="loyalty_benefits.html">Benefits and Status</a></li>
+                        <li><a href="loyalty_earn_rewards.html">Earn Rewards Points</a></li>
+                        <li><a href="loyalty_use_rewards.html">Use Your Points</a></li>
+                    </ul>
+                    <b class="mui">OFFER &amp; PACKAGE</b>
+                    <ul class="R413">
+                        <li><a href="offers_all_member.html">For All Member</a></li>
+                        <li><a href="offers_latest.html">The Latest Offers</a></li>
+                        <li><a href="offers_all_year.html">All Year Offers</a></li>
+                    </ul>
+                    <b class="mui">DINING SERVICE</b>
+                    <ul class="R413">
+                        <li><a href="dining_world_of_flavours.html">World of Flavours</a></li>
+                        <li><a href="dining_service.html">Popular Cities</a></li>
+                        <li><a href="dining_service.html?scroll=diningSeasonFestive">Season Festive</a></li>
+                    </ul>
+                    <b class="mui">BUSINESS EVENT</b>
+                    <ul class="R413">
+                        <li><a href="business_tailored_events.html">Tailored Events</a></li>
+                        <li><a href="business_meeting_planning.html">Meeting Planning</a></li>
+                        <li><a href="detail_business_private.html">Private Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="reservation">
+                <form action="checkout.html">
+                    <fieldset>
+                        <legend class="M522">BOOK WITH ALL</legend>
+                        <div class="11">
+                            <ul>
+                                <li>
+                                    <label for="destination" class="M5">Where do you want to travel ?</label>
+                                    <input type="text" class="alxL311" id="destination" placeholder="Destination, hotel name">
+                                    <label for="travellers" class="M5">
+                                        Travellers
+                                        <small class="R410">Loyalty or subscription</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="travellers" placeholder="0000 0000 0000 0000">
+                                </li>
+                                <li>
+                                    <label for="check-in-date" class="M5">
+                                        Dates
+                                        <div>
+                                            <span>1</span>
+                                            <span>Night</span>
+                                        </div>
+                                    </label>
+                                    <div>
+                                        <input type="date" class="alxL311" id="check-in-date">
+                                        <span>-</span>
+                                        <input type="date" class="alxL311" id="check-out-date">
+                                    </div>
+                                    <label for="profTravellers" class="M5">
+                                        Professional Travellers
+                                        <small class="R410">Business client with contract</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="profTravellers" placeholder="Client code (SC, AC...)">
+                                </li>
+                                <li>
+                                    <div class="roomSelect">
+                                        <label for="roomCount" class="M5">Rooms &amp; Guests</label>
+                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect">
+                                            <ol>
+                                                <li>
+                                                    <label for="roomCount" class="L310">Room(s)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="roomCount">
+                                                        <span class="L3">Room(s)</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="adultsCount">
+                                                        <span class="L3">Adult Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="childCount">
+                                                        <span class="L3">Children Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <input type="reset" class="btn alxL310" value="Reset">
+                                        </div>
+                                    </div>
+                                    <label for="promotionSelect" class="M5">
+                                        Special Rates or Promotion Code
+                                        <small class="R410">Choose a rate</small>
+                                    </label>
+                                    <span class="selectComponent">
+                                        <select id="promotionSelect" class="alxL311">
+                                            <option>None</option>
+                                            <option>AAA / CAA Member</option>
+                                            <option>Military &amp; Veteran</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="submit" class="alxM513" value="RESERVE NOW">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="alx helpFaqContainer account">
+        <div class="helpMainField">
+            <h2 class="imgCenterTitle 55">HOW CAN WE HELP YOU?</h2>
+            <div class="searchField">
+                <form>
+                    <input type="search" title="Search a keyword for questions or answers" placeholder="Search a keyword for questions or answers" class="alx L320">
+                    <input type="submit" value="SEARCH" class="L316">
+                </form>
+            </div>
+        </div>
+        <div>
+            <h3 class="E234">ACCOUNT</h3>
+            <div class="accordionBox">
+                <strong class="R422">MANAGE MY ACCOUNT &amp; PROBLEMS WITH MY ACCOUNT</strong>
+                <ol>
+                    <li>
+                        <strong>How do I update my personal information in my account?</strong>
+                        <div class="L316">
+                            <b class="M516">To update your personal information, please proceed as follows:</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Click «Login» to access your account
+                                    <ul class="dash">
+                                        <li>
+                                            on the<a href="index.html">all.accor.com</a> website
+                                        </li>
+                                        <li>
+                                            in the <a href="https://all.accor.com/ko/mobile/mobile-app.shtml" target="_blank">all.accor.com mobile application</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    2. Enter your email address or ALL - Accor Live Limitless card number and password
+                                </li>
+                                <li>
+                                    3. Click on « My Profile » section
+                                </li>
+                                <li>
+                                    4. Go to « My Details »
+                                </li>
+                                <li>
+                                    5. After making any changes you want to make, click « Save »
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>I want to cancel my membership. How do I cancel my membership?</strong>
+                        <div class="L316">
+                            <b class="M516">You may cancel your ALL - Accor Live Limitless account at any time.</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Go to « Support Page » on <a href="index.html">all.accor.com</a>
+                                </li>
+                                <li>
+                                    2. In the top right corner, click «Login» to enter your email address or ALL card number and password.
+                                </li>
+                                <li>
+                                    3. « ALL » Choose a subject for your request
+                                </li>
+                                <li>
+                                    4. « Other base oils » Choose a reason
+                                </li>
+                                <li>
+                                    5. If desired, state the reason for termination in « Comments »
+                                </li>
+                                <li>
+                                    6. Complete your request by clicking « Send Request »
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>I can't log in to my account. What should I do?</strong>
+                        <ul class="L3 disc 16">
+                            <li>
+                                Make sure you entered your email address correctly.
+                            </li>
+                            <li>
+                                Make sure the email address you entered is the same one you used when setting up your account.
+                            </li>
+                            <li>
+                                Make sure the password you enter is the same as the password you used to set up your account (if your password is different, click <a href="account_find_password">«Forgotten your password?»</a> )
+                            </li>
+                            <li>
+                                Make sure the Accor mobile app or website is not under maintenance. At the top of the «Contact Us» page, check for downtime-related messages.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>How do I find my ALL - Accor Live Limitless card number?</strong>
+                        <div class="L316">
+                            <b class="M516">How to find your ALL - Accor Live Limitless card number</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Access your « Account » via <a href="index.html">all.accor.com</a>
+                                </li>
+                                <li>
+                                    2. Enter your email address and password
+                                </li>
+                                <li>
+                                    3. Click « My Loyalty Area and Subscription Account » then « My Loyalty Card »
+                                </li>
+                                <li>
+                                    4. Card number displayed
+                                </li>
+                            </ol>
+                            <span>* If you have not yet received or lost your card number, you can redeem your card in digital form on the all.accor.com app via your phone or tablet.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How do I combine my cards into one account?</strong>
+                        <div class="L316">
+                            <b class="M516">If you have multiple ALL - Accor Live Limitless cards registered under the same name, you can request to combine them into one account.</b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Go to « Support Page » on <a href="index.html">all.accor.com</a>
+                                </li>
+                                <li>
+                                    2. In the top right corner, click «Login» to enter your email address or ALL card number and password.
+                                </li>
+                                <li>
+                                    3. After logging in, go back to the center of the web page and fill out the online contact web form.
+                                </li>
+                                <li>
+                                    4. « ALL » Choose a subject for your request.
+                                </li>
+                                <li>
+                                    5. « Request to combine multiple cards » Choose a reason.
+                                </li>
+                                <li>
+                                    6. In "Comments", specify how many cards you want to incorporate, specify the cards you want to keep and the email addresses associated with those cards.
+                                </li>
+                                <li>
+                                    7. Complete your request by clicking « Send Request »
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>My membership card is about to expire. Is the ALL - Accor Live Limitless loyalty card still valid?</strong>
+                        <ul class="L3 disc 16">
+                            <li>
+                                Loyalty or membership cards are separate.
+                            </li>
+                            <li>
+                                Membership cards have an expiration date.
+                            </li>
+                            <li>
+                                Loyalty cards are valid for life (Silver, Gold and Platinum tier levels have an expiration date).
+                            </li>
+                            <li>
+                                Therefore, if your membership card expires, your ALL - Accor Live Limitless loyalty card will remain valid.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>How do I create and access an account?</strong>
+                        <ul class="L316">
+                            <li>
+                                <b class="M516">You can create and access your account from the Accor mobile app or website.</b>
+                                <small class="R416">Create an account</small>
+                                <ol class="decimal">
+                                    <li>
+                                        1. Go to «Create Account» on the website <a href="index.html">all.accor.com</a>
+                                    </li>
+                                    <li>
+                                        2. Please enter the following:
+                                        <ul class="dash">
+                                            <li>
+                                                Email Address
+                                            </li>
+                                            <li>
+                                                Password
+                                            </li>
+                                            <li>
+                                                Title
+                                            </li>
+                                            <li>
+                                                Castls
+                                            </li>
+                                            <li>
+                                                Name
+                                            </li>
+                                            <li>
+                                                Nation
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        3. Leave the checkbox selected to join the free ALL loyalty program.
+                                    </li>
+                                    <li>
+                                        4. Click «Create Account» to confirm.
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <b class="M516">Access your account</b>
+                                <ol class="decimal">
+                                    <li>
+                                        1. Go to «Login».
+                                        <ul class="dash">
+                                            <li>
+                                                on the<a href="index.html">all.accor.com</a> website
+                                            </li>
+                                            <li>
+                                                in the <a href="https://all.accor.com/ko/mobile/mobile-app.shtml" target="_blank">all.accor.com mobile application</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        2. Enter youe email address or ALL card number and password.
+                                    </li>
+                                    <li>
+                                        3. Click «Login» to confirm.
+                                    </li>
+                                    <li>
+                                        4. Access your account by clicking on the icon at the top of the screen or by clicking <<My Account>> in the sub-menu that appears when you hover your 
+                                        mouse over it.
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>I forgot my password. How do I find or reset my password?</strong>
+                        <div class="L316">
+                            <b class="M516">on the website</b>
+                            <ul class="disc">
+                                <li>
+                                    Go to the « <a href="account_login.html">Login</a> » section.
+                                </li>
+                                <li>
+                                    « <a href="account_find_password.html">Forgot your password?</a> » click
+                                </li>
+                                <li>
+                                    Enter your email address, then click «Confirm»
+                                </li>
+                            </ul>
+                            <b class="M516">on our mobile site/mobile application</b>
+                            <ul class="disc">
+                                <li>
+                                    Click on « My Account » section
+                                </li>
+                                <li>
+                                    Go to My Profile.
+                                </li>
+                                <li>
+                                    « <a href="account_find_password.html">Forgot your password?</a> click
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How do I register a bank card to my account?</strong>
+                        <div class="L316">
+                            <b class="M516">Registering one or more bank cards to your account will make future bookings on the website or Accor mobile app even easier.</b>
+                            <small class="R416">To register a bank card to your account, please proceed as follows:</small>
+                            <ol class="decimal">
+                                <li>
+                                    1. Log in to your account.
+                                    <ul class="dash">
+                                        <li>
+                                            on the website <a href="index.html">all.accor.com</a>
+                                        </li>
+                                        <li>
+                                            In the <a href="https://all.accor.com/ko/mobile/mobile-app.shtml" target="_blank">Accor mobile app</a>
+                                        </li>
+                                        <li>
+                                            In the Accor tablet app
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    2. Access your account by clicking on the icon at the top of the screen or by clicking « My Account » in the sub-menu that appears when you hover your mouse over it.
+                                </li>
+                                <li>
+                                    3. Enter your bank details in the « Bank Card » section.
+                                    <ul class="dash">
+                                        <li>
+                                            Cardholder name
+                                        </li>
+                                        <li>
+                                            Card number
+                                        </li>
+                                        <li>
+                                            Expiration period
+                                        </li>
+                                        <li>
+                                            Security Code (3 digits on the back of the card, 4 digits for American Express) This information is used to verify that the card is a valid card and is not stored.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    4. Click « Save » to confirm.
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>What information is in my account?</strong>
+                        <p class="L316">ibis BUSINESS members can use this service at all ibis, ibis Styles and ibis budget hotels that offer ALL Concierge Priority Service, even if they are not ALL members. ibis 
+                            BUSINESS members who are also ALL members can use this service at all Accor hotels that offer priority desk service.</p>
+                    </li>
+                    <li>
+                        <strong>How do I change the banking information in my account?</strong>
+                        <ol class="L3 decimal 16">
+                            <li>
+                                1. Log in your account.
+                                <ul class="dash">
+                                    <li>
+                                        on the website <a href="index.html">all.accor.com</a>
+                                    </li>
+                                    <li>
+                                        In the <a href="https://all.accor.com/ko/mobile/mobile-app.shtml" target="_blank">Accor mobile app</a>
+                                    </li>
+                                    <li>
+                                        In the Accor tablet app
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                2. Access your account by clicking on the icon at the top of the screen or by clicking « My Account » in the sub-menu that appears when you hover your mouse over it.
+                            </li>
+                            <li>
+                                3. Select the desired card from the list in the « Bank cards » section and click « Edit ». You can change the name of the card or cardholder.
+                            </li>
+                            <li>
+                                4. Click « Save » to confirm.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>How do I activate my account and view the terms and conditions of the ALL - Accor Live Limitless program?</strong>
+                        <div class="L316">
+                            <b class="M516">To activate your account and complete your membership, access <a href="index.html">all.accor.com</a></b>
+                            <ol class="decimal">
+                                <li>
+                                    1. Under « ALL, FIRST-TIME LOGIN » click « PASSWORD/ACTIVATION »
+                                </li>
+                                <li>
+                                    2. Enter your name and email address
+                                </li>
+                                <li>
+                                    3. Click « OK »
+                                </li>
+                            </ol>
+                            <span>* You will receive an automatic welcome email. To complete your membership, click « Complete Membership » and then follow the instructions to activate your account and 
+                                view the terms and conditions for using the program.</span>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Why should I create and customize an account?</strong>
+                        <ul class="L3 disc 16">
+                            <li>
+                                Once you have entered your details, they will automatically appear, saving you time when making a new reservation.
+                            </li>
+                            <li>
+                                 You can access your reservation records through your account. You can also change your current reservation at any time.
+                                </li>
+                            <li>
+                                Just enter your favorite brands, destinations and preferences and we'll get recommendations on the mobile app and website for hotels that suit you.
+                            </li>
+                            <li>
+                                You can manage your newsletter subscriptions in your account so you never miss out on special promotions.
+                            </li>
+                            <li>
+                                You can also access your Customer Loyalty Program account and enjoy all the benefits offered by the program at your fingertips.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>How do I delete the bank card registered to my account?</strong>
+                        <ol class="L3 decimal 16">
+                            <li>
+                                1. Log in your account.
+                                <ul class="dash">
+                                    <li>
+                                        on the website <a href="index.html">all.accor.com</a>
+                                    </li>
+                                    <li>
+                                        In the <a href="https://all.accor.com/ko/mobile/mobile-app.shtml" target="_blank">Accor mobile app</a>
+                                    </li>
+                                    <li>
+                                        In the Accor tablet app
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                2. Access your account by clicking on the icon at the top of the screen or by clicking « My Account » in the sub-menu that appears when you hover your mouse over it. Bank 
+                                details related to the selected card will be permanently deleted immediately.
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <strong>Why am I receiving newsletters in other languages?</strong>
+                        <p class="L316">ALL is always doing its best to provide the best accommodation and use experience with services tailored to customer needs. For this reason, ALL sends newsletters with the 
+                            latest information so that customers can enjoy all the benefits of ALL to the fullest. Marketing promotional emails or newsletters may be in a different language than the 
+                            language used when booking your stay, as we provide you with products that are most relevant to your country of residence.For reservation-related emails, you can choose 
+                            your preferred language in your member account. If you no longer wish to receive newsletters in the language of your country of residence, please log in to ALL and 
+                            unsubscribe from your member account. ALL is always ready to help you, so if you have any other questions, feel free to ask. We hope to see you on your next trip with ALL..</p>
+                    </li>
+                </ol>
+            </div> 
+        </div>
+    </section>
+
+    <footer class="alx">
+        <div>
+            <div>
+                <h2 class="E232">EXCLUSIVE OFFERS</h2>
+                <p class="L313">Subscribe to our newsletter and receive special offers</p>
+                <form action="subscribe_accor.html">
+                    <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
+                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                </form>
+            </div>
+            <div>
+                <h2 class="E232">NEED HELP ?</h2>
+                <span class="L313"> 
+                    <a href="map.html">Reservation Management</a>
+                    <a href="helpCenter.html">Support and Inquiries</a>
+                </span>
+                <mark class="btn alxL313">
+                    Do you want to ask for questions ?
+                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                </mark>
+                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="M510">
+            <strong>ABOUT US</strong> 
+            <ul>
+                <li><a href="https://group.accor.com" target="_blank">ACCOR GROUP</a></li>
+                <li><a href="https://group.accor.com/hotel-development" target="_blank">MANAGEMENT &amp; FRANCHISES</a></li>
+                <li><a href="https://careers.accor.com" target="_blank">CAREERS</a></li>
+                <li><a href="https://all.accor.com/ko/sustainable-development/index.shtml" target="_blank">SUSTAINABLE DEVELOPMENT</a></li>
+                <li><a href="https://all.accor.com/affiliate/index.en.shtml" target="_blank">AFFILIATE PROGRAM</a></li>
+            </ul>
+            <strong>CUSTOMER SERVICE</strong>
+            <ul>
+                <li><a href="terms_general.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookies.html">COOKIES</a></li>
+                <li>
+                    <span>STAY CONNECTED</span>
+                    <a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a>
+                    <a href="https://www.instagram.com/all/" target="_blank">instagram</a>
+                    <a href="https://twitter.com/all" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a>
+                    <em>tripadvisor</em>
+                </li>
+            </ul>
+            <b>STAY CONNECTED</b>
+            <ul>
+                <li><a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/all/" target="_blank">instagram</a></li>
+                <li><a href="https://twitter.com/all" target="_blank">twitter</a></li>
+                <li><a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a></li>
+                <li>tripadvisor</li>
+            </ul>
+            <div>
+                <h3 class="M510">MOBILE APPLICATIONS</h3>
+                <span>
+                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=ko&referrer=mat_click_id%3Dfa12181839af409492a34c2659248cb6-20190912-14012%26link_click_id%3D700704422598298176&mat_click_id=fa12181839af409492a34c2659248cb6-20190912-14012">Google Play</a>
+                    <a href="https://apps.apple.com/kr/app/accor-all-%ED%98%B8%ED%85%94-%EC%98%88%EC%95%BD/id489472613?mat_click_id=870794f4e4534593891b7c4ad7b95593-20190912-14012&mt=tr&referrer=mat_click_id%3D870794f4e4534593891b7c4ad7b95593-20190912-14012%26link_click_id%3D700704503900740601">App Store</a>
+                </span>
+            </div>
+            <div class="L311">
+                <p>
+                    *Prices start from, based on a one night stay in a standard double room for two guests. Supplementary services, breakfast and tourist/city tax are not included. Price observed on all.accor.com within the past 24 hours, for a one night stay within the next eight days, starting tomorrow. Price subject to the hotel conditions, period and availability. Depending on the country, these prices may not include taxes, may include VAT only or may include all taxes (VAT and tourist/city tax). When prices do not include all taxes, the relevant taxes (VAT and tourist/city tax) will be stated in the forthcoming stages of the reservation process. The price is only guaranteed at the time of reservation.
+                </p>
+                <span>** Note 2Available 24/7. Calls to this number will cost 13 pence per minute plus your providers access charge (only for Accor hotels).</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

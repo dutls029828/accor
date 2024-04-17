@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accor</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/accor.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header class="alx">
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/header_logo.png" alt="accor">
+                </a>
+            </h1>
+            <div>
+                <ul class="btn M512">
+                    <li><input class="alxM512" type="button" value="SIGN IN OR JOIN"></li>
+                    <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
+                    <li><a href="account_not_yet_member.html">JOIN IN ACCOR</a></li>
+                </ul> 
+                <div class="menuBar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="M513">
+                <ul>
+                    <li>ACCOMMODATION</li>
+                    <li>LOYALTY PROGRAM</li>
+                    <li>OFFER &amp; PACKAGE</li>
+                    <li>DINING SERVICE</li>
+                    <li>BUSINESS EVENT</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="fnbPanel">
+            <div>
+                <div class="M513">
+                    <b class="mui">ACCOMMODATION</b>
+                    <ul class="R413">
+                        <li><a href="accom_hotel_Resort.html">Hotel &amp; Resorts</a></li>
+                        <li><a href="accom_aparthotels.html">Aparthotels &amp; Villas</a></li>
+                        <li><a href="accom_private_home.html">Luxury Private Home</a></li>
+                        <li><a href="accom_all_our_brand.html">ALL Accor Brand</a></li>
+                        <li><a href="map.html" class="mapBtn">FIND A HOTEL</a></li>
+                    </ul>
+                    <b class="mui">LOYALTY PROGRAM</b>
+                    <ul class="R413">
+                        <li><a href="loyalty.html">Discover the Program</a></li>
+                        <li><a href="loyalty_benefits.html">Benefits and Status</a></li>
+                        <li><a href="loyalty_earn_rewards.html">Earn Rewards Points</a></li>
+                        <li><a href="loyalty_use_rewards.html">Use Your Points</a></li>
+                    </ul>
+                    <b class="mui">OFFER &amp; PACKAGE</b>
+                    <ul class="R413">
+                        <li><a href="offers_all_member.html">For All Member</a></li>
+                        <li><a href="offers_latest.html">The Latest Offers</a></li>
+                        <li><a href="offers_all_year.html">All Year Offers</a></li>
+                    </ul>
+                    <b class="mui">DINING SERVICE</b>
+                    <ul class="R413">
+                        <li><a href="dining_world_of_flavours.html">World of Flavours</a></li>
+                        <li><a href="dining_service.html">Popular Cities</a></li>
+                        <li><a href="dining_service.html?scroll=diningSeasonFestive">Season Festive</a></li>
+                    </ul>
+                    <b class="mui">BUSINESS EVENT</b>
+                    <ul class="R413">
+                        <li><a href="business_tailored_events.html">Tailored Events</a></li>
+                        <li><a href="business_meeting_planning.html">Meeting Planning</a></li>
+                        <li><a href="detail_business_private.html">Private Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="reservation">
+                <form action="checkout.html">
+                    <fieldset>
+                        <legend class="M522">BOOK WITH ALL</legend>
+                        <div class="11">
+                            <ul>
+                                <li>
+                                    <label for="destination" class="M5">Where do you want to travel ?</label>
+                                    <input type="text" class="alxL311" id="destination" placeholder="Destination, hotel name">
+                                    <label for="travellers" class="M5">
+                                        Travellers
+                                        <small class="R410">Loyalty or subscription</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="travellers" placeholder="0000 0000 0000 0000">
+                                </li>
+                                <li>
+                                    <label for="check-in-date" class="M5">
+                                        Dates
+                                        <div>
+                                            <span>1</span>
+                                            <span>Night</span>
+                                        </div>
+                                    </label>
+                                    <div>
+                                        <input type="date" class="alxL311" id="check-in-date">
+                                        <span>-</span>
+                                        <input type="date" class="alxL311" id="check-out-date">
+                                    </div>
+                                    <label for="profTravellers" class="M5">
+                                        Professional Travellers
+                                        <small class="R410">Business client with contract</small>
+                                    </label>
+                                    <input type="text" class="alxL311" id="profTravellers" placeholder="Client code (SC, AC...)">
+                                </li>
+                                <li>
+                                    <div class="roomSelect">
+                                        <label for="roomCount" class="M5">Rooms &amp; Guests</label>
+                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect">
+                                            <ol>
+                                                <li>
+                                                    <label for="roomCount" class="L310">Room(s)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="roomCount">
+                                                        <span class="L3">Room(s)</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="adultsCount">
+                                                        <span class="L3">Adult Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
+                                                    <div class="countComponent">
+                                                        <input type="number" class="alxL311" id="childCount">
+                                                        <span class="L3">Children Per Room</span>
+                                                        <div>
+                                                            <input type="button" class="alxL311" value="minus">
+                                                            <input type="button" class="alxL311" value="plus">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                            <input type="reset" class="btn alxL310" value="Reset">
+                                        </div>
+                                    </div>
+                                    <label for="promotionSelect" class="M5">
+                                        Special Rates or Promotion Code
+                                        <small class="R410">Choose a rate</small>
+                                    </label>
+                                    <span class="selectComponent">
+                                        <select id="promotionSelect" class="alxL311">
+                                            <option>None</option>
+                                            <option>AAA / CAA Member</option>
+                                            <option>Military &amp; Veteran</option>
+                                            <option>Government</option>
+                                        </select>
+                                    </span>
+                                </li>
+                            </ul>
+                            <input type="submit" class="alxM513" value="RESERVE NOW">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="alx helpFaqContainer membership">
+        <div class="helpMainField">
+            <h2 class="imgCenterTitle 55">Frequently Asked Questions</h2>
+            <div class="searchField">
+                <form>
+                    <input type="search" title="Search a keyword for questions or answers" placeholder="Search a keyword for questions or answers" class="alx L320">
+                    <input type="submit" value="SEARCH" class="L316">
+                </form>
+            </div>
+        </div>
+        <div>
+            <h3 class="E234">MEMBERSHIP</h3>
+            <div class="accordionBox">
+                <ul class="R422">
+                    <li data-tab="ibisBusiness">IBIS BUSINESS</li>
+                    <li data-tab="businessPlus">BUSINESS PLUS</li>
+                    <li data-tab="accorPlus">ACCOR PLUS</li>
+                </ul>
+                <ol id="ibisBusiness">
+                    <li>
+                        <strong>Who do I contact if I have a problem with my ibis BUSINESS subscription or benefits?</strong>
+                        <div class="L316">
+                            <b class="M516">ibis BUSINESS members have access to dedicated customer service by phone or online.</b>
+                            <ul class="disc">
+                                <li>
+                                    Online : At the bottom of your personal account dashboard, click « Need some help? You can make a request by clicking the » button.
+                                </li>
+                                <li>
+                                    Phone : At the bottom of your personal account dashboard click the « Need some help? » You can be contacted at a dedicated phone number that is verified with the click 
+                                    of a button.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Can I get a refund after paying the subscription fee?</strong>
+                        <p class="L316">
+                            As indicated in the Program's General Terms and Conditions, Members who have signed up online have the right to cancel if they have not benefited from the Program. To 
+                            exercise this right, you must contact our customer service department within 14 days of registering online. Members who do not sign up online may cancel the program at 
+                            any time by contacting the customer service department, and even if the issued card is not used, the card will not be reimbursed in whole or in part.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Instant Free Upgrade to ALL Gold Membership Status: How Can I Benefit?</strong>
+                        <p class="L316">
+                            ibis BUSINESS members are automatically updated to ALL Gold status and will maintain this status until the end of the ibis BUSINESS subscription period (if you are already 
+                            an ALL member when you sign up for ibis BUSINESS, if you are enrolled in both programs at the same time, or if you are a member of ibis BUSINESS Anyone who has signed 
+                            up for ALL after becoming a member). Also, when you renew ibis BUSINESS, you are automatically upgraded to ALL Gold level. If you subscribed to ALL after becoming an ibis 
+                            BUSINESS member, you will remain so for 12 months (in case of 1-year subscription) or 24 months (in case of 2-year subscription) after subscribing to ibis BUSINESS to receive 
+                            free upgrade to ALL Gold level. You should.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Who is eligible for the ibis BUSINESS card?</strong>
+                        <p class="L316">
+                            ibis BUSINESS is created for customers who want to receive discounts and special offers when staying at _ibis, ibis Styles and ibis budget hotels_ for business or leisure. 
+                            Especially suitable for frequent travelers who want to receive a variety of accommodations and benefits from exclusive rates, privileges and recognition.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>10% discount on Food and Beverages: How can I benefit?</strong>
+                        <p class="L316">
+                            ibis BUSINESS members receive a 10% discount on their bills at restaurants and bars at participating ibis, ibis Styles and ibis budget hotels even if they do not stay at the 
+                            hotel.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Do ibis BUSINESS members receive discounts on parking fees?</strong>
+                        <p class="L316">
+                            The ibis BUSINESS discount applies only to rooms and F&B and not to other services. ibis BUSINESS members are not eligible for discounted parking rates.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>What is the ibis BUSINESS card?</strong>
+                        <div class="L316">
+                            <b class="M516">Discounts - all can be combined with ALL member rates:</b>
+                            <ul class="disc">
+                                <li>
+                                    10% discount_Flexible rates booked through direct channels**
+                                </li>
+                                <li>
+                                    5% discount_Non-changeable rates booked through direct channels**
+                                </li>
+                                <li>
+                                    10% discount_ at the restaurants and bars of ibis, ibis Styles and ibis budget hotels, even if you are not staying at the hotel
+                                </li>
+                            </ul>
+                            <b class="M516">Personal Benefits:</b>
+                            <ul class="disc">
+                                <li>
+                                    Guaranteed room availability up to 48 hours prior to stay (excluding non-reservation periods)
+                                </li>
+                                <li>
+                                    Instant FREE access to ALL Gold Tier - for privileges : free early check-in and late check-out, Rewards Points Accelerators, additional 5% discount on member rate 
+                                    (combinable with ibis BUSINESS discount), welcome drink and much more to check out benefit!
+                                </li>
+                                <li>
+                                    Priority desk service at ibis, ibis Styles and ibis budget hotels
+                                </li>
+                                <li>
+                                    Even more special offers
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How do I renew my ibis BUSINESS subscription?</strong>
+                        <div class="L316">
+                            <b class="M516">Subscribers may renew their ibis BUSINESS subscription up to 30 days before the end of the current subscription period (expiration date D-30).</b>
+                            <p>Online : at ibisbusiness.com.. At the front desk of ibis, ibis Styles or ibis budget hotels in France, Germany, Austria, Switzerland, Belgium, Netherlands, Luxembourg, Ireland, 
+                                United Kingdom, Portugal, Spain, Italy and Greece.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>My ibis BUSINESS card is lost or stolen: what should I do?</strong>
+                        <p class="L316">
+                            In case of loss or theft, you can either online or by phone or at the bottom of your personal account on accorhotels.com under « Need help? » Click the button to notify 
+                            Customer Service Department. It is important to report incidents of this kind to prevent abuse or fraudulent use of your ibis BUSINESS card.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Will I get a new physical card when I renew my ibis BUSINESS subscription?</strong>
+                        <p class="L316">
+                            When you renew your subscription, you will not receive a new physical ibis BUSINESS card and your card number will not change. You can continue to use your card and 
+                            receive ibis BUSINESS benefit services!
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Besides discounts, what benefits does the ibis BUSINESS card offer?</strong>
+                        <div class="L316">
+                            <b class="M516">Not only that, ibis BUSINESS members get discounts on room rates and restaurant and bar costs!</b>
+                            <ul class="disc">
+                                <li>
+                                    Guaranteed room availability up to 48 hours prior to accommodation (except for non-reservation periods)
+                                </li>
+                                <li>
+                                    Instant FREE access to ALL Gold status for privileges * Free early check-in and late check-out, Rewards point accelerators, additional 5% discount on ALL member rates 
+                                    (combinable with ibis BUSINESS discount), welcome drink and much more to check out!
+                                </li>
+                                <li>
+                                    Priority desk service at ibis, ibis Styles and ibis budget hotels
+                                </li>
+                                <li>
+                                    Even more special offers
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Why join ibis BUSINESS if you are already a member of ALL?</strong>
+                        <p class="L316">
+                            By becoming a member of both programs, you can make the most of your ibis, ibis Styles and ibis budget hotel experience! Discount on all ibis BUSINESS benefits (special 
+                            treatment, guaranteed room availability 48 hours prior to arrival* …) (10% discount on flexible rates with _ibis BUSINESS AND if you are a member of both programmes, plus 
+                            an additional 5% discount on ALL member rates) Can be combined with any ALL benefit, including.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>How much does the ibis BUSINESS card cost?</strong>
+                        <div class="L316">
+                            <p>To check the cost of the ibis BUSINESS card, visit the online sign-up page.</p>
+                            <a href="https://ibis.accor.com/business/ibis-business-card/index.en.shtml" target="_blank">ibis Business Card</a>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Can ibis BUSINESS discounts be combined with ALL member rates?</strong>
+                        <p class="L316">
+                            The ibis BUSINESS discount can be combined with ALL member rates. Discounts from both programs are added together, so ibis BUSINESS members can receive more 
+                            discounts than customers who are members only in the case of ALL. You get a 10% discount on flexible rates (ibis BUSINESS discount) and an additional 5% discount on ALL 
+                            member rates.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>Guaranteed room use for ibis BUSINESS members: How do I redeem my points?</strong>
+                        <p class="L316">ibis BUSINESS members can use this service at all ibis, ibis Styles and ibis budget hotels that offer ALL Concierge Priority Service, even if they are not ALL members. ibis 
+                            BUSINESS members who are also ALL members can use this service at all Accor hotels that offer priority desk service.</p>
+                    </li>
+                </ol>
+                <ol id="businessPlus">
+                    <li>
+                        <strong>How much discount can I get with a Business Plus card (eg Accor Favorite Guest Business card) and what are 
+                            the benefits?</strong>
+                        <div class="L316">
+                            <b class="M516">At over 2,700 Accor hotels worldwide, you can enjoy discounts on:</b>
+                            <ul class="disc">
+                                <li>
+                                    Sofitel: 20% off all room rates (whether restrictions apply)
+                                </li>
+                                <li>
+                                    Pullman, MGallery, Grand Mercure, Novotel and Mercure: 20% discount on room upgrade rates without restrictions and 5% discount on selected rates subject to restrictions
+                                </li>
+                                <li>
+                                    Suite Novotel: 10% discount on regular suite rates for short stays (1-2 nights) and 7% discount for stays of 3 nights or more and 8 nights or more
+                                </li>
+                                <li>
+                                    ibis: 10% discount on regular room rates and restaurant service charges
+                                </li>
+                                <li>
+                                    ibis Styles: 10% discount on room rates with breakfast or half-board package and 5% discount on selected rates subject to restrictions
+                                </li>
+                                <li>
+                                    Adagio Aparthotels (excluding Adagio Access): 5% off unlimited published rates for a minimum stay of 4 nights
+                                </li>
+                                <li>
+                                    Thalassa sea &amp; spa: hotel brand discount for all stays
+                                </li>
+                            </ul>
+                            <b class="M516">Business Plus cards are also packaged for room use.</b>
+                            <ul class="disc">
+                                <li>
+                                    If booked at least 3 days prior to arrival (before noon, local time of the hotel visited).
+                                </li>
+                                <li>
+                                    Only for stays paid at a published rate or basic rate (Guaranteed room availability cannot be combined with discounts granted by membership card).
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Can I get a refund after paying the subscription fee?</strong>
+                        <p class="L316">
+                            As indicated in the Program's General Terms and Conditions, Members who have signed up online have the right to cancel if they have not benefited from the Program. To 
+                            exercise this right, you must contact our customer service department within 14 days of registering online. Members who do not sign up online may cancel the program at 
+                            any time by contacting the customer service department, and even if the issued card is not used, the card will not be reimbursed in whole or in part.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>What is a Business Plus card (eg Accor Favorite Guest Business card)?</strong>
+                        <p class="L316">
+                            The Business Plus card is a subscription card for companies staying at Accor hotels and frequent business travelers. In this program, you can enjoy your stay at Sofitel, Pullman, 
+                            MGallery, Grand Mercure, Novotel, Suite Novotel, Mercure, Adagio Aparthotels (except Adagio Access), ibis, ibis Styles and Thalassa sea & spa hotels worldwide and with our 
+                            partner Europcar. We offer discounts and special offers. The card is a paid card and is not assigned a name and is valid for one year from the date of issue. The Business Plus 
+                            Card costs 170 euros including tax (141.67 euros before tax French VAT rate applies to the price shown before tax).</p>
+                    </li>
+                    <li>
+                        <strong>If my Business Plus card (eg Accor Favorite Guest Business card) is lost or stolen, what should I do if the card 
+                            is damaged?</strong>
+                        <div class="L316">
+                            <b class="M516">If your Accor Favorite Guest Business card is lost, stolen or damaged</b>
+                            <ul class="disc">
+                                <li>
+                                    Log in to your account at <a href="index.html">all.accor.com</a>
+                                </li>
+                                <li>
+                                    Request a duplicate card in « My Subscription Cards » section
+                                </li>
+                                <li>
+                                    Reproduction is free. You can also print from your account while waiting to receive your card.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>How can I get the benefits and discounts offered by my Business Plus card (eg Accor Favorite Guest Business 
+                            card)?</strong>
+                        <div class="L316">
+                            <b class="M516">Accor Favorite Guest Business cardholders must:</b>
+                            <ul class="disc">
+                                <li>
+                                    Present your card number when making a reservation
+                                </li>
+                                <li>
+                                    Card must be presented when checking in at the hotel reception desk
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+                <ol id="accorPlus">
+                    <li>
+                        <strong>What is the Accor Plus program?</strong>
+                        <div class="L316">
+                            With Accor Plus, the most comprehensive travel, dining and lifestyle program in Asia Pacific, customers can do more in surprising and unimaginable ways. Enjoy a variety of 
+                            destinations and styles from over 800 hotels, resorts and apartments in 18 countries worldwide. Plus, get member-only benefits and experiences. Accor Plus members 
+                            automatically have access to the Silver membership level in the ALL loyalty program. Earn and redeem points for every eligible stay at 3,600 participating Accor hotels, 
+                            including 35 hotel brands worldwide. Visit <a href="https://www.accorplus.com/">accorplus.com</a> for more information about signing up for the Accor Plus program or viewing the full terms and conditions.
+                        </div>
+                    </li>
+                    <li>
+                        <strong>What are the benefits of the Accor Plus program?</strong>
+                        <p class="L316">
+                            Accor Plus members can take advantage of a range of special offers at 800 Accor locations in Asia Pacific. Members can save 50% off meals (Asia Pacific) and 15% beverages 
+                            (Asia) at over 1,100 hotel restaurants with half price. Priority booking of Accor Global Sales and promotions before they open to the public, savings of up to 50% on hotel stays i
+                            n Red Hot Rooms, and 'Today's Lowest Unlimited Published Rates' in all rooms at participating hotels in Asia Pacific. Discount 10%. Accor Plus key members receive a year-
+                            round free night's stay in a standard room each year through the Stay Plus benefit at participating Accor.Accor Plus offers exclusive access to a range of 'money can't buy' 
+                            experiences through members-only events and entertainment partners.</p>
+                    </li>
+                    <li>
+                        <strong>What are the membership levels in the Accor Advantage Plus program?</strong>
+                        <div class="L316">
+                            <p>Accor Plus members automatically enjoy Silver membership status at hotels participating in the ALL loyalty program. Your tier is determined by your Accor Plus account 
+                                activity over 12 months (365 days). When you renew in the Accor Advantage Plus program, you will receive a membership level that corresponds to your performance 
+                                calculated over the previous 12 months (see transition fee below). If you are an Accor Plus member, your membership tier will not drop to the Classic tier. The rules for 
+                                obtaining ALL program benefits depend on the ALL membership level at the time of stay (check-in date). ALL program benefits are provided only if the stay is valid and ALL is 
+                                eligible for accrual.</p>
+                            <p>If you do not renew your membership at the end of its validity period, your membership to the Accor Plus program will be terminated and you will be ineligible for benefits. 
+                                However, membership in the ALL program will remain. Review activity performance for the previous year and the current year. The period most favorable to the member is 
+                                used to determine the new tier. If the same rank can be maintained in the most favorable period, the same rank will be maintained. Otherwise, you will receive the next lower 
+                                rating regardless of your activity performance. Your Tier and Tier Nights will be maintained until the end of the validity period.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div> 
+        </div>
+    </section>
+
+    <footer class="alx">
+        <div>
+            <div>
+                <h2 class="E232">EXCLUSIVE OFFERS</h2>
+                <p class="L313">Subscribe to our newsletter and receive special offers</p>
+                <form action="subscribe_accor.html">
+                    <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
+                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                </form>
+            </div>
+            <div>
+                <h2 class="E232">NEED HELP ?</h2>
+                <span class="L313"> 
+                    <a href="map.html">Reservation Management</a>
+                    <a href="helpCenter.html">Support and Inquiries</a>
+                </span>
+                <mark class="btn alxL313">
+                    Do you want to ask for questions ?
+                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                </mark>
+                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+            </div>
+        </div>
+        <div class="M510">
+            <strong>ABOUT US</strong> 
+            <ul>
+                <li><a href="https://group.accor.com" target="_blank">ACCOR GROUP</a></li>
+                <li><a href="https://group.accor.com/hotel-development" target="_blank">MANAGEMENT &amp; FRANCHISES</a></li>
+                <li><a href="https://careers.accor.com" target="_blank">CAREERS</a></li>
+                <li><a href="https://all.accor.com/ko/sustainable-development/index.shtml" target="_blank">SUSTAINABLE DEVELOPMENT</a></li>
+                <li><a href="https://all.accor.com/affiliate/index.en.shtml" target="_blank">AFFILIATE PROGRAM</a></li>
+            </ul>
+            <strong>CUSTOMER SERVICE</strong>
+            <ul>
+                <li><a href="terms_general.html">TERMS &amp; CONDITIONS</a></li>
+                <li><a href="privacy_policy.html">PRIVACY POLICY</a></li>
+                <li><a href="cookies.html">COOKIES</a></li>
+                <li>
+                    <span>STAY CONNECTED</span>
+                    <a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a>
+                    <a href="https://www.instagram.com/all/" target="_blank">instagram</a>
+                    <a href="https://twitter.com/all" target="_blank">twitter</a>
+                    <a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a>
+                    <em>tripadvisor</em>
+                </li>
+            </ul>
+            <b>STAY CONNECTED</b>
+            <ul>
+                <li><a href="https://www.facebook.com/ALLaccorKR" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/all/" target="_blank">instagram</a></li>
+                <li><a href="https://twitter.com/all" target="_blank">twitter</a></li>
+                <li><a href="https://www.youtube.com/All_AccorLiveLimitless" target="_blank">youtube</a></li>
+                <li>tripadvisor</li>
+            </ul>
+            <div>
+                <h3 class="M510">MOBILE APPLICATIONS</h3>
+                <span>
+                    <a href="https://play.google.com/store/apps/details?id=com.accor.appli.hybrid&hl=ko&referrer=mat_click_id%3Dfa12181839af409492a34c2659248cb6-20190912-14012%26link_click_id%3D700704422598298176&mat_click_id=fa12181839af409492a34c2659248cb6-20190912-14012">Google Play</a>
+                    <a href="https://apps.apple.com/kr/app/accor-all-%ED%98%B8%ED%85%94-%EC%98%88%EC%95%BD/id489472613?mat_click_id=870794f4e4534593891b7c4ad7b95593-20190912-14012&mt=tr&referrer=mat_click_id%3D870794f4e4534593891b7c4ad7b95593-20190912-14012%26link_click_id%3D700704503900740601">App Store</a>
+                </span>
+            </div>
+            <div class="L311">
+                <p>
+                    *Prices start from, based on a one night stay in a standard double room for two guests. Supplementary services, breakfast and tourist/city tax are not included. Price observed on all.accor.com within the past 24 hours, for a one night stay within the next eight days, starting tomorrow. Price subject to the hotel conditions, period and availability. Depending on the country, these prices may not include taxes, may include VAT only or may include all taxes (VAT and tourist/city tax). When prices do not include all taxes, the relevant taxes (VAT and tourist/city tax) will be stated in the forthcoming stages of the reservation process. The price is only guaranteed at the time of reservation.
+                </p>
+                <span>** Note 2Available 24/7. Calls to this number will cost 13 pence per minute plus your providers access charge (only for Accor hotels).</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
