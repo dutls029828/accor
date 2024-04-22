@@ -14777,8 +14777,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     div[class*='helpContainer'] .helpCenterFaq div {
-        background: url('../images/loyalty_faq.png') no-repeat center top / 100%;
-        padding-top: 500px;
+        background: url('../images/loyalty_faq.png') no-repeat center top / 41vh;
+        padding-top: 30vw;
         background-position-y: var(--sp20);
     }
 
