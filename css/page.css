@@ -6490,6 +6490,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         margin: 0 auto;
         padding: 0 3%;
     }
+    div[class*='helpContainer'] .helpCenterFaq div {
+        background: url('../images/loyalty_faq.png') no-repeat center top / 74vh;
+        padding-top: 51vh;
+        background-position-y: var(--sp20);
+    }
     div[class*='helpContainer'] .helpCenterFaq div ul{
         padding-top: var(--sp20);
     }
@@ -14777,8 +14782,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     div[class*='helpContainer'] .helpCenterFaq div {
-        background: url('../images/loyalty_faq.png') no-repeat center top / 41vh;
-        padding-top: 30vw;
+        background: url('../images/loyalty_faq.png') no-repeat center top / 125vh;
+        padding-top: 88vh;
         background-position-y: var(--sp20);
     }
 
