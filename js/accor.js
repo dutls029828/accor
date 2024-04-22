@@ -5,7 +5,6 @@ $(function(){
     slider(".tickerBox .tickerSlider",true,true,false,0,500000,false,false,'horizontal');
     slider(".diningServiceContainer .tileSlider",false,false,false,0,500,true,true,"fade");
     pagerCustomSlider();
-    // customSlider(".businessMeetingContainer headlineSlider",".businessMeetingContainer .countBox .currentIndex",".businessMeetingContainer .countBox .maxIndex",false);
 
     termsPopup(".offersYearContainer .horiCardslotBox ul li div span input",".btn_close");
     termsPopup("#diningSeasonFestive ul li","#diningSeasonFestive > div .btn_close");
@@ -48,6 +47,7 @@ $(function(){
     mainScrollAct();
     mapEvent();
     mainPopup();
+    backBtn(".historyBack");
 
 });
 function mainPopup(){
@@ -499,4 +499,9 @@ function mainScrollAct(){
         popupBox.removeClass("active");
     });
   }
-  
+
+  function backBtn(button){
+    $(button).click(function(){
+      history.go(-1);
+    });
+  }

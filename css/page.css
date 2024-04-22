@@ -12,7 +12,10 @@ a {
     transform: translateY(0px);
     opacity: 1;
 }
-
+ol,li{
+    list-style-position: inside;
+    list-style: none;
+}
 div[class*='accomContainer'] .headlineContent div:last-of-type a,
 div[class*='accomContainer'] .globalCardslotBox ul li a,
 div[class*='brandSubContainer'] .allBrandCarousel>a,
@@ -57,6 +60,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .diningFlavoursContainer,
     .tailoredEventsContainer,
     .businessMeetingContainer,
+    div[class*='detailContainer']
     div[class*='businessDetailContainer'],
     div[class*='brandSubContainer'],
     section[class*='diningDetailContainer'],
@@ -69,7 +73,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .dayuseContainer,
     section[class*='termsContainer'] {
         max-width: 767px;
-        padding-top: 56px;
+        padding-top: 65px;
     }
 
     .bannerBoxR img {
@@ -89,8 +93,10 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     .bannerBoxR > div p {
         line-height: 16px;
-        margin-bottom: var(--sp25);
         color: var(--gs07);
+    }
+    .bannerBoxR > div a{
+        margin-top: var(--sp25);
     }
 
     /* bannerBoxR */
@@ -443,7 +449,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     .loyalty div p {
-        margin-bottom: var(--sp40);
+        margin-bottom: var(--sp25);
         line-height: 23px;
         color: var(--gs07);
     }
@@ -3570,14 +3576,14 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         max-width: 1279px;
         margin: 0 auto;
         position: relative;
-        padding: 56px 3% 0 3%;
+        padding: 65px 3% 3%;
     }
 
     div[class*='detailContainer'] .historyBack {
         position: absolute;
         color: var(--gs02);
         padding: var(--sp15) 10px;
-        background: url('../images/arrow_back.png') no-repeat 5px bottom / 30px;
+        background: url('../images/arrow_back.png') no-repeat 8px bottom / 30px;
     }
 
     div[class*='detailContainer'] h2 {
@@ -3607,6 +3613,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     div[class$='detailContainer05'] h2 {
         background-image: url('../images/index_detail_headline_05.png');
+        background-position-x: 40%;
     }
 
     div[class$='detailContainer06'] h2 {
@@ -3761,7 +3768,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         background-color: rgba(28, 28, 28, 0.9);
         padding: var(--sp65) 6.25%;
         box-sizing: border-box;
-        top: 57px;
+        top: 65px;
         overflow-y: scroll;
         left: 0;
     }
@@ -3798,13 +3805,13 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     .detailContainer12 .termsPopup input.btn_close {
         padding: var(--sp20) 2.5%;
+        width: 55px;
         text-indent: -9999px;
         box-sizing: border-box;
         border: none;
         margin-left: auto;
         background: url('../images/icon_close_popup.png')var(--sc03) no-repeat center / 12px;
         display: block;
-        ;
     }
 
     div[class*='detailContainer'] .termsPopup article h3 {
@@ -3927,35 +3934,32 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     .detailContainer12>.termsPopup ul li {
-        float: left;
-        width: 31.8%;
-        padding: var(--sp20) 1% var(--sp70);
+        display: block;
+        padding: var(--sp20) 7% var(--sp35);
         box-sizing: border-box;
-        min-height: 630px;
     }
-
-    .detailContainer12>.termsPopup ul li:not(:first-of-type) {
-        margin-left: 2.3%;
+    .detailContainer12>.termsPopup ul li:not(:last-of-type){
+        margin-bottom: var(--sp25);
     }
 
     .detailContainer12>.termsPopup ul li div img {
-        margin-bottom: var(--sp55);
+        margin-bottom: var(--sp30);
     }
 
     .detailContainer12>.termsPopup ul li div dl dt {
         color: var(--sc01);
         text-align: center;
-        margin-bottom: var(--sp50);
+        margin-bottom: var(--sp30);
     }
 
     .detailContainer12>.termsPopup ul li div dl dd {
         color: var(--gs11);
         text-align: left;
-        padding-left: 10%;
         background-repeat: no-repeat;
         background-position: center left;
         background-size: 5%;
         line-height: 20px;
+        padding: 5px 0 5px 10%;
     }
 
     .detailContainer12>.termsPopup ul li div dl {
@@ -8010,10 +8014,13 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         margin: 0;
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:last-of-type div{
-        width: 30%; display: inline-block; margin-left: 70%; padding: var(--sp10) 0 0;
+        width: 15%; display: inline-block; margin: 0 5% 0 80%; padding: var(--sp15) 0 0;
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:last-of-type div input[type='button'] {
-        color: var(--gs05);
+        color: var(--gs05); text-align: right; width: 40%;
+    }
+    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:last-of-type div input[value='Edit']{
+        margin-left: 20%;
     }
 
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:last-of-type div input[type='button']:hover {
@@ -8129,9 +8136,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .diningServiceContainer div:nth-of-type(2) .bx-wrapper .bx-viewport .tileSlider li a mark{
         font-size: 3vw;
     }
-    /* .businessDetailContainer>div:first-child div p{
-        max-width: 400px;
-    } */
     .businessDetailContainer.seminar .businessImgText div p, 
     .businessDetailContainer.product .businessImgText div p, 
     .businessDetailContainer.training .businessImgText div p{
@@ -8234,7 +8238,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         box-sizing: border-box;
         padding: var(--sp55) 3.125%;
         box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
-        /* position: absolute; right: 12.5%; bottom: -50px; */
     }
 
     .bannerBoxR > div h2 {
@@ -12019,7 +12022,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         background-color: rgba(28, 28, 28, 0.9);
         padding: var(--sp65) 6.25%;
         box-sizing: border-box;
-        top: 57px;
+        top: 68px;
         overflow-y: scroll;
         left: 0;
     }
@@ -12056,13 +12059,13 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     .detailContainer12 .termsPopup input.btn_close {
         padding: var(--sp20) 2.5%;
+        width: 55px;
         text-indent: -9999px;
         box-sizing: border-box;
         border: none;
         margin-left: auto;
         background: url('../images/icon_close_popup.png')var(--sc03) no-repeat center / 12px;
         display: block;
-        ;
     }
 
     div[class*='detailContainer'] .termsPopup article h3 {
@@ -12212,10 +12215,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     .detailContainer12>.termsPopup ul li {
         float: left;
+        display: block;
         width: 31.8%;
-        padding: var(--sp20) 1% var(--sp70);
+        padding: var(--sp20) 1% var(--sp55);
         box-sizing: border-box;
-        min-height: 630px;
+        min-height: 620px;
     }
 
     .detailContainer12>.termsPopup ul li:not(:first-of-type) {
@@ -16217,7 +16221,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         width: 100%;
         height: 100%;
         z-index: 9998;
-        overflow-y: scrol;
+        overflow-y: scroll;
     }
     .mainPopup.active .mainPopupContent{
         background: url('../images/pattern_03.jpg') no-repeat center / cover;
@@ -16233,6 +16237,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         z-index: 9999;
         box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
         text-align: center;
+        min-height: 260px;
     }
     .mainPopup.active .mainPopupContent h2{
         color: var(--gs03); margin-bottom: var(--sp45); font-size: 22px;
@@ -16257,6 +16262,24 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         cursor: pointer;
     }
 }
+/* @media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
+    .mainPopup.active .mainPopupContent{
+        background: url('../images/pattern_03.jpg') no-repeat center / cover;
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 260px;
+        border-radius: 20px;
+        padding: 40px 2%;
+        box-sizing: border-box;
+        z-index: 9999;
+        box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+        text-align: center;
+        min-height: 260px;
+    }
+} */
 
 @media screen and (min-width: 950px) and (max-width: 1279px) {
     .vertiCardslotBox {
@@ -20403,14 +20426,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         padding-top: var(--sp15);
     }
 
-    div[class*='detailContainer']>.termsPopup+div span::after {
-        width: 200px;
-    }
-
-    div[class*='detailContainer03']>.termsPopup+div span::after {
-        width: 165px;
-    }
-
     .detailContainer04>div {
         margin-bottom: var(--sp150);
     }
@@ -20505,10 +20520,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     .detailContainer12>.termsPopup ul li {
         float: left;
+        display: block;
         width: 31.8%;
-        padding: var(--sp20) 1% var(--sp70);
+        padding: var(--sp20) 1% var(--sp50);
         box-sizing: border-box;
-        min-height: 630px;
+        min-height: 610px;
     }
 
     .detailContainer12>.termsPopup ul li:not(:first-of-type) {
@@ -20523,6 +20539,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--sc01);
         text-align: center;
         margin-bottom: var(--sp50);
+        font-size: 1.1vw;
     }
 
     .detailContainer12>.termsPopup ul li div dl dd {

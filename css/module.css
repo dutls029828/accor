@@ -48,7 +48,6 @@
 [class*='L3']{font-weight: 300;}
 [class*='R4']{font-weight: 400;}
 [class*='M5']{font-weight: 500;}
-[class*='B6']{font-weight: 700;}
 
 
 [class*='pt']{background-repeat: no-repeat; background-position: center; background-size: cover;}
@@ -69,35 +68,34 @@
 [class*='btn']{cursor: pointer; transition-duration: 0.35s;}
 
 @media screen and (max-width: 767px){
-    [class$='55']{font-size: 25px; color: var(--gs01); font-weight: 100;} /* change*/
+    [class$='55']{font-size: 25px; color: var(--gs01); font-weight: 100;}
 
-    [class$='34']{font-size: 24px;} /* change */
+    [class$='34']{font-size: 24px;}
 
-    [class$='32']{font-size: 24px;} /* change */ 
+    [class$='32']{font-size: 24px;}
 
-    [class$='22']{font-size: 16px;} /* change */ 
+    [class$='22']{font-size: 16px;}
 
-    [class$='16']{font-size: 10px;} /* change */
+    [class$='16']{font-size: 10px;}
 
-    [class$='15']{font-size: 10px;} /* change */
+    [class$='15']{font-size: 10px;}
 
-    [class$='14']{font-size: 12px;} /* change */
+    [class$='14']{font-size: 12px;}
 
-    [class$='13']{font-size: 10px;} /* change */
+    [class$='13']{font-size: 10px;}
 
-    [class$='12']{font-size: 10px;} /* change */
+    [class$='12']{font-size: 10px;}
 
-    [class$='11']{font-size: 11px;} /* change */
+    [class$='11']{font-size: 11px;}
 
     [class$='10']{font-size: 9px;}
 
-    [class$='9']{font-size: 9px;} /* change */
+    [class$='9']{font-size: 9px;}
 
-    .ebg50{font-size: 20px; color: var(--gs01);} /* change*/
+    .ebg50{font-size: 20px; color: var(--gs01);}
     .ebg34{font-size: 24px; color: var(--gs03); font-weight: 400;}
-    .ebg24{font-size: 14px; color: var(--gs10);} /* change */
+    .ebg24{font-size: 14px; color: var(--gs10);}
     .ebg24.ita{color: var(--gs02);}
-    .ebg22{font-size: 22px; color: var(--gs10); font-weight: 200;}
 
     .symbolTitle{
         margin: 0 auto; text-align: center; padding: 105px 5% var(--sp30) 5%; text-transform: uppercase;
@@ -120,19 +118,18 @@
     .ebg34{font-size: 24px; color: var(--gs03); font-weight: 400;}
     .ebg24{font-size: 24px; color: var(--gs10);}
     .ebg24.ita{color: var(--gs02);}
-    .ebg22{font-size: 22px; color: var(--gs10); font-weight: 200;}
 
-    [class$='55']{font-size: 40px; color: var(--gs01); font-weight: 100;} /* change*/
+    [class$='55']{font-size: 40px; color: var(--gs01); font-weight: 100;}
 
-    [class$='34']{font-size: 28px;} /* change*/
+    [class$='34']{font-size: 28px;}
 
-    [class$='32']{font-size: 26px;} /* change*/
+    [class$='32']{font-size: 26px;}
 
-    [class$='22']{font-size: 16px;}  /* change*/
+    [class$='22']{font-size: 16px;}
 
     [class$='16']{font-size: 16px;}
 
-    [class$='15']{font-size: 15px;} /* change*/
+    [class$='15']{font-size: 15px;}
 
     [class$='14']{font-size: 14px;}
 
@@ -140,9 +137,9 @@
 
     [class$='12']{font-size: 12px;}
 
-    [class$='11']{font-size: 11px;} /* change*/
+    [class$='11']{font-size: 11px;}
 
-    [class$='10']{font-size: 9px;} /* change*/
+    [class$='10']{font-size: 9px;}
 
     [class$='9']{font-size: 9px;}
 
@@ -167,7 +164,6 @@
     .ebg34{font-size: 34px; color: var(--gs03); font-weight: 400;}
     .ebg24{font-size: 24px; color: var(--gs10);}
     .ebg24.ita{color: var(--gs02);}
-    .ebg22{font-size: 22px; color: var(--gs10); font-weight: 200;}
 
     [class$='55']{font-size: 55px; color: var(--gs01); font-weight: 100;}
 

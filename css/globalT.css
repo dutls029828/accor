@@ -44,6 +44,7 @@ video {
         background-color: var(--gs01);
         z-index: 1000;
         box-sizing: border-box;
+        height: 65px;
     }
     header ul li {
         list-style: none;
