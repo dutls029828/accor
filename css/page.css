@@ -62,7 +62,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .diningFlavoursContainer,
     .tailoredEventsContainer,
     .businessMeetingContainer,
-    div[class*='detailContainer']
+    div[class*='detailContainer'],
     div[class*='businessDetailContainer'],
     div[class*='brandSubContainer'],
     section[class*='diningDetailContainer'],
@@ -3287,7 +3287,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     .businessDetailContainer.reception>div:first-child div {
         background-image: url('../images/business_reception_headline.png');
-        background-position: 50px center;
+        background-position: top center;
     }
 
     .businessDetailContainer.seminar>div:first-child {
