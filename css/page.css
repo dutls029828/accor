@@ -4821,7 +4821,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     section[class*='accountContainer'].signUp .formPackage form div:first-of-type ul li {
-        padding-left: 4%;
+        padding-left: 6%;
         line-height: 16px;
         background: url('../images/icon_check_circle_classic.png') no-repeat 1% center / 12px;
     }
