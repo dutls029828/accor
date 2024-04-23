@@ -46,7 +46,7 @@ div[class*='brandSubContainer'] .allBrandCarousel>a:after,
 div[class*='detailContainer']>.termsPopup+div span::after{
     width: 100%;
 }
-@media screen and (max-width: 767px) {  
+@media screen and (max-width: 767px) {
     .indexContainer,
     div[class*='accomContainer'],
     .allBrandContainer,
@@ -1252,9 +1252,9 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         max-width: 1279px;
         margin: 0 auto;
         list-style: none;
-        display: flex;
+        /* display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-around; */
     }
 
     .allBrandContainer .allBrandArrange li {
@@ -1263,7 +1263,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     .allBrandContainer .allBrandArrange li.active {
-        flex: 1 auto;
+        /* flex: 1 auto; */
         max-width: 350px;
         border-radius: 20px;
         display: block;
@@ -1277,6 +1277,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         width: 100%;
         border-radius: 20px;
         border: 1px solid var(--gs05);
+        box-sizing: border-box;
     }
 
     .loyaltyContainer .headlineContent {
