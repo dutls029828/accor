@@ -16,6 +16,9 @@ ol,li{
     list-style-position: inside;
     list-style: none;
 }
+.countBox{
+    display: none;
+}
 div[class*='accomContainer'] .headlineContent div:last-of-type a,
 div[class*='accomContainer'] .globalCardslotBox ul li a,
 div[class*='brandSubContainer'] .allBrandCarousel>a,
