@@ -23262,7 +23262,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li ul li a,
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li div.L316 a {
+    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li div.L316 a,
+    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li a {
         color: var(--sc01);
         text-decoration: underline;
         text-underline-offset: 5px;
