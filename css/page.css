@@ -15725,6 +15725,9 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         text-underline-offset: 5px;
     }
 
+    section[class*='termsContainer'].adagio .accordionBox li:first-of-type ul>li{
+        line-height: 22px;
+    }
     section[class*='termsContainer'].adagio .accordionBox li:first-of-type ul>li,
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(18) ul>li {
         padding-left: 5px;
