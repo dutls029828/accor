@@ -14,6 +14,7 @@ $(function(){
     navClick();
     navFnb("header #fnbPanel b.mui ");
     signClick();
+    rsvnRoomSelect("#reservation .roomSelect button");
     selectClick(".roomSelect");
     selectClick(".specialComponent");
     selectClick(".selectComponent");
@@ -129,7 +130,13 @@ function signClick(){
 function selectClick(target){
     $(target).click(function(){
         $(this).toggleClass("active");
-    })
+    });
+}
+
+function rsvnRoomSelect(btn){
+    $(btn).click(function(){
+        $("#reservation form div ul li .roomSelect").toggleClass("active");
+    });
 }
 
 function roomSelect(openBtn,closeBtn){

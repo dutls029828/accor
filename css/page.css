@@ -25,6 +25,7 @@ div[class*='brandSubContainer'] .allBrandCarousel>a,
 .loyaltyUseContainer .horiCardslotBox li div a,
 .offersMemberContainer .horiCardslotBox ul li div a,
 .offersLatestContainer .horiCardslotBox ul li div a,
+.offersYearContainer .horiCardslotBox ul li div span,
 .diningServiceContainer .bannerBoxR .gs1 a,
 .tailoredEventsContainer .horiCardslotBox ul li div a,
 div[class*='detailContainer'] .termsPopup+div{
@@ -39,6 +40,7 @@ div[class*='brandSubContainer'] .allBrandCarousel>a:after,
 .loyaltyUseContainer .horiCardslotBox li div a::before,
 .offersMemberContainer .horiCardslotBox ul li div a::before,
 .offersLatestContainer .horiCardslotBox ul li div a::before,
+.offersYearContainer .horiCardslotBox ul li div span::after,
 .diningServiceContainer .bannerBoxR .gs1 a::after,
 .tailoredEventsContainer .horiCardslotBox ul li div a:after,
 div[class*='detailContainer']>.termsPopup+div span::after{
@@ -6827,7 +6829,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     section[class*='helpCall'] ul {
-        list-style: none;
+        list-style: none; padding: 0 3%;
     }
 
     section[class*='helpCall'] ul li {
@@ -10513,6 +10515,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         position: relative;
         display: block;
         text-align: right;
+        margin-left: auto;
     }
 
     .offersYearContainer .horiCardslotBox ul li div span::after {
