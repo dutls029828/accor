@@ -16,9 +16,6 @@ ol,li{
     list-style-position: inside;
     list-style: none;
 }
-.countBox{
-    display: none;
-}
 div[class*='accomContainer'] .headlineContent div:last-of-type a,
 div[class*='accomContainer'] .globalCardslotBox ul li a,
 div[class*='brandSubContainer'] .allBrandCarousel>a,
@@ -19710,35 +19707,35 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         background-color: var(--gs02);
     }
 
-    .businessMeetingContainer>div:nth-of-type(3) {
+    .businessMeetingContainer>.businessMeetingList {
         max-width: 1440px;
         margin: 0 auto;
     }
 
-    .businessMeetingContainer>div:nth-of-type(3) ul {
+    .businessMeetingContainer>.businessMeetingList ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         list-style: none;
     }
 
-    .businessMeetingContainer>div:nth-of-type(3) ul li {
+    .businessMeetingContainer>.businessMeetingList ul li {
         width: 30%;
     }
 
-    .businessMeetingContainer>div:nth-of-type(3) ul li:not(:nth-last-child(-n+3)) {
+    .businessMeetingContainer>.businessMeetingList ul li:not(:nth-last-child(-n+3)) {
         margin-bottom: var(--sp45);
     }
 
-    .businessMeetingContainer>div:nth-of-type(3) ul li a {
+    .businessMeetingContainer>.businessMeetingList ul li a {
         display: block;
     }
 
-    .businessMeetingContainer>div:nth-of-type(3) ul li a img {
+    .businessMeetingContainer>.businessMeetingList ul li a img {
         width: 100%;
     }
 
-    .businessMeetingContainer>div:nth-of-type(3) ul li a mark {
+    .businessMeetingContainer>.businessMeetingList ul li a mark {
         display: block;
         padding: var(--sp30) 0;
         text-align: center;
@@ -19747,27 +19744,27 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs02);
     }
 
-    .businessMeetingContainer>div:nth-of-type(4) div {
+    .businessMeetingContainer>.businessMeetingPlanner div {
         max-width: 1440px;
         margin: 0 auto;
     }
 
-    .businessMeetingContainer>div:nth-of-type(4) div div {
+    .businessMeetingContainer>.businessMeetingPlanner div div {
         color: var(--gs02);
         padding: var(--sp85);
     }
 
-    .businessMeetingContainer>div:nth-of-type(4) div div h3 {
+    .businessMeetingContainer>.businessMeetingPlanner div div h3 {
         margin-bottom: var(--sp50);
     }
 
-    .businessMeetingContainer>div:nth-of-type(4) div div p {
+    .businessMeetingContainer>.businessMeetingPlanner div div p {
         color: var(--gs04);
         margin-bottom: var(--sp65);
         line-height: 30px;
     }
 
-    .businessMeetingContainer>div:nth-of-type(4) div div ul {
+    .businessMeetingContainer>.businessMeetingPlanner div div ul {
         height: 160px;
         list-style: none;
         display: flex;
@@ -19775,7 +19772,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         flex-wrap: wrap;
     }
 
-    .businessMeetingContainer>div:nth-of-type(4) div div ul li {
+    .businessMeetingContainer>.businessMeetingPlanner div div ul li {
         width: 26%;
         background: url('../images/icon_wCheck.png') no-repeat left 10% / 14px;
         padding-left: 4%;
