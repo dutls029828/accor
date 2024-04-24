@@ -288,6 +288,7 @@ function smoothtoAnchor() {
       };
 }
 
+
 function termsPopup(openBtn,closeBtn){
     var dataPopVal;
 

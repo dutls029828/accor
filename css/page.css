@@ -4293,18 +4293,12 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         transform: scaleX(0.5);
     }
 
-    div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li {
-        border: 1px solid var(--gs04);
-        border-radius: 20px;
-    }
-
     div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li a {
         display: block;
     }
 
     div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li a img {
         width: 100%;
-        border-radius: 20px;
     }
 
     div[class*='brandSubContainer'] .allBrandCarousel>.bx-wrapper .bx-controls-direction a {
@@ -4698,7 +4692,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     section[class*='accountContainer'].signIn .formPackage form label[for="saveInfo"] {
         float: right;
-        width: 94%;
+        width: 93%;
         margin-left: 1%;
     }
 
@@ -8131,7 +8125,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .offersHeadline figcaption dl dd:last-of-type,
     .slideBox .wayCarousel li figure figcaption dl dd,
     .allBrandContainer>.allBrandTab li h3{
-        font-size: 1.5vw;
+        font-size: 1.5vw !important;
     }
     .loyaltyBenefitsContainer .statusLevelBox .bx-wrapper .bx-viewport .statusLevelCarousel li{
         min-height: 370px;
@@ -12588,19 +12582,13 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='brandSubContainer'] .allBrandCarousel>a:hover:after {
         transform: scaleX(0.5);
     }
-
-    div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li {
-        border: 1px solid var(--gs04);
-        border-radius: 20px;
-    }
-
     div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li a {
         display: block;
     }
 
     div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li a img {
         width: 100%;
-        border-radius: 20px;
+        border-radius: 5px;
     }
 
     div[class*='brandSubContainer'] .allBrandCarousel>.bx-wrapper .bx-controls-direction a {
@@ -20892,19 +20880,13 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='brandSubContainer'] .allBrandCarousel>a:hover:after {
         transform: scaleX(0.5);
     }
-
-    div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li {
-        border: 1px solid var(--gs04);
-        border-radius: 20px;
-    }
-
     div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li a {
         display: block;
     }
 
     div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li a img {
         width: 100%;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     div[class*='brandSubContainer'] .allBrandCarousel>.bx-wrapper .bx-controls-direction a {
