@@ -4585,6 +4585,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         width: 49%;
         float: left;
         position: relative;
+        margin-bottom: var(--sp10);
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc']:nth-of-type(2) {
@@ -4627,7 +4628,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input:invalid {
-        margin-bottom: var(--sp10);
+        /* margin-bottom: var(--sp10); */
         padding-left: 5%;
     }
 
@@ -12877,6 +12878,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         width: 49%;
         float: left;
         position: relative;
+        margin-bottom: var(--sp10);
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc']:nth-of-type(2) {
@@ -12919,13 +12921,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input:invalid {
-        margin-bottom: var(--sp10);
         padding-left: 5%;
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone'] {
         clear: both;
-        margin-top: var(--sp10);
         position: relative;
     }
 
@@ -21168,6 +21168,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         width: 49%;
         float: left;
         position: relative;
+        margin-bottom: var(--sp10);
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc']:nth-of-type(2) {
@@ -21210,13 +21211,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input:invalid {
-        margin-bottom: var(--sp10);
         padding-left: 5%;
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone'] {
         clear: both;
-        margin-top: var(--sp10);
         position: relative;
     }
 
