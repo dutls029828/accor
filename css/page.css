@@ -4093,6 +4093,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     .brandSubContainer.rixos .imgCenterTitle {
         background-image: url('../images/brand_rixos_01.png');
+        background-position-x: 30% !important;
     }
 
     .brandSubContainer.onefinestay .imgCenterTitle {
@@ -4217,7 +4218,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     div[class*='brandSubContainer'] .imgCenterTitle span {
         display: block;
-        padding-top: var(--sp30);
+        padding-top: var(--sp20);
     }
 
     div[class*='brandSubContainer'] .bannerBoxR .gs1 {
@@ -4225,7 +4226,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     div[class*='brandSubContainer'] .bannerBoxR .gs1 h3 {
-        margin-bottom: var(--sp35);
+        margin-bottom: var(--sp30);
     }
 
     div[class*='brandSubContainer'] .hotelSelection {
@@ -4557,7 +4558,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs07);
     }
 
-    section[class*='accountContainer'] div {
+    section[class*='accountContainer'] div,
+    section[class*='accountContainer'] .formPackage {
         margin: 0 auto;
         max-width: 600px;
     }
@@ -8257,8 +8259,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     .bannerBoxR > div p {
         line-height: 21px;
-        margin-bottom: var(--sp25);
         color: var(--gs07);
+    }
+    
+    .bannerBoxR > div a{
+        margin-top: var(--sp25);
     }
 
     /* bannerBoxR */
@@ -8965,7 +8970,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         left: 0;
         top: 0;
         width: 75%;
-        height: 45px;
         background-color: var(--gs04);
         padding: var(--sp15) 1.38%;
         box-sizing: border-box;
@@ -12386,6 +12390,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     .brandSubContainer.rixos .imgCenterTitle {
         background-image: url('../images/brand_rixos_01.png');
+        background-position-x: 30% !important;
     }
 
     .brandSubContainer.onefinestay .imgCenterTitle {
@@ -12510,7 +12515,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     div[class*='brandSubContainer'] .imgCenterTitle span {
         display: block;
-        padding-top: var(--sp30);
+        padding-top: var(--sp20);
     }
 
     div[class*='brandSubContainer'] .bannerBoxR .gs1 {
@@ -12518,7 +12523,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     div[class*='brandSubContainer'] .bannerBoxR .gs1 h3 {
-        margin-bottom: var(--sp35);
+        margin-bottom: var(--sp30);
     }
 
     div[class*='brandSubContainer'] .hotelSelection {
@@ -12856,7 +12861,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs07);
     }
 
-    section[class*='accountContainer'] div {
+    section[class*='accountContainer'] div,
+    section[class*='accountContainer'] .formPackage {
         margin: 0 auto;
         max-width: 600px;
     }
@@ -16422,6 +16428,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .diningFlavoursContainer,
     .tailoredEventsContainer .imgCenterTitle,
     .businessMeetingContainer,
+    .businessSubscribeContainer,
     div[class*='brandSubContainer'],
     section[class*='diningDetailContainer'],
     div[class*='helpContainer'],
@@ -16431,7 +16438,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .allsafeContainer,
     .bookarideContainer,
     .dayuseContainer,
-    section[class*='termsContainer'] {
+    section[class*='termsContainer']{
         max-width: 1920px;
         padding-top: 140px;
     }
@@ -16462,8 +16469,10 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     .bannerBoxR > div p {
         line-height: 21px;
-        margin-bottom: var(--sp25);
         color: var(--gs07);
+    }
+    .bannerBoxR > div a{
+        margin-top: var(--sp25);
     }
 
     /* bannerBoxR */
@@ -17174,7 +17183,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         left: 0;
         top: 0;
         width: 75%;
-        height: 45px;
         background-color: var(--gs04);
         padding: var(--sp15) 1.38%;
         box-sizing: border-box;
@@ -20793,7 +20801,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
 
     div[class*='brandSubContainer'] .imgCenterTitle span {
         display: block;
-        padding-top: var(--sp30);
+        padding-top: var(--sp20);
     }
 
     div[class*='brandSubContainer'] .bannerBoxR .gs1 {
@@ -20801,7 +20809,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     div[class*='brandSubContainer'] .bannerBoxR .gs1 h3 {
-        margin-bottom: var(--sp35);
+        margin-bottom: var(--sp30);
     }
 
     div[class*='brandSubContainer'] .hotelSelection {
@@ -21113,7 +21121,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         bottom: var(--sp15);
     }
 
-    section[class*='accountContainer'] {
+    section[class*='accountContainer'],
+    .businessSubscribeContainer {
         max-width: 1440px;
         margin: 0 auto var(--sp150);
         padding-top: 140px;
@@ -21127,7 +21136,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         background: url('../images/arrow_back_blue.png') no-repeat center / 30px;
     }
 
-    section[class*='accountContainer'] h2 {
+    section[class*='accountContainer'] h2{
         padding-top: var(--sp70);
         text-align: center;
         margin-bottom: var(--sp70);
@@ -21140,7 +21149,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs07);
     }
 
-    section[class*='accountContainer'] div {
+    section[class*='accountContainer'] div,
+    section[class*='accountContainer'] .formPackage {
         margin: 0 auto;
         max-width: 600px;
     }
@@ -22643,6 +22653,10 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     section[class*='accountContainer'].checkoutNext a:not(.historyBack):hover {
         background-color: var(--sc01);
         color: var(--gs02);
+    }
+
+    .subBusiness form .formPackage *{
+        display: block;
     }
 
     div[class*='rsvnContainer'] {
