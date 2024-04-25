@@ -22656,7 +22656,17 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     .subBusiness form .formPackage *{
-        display: block;
+        display: block; width: 100%;
+    }
+    .subBusiness form .formPackage label{
+        margin-bottom: var(--sp10);
+    }
+    .subBusiness form .formPackage input{
+        border: 1px solid var(--gs05);
+    }
+    .subBusiness form .formPackage input,
+    .subBusiness form .formPackage select{
+        padding: var(--sp20) 3%; box-sizing: border-box; 
     }
 
     div[class*='rsvnContainer'] {
