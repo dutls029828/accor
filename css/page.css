@@ -4569,6 +4569,9 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         cursor: pointer;
     }
 
+    section[class*='accountContainer'] .formPackage form #personalInfo{
+        margin-bottom: var(--sp30);
+    }
     section[class*='accountContainer'] .formPackage form #personalInfo div label {
         transition: all .2s linear;
     }
@@ -4576,6 +4579,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     section[class*='accountContainer'] .formPackage form #personalInfo input {
         background-color: var(--gs02);
         width: 100%;
+        margin-bottom: 0;
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] {
@@ -6059,7 +6063,51 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         background-color: var(--sc01);
         color: var(--gs02);
     }
+    .subBusiness .formPackage form fieldset label:not(label[for='checkAgree']){
+        margin-bottom: var(--sp10); display: inline-block;
+    }
+    .subBusiness .formPackage form fieldset input:not(input[type='checkbox']){
+        border: 1px solid var(--gs05); width: 100%;
+    }
+    .subBusiness .formPackage form fieldset input:not(input[type='checkbox']),
+    .subBusiness .formPackage form fieldset select{
+        padding: var(--sp20) 3%; box-sizing: border-box; 
+    }
+    .subBusiness .formPackage form fieldset input:not(input[type='checkbox']),
+    .subBusiness .formPackage form fieldset .selectComponent{
+        margin-bottom: var(--sp30);
+    }
+    .subBusiness .formPackage form fieldset span:not(.selectComponent){
+        color: var(--sc04);
+    }
+    .subBusiness .formPackage form fieldset input[type='submit']{
+        border: none; border-radius: 25px; background-color: var(--sc03); color: var(--gs10);
+        transition: all .3s ease-out;
+    }
+    .subBusiness .formPackage form fieldset input[type='submit']:hover{
+        background-color: var(--sc01); color: var(--gs02);
+    }
 
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo):after{
+        content: ''; display: block; clear: both;
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) label,
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) input{
+        display: block;
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) label{
+        float: right; width: 93%; box-sizing: border-box; line-height: 20px; margin-left: 1%;
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) label[for='checkAgree']{
+        margin-bottom: var(--sp15);
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) input{
+        float: left; width: 3%; box-sizing: border-box;
+    }
+
+    .subBusiness.after .formPackage form fieldset input[type='submit']{
+        margin-top: var(--sp40);
+    }
     div[class*='rsvnContainer'] {
         max-width: 1279px;
         margin: 0 auto;
@@ -12872,6 +12920,9 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         cursor: pointer;
     }
 
+    section[class*='accountContainer'] .formPackage form #personalInfo{
+        margin-bottom: var(--sp30);
+    }
     section[class*='accountContainer'] .formPackage form #personalInfo div label {
         transition: all .2s linear;
     }
@@ -12879,6 +12930,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     section[class*='accountContainer'] .formPackage form #personalInfo input {
         background-color: var(--gs02);
         width: 100%;
+        margin-bottom: 0;
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] {
@@ -13123,7 +13175,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 
     section[class*='accountContainer'].signUp .formPackage form div:first-of-type ul li {
-        padding-left: 4%;
+        padding-left: 5%;
         line-height: 16px;
         background: url('../images/icon_check_circle_classic.png') no-repeat 1% center / 12px;
     }
@@ -14361,7 +14413,49 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         background-color: var(--sc01);
         color: var(--gs02);
     }
-
+    .subBusiness .formPackage form fieldset label:not(label[for='checkAgree']){
+        margin-bottom: var(--sp10); display: inline-block;
+    }
+    .subBusiness .formPackage form fieldset input:not(input[type='checkbox']){
+        border: 1px solid var(--gs05); width: 100%;
+    }
+    .subBusiness .formPackage form fieldset input:not(input[type='checkbox']),
+    .subBusiness .formPackage form fieldset select{
+        padding: var(--sp20) 3%; box-sizing: border-box; 
+    }
+    .subBusiness .formPackage form fieldset input:not(input[type='checkbox']),
+    .subBusiness .formPackage form fieldset .selectComponent{
+        margin-bottom: var(--sp30);
+    }
+    .subBusiness .formPackage form fieldset span:not(.selectComponent){
+        color: var(--sc04);
+    }
+    .subBusiness .formPackage form fieldset input[type='submit']{
+        border: none; border-radius: 25px; background-color: var(--sc03); color: var(--gs10);
+        transition: all .3s ease-out;
+    }
+    .subBusiness .formPackage form fieldset input[type='submit']:hover{
+        background-color: var(--sc01); color: var(--gs02);
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo):after{
+        content: ''; display: block; clear: both;
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) label,
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) input{
+        display: block;
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) label{
+        float: right; width: 93%; box-sizing: border-box; line-height: 20px; margin-left: 1%;
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) label:first-of-type{
+        margin-bottom: var(--sp15);
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) input{
+        float: left; width: 3%; box-sizing: border-box;
+    }
+    .subBusiness.after .formPackage form fieldset input[type='submit']{
+        margin-top: var(--sp40);
+    }
     div[class*='rsvnContainer'] {
         max-width: 1279px;
         margin: 0 auto;
@@ -21160,6 +21254,9 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         cursor: pointer;
     }
 
+    section[class*='accountContainer']:not(.checkout) .formPackage form #personalInfo{
+        margin-bottom: var(--sp30);
+    }
     section[class*='accountContainer'] .formPackage form #personalInfo div label {
         transition: all .2s linear;
     }
@@ -21167,6 +21264,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     section[class*='accountContainer'] .formPackage form #personalInfo input {
         background-color: var(--gs02);
         width: 100%;
+        margin-bottom: 0;
     }
 
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] {
@@ -21717,14 +21815,16 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs02);
     }
 
-    section[class*='accountContainer'].signupmsg p {
+    section[class*='accountContainer'].signupmsg p,
+    section[class*='accountContainer'].subBusinessMsg p {
         max-width: 685px;
         margin: 0 auto var(--sp75);
         text-align: center;
         line-height: 28px;
     }
 
-    section[class*='accountContainer'].signupmsg a:not(.historyBack) {
+    section[class*='accountContainer'].signupmsg a:not(.historyBack),
+    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack) {
         display: block;
         background-color: var(--sc03);
         border: none;
@@ -21738,7 +21838,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs10);
     }
 
-    section[class*='accountContainer'].signupmsg a:not(.historyBack):hover {
+    section[class*='accountContainer'].signupmsg a:not(.historyBack):hover,
+    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack):hover {
         background-color: var(--sc01);
         color: var(--gs02);
     }
@@ -21794,9 +21895,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--sc04);
     }
 
-    /* section[class*='accountContainer'].forgotPw .formPackage form input#userEmail{
-        background: url('../images/icon_alert.png') no-repeat 97% center / 20px; border-color: var(--sc04);
-    } */
     section[class*='accountContainer'].forgotPwMsg * {
         margin: 0 auto;
     }
@@ -22655,19 +22753,50 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs02);
     }
 
-    .subBusiness form .formPackage *{
-        display: block; width: 100%;
+    .subBusiness .formPackage form fieldset label:not(label[for='checkAgree']){
+        margin-bottom: var(--sp10); display: inline-block;
     }
-    .subBusiness form .formPackage label{
-        margin-bottom: var(--sp10);
+    .subBusiness .formPackage form fieldset input:not(input[type='checkbox']){
+        border: 1px solid var(--gs05); width: 100%;
     }
-    .subBusiness form .formPackage input{
-        border: 1px solid var(--gs05);
-    }
-    .subBusiness form .formPackage input,
-    .subBusiness form .formPackage select{
+    .subBusiness .formPackage form fieldset input:not(input[type='checkbox']),
+    .subBusiness .formPackage form fieldset select{
         padding: var(--sp20) 3%; box-sizing: border-box; 
     }
+    .subBusiness .formPackage form fieldset input:not(input[type='checkbox']),
+    .subBusiness .formPackage form fieldset .selectComponent{
+        margin-bottom: var(--sp30);
+    }
+    .subBusiness .formPackage form fieldset span:not(.selectComponent){
+        color: var(--sc04);
+    }
+    .subBusiness .formPackage form fieldset input[type='submit']{
+        border: none; border-radius: 25px; background-color: var(--sc03); color: var(--gs10);
+        transition: all .3s ease-out;
+    }
+    .subBusiness .formPackage form fieldset input[type='submit']:hover{
+        background-color: var(--sc01); color: var(--gs02);
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo):after{
+        content: ''; display: block; clear: both;
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) label,
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) input{
+        display: block;
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) label{
+        float: right; width: 93%; box-sizing: border-box; line-height: 20px; margin-left: 1%;
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) label:first-of-type{
+        margin-bottom: var(--sp15);
+    }
+    .subBusiness.after .formPackage form fieldset > div:not(#personalInfo) input{
+        float: left; width: 3%; box-sizing: border-box;
+    }
+    .subBusiness.after .formPackage form fieldset input[type='submit']{
+        margin-top: var(--sp40);
+    }
+
 
     div[class*='rsvnContainer'] {
         max-width: 1440px;

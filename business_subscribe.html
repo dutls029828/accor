@@ -184,43 +184,49 @@
             SUBSCRIBE TO ACCOR BUSINESS OFFER
             <span class="L315">Up to a 9% reduction on your stays by subscribing to the offer in just a few minutes.</span>
         </h2>
-        <form action="business_subscribe_next.html">
-            <fieldset class="formPackage">
-                <label for="companyName" class="alxL311">Company Name</label>
-                <span>*</span>
-                <input type="text" id="companyName" required class="alx L314">
-                <label for="companySelect" class="alxL311">Company Industry</label>
-                <span>*</span>
-                <select id="companySelect" class="alx L314">
-                    <option selected>Select your sector</option>
-                    <option>Agriculture, Forestry and Fishing</option>
-                    <option>Mining</option>
-                    <option>Construction</option>
-                    <option>Manufacturing</option>
-                    <option>Wholesale Trade</option>
-                    <option>Retail Trade</option>
-                    <option>Finance, Insurance, And Real Estate</option>
-                    <option>Services: Non Professional</option>
-                    <option>Public Administraion</option>
-                </select>
-                <label for="companyAddress" class="alxL311">Address</label>
-                <span>*</span>
-                <input type="text" id="companyAddress" required class="alx L314">
-                <label for="companyAddressDetail" class="alxL311">Additional address information (optional)</label>
-                <input type="text" id="companyAddressDetail" class="alx L314">
-                <label for="companyPostal" class="alxL311">Postal Code</label>
-                <input type="text" id="companyPostal" class="alx L314">
-                <label for="companyCity" class="alxL311">City</label>
-                <input type="text" id="companyCity" class="alx L314">
-                <label for="companyCountry" class="alxL311">Country</label>
-                <span>*</span>
-                <select id="companyCountry" class="alx L314">
-                    <option>Select your country</option>
-                    <option>Korea, Republic of</option>
-                </select>
-                <input type="submit" value="CONTINUE" class="alx L314">
-            </fieldset>
-        </form>
+        <div class="formPackage">
+            <form action="business_subscribe_next.html">
+                <fieldset>
+                    <label for="companyName" class="alxL314">Company Name</label>
+                    <span>*</span>
+                    <input type="text" id="companyName" required class="alx L314">
+                    <label for="companySelect" class="alxL314">Company Industry</label>
+                    <span>*</span>
+                    <span class="selectComponent">
+                        <select id="companySelect" class="alx L314">
+                            <option selected>Select your sector</option>
+                            <option>Agriculture, Forestry and Fishing</option>
+                            <option>Mining</option>
+                            <option>Construction</option>
+                            <option>Manufacturing</option>
+                            <option>Wholesale Trade</option>
+                            <option>Retail Trade</option>
+                            <option>Finance, Insurance, And Real Estate</option>
+                            <option>Services: Non Professional</option>
+                            <option>Public Administraion</option>
+                        </select>
+                    </span>
+                    <label for="companyAddress" class="alxL314">Address</label>
+                    <span>*</span>
+                    <input type="text" id="companyAddress" required class="alx L314">
+                    <label for="companyAddressDetail" class="alxL314">Additional address information (optional)</label>
+                    <input type="text" id="companyAddressDetail" class="alx L314">
+                    <label for="companyPostal" class="alxL314">Postal Code</label>
+                    <input type="text" id="companyPostal" class="alx L314">
+                    <label for="companyCity" class="alxL314">City</label>
+                    <input type="text" id="companyCity" class="alx L314">
+                    <label for="companyCountry" class="alxL314">Country</label>
+                    <span>*</span>
+                    <span class="selectComponent">
+                        <select id="companyCountry" class="alx L314">
+                            <option>Select your country</option>
+                            <option>Korea, Republic of</option>
+                        </select>
+                    </span>
+                    <input type="submit" value="CONTINUE" class="alx L314">
+                </fieldset>
+            </form>
+        </div>
     </section>    
 
     <footer class="alx">
