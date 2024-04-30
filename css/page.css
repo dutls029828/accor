@@ -5132,14 +5132,16 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs02);
     }
 
-    section[class*='accountContainer'].signupmsg p {
+    section[class*='accountContainer'].signupmsg p,
+    section[class*='accountContainer'].subBusinessMsg p  {
         max-width: 685px;
         margin: 0 auto var(--sp75);
         text-align: center;
         line-height: 28px;
     }
 
-    section[class*='accountContainer'].signupmsg a:not(.historyBack) {
+    section[class*='accountContainer'].signupmsg a:not(.historyBack),
+    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack) {
         display: block;
         background-color: var(--sc03);
         border: none;
@@ -5153,7 +5155,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs10);
     }
 
-    section[class*='accountContainer'].signupmsg a:not(.historyBack):hover {
+    section[class*='accountContainer'].signupmsg a:not(.historyBack):hover,
+    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack):hover {
         background-color: var(--sc01);
         color: var(--gs02);
     }
@@ -13481,14 +13484,16 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs02);
     }
 
-    section[class*='accountContainer'].signupmsg p {
+    section[class*='accountContainer'].signupmsg p,
+    section[class*='accountContainer'].subBusinessMsg p  {
         max-width: 685px;
         margin: 0 auto var(--sp75);
         text-align: center;
         line-height: 28px;
     }
 
-    section[class*='accountContainer'].signupmsg a:not(.historyBack) {
+    section[class*='accountContainer'].signupmsg a:not(.historyBack),
+    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack) {
         display: block;
         background-color: var(--sc03);
         border: none;
@@ -13502,7 +13507,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs10);
     }
 
-    section[class*='accountContainer'].signupmsg a:not(.historyBack):hover {
+    section[class*='accountContainer'].signupmsg a:not(.historyBack):hover,
+    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack):hover {
         background-color: var(--sc01);
         color: var(--gs02);
     }
