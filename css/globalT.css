@@ -20,31 +20,45 @@ video{
     content: ''; display: block; clear: both;
 }
 @media screen and (max-width: 767px){
-    header>div:first-of-type,
-    header>div#fnbPanel>div:first-of-type div b.mui,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn),
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3),
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li .countComponent,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent,
-    footer,
-    footer>div:last-of-type>strong{
-        position: relative;
-    }
-    header>div:first-of-type nav,
-    header>div:first-of-type div .menuBar,
-    header>div:first-of-type div .menuBar.active span,
-    header>div:first-of-type div ul,
+    header,
+    header>div#fnbPanel,
     header>div#fnbPanel>div:first-of-type div,
-    header>div#fnbPanel>div:first-of-type div b.mui:after,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button::after,
     header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent span,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button'],
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent:after,
-    footer>div:last-of-type>strong:after{
-        position: absolute;
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) button,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) span select,
+    footer>div:first-of-type,
+    footer>div:first-of-type div:first-of-type form input:first-of-type{
+        width: 100%; box-sizing: border-box;
+    }
+    header>div:first-of-type h1 a img,
+    header>div:first-of-type nav,
+    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
+    header>div#fnbPanel>div#reservation form fieldset legend,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(1) input,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2)>input,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent>input,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect>input[type='reset']{
+        width: 100%;
+    }
+    header>div:first-of-type div ul li,
+    header>div:first-of-type div ul>li:first-of-type.active,
+    header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
+    header>div#fnbPanel>div:first-of-type div ul li a.mapBtn:hover,
+    header>div#fnbPanel>div#reservation form fieldset,
+    header>div#fnbPanel>div#reservation form fieldset>div,
+    header>div#fnbPanel>div#reservation form fieldset>div ul>li input:not(input[type='reset']),
+    footer>div:last-of-type div:first-of-type>span{
+        box-sizing: border-box;
+    }
+    header>div:first-of-type>nav ul,
+    header>div:first-of-type div ul>li:not(:first-of-type),
+    header>div:first-of-type div ul li:not(:nth-of-type(1)),
+    header>div#fnbPanel,
+    header>div#fnbPanel>div#reservation,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect,
+    footer>div:last-of-type ul:not(:last-of-type),
+    footer>div:last-of-type ul:nth-of-type(2) li:last-of-type{
+        display: none;
     }
     header>div:first-of-type h1 a,
     header>div:first-of-type div span,
@@ -74,8 +88,34 @@ video{
     footer>div:last-of-type div:first-of-type>span{
         display: block;
     }
+    header>div:first-of-type,
+    header>div#fnbPanel>div:first-of-type div b.mui,
+    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn),
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3),
+    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li .countComponent,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent,
+    footer,
+    footer>div:last-of-type>strong{
+        position: relative;
+    }
+    header>div:first-of-type nav,
+    header>div:first-of-type div .menuBar,
+    header>div:first-of-type div .menuBar.active span,
+    header>div:first-of-type div ul,
+    header>div#fnbPanel>div:first-of-type div,
+    header>div#fnbPanel>div:first-of-type div b.mui:after,
+    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button::after,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent span,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button'],
+    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent:after,
+    footer>div:last-of-type>strong:after{
+        position: absolute;
+    }
     header{
-        position: fixed; width: 100%; padding: var(--sp20) 3%; top: 0; background-color: var(--gs01); z-index: 1000; box-sizing: border-box; height: 65px;
+        position: fixed; padding: var(--sp20) 3%; top: 0; background-color: var(--gs01); z-index: 1000; height: 65px;
     }
     header ul li{
         list-style: none;
@@ -87,13 +127,10 @@ video{
         width: 20%; line-height: 35px;
     }
     header>div:first-of-type h1 a img{
-        width: 100%; max-width: 95px;
+        max-width: 95px;
     }
     header>div:first-of-type nav{
-        color: var(--sc01); right: 0; width: 100%;
-    }
-    header>div#fnbPanel>div:first-of-type div{
-        box-sizing: border-box; width: 100%;
+        color: var(--sc01); right: 0;
     }
     header>div:first-of-type div .menuBar{
         width: 30px; right: 0; top: 0;
@@ -116,20 +153,14 @@ video{
     header>div:first-of-type div .menuBar.active span:last-of-type{
         transform: rotate(45deg);
     }
-    header>div:first-of-type>nav ul{
-        display: none;
-    }
     header>div:first-of-type div ul{
         right: 60px; top: 0; z-index: 1;
     }
     header>div:first-of-type div ul li{
-        text-align: center; width: 140px; transition-duration: 0.35s; box-sizing: border-box;
+        text-align: center; width: 140px; transition-duration: 0.35s;
     }
     header>div:first-of-type div ul li a{
         text-decoration: none; color: var(--sc01);
-    }
-    header>div:first-of-type div ul>li:not(:first-of-type){
-        display: none;
     }
     header>div:first-of-type div ul>li{
         border-width: 2px; line-height: 16px; transition: line-height 0.35s ease-out; border-style: solid;
@@ -141,7 +172,7 @@ video{
         border-color: transparent;
     }
     header>div:first-of-type div ul>li:first-of-type.active{
-        background-color: var(--gs01); color: var(--sc01); border: 2px solid var(--sc01); box-sizing: border-box;
+        background-color: var(--gs01); color: var(--sc01); border: 2px solid var(--sc01);
     }
     header>div:first-of-type div ul>li:first-of-type::after{
         content: ''; display: inline-block; width: 10px; height: 10px; vertical-align: middle; background: url('../images/arrow_pinkRight_up.png') no-repeat right center / 100%; 
@@ -165,9 +196,6 @@ video{
     header>div:first-of-type div ul>li:last-of-type{
         background-color: var(--gs01); border-color: var(--sc01);
     }
-    header>div:first-of-type div ul li:not(:nth-of-type(1)){
-        display: none;
-    }
     header>div:first-of-type div ul>li a{
         transition: all .3s ease-out;
     }
@@ -184,8 +212,7 @@ video{
         background-color: var(--sc01); color: var(--gs01);
     }
     header>div#fnbPanel{
-        position: fixed; height: 100%; width: 100%; background-color: white; left: 0; padding: var(--sp40) 3% 0 3%; 
-        box-sizing: border-box; display: none; top: 50px;
+        position: fixed; height: 100%; background-color: white; left: 0; padding: var(--sp40) 3% 0 3%; top: 50px;
     }
     header>div#fnbPanel>div:first-of-type div{
         right: 10%; top: 0; padding-top: 45px;
@@ -209,10 +236,10 @@ video{
         cursor: pointer; padding-right: 3%;
     }
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn{
-        background-color: var(--gs01); border: 2px solid var(--sc01); color: var(--sc01); text-align: center; padding: var(--sp15) 10%; box-sizing: border-box; transition-duration: 0.35s;
+        background-color: var(--gs01); border: 2px solid var(--sc01); color: var(--sc01); text-align: center; padding: var(--sp15) 10%; transition-duration: 0.35s;
     }
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn:hover{
-        background-color: var(--sc01); border: 2px solid var(--sc01); box-sizing: border-box; color: var(--gs01);
+        background-color: var(--sc01); border: 2px solid var(--sc01); color: var(--gs01);
     }
     header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn){
         color: var(--gs05); text-decoration: none; transition: letter-spacing 0.35s ease-out;
@@ -221,7 +248,7 @@ video{
         color: var(--sc03); letter-spacing: 1.3px;
     }
     header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before{
-        content: ''; width: 100%; height: 1px; left: 0; bottom: -1.5px; background-color: var(--sc03); transform: scaleX(0); transition: transform 0.35s ease;
+        content: ''; height: 1px; left: 0; bottom: -1.5px; background-color: var(--sc03); transform: scaleX(0); transition: transform 0.35s ease;
     }
     header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):hover:before{
         transform: scaleX(1);
@@ -229,17 +256,14 @@ video{
     header>div#fnbPanel div:first-of-type div ul li:not(:last-of-type){
         margin-bottom: var(--sp40);
     }
-    header>div#fnbPanel>div#reservation{
-        display: none;
-    }
     header>div#fnbPanel>div#reservation form fieldset{
         box-shadow: 0px 5px 25px -10px rgba(93, 88, 89, 0.4); display: flex; flex-direction: column; width: 50%;
     }
     header>div#fnbPanel>div#reservation form fieldset legend{
-        width: 100%; background: url('../images/pattern_rsvn.jpg') no-repeat center / cover; text-align: center; padding: var(--sp15) 0; box-sizing: border-box; color: var(--gs01);
+        background: url('../images/pattern_rsvn.jpg') no-repeat center / cover; text-align: center; padding: var(--sp15) 0; color: var(--gs01);
     }
     header>div#fnbPanel>div#reservation form fieldset>div{
-        background-color: var(--gs01); padding: var(--sp20) 5%; box-sizing: border-box;
+        background-color: var(--gs01); padding: var(--sp20) 5%;
     }
     header>div#fnbPanel>div#reservation form fieldset>div>ul{
         margin-bottom: var(--sp20);
@@ -260,12 +284,7 @@ video{
         color: var(--sc03);
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul>li input:not(input[type='reset']){
-        padding: var(--sp15); border: 1px solid var(--gs04); background-color: var(--gs02); color: var(--sc02); box-sizing: border-box;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(1) input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2)>input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent>input{
-        width: 100%;
+        padding: var(--sp15); border: 1px solid var(--gs04); background-color: var(--gs02); color: var(--sc02);
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2) label div{
         float: right;
@@ -288,11 +307,8 @@ video{
     header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button:after{
         transform: rotate(180deg);
     }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect{
-        display: none;
-    }
     header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect{
-        width: 100%; padding: var(--sp15) 5%; box-sizing: border-box; background-color: var(--gs02); border: 1px solid var(--gs10); top: 67px; z-index: 1;
+        padding: var(--sp15) 5%; background-color: var(--gs02); border: 1px solid var(--gs10); top: 67px; z-index: 1;
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li{
         margin-bottom: var(--sp15);
@@ -317,7 +333,7 @@ video{
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) button,
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) span select{
-        padding: var(--sp15); border: 1px solid var(--gs04); background-color: var(--gs02); color: var(--sc02); box-sizing: border-box; width: 100%; text-align: left;
+        padding: var(--sp15); border: 1px solid var(--gs04); background-color: var(--gs02); color: var(--sc02); text-align: left;
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent:after{
         background: url('../images/arrow_expand_small.png') no-repeat 95% center; content: ''; width: 14px; height: 8px; transition: transform 0.35s ease-out; transform: rotate(0deg); right: 5%; top: 5px;
@@ -338,13 +354,13 @@ video{
         color: var(--gs10); font-weight: 500;
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect>input[type='reset']{
-        background-color: transparent; border: none; color: var(--sc05); width: 100%; text-align: right;
+        background-color: transparent; border: none; color: var(--sc05); text-align: right;
     }
     footer{
         margin: var(--sp60) auto 0; max-width: 1279px; padding: 0 3% var(--sp20) 3%;
     }
     footer>div:first-of-type{
-        background-color: var(--gs01); width: 100%; box-sizing: border-box;
+        background-color: var(--gs01);
     }
     footer>div:first-of-type div{
         padding: var(--sp70) 10vw; box-shadow: 1px 1px 25px 0.3px rgba(0, 0, 0, 0.2);
@@ -366,7 +382,7 @@ video{
         margin: 0 auto;
     }
     footer>div:first-of-type div:first-of-type form input:first-of-type{
-        padding: var(--sp15) 10% var(--sp15) var(--sp15); width: 100%; margin-bottom: var(--sp45); box-sizing: border-box; border: 1px solid var(--gs04); background-color: var(--gs02);
+        padding: var(--sp15) 10% var(--sp15) var(--sp15); margin-bottom: var(--sp45); border: 1px solid var(--gs04); background-color: var(--gs02);
     }
     footer>div:first-of-type div:first-of-type form input::placeholder{
         color: var(--sc02);
@@ -432,7 +448,7 @@ video{
         margin: var(--sp55) 0 var(--sp10); text-align: center;
     }
     footer>div:last-of-type ul:not(:last-of-type){
-        display: none; padding-left: 3%; margin-bottom: var(--sp30);
+        padding-left: 3%; margin-bottom: var(--sp30);
     }
     footer>div:last-of-type ul:last-of-type{
         margin-bottom: var(--sp55); padding: 0 20%;
@@ -455,9 +471,6 @@ video{
     }
     footer>div:last-of-type ul li:hover{
         color: var(--gs09);
-    }
-    footer>div:last-of-type ul:nth-of-type(2) li:last-of-type{
-        display: none;
     }
     footer>div:last-of-type ul:last-of-type li{
         text-indent: -9999px; display: inline-block;
@@ -497,7 +510,7 @@ video{
         margin-bottom: var(--sp30); font-size: 10px; text-align: center;
     }
     footer>div:last-of-type div:first-of-type>span{
-        background: url('../images/mobile_footer.png') no-repeat center top / contain; height: 150px; padding-top: var(--sp150); box-sizing: border-box; text-align: center;
+        background: url('../images/mobile_footer.png') no-repeat center top / contain; height: 150px; padding-top: var(--sp150); text-align: center;
     }
     footer>div:last-of-type div:first-of-type>span a{
         display: inline-block; max-width: 158px; line-height: 80px; text-indent: -9999px; width: 45%; background-position: center; background-size: 100%; background-repeat: no-repeat;
@@ -1240,8 +1253,7 @@ video{
         color: var(--sc02);
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul li input:focus{
-        color: var(--gs10);
-        font-weight: 500;
+        color: var(--gs10);font-weight: 500;
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect>input[type='reset']{
         background-color: transparent; border: none; color: var(--sc05); width: 100%; text-align: right;
