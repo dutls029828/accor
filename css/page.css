@@ -1386,7 +1386,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         line-height: 16px; margin-bottom: var(--sp25);
     }
     .offersYearContainer .horiCardslotBox ul li div span{
-        position: relative; display: block; text-align: right;
+        position: relative; display: block; text-align: right; margin-left: auto;
     }
     .offersYearContainer .horiCardslotBox ul li div span::after{
         position: absolute; width: 112px; height: 1px; content: ''; right: 5px; bottom: -5px;
@@ -10961,7 +10961,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         line-height: 21px; margin-bottom: var(--sp25);
     }
     .offersYearContainer .horiCardslotBox ul li div span{
-        position: relative; display: block; text-align: right;
+        position: relative; display: block; text-align: right; margin-left: auto;
     }
     .offersYearContainer .horiCardslotBox ul li div span::after{
         position: absolute; width: 142px; height: 1px; content: ''; right: 5px; bottom: -5px; transform: scaleX(1); transition: transform 0.3s ease-out; transform-origin: right;

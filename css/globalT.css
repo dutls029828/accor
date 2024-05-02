@@ -231,6 +231,7 @@ img,video{
     }
     header>div:first-of-type div ul>li:first-of-type.active,
     header>div:first-of-type div ul>li:not(:first-of-type),
+    header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn:hover{
         border: 2px solid var(--sc01);
     }
@@ -614,6 +615,7 @@ img,video{
     header>div:first-of-type div ul>li:not(:first-of-type),
     header>div:first-of-type div ul li:not(:nth-of-type(1)),
     header>div#fnbPanel,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
     footer>div:last-of-type>strong,
     footer>div:last-of-type>b,
     footer>div:last-of-type>ul:last-of-type{
@@ -735,7 +737,7 @@ img,video{
     header>div:first-of-type div ul>li:first-of-type.active,
     header>div:first-of-type div ul>li:nth-of-type(2):hover a,
     header>div:first-of-type div ul>li:last-of-type,
-    header>div#fnbPanel
+    header>div#fnbPanel,
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn:hover,
     header>div#fnbPanel>div#reservation form fieldset>div,
     footer>div:first-of-type{
@@ -899,7 +901,7 @@ img,video{
         opacity: 1; margin-bottom: var(--sp50);
     }
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn{
-        padding: var(--sp15) 20%; transition-duration: .3s; min-width: 180px;
+        padding: var(--sp15) 20%; transition-duration: .3s; min-width: 180px; background-color: var(--sc01);
     }
     header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn){
         text-decoration: none; transition: letter-spacing .3s ease-out;
