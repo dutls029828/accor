@@ -3,10 +3,10 @@ $(function(){
     slider(".indexContainer .propBox .propSlider",false,false,true,4000,400,false,false,'fade');
     slider(".indexContainer .brandSlider",false,false,true,8000,1000,false,false,'fade');
     slider(".tickerBox .tickerSlider",true,true,false,0,500000,false,false,'horizontal');
-    slider(".diningServiceContainer .tileSlider",false,false,false,0,500,true,true,"fade");
+    slider("div[class*='diningContainer'].service .tileSlider",false,false,false,0,500,true,true,"fade");
     pagerCustomSlider();
 
-    termsPopup(".offersYearContainer .horiCardslotBox ul li div span input",".btn_close");
+    termsPopup("div[class*='offersContainer'].year .horiCardslotBox ul li div span input",".btn_close");
     termsPopup("#diningSeasonFestive ul li","#diningSeasonFestive > div .btn_close");
     termsPopup("div[class*='detailContainer'] > .termsPopup+div span input", ".btn_close");
     termsPopup(".mapPopup",".btn_close");
@@ -186,7 +186,6 @@ function wayCarousel(){
         maxSlides: 2,
         moveSlides: 1,
         slideWidth: 1320,
-        // slideMargin: 60,
         pager: false,
         touchEnabled: false
     });
@@ -330,7 +329,7 @@ function miniBoxUI(miniBoxBtn){
 }
 
 function pagerCustomSlider(){
-    $(".businessMeetingContainer .headlineSlider").bxSlider({
+    $("div[class*='businessContainer'].meetingPlanning .headlineSlider").bxSlider({
         controls: true,
         auto: true,
         pause: 6000,
