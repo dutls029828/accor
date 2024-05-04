@@ -727,6 +727,11 @@ img,video{
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect>input[type='reset']{
         background-color: transparent; border: none;
     }
+    header>div:first-of-type div ul>li:nth-of-type(2),
+    header>div:first-of-type div ul>li:last-of-type a:hover,
+    header>div#fnbPanel>div:first-of-type div ul li a.mapBtn{
+        background-color: var(--sc01);
+    }
     header>div:first-of-type div span,
     header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
     footer>div:first-of-type div:first-of-type form input[type='submit'],
@@ -751,7 +756,6 @@ img,video{
         background-color: var(--gs02);
     }
     header>div:first-of-type nav,
-    header>div:first-of-type div ul li a,
     header>div:first-of-type div ul>li:first-of-type.active input,
     header>div:first-of-type div ul>li:nth-of-type(2):hover a,
     header>div:first-of-type div ul>li:last-of-type a,
@@ -776,6 +780,7 @@ img,video{
     header>div#fnbPanel>div#reservation form fieldset>div>input:hover{
         color: var(--sc03);
     }
+    header>div:first-of-type div ul li a,
     header>div:first-of-type div ul>li:last-of-type:hover a,
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
     header>div#fnbPanel>div#reservation form fieldset legend{
@@ -863,9 +868,6 @@ img,video{
     }
     header>div:first-of-type div ul>li:first-of-type input{
         padding-right: var(--sp10);
-    }
-    header>div:first-of-type div ul>li:nth-of-type(2){
-        background-color: var(--sc01);
     }
     header>div:first-of-type div ul>li a{
         transition: all .3s ease-out;

@@ -128,8 +128,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         border-color: var(--sc03); background-image: url('../images/arrow_pinkRight.png');
     }
     .indexContainer .globalCardslotBox ul>li a,
-    div[class*='offersContainer'].member .globalCardslotBox ul li a,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a,
+    div[class*='offersContainer'] .globalCardslotBox ul li a,
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a,
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a,
     div[class*='rsvnContainer']>div:first-of-type>a,
@@ -142,17 +141,29 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         background-position-x: 92%;
     }
     .indexContainer .globalCardslotBox ul>li a:after,
-    div[class*='offersContainer'].member .globalCardslotBox ul li a:after,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a::after,
+    div[class*='offersContainer'] .globalCardslotBox ul li a:after,
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:after,
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:after,
     div[class*='rsvnContainer']>div:first-of-type>a:after,
     .bookarideContainer>div:last-of-type a:after{
         position: absolute; left: 0; top: 0; content: 'Learn More'; width: 75%; padding: var(--sp15) 1.38%; box-sizing: border-box; text-align: center; transition: width .3s ease-out;
     }
+    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a::after,
+    div[class*='offersContainer'] .globalCardslotBox ul li a::after,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a::after,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:after,
+    div[class*='rsvnContainer']>div:first-of-type>a::after,
+    .bookarideContainer>div:last-of-type a::after{
+        background-color: var(--gs04);
+    }
+    .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a::after,
+    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a::after,
+    div[class*='offersContainer'] .globalCardslotBox ul .fTextDesc.pt7 a:after,
+    div[class*='offersContainer'] .globalCardslotBox ul .hTextDesc.pt3 a:after{
+        background-color: var(--sc03);
+    }
     .indexContainer .globalCardslotBox ul>li a:hover,
-    div[class*='offersContainer'].member .globalCardslotBox ul li a:hover,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a:hover,
+    div[class*='offersContainer'] .globalCardslotBox ul li a:hover,
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:hover,
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:hover,
     div[class*='rsvnContainer']>div:first-of-type>a:hover,
@@ -160,8 +171,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         background-position-x: right; transition-delay: .05s;
     }
     .indexContainer .globalCardslotBox ul>li a:hover:after,
-    div[class*='offersContainer'].member .globalCardslotBox ul li a:hover:after,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a:hover:after,
+    div[class*='offersContainer'] .globalCardslotBox ul li a:hover:after,
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:hover:after,
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:hover:after,
     div[class*='rsvnContainer']>div:first-of-type>a:hover:after,
@@ -616,15 +626,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 dl dt{
         max-width: 285px;
     }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a::after{
-        background-color: var(--gs04);
-    }
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a:first-of-type{
         margin-bottom: var(--sp10);
-    }
-    .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a::after,
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a::after{
-        background-color: var(--sc03);
     }
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a:first-of-type::after{
         content: 'Aparthotels';
@@ -1285,18 +1288,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) div>a:first-of-type{
         content: 'ONLINE' !important; margin-bottom: var(--sp15);
     }
-    div[class*='offersContainer'].member .globalCardslotBox ul li a::after{
-        background-color: var(--gs04);
-    }
     div[class*='offersContainer'].member .globalCardslotBox ul .fImgDesc a:first-of-type::after{
         content: 'ONLINE';
     }
     div[class*='offersContainer'].member .globalCardslotBox ul .fImgDesc a:last-of-type::after{
         content: 'BY PHONE';
-    }
-    div[class*='offersContainer'].member .globalCardslotBox ul .fTextDesc.pt7 a:after,
-    div[class*='offersContainer'].member .globalCardslotBox ul .hTextDesc.pt3 a:after{
-        background-color: var(--sc03);
     }
     div[class*='offersContainer'].member .globalCardslotBox ul li a:hover:after{
         width: 100%;
@@ -1353,13 +1349,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(2),
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(6){
         margin-left: 1%;
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a::after{
-        background-color: var(--gs04);
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(4) a::after,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(6) a::after{
-        background-color: var(--sc03);
     }
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3){
         position: relative; color: var(--gs02); text-align: center; margin: var(--sp10) 0; min-height: 360px; display: flex; justify-content: center; align-items: center;
@@ -1693,9 +1682,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:first-of-type .gs9 a:first-of-type{
         margin-bottom: var(--sp15);
     }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a::after{
-        background-color: var(--gs04);
-    }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:first-of-type .gs9 a:first-of-type::after{
         content: 'PARTICIPATING BRANDS';
     }
@@ -1726,7 +1712,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         background: url('../images/icon_wCheck.png') no-repeat left center / 14px;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:after{
-        content: 'ENROL YOUR COMPANY'; background-color: var(--gs04);
+        content: 'ENROL YOUR COMPANY';
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox{
         padding: 0 3%; list-style: none;
@@ -3504,9 +3490,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='rsvnContainer']>div .imgCenterTitle{
         text-align: center; margin-bottom: var(--sp50);
     }
-    div[class*='rsvnContainer']>div:first-of-type>a::after{
-       background-color: var(--gs04);
-    }
     div[class*='rsvnContainer'].myaccount>div:first-of-type>a::after{
         content: 'Go to My Booking';
     }
@@ -4052,12 +4035,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
     .bookarideContainer>div:last-of-type a{
         background-image: url('../images/arrow_greyRight.png'); border-color: var(--gs04);
-    }
-    .bookarideContainer>div:last-of-type a::after{
-        background-color: var(--gs04);
-    }
-    .bookarideContainer>div:last-of-type a:hover:after{
-        width: 100%;
     }
     .dayuseContainer{
         max-width: 1440px; margin: 0 auto var(--sp60);
@@ -4788,21 +4765,64 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .mapContainer .mapContent .hotelInform::after{
         content: ''; display: block; clear: both;
     }
+    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a,
+    div[class*='offersContainer'] .globalCardslotBox ul li a,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a,
+    .bookarideContainer>div:last-of-type a{
+        border-color: var(--gs04); background-image: url('../images/arrow_greyRight.png');
+    }
+    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a,
+    .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a,
+    div[class*='offersContainer'] .globalCardslotBox ul .fTextDesc.pt7 a,
+    div[class*='offersContainer'] .globalCardslotBox ul .hTextDesc.pt3 a{
+        border-color: var(--sc03); background-image: url('../images/arrow_pinkRight.png');
+    }
     .indexContainer .globalCardslotBox ul>li a,
-    div[class*='offersContainer'] .globalCardslotBox ul li a{
+    div[class*='offersContainer'] .globalCardslotBox ul li a,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a,
+    .bookarideContainer>div:last-of-type a{
         position: relative; display: block; padding: var(--sp15) 3.125%; border-width: 1px; border-style: solid; color: var(--gs10);
-        background-repeat: no-repeat; background-position: 90% center; background-size: 14px; max-width: 180px;
+        background-repeat: no-repeat; background-position: 90% center; background-size: 14px; max-width: 180px; transition-duration: .3s;
+    }
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:first-of-type,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a,
+    .bookarideContainer>div:last-of-type a{
+        background-position-x: 92%;
     }
     .indexContainer .globalCardslotBox ul>li a:after,
-    div[class*='offersContainer'] .globalCardslotBox ul li a:after{
+    div[class*='offersContainer'] .globalCardslotBox ul li a:after,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:after,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:after,
+    .bookarideContainer>div:last-of-type a:after{
         position: absolute; left: 0; top: 0; content: 'Learn More'; width: 75%; padding: var(--sp15) 1.38%; box-sizing: border-box; text-align: center; transition: width .3s ease-out;
     }
+    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a::after,
+    div[class*='offersContainer'] .globalCardslotBox ul li a::after,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a::after,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:after,
+    .bookarideContainer>div:last-of-type a:after{
+        background-color: var(--gs04);
+    }
+    .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a::after,
+    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a::after,
+    div[class*='offersContainer'] .globalCardslotBox ul .fTextDesc.pt7 a::after,
+    div[class*='offersContainer'] .globalCardslotBox ul .hTextDesc.pt3 a::after{
+        background-color: var(--sc03);
+    }
     .indexContainer .globalCardslotBox ul>li a:hover,
-    div[class*='offersContainer'] .globalCardslotBox ul li a:hover{
+    div[class*='offersContainer'] .globalCardslotBox ul li a:hover,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:hover,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:hover,
+    .bookarideContainer>div:last-of-type a:hover{
         background-position-x: right; transition-delay: .05s;
     }
     .indexContainer .globalCardslotBox ul>li a:hover:after,
-    div[class*='offersContainer'].member .globalCardslotBox ul li a:hover:after{
+    div[class*='offersContainer'] .globalCardslotBox ul li a:hover:after,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:hover:after,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:hover:after,
+    .bookarideContainer>div:last-of-type a:hover:after{
         width: 100%;
     }
     .bannerBoxR img{
@@ -5256,21 +5276,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 dl dt{
         max-width: 285px;
     }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a{
-        border-color: var(--gs04); background-image: url('../images/arrow_greyRight.png');
-    }
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a{
-        float: left; width: 52%; border-color: var(--sc03); background-image: url('../images/arrow_pinkRight.png');
-    }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a{
-        border-color: var(--sc03); background-image: url('../images/arrow_pinkRight.png');
-    }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a::after{
-        background-color: var(--gs04);
-    }
-    .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a::after,
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a::after{
-        background-color: var(--sc03);
+        float: left; width: 52%;
     }
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a:first-of-type::after{
         content: 'Aparthotels';
@@ -5927,7 +5934,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         position: relative; margin: var(--sp10) 0 var(--sp10) 0.4%; display: flex; justify-content: center; align-items: center;
     }
     div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) div{
-        position: absolute; display: flex; flex-wrap: wrap; max-width: 400px; justify-content: space-between;
+        position: absolute; display: flex; flex-wrap: wrap; justify-content: space-between;
     }
     div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) div h3{
         margin-bottom: var(--sp40); text-align: center; width: 100%;
@@ -5938,25 +5945,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) div>a:first-of-type{
         content: 'ONLINE' !important;
     }
-    div[class*='offersContainer'].member .globalCardslotBox ul li a{
-        border-color: var(--gs04); background-image: url('../images/arrow_greyRight.png');
-    }
-    div[class*='offersContainer'].member .globalCardslotBox ul li a::after{
-        background-color: var(--gs04);
-    }
     div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) a:first-of-type::after{
         content: 'ONLINE';
     }
     div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) a:last-of-type::after{
         content: 'BY PHONE';
-    }
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(4) a,
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(6) a{
-        border-color: var(--sc03); background-image: url('../images/arrow_pinkRight.png');
-    }
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(4) a::after,
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(6) a::after{
-        background-color: var(--sc03);
     }
     div[class*='offersContainer'].member .bannerBox div{
         padding: var(--sp60) 3.125%;
@@ -6012,27 +6005,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(6){
         margin-left: 1%;
     }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a{
-        position: relative; display: block; max-width: 165px; padding: var(--sp15) 3.125%; border: 1px solid var(--gs04); color: var(--gs10);
-        background: url('../images/arrow_greyRight.png') no-repeat 90% center / 14px;
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a:hover{
-        background-position: right; transition-delay: .05s;
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a::after{
-        position: absolute; content: 'Learn More'; left: 0; top: 0; width: 75%; height: 45px; background-color: var(--gs04); padding: var(--sp15) 1.38%; box-sizing: border-box; text-align: center; transition: width .3s ease-out;
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a:hover:after{
-        width: 100%; padding: var(--sp15) 3.125%;
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(4) a,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(6) a{
-        border-color: var(--sc03); background-image: url('../images/arrow_pinkRight.png');
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(4) a::after,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(6) a::after{
-        background-color: var(--sc03);
-    }
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3) a{
         margin: 0 auto;
     }
@@ -6040,8 +6012,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         position: relative; color: var(--gs02); text-align: center; margin: var(--sp10) 0; min-height: 360px; display: flex; justify-content: center; align-items: center;
     }
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3) div{
-        position: absolute;
-        width: 500px;
+        position: absolute; width: 500px;
     }
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3) div h3{
         margin-bottom: var(--sp25);
@@ -6333,9 +6304,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         position: absolute; display: inline-block; top: 45%; text-align: center; width: 100%; color: var(--gs02); background-color: transparent;
         font-style: normal; font-size: 28px; font-weight: inherit;
     }
-    div[class*='businessContainer'].tailoredEvents :not(.imgCenterTitle){
-        max-width: 1440px; margin: 0 auto;
-    }
     div[class*='businessContainer'].tailoredEvents .imgCenterTitle{
         background: url('../images/business_tailoredEvents_headline.png') no-repeat center / cover;
         width: 100%; min-height: 800px; text-align: center; line-height: 800px; color: #c2a044;
@@ -6369,21 +6337,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 p{
         color: var(--gs05); line-height: 30px; margin-bottom: var(--sp40);
     }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a{
-        position: relative;  display: block;  padding: var(--sp15) 3.125%;  border: 1px solid var(--gs04);  color: var(--gs10);
-        background: url('../images/arrow_greyRight.png') no-repeat 92% center / 14px; transition-duration: .3s;
-    }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:last-of-type{
-        background-position-x: 90%;
-    }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:first-of-type:after{
         width: 80%;
-    }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a::after{
-        position: absolute; left: 0; top: 0; width: 75%; height: 45px; background-color: var(--gs04); padding: var(--sp15) 1.38%; text-align: center; transition: width .3s ease-out; box-sizing: border-box;
-    }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:hover{
-        background-position-x: right; transition-delay: .05s;
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:first-of-type .gs9 a{
         float: left; width: 47.5%;
@@ -6395,12 +6350,13 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         content: 'PARTICIPATING BRANDS';
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:first-of-type .gs9 a:last-of-type{
-        max-width: 150px; margin-left: 5%;
+        margin-left: 5%;
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:first-of-type .gs9 a:last-of-type::after{
         content: 'FAQ';
     }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:nth-of-type(2) .gs9 a{
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:nth-of-type(2) .gs9 a,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:last-of-type .gs9 a{
         max-width: 200px; margin-left: 0;
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:nth-of-type(2) .gs9 a::after{
@@ -6412,14 +6368,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:nth-of-type(3) .gs9 a::after{
         content: 'RESERVE NOW';
     }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:last-of-type .gs9 a{
-        max-width: 200px; margin-left: 0;
-    }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:last-of-type .gs9 a::after{
         content: 'CHECK OUT THE BLOG';
-    }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:hover::after{
-        width: 100%;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) h3+div{
         background: url('../images/business_tailoredEvents_offer.png') no-repeat center / cover;
@@ -6433,18 +6383,10 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         line-height: 28px; padding-left: 4%;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a{
-        position: relative; display: block; max-width: 250px; padding: var(--sp15) 3.125%; border: 1px solid var(--gs04); color: var(--gs10);
-        background: url('../images/arrow_greyRight.png') no-repeat 92% center / 14px; transition-duration: .3s;
+        max-width: 250px; margin: 0 auto;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:after{
-        position: absolute; content: 'ENROL YOUR COMPANY'; left: 0; top: 0; width: 80%; height: 45px; background-color: var(--gs04);
-        padding: var(--sp15) 1.38%; text-align: center; transition: width .3s ease-out; box-sizing: border-box;
-    }
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:hover{
-        background-position-x: right; transition-delay: .05s;
-    }
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:hover:after{
-        width: 100%;
+        content: 'ENROL YOUR COMPANY'; width: 80%;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox{
         padding: 0 3%; list-style: none;
@@ -8794,14 +8736,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs05); padding-top: var(--sp10); display: block; line-height: 21px;
     }
     .bookarideContainer>div:last-of-type a{
-        position: relative; display: block; padding: var(--sp15) 2%; border: 1px solid var(--gs04); color: var(--gs10);
-        background: url('../images/arrow_greyRight.png') no-repeat 92% center / 14px; max-width: 180px; margin: 0 auto;
-    }
-    .bookarideContainer>div:last-of-type a::after{
-        position: absolute; left: 0; top: 0; height: 45px; background-color: var(--gs04); padding: var(--sp15) 1%; box-sizing: border-box; text-align: center; transition: width .3s ease-out; width: 80%; content: 'LEARN MORE';
-    }
-    .bookarideContainer>div:last-of-type a:hover:after{
-        width: 100%;
+         margin: 0 auto;
     }
     .dayuseContainer{
         max-width: 1440px; margin: 0 auto var(--sp60);
@@ -9406,6 +9341,34 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
 }
 @media screen and (min-width: 1280px){
+    .indexContainer,
+    div[class*='accomContainer'],
+    .allBrandContainer,
+    .mapContainer,
+    div[class*='loyaltyContainer'].discoverProgram,
+    div[class*='loyaltyContainer'].benefits,
+    div[class*='loyaltyContainer'].earnRewards,
+    div[class*='loyaltyContainer'].useRewards,
+    div[class*='offersContainer'].member,
+    div[class*='offersContainer'].year,
+    div[class*='offersContainer'].latest,
+    div[class*='diningContainer'].service,
+    div[class*='diningContainer'].flavours,
+    div[class*='businessContainer'].tailoredEvents .imgCenterTitle,
+    div[class*='businessContainer'].meetingPlanning,
+    .businessSubscribeContainer,
+    div[class*='brandSubContainer'],
+    section[class*='diningDetailContainer'],
+    div[class*='helpContainer'],
+    section[class*='helpCall'],
+    section[class*=helpFaqContainer],
+    div[class*='rsvnContainer'],
+    .allsafeContainer,
+    .bookarideContainer,
+    .dayuseContainer,
+    section[class*='termsContainer']{
+        max-width: 1920px; padding-top: 140px;
+    }
     div[class*='loyaltyContainer'].benefits .accordionBox ul:first-of-type::after,
     div[class*='loyaltyContainer'].benefits .accordionBox ul:not(:first-of-type) li div dl:after,
     div[class*='offersContainer'].year>div:nth-of-type(2)>div .bannerBoxR .gs1::after,
@@ -9434,34 +9397,70 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .mapContainer .mapContent .hotelInform::after{
         content: ''; display: block; clear: both;
     }
-
-    .indexContainer,
-    div[class*='accomContainer'],
-    .allBrandContainer,
-    .mapContainer,
-    div[class*='loyaltyContainer'].discoverProgram,
-    div[class*='loyaltyContainer'].benefits,
-    div[class*='loyaltyContainer'].earnRewards,
-    div[class*='loyaltyContainer'].useRewards,
-    div[class*='offersContainer'].member,
-    div[class*='offersContainer'].year,
-    div[class*='offersContainer'].latest,
-    div[class*='diningContainer'].service,
-    div[class*='diningContainer'].flavours,
-    div[class*='businessContainer'].tailoredEvents .imgCenterTitle,
-    div[class*='businessContainer'].meetingPlanning,
-    .businessSubscribeContainer,
-    div[class*='brandSubContainer'],
-    section[class*='diningDetailContainer'],
-    div[class*='helpContainer'],
-    section[class*='helpCall'],
-    section[class*=helpFaqContainer],
-    div[class*='rsvnContainer'],
-    .allsafeContainer,
-    .bookarideContainer,
-    .dayuseContainer,
-    section[class*='termsContainer']{
-        max-width: 1920px; padding-top: 140px;
+    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a,
+    div[class*='offersContainer'] .globalCardslotBox ul li a,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a,
+    div[class*='rsvnContainer']>div:first-of-type>a,
+    .bookarideContainer>div:last-of-type a{
+        border-color: var(--gs04); background-image: url('../images/arrow_greyRight.png');
+    }
+    .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a,
+    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a,
+    div[class*='offersContainer'] .globalCardslotBox ul li:nth-of-type(4) a,
+    div[class*='offersContainer'] .globalCardslotBox ul li:nth-of-type(6) a{
+        border-color: var(--sc03); background-image: url('../images/arrow_pinkRight.png');
+    }
+    .indexContainer .globalCardslotBox ul>li a,
+    div[class*='offersContainer'] .globalCardslotBox ul li a,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a,
+    div[class*='rsvnContainer']>div:first-of-type>a,
+    .bookarideContainer>div:last-of-type a{
+        position: relative; display: block; max-width: 165px; padding: var(--sp15) 3.125%; border-width: 1px; border-style: solid; color: var(--gs10);
+        background-repeat: no-repeat; background-position: 90% center; background-size: 14px; transition-duration: .3s;
+    }
+    div[class*='rsvnContainer']>div:first-of-type>a,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a{
+        background-position-x: 92%;
+    }
+    .indexContainer .globalCardslotBox ul>li a:hover,
+    div[class*='offersContainer'] .globalCardslotBox ul li a:hover,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:hover,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:hover,
+    div[class*='rsvnContainer']>div:first-of-type>a:hover,
+    .bookarideContainer>div:last-of-type a:hover{
+        background-position-x: right; transition-delay: .05s;
+    }
+    .indexContainer .globalCardslotBox ul>li a::after,
+    div[class*='offersContainer'] .globalCardslotBox ul li a:after,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:after,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:after,
+    div[class*='rsvnContainer']>div:first-of-type>a:after,
+    .bookarideContainer>div:last-of-type a:after{
+        position: absolute; content: 'Learn More'; left: 0; top: 0; width: 75%; padding: var(--sp15) 1.38%; box-sizing: border-box; text-align: center; transition: width .3s ease-out;
+    }
+    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a::after,
+    div[class*='offersContainer'] .globalCardslotBox ul li a::after,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a::after,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:after,
+    div[class*='rsvnContainer']>div:first-of-type>a:hover:after,
+    div[class*='rsvnContainer']>div:first-of-type>a::after,
+    .bookarideContainer>div:last-of-type a::after{
+        background-color: var(--gs04);
+    }
+    .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a::after,
+    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a::after,
+    div[class*='offersContainer'] .globalCardslotBox ul li:nth-of-type(4) a::after,
+    div[class*='offersContainer'] .globalCardslotBox ul li:nth-of-type(6) a::after{
+        background-color: var(--sc03);
+    }
+    .indexContainer .globalCardslotBox ul>li a:hover:after,
+    div[class*='offersContainer'] .globalCardslotBox ul li a:hover:after,
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:hover:after,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:hover:after,
+    .bookarideContainer>div:last-of-type a:hover:after{
+        width: 100%;
     }
     .bannerBoxR{
         position: relative;
@@ -9909,30 +9908,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 dl dt{
         max-width: 285px;
     }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a{
-        position: relative; display: block; max-width: 165px; padding: var(--sp15) 3.125%; border: 1px solid var(--gs04); color: var(--gs10);
-        background: url('../images/arrow_greyRight.png') no-repeat 90% center / 14px;
-    }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a:hover{
-        background-position-x: right; transition-delay: .05s;
-    }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a::after{
-        position: absolute; content: 'Learn More'; left: 0; top: 0; width: 75%; background-color: var(--gs04); padding: var(--sp15) 1.38%;
-        box-sizing: border-box; text-align: center; transition: width .3s ease-out;
-    }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt1 a:hover::after{
-        width: 100%; padding: var(--sp15) 3.125%;
-    }
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a{
-        position: relative; display: block; float: left; width: 52%; max-width: 165px; padding: var(--sp15) 3.125%; border: 1px solid var(--sc03); color: var(--gs10);
-        background: url('../images/arrow_pinkRight.png') no-repeat 90% center / 14px; max-width: 165px; text-align: center; box-sizing: border-box;
-    }
-    .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a:hover{
-        background-position-x: right; transition-delay: .05s;
-    }
-    .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a::after{
-        position: absolute; left: 0; top: 0; width: 75%; height: 45px; background-color: var(--sc03); padding: var(--sp15) 1.38%;
-        box-sizing: border-box; text-align: center; transition: width .3s ease-out;
+        float: left; width: 52%;
     }
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a:first-of-type::after{
         content: 'Aparthotels';
@@ -9940,28 +9917,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a:last-of-type::after{
         content: 'Villas';
     }
-    .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a:hover::after{
-        width: 100%; padding: var(--sp15) 3.125%; content: 'Learn More';
-    }
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a:not(:first-of-type){
         margin-left: 6%;
     }
     .indexContainer .globalCardslotBox ul>li:nth-of-type(5).hImgDesc{
         position: relative; margin-left: 0.4%;
-    }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a{
-        position: relative; display: block; max-width: 165px; padding: var(--sp15) 3.125%; border: 1px solid var(--sc03); color: var(--gs10);
-        background: url('../images/arrow_pinkRight.png') no-repeat 90% center / 14px;
-    }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a:hover{
-        background-position-x: right; transition-delay: .05s;
-    }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a::after{
-        position: absolute; content: 'Learn More'; left: 0; top: 0; width: 75%; height: 45px; background-color: var(--sc03); padding: var(--sp15) 1.38%;
-        box-sizing: border-box; text-align: center; transition: width .3s ease-out;
-    }
-    .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a:hover::after{
-        width: 100%; padding: var(--sp15) 3.125%;
     }
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2,
     .indexContainer .globalCardslotBox ul>li:nth-of-type(5).hImgDesc,
@@ -10671,16 +10631,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) div>a:first-of-type{
         content: 'ONLINE' !important;
     }
-    div[class*='offersContainer'].member .globalCardslotBox ul li a{
-        position: relative;display: block;max-width: 165px;padding: var(--sp15) 3.125%;border: 1px solid var(--gs04);color: var(--gs10);
-        background: url('../images/arrow_greyRight.png') no-repeat 90% center / 14px;
-    }
-    div[class*='offersContainer'].member .globalCardslotBox ul li a:hover{
-        background-position: right; transition-delay: .05s;
-    }
-    div[class*='offersContainer'].member .globalCardslotBox ul li a::after{
-        position: absolute;content: 'Learn More';left: 0;top: 0;width: 75%;height: 45px;background-color: var(--gs04);padding: var(--sp15) 1.38%;box-sizing: border-box;text-align: center;transition: width .3s ease-out;
-    }
     div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) a:first-of-type::after{
         content: 'ONLINE';
     }
@@ -10689,14 +10639,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
     div[class*='offersContainer'].member .globalCardslotBox ul li a:hover:after{
         width: 100%; padding: var(--sp15) 3.125%;
-    }
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(4) a,
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(6) a{
-        border-color: var(--sc03); background-image: url('../images/arrow_pinkRight.png');
-    }
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(4) a::after,
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(6) a::after{
-        background-color: var(--sc03);
     }
     div[class*='offersContainer'].member .bannerBox div{
         padding: var(--sp60) 3.125%; box-sizing: border-box;
@@ -10752,27 +10694,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3),
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(5){
         margin-left: 0.4%;
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a{
-        position: relative; display: block; max-width: 165px; padding: var(--sp15) 3.125%; border: 1px solid var(--gs04); color: var(--gs10);
-        background: url('../images/arrow_greyRight.png') no-repeat 90% center / 14px;
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a:hover{
-        background-position: right; transition-delay: .05s;
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a::after{
-        position: absolute; content: 'Learn More'; left: 0; top: 0; width: 75%; height: 45px; background-color: var(--gs04); padding: var(--sp15) 1.38%; box-sizing: border-box; text-align: center; transition: width .3s ease-out;
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li a:hover:after{
-        width: 100%; padding: var(--sp15) 3.125%;
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(4) a,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(6) a{
-        border-color: var(--sc03); background-image: url('../images/arrow_pinkRight.png');
-    }
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(4) a::after,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(6) a::after{
-        background-color: var(--sc03);
     }
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3) a{
         margin: 0 auto;
@@ -11074,14 +10995,14 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         font-style: normal; font-size: 34px; font-weight: inherit;
     }
     div[class*='businessContainer'].tailoredEvents :not(.imgCenterTitle){
-        max-width: 1440px; margin: 0 auto;
+        max-width: 1440px;
     }
     div[class*='businessContainer'].tailoredEvents .imgCenterTitle{
         background: url('../images/business_tailoredEvents_headline.png') no-repeat center / cover;
         width: 100%; min-height: 800px; text-align: center; line-height: 800px; color: #c2a044;
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type{
-        position: relative; max-width: 1080px;
+        position: relative; max-width: 1080px; margin: 0 auto;
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type ul{
         text-align: center; display: flex; flex-wrap: nowrap; height: 48px; align-items: stretch; list-style: none;
@@ -11109,21 +11030,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 p{
         color: var(--gs05); line-height: 30px; margin-bottom: var(--sp40);
     }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a{
-        position: relative; display: block; padding: var(--sp15) 3.125%; border: 1px solid var(--gs04); color: var(--gs10);
-        background: url('../images/arrow_greyRight.png') no-repeat 92% center / 14px; transition-duration: .3s;
-    }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:last-of-type{
+    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage#businessTab_01 .gs9 a:last-of-type{
         background-position-x: 90%;
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:first-of-type:after{
         width: 80%;
-    }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a::after{
-        position: absolute; left: 0; top: 0; width: 75%; height: 45px; background-color: var(--gs04); padding: var(--sp15) 1.38%; text-align: center; transition: width .3s ease-out; box-sizing: border-box;
-    }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:hover{
-        background-position-x: right; transition-delay: .05s;
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:first-of-type .gs9 a{
         float: left; width: 47.5%;
@@ -11158,8 +11069,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:last-of-type .gs9 a::after{
         content: 'CHECK OUT THE BLOG';
     }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 a:hover::after{
-        width: 100%;
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2){
+        margin: 0 auto;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) h3+div{
         background: url('../images/business_tailoredEvents_offer.png') no-repeat center / cover;
@@ -11172,17 +11083,10 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         display: inline-block; margin-bottom: var(--sp70); background: url('../images/icon_wCheck.png') no-repeat left center / 14px; line-height: 28px; padding-left: 4%;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a{
-        position: relative; display: block; margin: 0 auto; max-width: 250px; padding: var(--sp15) 3.125%; border: 1px solid var(--gs04); color: var(--gs10);
-        background: url('../images/arrow_greyRight.png') no-repeat 92% center / 14px; transition-duration: .3s;
+        margin: 0 auto; max-width: 250px;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:after{
-        position: absolute; content: 'ENROL YOUR COMPANY'; left: 0; top: 0; width: 80%; height: 45px; background-color: var(--gs04); padding: var(--sp15) 1.38%; text-align: center; transition: width .3s ease-out; box-sizing: border-box;
-    }
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:hover{
-        background-position-x: right; transition-delay: .05s;
-    }
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:hover:after{
-        width: 100%;
+        content: 'ENROL YOUR COMPANY';
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox{
         display: flex; justify-content: space-between; list-style: none;
@@ -12991,20 +12895,13 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         text-align: center; margin-bottom: var(--sp50);
     }
     div[class*='rsvnContainer']>div:first-of-type>a{
-        position: relative; display: block; padding: var(--sp15) 2%; border: 1px solid var(--gs04); color: var(--gs10);
-        background: url('../images/arrow_greyRight.png') no-repeat 92% center / 14px; max-width: 210px; margin: 0 auto;
-    }
-    div[class*='rsvnContainer']>div:first-of-type>a::after{
-        position: absolute; left: 0; top: 0; height: 45px; background-color: var(--gs04); padding: var(--sp15) 1%; box-sizing: border-box; text-align: center; transition: width .3s ease-out; width: 80%;
+        max-width: 210px; margin: 0 auto;
     }
     div[class*='rsvnContainer'].myaccount>div:first-of-type>a::after{
         content: 'Go to My Booking';
     }
     div[class*='rsvnContainer'].mybooking>div:first-of-type>a::after{
         content: 'Go to My Account';
-    }
-    div[class*='rsvnContainer']>div:first-of-type>a:hover::after{
-        width: 100%;
     }
     div[class*='rsvnContainer'].myaccount>ul{
         list-style: none;
@@ -13534,13 +13431,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs05); padding-top: var(--sp10); display: block; line-height: 21px;
     }
     .bookarideContainer>div:last-of-type a{
-        position: relative; display: block; padding: var(--sp15) 2%; border: 1px solid var(--gs04); color: var(--gs10); background: url('../images/arrow_greyRight.png') no-repeat 92% center / 14px; max-width: 180px; margin: 0 auto;
-    }
-    .bookarideContainer>div:last-of-type a::after{
-        position: absolute; left: 0; top: 0; height: 45px; background-color: var(--gs04); padding: var(--sp15) 1%; box-sizing: border-box; text-align: center; transition: width .3s ease-out; width: 80%; content: 'LEARN MORE';
-    }
-    .bookarideContainer>div:last-of-type a:hover:after{
-        width: 100%;
+        max-width: 180px; margin: 0 auto;
     }
     .dayuseContainer{
         margin-bottom: var(--sp150); max-width: 1440px; margin: 0 auto var(--sp150);
