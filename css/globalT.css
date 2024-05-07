@@ -17,6 +17,8 @@ img,video{
 .bx-wrapper .bx-viewport ul:after{
     content: ''; display: block; clear: both;
 }
+
+/* A / U  */
 @media screen and (max-width: 767px){
     header,
     header>div#fnbPanel,
@@ -1105,6 +1107,10 @@ img,video{
         clear: both; padding-top: var(--sp45); color: var(--gs08);
     }
 }
+@media screen and (min-width: 768px){
+    
+}
+/* ? tablet + mobile */
 @media screen and (min-width: 1280px){
     header,
     header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
@@ -1597,3 +1603,7 @@ img,video{
         clear: both; padding-top: 80px; color: var(--gs08);
     }
 }
+@media screen and (min-width: 768px){
+    
+}
+/* ? desktop + tablet */

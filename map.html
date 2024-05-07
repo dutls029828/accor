@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accor</title>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgQY-FICvmySfit6TJl8n7h1rb0aGHkkE&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.fitvids.js"></script>
@@ -230,6 +232,9 @@
                         </figcaption>
                     </figure>
                 </div>
+                <gmp-map center="48.83858108520508,2.3784594535827637" zoom="14" map-id="DEMO_MAP_ID">
+                    <gmp-advanced-marker position="48.83858108520508,2.3784594535827637" title="My location"></gmp-advanced-marker>
+                </gmp-map>
             </div>
             <div class="mapPopup" id="mapPopup">
                 <div class="gs1">
