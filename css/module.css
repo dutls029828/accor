@@ -76,9 +76,9 @@
 
     [class$='22']{font-size: 16px;}
 
-    [class$='16']{font-size: 10px;}
+    [class$='16']{font-size: 10px; line-height: 16px;}
 
-    [class$='15']{font-size: 10px;}
+    [class$='15']{font-size: 10px; line-height: 16px;}
 
     [class$='14']{font-size: 12px;}
 
@@ -111,7 +111,367 @@
     mark.rBottomLabel{
         position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; right: 0; bottom: 0;
         background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
-    } 
+    }
+    .bannerBoxR img{
+        width: 100%;
+    }
+    .bannerBoxR>div{
+        box-sizing: border-box; padding: var(--sp30) 5%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
+    }
+    .bannerBoxR>div h2{
+        color: var(--gs10); margin-bottom: var(--sp30);
+    }
+    .bannerBoxR>div p{
+        color: var(--gs07);
+    }
+    .bannerBoxR>div a{
+        margin-top: var(--sp25);
+    }
+    .tickerSlider{
+        background-color: var(--sc01); height: 270px;
+    }
+    .tickerSlider>.bx-viewport{
+        height: 269px;
+    }
+    .tickerSlider li{
+        padding: 105px 0; line-height: 60px;
+    }
+    .tickerSlider li:not(:first-of-type){
+        margin-left: 100px;
+    }
+    .tickerSlider li a{
+        display: block;
+    }
+    .tickerSlider li a img{
+        max-height: 60px;
+    }
+    .tickerSlider li:nth-of-type(1){
+        max-width: 247px !important;
+    }
+    .tickerSlider li:nth-of-type(2){
+        max-width: 174px;
+    }
+    .tickerSlider li:nth-of-type(3){
+        max-width: 200px;
+    }
+    .tickerSlider li:nth-of-type(4){
+        max-width: 167px;
+    }
+    .tickerSlider li:nth-of-type(5){
+        max-width: 76px;
+    }
+    .tickerSlider li:nth-of-type(6){
+        max-width: 266px;
+    }
+    .tickerSlider li:nth-of-type(7){
+        max-width: 264px;
+    }
+    .tickerSlider li:nth-of-type(8){
+        max-width: 196px;
+    }
+    .tickerSlider li:nth-of-type(9){
+        max-width: 160px;
+    }
+    .tickerSlider li:nth-of-type(10){
+        max-width: 211px;
+    }
+    .tickerSlider li:nth-of-type(11){
+        max-width: 106px;
+    }
+    .tickerSlider li:nth-of-type(12){
+        max-width: 166px;
+    }
+    .tickerSlider li:nth-of-type(13){
+        max-width: 158px;
+    }
+    .tickerSlider li:nth-of-type(14){
+        max-width: 139px;
+    }
+    .tickerSlider li:nth-of-type(15){
+        max-width: 204px;
+    }
+    .tickerSlider li:nth-of-type(16){
+        max-width: 228px;
+    }
+    .tickerSlider li:nth-of-type(17){
+        max-width: 266px;
+    }
+    .tickerSlider li:nth-of-type(18){
+        max-width: 198px;
+    }
+    .tickerSlider li:nth-of-type(19){
+        max-width: 210px;
+    }
+    .tickerSlider li:nth-of-type(20){
+        max-width: 190px;
+    }
+    .tickerSlider li:nth-of-type(21){
+        max-width: 184px;
+    }
+    .tickerSlider li:nth-of-type(22){
+        max-width: 38px;
+    }
+    .tickerSlider li:nth-of-type(23){
+        max-width: 168px;
+    }
+    .tickerSlider li:nth-of-type(24){
+        max-width: 162px;
+    }
+    .tickerSlider li:nth-of-type(25){
+        max-width: 113px;
+    }
+    .tickerSlider li:nth-of-type(26){
+        max-width: 62px;
+    }
+    .tickerSlider li:nth-of-type(27){
+        max-width: 159px;
+    }
+    .tickerSlider li:nth-of-type(28){
+        max-width: 165px;
+    }
+    .tickerSlider li:nth-of-type(29){
+        max-width: 220px;
+    }
+    .tickerSlider li:nth-of-type(30){
+        max-width: 208px;
+    }
+    .tickerSlider li:nth-of-type(31){
+        max-width: 126px;
+    }
+    .tickerSlider li:nth-of-type(32){
+        max-width: 111px;
+    }
+    .tickerSlider li:nth-of-type(33){
+        max-width: 92px;
+    }
+    .tickerSlider li:nth-of-type(34){
+        max-width: 208px;
+    }
+    .tickerSlider li:nth-of-type(35){
+        max-width: 68px;
+    }
+    .tickerSlider li:nth-of-type(36){
+        max-width: 66px;
+    }
+    .tickerSlider li:nth-of-type(37){
+        max-width: 74px;
+    }
+    .tickerSlider li:nth-of-type(38){
+        max-width: 138px;
+    }
+    .tickerSlider li:nth-of-type(39){
+        max-width: 174px;
+    }
+    .tickerSlider li:nth-of-type(40){
+        max-width: 168px;
+    }
+    .tickerSlider li:nth-of-type(41){
+        max-width: 182px;
+    }
+    .tickerSlider li:nth-of-type(42){
+        max-width: 142px;
+    }
+    .slideBox .bx-wrapper{
+        margin-left: auto;
+    }
+    .slideBox .bx-wrapper .bx-controls-direction a{
+        background-color: rgba(195, 195, 195, 0.2); width: 40px; height: 40px; border-radius: 50px; margin-top: 0px; top: 43%; z-index: 100;
+        position: absolute; background-repeat: no-repeat; background-position: center; background-size: 25%;
+    }
+    .slideBox .bx-wrapper .bx-controls-direction .bx-prev{
+        background-image: url('../images/icon_wLeftArrow.png'), rgba(195, 195, 195, 0.2); 
+    }
+    .slideBox .bx-wrapper .bx-controls-direction .bx-next{
+        background-image: url('../images/icon_wRightArrow.png'), rgba(195, 195, 195, 0.2);
+    }
+    .slideBox .wayCarousel li{
+        position: relative;
+    }
+    .slideBox .wayCarousel li figure figcaption{
+        position: absolute; width: 100%; right: 0; top: 0; padding: var(--sp15) 5%; box-sizing: border-box; box-shadow: 3px 0.2px 25px 0.5px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 15px 15px; background-repeat: no-repeat;
+    }
+    .slideBox .wayCarousel .slide01 figure figcaption{
+        background-color: rgba(245, 232, 222, 0.7);
+    }
+    .slideBox .wayCarousel .slide02 figure figcaption{
+        background-color: rgba(166, 218, 245, 0.8);
+    }
+    .slideBox .wayCarousel .slide03 figure figcaption{
+        background-color: rgba(255, 235, 215, 0.8);
+    }
+    .slideBox .wayCarousel .slide04 figure figcaption{
+        background-color: rgba(157, 178, 195, 0.9);
+    }
+    .slideBox .wayCarousel .slide05 figure figcaption{
+        background-color: rgba(236, 195, 175, 0.5);
+    }
+    .slideBox .wayCarousel .slide06 figure figcaption{
+        background-color: rgba(166, 175, 226, 0.5);
+    }
+    .slideBox .wayCarousel .slide07 figure figcaption{
+        background-color: rgba(210, 228, 238, 0.5);
+    }
+    .slideBox .wayCarousel .slide08 figure figcaption{
+        background-color: rgba(230, 240, 250, 0.5);
+    }
+    .slideBox .wayCarousel li figure figcaption dl dt{
+        margin-bottom: var(--sp10); font-size: 1.7vh;
+    }
+    .slideBox .wayCarousel li figure figcaption dl dd{
+        font-size: 1.1vh;
+    }
+    .vertiCardslotBox .tImgDesc:not(:last-of-type){
+        margin-bottom: var(--sp15);
+    }
+    .vertiCardslotBox .tImgDesc img{
+        margin-bottom: var(--sp10); width: 100%;
+    }
+    .vertiCardslotBox .tImgDesc dl{
+        padding: var(--sp30) 5%; box-sizing: border-box;
+    }
+    .vertiCardslotBox .tImgDesc .pt2,
+    .vertiCardslotBox .tImgDesc .pt4,
+    .vertiCardslotBox .tImgDesc .pt5,
+    .vertiCardslotBox .tImgDesc .pt6{
+        color: var(--gs02);
+    }
+    .vertiCardslotBox .tImgDesc .sc3{
+        color: var(--gs10);
+    }
+    .vertiCardslotBox .tImgDesc dl dt{
+        margin-bottom: var(--sp20);
+    }
+    .vertiCardslotBox .tImgDesc dl dt small{
+        display: block; padding-bottom: var(--sp20);
+    }
+    .vertiCardslotBox .tImgDesc dl dd{
+        line-height: 16px;
+    }
+    .loyalty,
+    .loyalty div:first-of-type{
+        position: relative;
+    }
+    .loyalty div{
+        box-shadow: 1px 1px 10px 0.3px rgba(0, 0, 0, 0.2); box-sizing: border-box;
+    }
+    .loyalty div:last-of-type{
+        padding: var(--sp40) 5%;
+    }
+    .loyalty div.gs1{
+        width: 100%;
+    }
+    .loyalty div h3,
+    .loyalty div p{
+        margin-bottom: var(--sp25);
+    }
+    .loyalty div h3{
+        color: var(--gs10);
+    }
+    .loyalty div p{
+        color: var(--gs07);
+    }
+    .loyalty div a{
+        display: block;
+    }
+    .loyalty div a:first-of-type{
+        margin-bottom: var(--sp20); padding: var(--sp15) 6%; background-color: var(--gs04); color: var(--gs10); text-align: center;
+    }
+    .loyalty div a:first-of-type:hover{
+        background-color: var(--sc01); color: var(--gs01);
+    }
+    .loyalty div a:last-of-type{
+        color: var(--sc05); max-width: 145px; letter-spacing: 1px; margin-left: auto; text-align: right;
+    }
+    .horiCardslotBox{
+        max-width: 767px; margin: 0 auto;
+    }
+    .horiCardslotBox:not(.symbolTitle){
+        padding: 0 3%;
+    }
+    .horiCardslotBox ul li{
+        display: block;
+    }
+    .horiCardslotBox ul li:not(:last-of-type){
+        margin-bottom: var(--sp30);
+    }
+    .horiCardslotBox ul li img{
+        width: 100%;
+    }
+    .horiCardslotBox ul .fullImgDesc img{
+        margin-bottom: var(--sp15);
+    }
+    .horiCardslotBox ul .fullDescImg img{
+        margin-top: var(--sp15);
+    }
+    .horiCardslotBox ul li div{
+        padding: var(--sp30) 5%; box-sizing: border-box;
+    }
+    .horiCardslotBox ul li div dl dt{
+        margin-bottom: var(--sp20);
+    }
+    .horiCardslotBox ul li div dl dt small{
+        display: block; padding-bottom: var(--sp20);
+    }
+    .horiCardslotBox ul li .pt4,
+    .horiCardslotBox ul li .pt5,
+    .horiCardslotBox ul li .pt6,
+    .horiCardslotBox ul li .pt7{
+        color: var(--gs02);
+    }
+    .horiCardslotBox ul li .sc3{
+        color: var(--gs10);
+    }
+    .horiCardslotBox ul li div a{
+        color: inherit;
+    }
+    .twoDescCardslotBox{
+        max-width: 1440px; margin: 0 auto;
+    }
+    .twoDescCardslotBox div img{
+        width: 100%; margin-bottom: var(--sp25);
+    }
+    .twoDescCardslotBox div{
+        display: flex; flex-wrap: wrap; justify-content: space-between;
+    }
+    .twoDescCardslotBox div dl{
+        display: block; box-sizing: border-box; padding: var(--sp30) 4.5%; width: 100%;
+    }
+    .twoDescCardslotBox div dl:not(:last-of-type){
+        margin-bottom: var(--sp15);
+    }
+    .twoDescCardslotBox div dl dt{
+        margin-bottom: var(--sp20);
+    }
+    .twoDescCardslotBox div dl dt small{
+        display: block; padding-bottom: var(--sp20);
+    }
+    .globalCardslotBox{
+        max-width: 767px; margin: 0 auto; padding: 0 3%; box-sizing: border-box;
+    }
+    .globalCardslotBox ul{
+        display: flex; flex-flow: column nowrap; justify-content: space-between; align-content: space-between; align-items: stretch; list-style: none;
+    }
+    .globalCardslotBox ul li{
+        color: var(--gs01); box-sizing: border-box;
+    }
+    .globalCardslotBox ul li:not(:last-of-type){
+        margin-bottom: var(--sp10);
+    }
+    .globalCardslotBox ul .fImgDesc,
+    .globalCardslotBox ul .hImgDesc{
+        padding: 180px 0;
+    }
+    .globalCardslotBox ul li.hTextDesc,
+    .globalCardslotBox ul li.fTextDesc{
+        padding: var(--sp40) 10%;
+    }
+    .globalCardslotBox ul li dl{
+        margin-bottom: var(--sp35);
+    }
+    .globalCardslotBox ul li dl dt{
+        margin-bottom: var(--sp25);
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
     .ebg50{font-size: 40px; color: var(--gs01);}
@@ -127,9 +487,9 @@
 
     [class$='22']{font-size: 16px;}
 
-    [class$='16']{font-size: 16px;}
+    [class$='16']{font-size: 16px; line-height: 21px;}
 
-    [class$='15']{font-size: 15px;}
+    [class$='15']{font-size: 15px; line-height: 21px;}
 
     [class$='14']{font-size: 14px;}
 
@@ -158,6 +518,358 @@
         position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; right: 0; bottom: 0;
         background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
     }
+    .bannerBoxR img{
+        width: 100%;
+    }
+    .bannerBoxR>div{
+        box-sizing: border-box; padding: var(--sp55) 3.125%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
+    }
+    .bannerBoxR>div h2{
+        color: var(--gs10); margin-bottom: var(--sp30);
+    }
+    .bannerBoxR>div p{
+        color: var(--gs07);
+    }
+    .bannerBoxR>div a{
+        margin-top: var(--sp25);
+    }
+    .tickerSlider{
+        background-color: var(--sc01); height: 270px;
+    }
+    .tickerSlider>.bx-viewport{
+        height: 269px;
+    }
+    .tickerSlider li{
+        padding: 105px 0; line-height: 60px;
+    }
+    .tickerSlider li:not(:first-of-type){
+        margin-left: 100px;
+    }
+    .tickerSlider li a{
+        display: block;
+    }
+    .tickerSlider li a img{
+        max-height: 60px;
+    }
+    .tickerSlider li:nth-of-type(1){
+        max-width: 247px !important;
+    }
+    .tickerSlider li:nth-of-type(2){
+        max-width: 174px;
+    }
+    .tickerSlider li:nth-of-type(3){
+        max-width: 200px;
+    }
+    .tickerSlider li:nth-of-type(4){
+        max-width: 167px;
+    }
+    .tickerSlider li:nth-of-type(5){
+        max-width: 76px;
+    }
+    .tickerSlider li:nth-of-type(6){
+        max-width: 266px;
+    }
+    .tickerSlider li:nth-of-type(7){
+        max-width: 264px;
+    }
+    .tickerSlider li:nth-of-type(8){
+        max-width: 196px;
+    }
+    .tickerSlider li:nth-of-type(9){
+        max-width: 160px;
+    }
+    .tickerSlider li:nth-of-type(10){
+        max-width: 211px;
+    }
+    .tickerSlider li:nth-of-type(11){
+        max-width: 106px;
+    }
+    .tickerSlider li:nth-of-type(12){
+        max-width: 166px;
+    }
+    .tickerSlider li:nth-of-type(13){
+        max-width: 158px;
+    }
+    .tickerSlider li:nth-of-type(14){
+        max-width: 139px;
+    }
+    .tickerSlider li:nth-of-type(15){
+        max-width: 204px;
+    }
+    .tickerSlider li:nth-of-type(16){
+        max-width: 228px;
+    }
+    .tickerSlider li:nth-of-type(17){
+        max-width: 266px;
+    }
+    .tickerSlider li:nth-of-type(18){
+        max-width: 198px;
+    }
+    .tickerSlider li:nth-of-type(19){
+        max-width: 210px;
+    }
+    .tickerSlider li:nth-of-type(20){
+        max-width: 190px;
+    }
+    .tickerSlider li:nth-of-type(21){
+        max-width: 184px;
+    }
+    .tickerSlider li:nth-of-type(22){
+        max-width: 38px;
+    }
+    .tickerSlider li:nth-of-type(23){
+        max-width: 168px;
+    }
+    .tickerSlider li:nth-of-type(24){
+        max-width: 162px;
+    }
+    .tickerSlider li:nth-of-type(25){
+        max-width: 113px;
+    }
+    .tickerSlider li:nth-of-type(26){
+        max-width: 62px;
+    }
+    .tickerSlider li:nth-of-type(27){
+        max-width: 159px;
+    }
+    .tickerSlider li:nth-of-type(28){
+        max-width: 165px;
+    }
+    .tickerSlider li:nth-of-type(29){
+        max-width: 220px;
+    }
+    .tickerSlider li:nth-of-type(30){
+        max-width: 208px;
+    }
+    .tickerSlider li:nth-of-type(31){
+        max-width: 126px;
+    }
+    .tickerSlider li:nth-of-type(32){
+        max-width: 111px;
+    }
+    .tickerSlider li:nth-of-type(33){
+        max-width: 92px;
+    }
+    .tickerSlider li:nth-of-type(34){
+        max-width: 208px;
+    }
+    .tickerSlider li:nth-of-type(35){
+        max-width: 68px;
+    }
+    .tickerSlider li:nth-of-type(36){
+        max-width: 66px;
+    }
+    .tickerSlider li:nth-of-type(37){
+        max-width: 74px;
+    }
+    .tickerSlider li:nth-of-type(38){
+        max-width: 138px;
+    }
+    .tickerSlider li:nth-of-type(39){
+        max-width: 174px;
+    }
+    .tickerSlider li:nth-of-type(40){
+        max-width: 168px;
+    }
+    .tickerSlider li:nth-of-type(41){
+        max-width: 182px;
+    }
+    .tickerSlider li:nth-of-type(42){
+        max-width: 142px;
+    }
+    .slideBox .bx-wrapper .bx-controls-direction a{
+        background-color: rgba(195, 195, 195, 0.2); width: 80px; height: 80px; border-radius: 50px; margin-top: 0px; top: 43%; position: absolute; z-index: 100;
+    }
+    .slideBox .bx-wrapper .bx-controls-direction .bx-prev{
+        background: url('../images/icon_wLeftArrow.png'), rgba(195, 195, 195, 0.2); background-repeat: no-repeat; background-position: center;
+    }
+    .slideBox .bx-wrapper .bx-controls-direction .bx-next{
+        background: url('../images/icon_wRightArrow.png'), rgba(195, 195, 195, 0.2); background-repeat: no-repeat; background-position: center;
+    }
+    .slideBox .wayCarousel li{
+        position: relative;
+    }
+    .slideBox .wayCarousel li figure figcaption{
+        position: absolute; width: 45%; right: 0; top: 0; padding: var(--sp60) 5%; min-width: 604px; box-sizing: border-box;
+        box-shadow: 3px 0.2px 25px 0.5px rgba(0, 0, 0, 0.2); border-radius: 0 0 0 15px; background-repeat: no-repeat;
+    }
+    .slideBox .wayCarousel .slide01 figure figcaption{
+        background-color: rgba(245, 232, 222, 0.8);
+    }
+    .slideBox .wayCarousel .slide02 figure figcaption{
+        background-color: rgba(166, 218, 245, 0.9);
+    }
+    .slideBox .wayCarousel .slide03 figure figcaption{
+        background-color: rgba(255, 235, 215, 0.9);
+    }
+    .slideBox .wayCarousel .slide04 figure figcaption{
+        background-color: rgba(157, 178, 195, 0.9);
+    }
+    .slideBox .wayCarousel .slide05 figure figcaption{
+        background-color: rgba(236, 195, 175, 0.5);
+    }
+    .slideBox .wayCarousel .slide06 figure figcaption{
+        background-color: rgba(166, 175, 226, 0.5);
+    }
+    .slideBox .wayCarousel .slide07 figure figcaption{
+        background-color: rgba(210, 228, 238, 0.5);
+    }
+    .slideBox .wayCarousel .slide08 figure figcaption{
+        background-color: rgba(230, 240, 250, 0.5);
+    }
+    .slideBox .wayCarousel li figure figcaption dl dt{
+        margin-bottom: var(--sp30);
+    }
+    .vertiCardslotBox .tImgDesc dl{
+        padding: var(--sp50) 9%; box-sizing: border-box;
+    }
+    .vertiCardslotBox .tImgDesc dl{
+        padding: var(--sp50) 7%; box-sizing: border-box;
+    }
+    .vertiCardslotBox .tImgDesc .pt2,
+    .vertiCardslotBox .tImgDesc .pt4,
+    .vertiCardslotBox .tImgDesc .pt5,
+    .vertiCardslotBox .tImgDesc .pt6{
+        color: var(--gs02);
+    }
+    .vertiCardslotBox .tImgDesc .sc3{
+        color: var(--gs10);
+    }
+    .vertiCardslotBox .tImgDesc dl dt{
+        margin-bottom: var(--sp25);
+    }
+    .vertiCardslotBox .tImgDesc dl dt small{
+        display: block; padding-bottom: var(--sp25);
+    }
+    .loyalty{
+        position: relative;
+    }
+    .loyalty div{
+        box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3); box-sizing: border-box;
+    }
+    .loyalty div:first-of-type{
+        position: relative;
+    }
+    .loyalty div:last-of-type{
+        padding: var(--sp55);
+    }
+    .loyalty div.gs1{
+        width: 100%;
+    }
+    .loyalty div h3{
+        margin-bottom: var(--sp25); color: var(--gs10);
+    }
+    .loyalty div p{
+        margin-bottom: var(--sp40); line-height: 23px; color: var(--gs07);
+    }
+    .loyalty div a{
+        display: block;
+    }
+    .loyalty div a:first-of-type{
+        width: 30%; max-width: 201px; margin-bottom: var(--sp20); padding: var(--sp15) 6%; background-color: var(--gs04); color: var(--gs10); text-align: center;
+    }
+    .loyalty div a:first-of-type:hover{
+        background-color: var(--sc01); color: var(--gs01);
+    }
+    .loyalty div a:last-of-type{
+        color: var(--sc05); letter-spacing: 1px;
+    }
+    .horiCardslotBox{
+        max-width: 1279px; margin: 0 auto;
+    }
+    .horiCardslotBox:not(.symbolTitle){
+        padding: 0 3%;
+    }
+    .horiCardslotBox ul li{
+        display: block;
+    }
+    .horiCardslotBox ul li:not(:last-of-type){
+        margin-bottom: var(--sp30);
+    }
+    .horiCardslotBox ul li img{
+        width: 100%;
+    }
+    .horiCardslotBox ul .fullImgDesc img{
+        margin-bottom: var(--sp15);
+    }
+    .horiCardslotBox ul .fullDescImg img{
+        margin-top: var(--sp15);
+    }
+    .horiCardslotBox ul li div{
+        padding: var(--sp55) 5%; box-sizing: border-box;
+    }
+    .horiCardslotBox ul li div dl dt{
+        margin-bottom: var(--sp40);
+    }
+    .horiCardslotBox ul li div dl dt small{
+        display: block; padding-bottom: var(--sp30);
+    }
+    .horiCardslotBox ul li div dl dd:last-of-type{
+        margin-bottom: var(--sp25);
+    }
+    .horiCardslotBox ul li .pt4,
+    .horiCardslotBox ul li .pt5,
+    .horiCardslotBox ul li .pt6,
+    .horiCardslotBox ul li .pt7{
+        color: var(--gs02);
+    }
+    .horiCardslotBox ul li .sc3{
+        color: var(--gs10);
+    }
+    .horiCardslotBox ul li div a{
+        color: inherit;
+    }
+    .twoDescCardslotBox{
+        max-width: 1440px; margin: 0 auto;
+    }
+    .twoDescCardslotBox div img{
+        width: 100%; margin-bottom: var(--sp25);
+    }
+    .twoDescCardslotBox div{
+        display: flex; flex-wrap: wrap; justify-content: space-between;
+    }
+    .twoDescCardslotBox div dl{
+        width: 49%; box-sizing: border-box; min-height: 300px; padding: var(--sp65) 4.5%;
+    }
+    .twoDescCardslotBox div dl:last-of-type{
+        margin-left: 2%;
+    }
+    .twoDescCardslotBox div dl dt{
+        margin-bottom: var(--sp35);
+    }
+    .twoDescCardslotBox div dl dt small{
+        display: block; padding-bottom: var(--sp25);
+    }
+    .globalCardslotBox{
+        max-width: 1279px; margin: 0 auto; padding: 0 3%; box-sizing: border-box;
+    }
+    .globalCardslotBox ul{
+        display: flex; flex-flow: row wrap; justify-content: space-between; align-content: space-between; align-items: stretch; list-style: none;
+    }
+    .globalCardslotBox ul li{
+        color: var(--gs01); box-sizing: border-box;
+    }
+    .globalCardslotBox ul .hTextDesc,
+    .globalCardslotBox ul .hImgDesc{
+        width: 49%; flex: 1 auto;
+    }
+    .globalCardslotBox ul .fTextDesc,
+    .globalCardslotBox ul .fImgDesc{
+        width: 100%; flex: 2 auto;
+    }
+    .globalCardslotBox ul .fImgDesc{
+        padding: 180px 0;
+    }
+    .globalCardslotBox ul li.hTextDesc,
+    .globalCardslotBox ul li.fTextDesc{
+        padding: var(--sp70) var(--sp65);
+    }
+    .globalCardslotBox ul li dl{
+        margin-bottom: var(--sp35);
+    }
+    .globalCardslotBox ul li dl dt{
+        margin-bottom: var(--sp25);
+    }
 }
 @media screen and (min-width: 1280px){
     .ebg50{font-size: 50px; color: var(--gs01);}
@@ -173,9 +885,9 @@
 
     [class$='22']{font-size: 22px;}
 
-    [class$='16']{font-size: 16px;}
+    [class$='16']{font-size: 16px; line-height: 21px;}
 
-    [class$='15']{font-size: 15px;}
+    [class$='15']{font-size: 15px; line-height: 21px;}
 
     [class$='14']{font-size: 14px;}
 
@@ -203,5 +915,356 @@
     mark.rBottomLabel{
         position: absolute; width: max-content; max-width: 100%; padding: 12px 15px; right: 0; bottom: 0;
         background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
+    }
+    .bannerBoxR{
+        position: relative;
+    }
+    .bannerBoxR img{
+        width: 100%;
+    }
+    .bannerBoxR>div{
+        position: absolute; right: 12.5%; bottom: -50px; width: 35%; min-width: 666px; box-sizing: border-box; padding: var(--sp55) 3.125%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
+    }
+    .bannerBoxR>div h2{
+        color: var(--gs10); margin-bottom: var(--sp30);
+    }
+    .bannerBoxR>div p{
+        color: var(--gs07);
+    }
+    .bannerBoxR>div a{
+        margin-top: var(--sp25);
+    }
+    .tickerSlider{
+        background-color: var(--sc01); height: 430px;
+    }
+    .tickerSlider li{
+        padding: 185px 0; line-height: 60px;
+    }
+    .tickerSlider li:not(:first-of-type){
+        margin-left: 100px;
+    }
+    .tickerSlider li a{
+        display: block;
+    }
+    .tickerSlider li a img{
+        max-height: 60px;
+    }
+    .tickerSlider li:nth-of-type(1){
+        max-width: 247px !important;
+    }
+    .tickerSlider li:nth-of-type(2){
+        max-width: 174px;
+    }
+    .tickerSlider li:nth-of-type(3){
+        max-width: 200px;
+    }
+    .tickerSlider li:nth-of-type(4){
+        max-width: 167px;
+    }
+    .tickerSlider li:nth-of-type(5){
+        max-width: 76px;
+    }
+    .tickerSlider li:nth-of-type(6){
+        max-width: 266px;
+    }
+    .tickerSlider li:nth-of-type(7){
+        max-width: 264px;
+    }
+    .tickerSlider li:nth-of-type(8){
+        max-width: 196px;
+    }
+    .tickerSlider li:nth-of-type(9){
+        max-width: 160px;
+    }
+    .tickerSlider li:nth-of-type(10){
+        max-width: 211px;
+    }
+    .tickerSlider li:nth-of-type(11){
+        max-width: 106px;
+    }
+    .tickerSlider li:nth-of-type(12){
+        max-width: 166px;
+    }
+    .tickerSlider li:nth-of-type(13){
+        max-width: 158px;
+    }
+    .tickerSlider li:nth-of-type(14){
+        max-width: 139px;
+    }
+    .tickerSlider li:nth-of-type(15){
+        max-width: 204px;
+    }
+    .tickerSlider li:nth-of-type(16){
+        max-width: 228px;
+    }
+    .tickerSlider li:nth-of-type(17){
+        max-width: 266px;
+    }
+    .tickerSlider li:nth-of-type(18){
+        max-width: 198px;
+    }
+    .tickerSlider li:nth-of-type(19){
+        max-width: 210px;
+    }
+    .tickerSlider li:nth-of-type(20){
+        max-width: 190px;
+    }
+    .tickerSlider li:nth-of-type(21){
+        max-width: 184px;
+    }
+    .tickerSlider li:nth-of-type(22){
+        max-width: 38px;
+    }
+    .tickerSlider li:nth-of-type(23){
+        max-width: 168px;
+    }
+    .tickerSlider li:nth-of-type(24){
+        max-width: 162px;
+    }
+    .tickerSlider li:nth-of-type(25){
+        max-width: 113px;
+    }
+    .tickerSlider li:nth-of-type(26){
+        max-width: 62px;
+    }
+    .tickerSlider li:nth-of-type(27){
+        max-width: 159px;
+    }
+    .tickerSlider li:nth-of-type(28){
+        max-width: 165px;
+    }
+    .tickerSlider li:nth-of-type(29){
+        max-width: 220px;
+    }
+    .tickerSlider li:nth-of-type(30){
+        max-width: 208px;
+    }
+    .tickerSlider li:nth-of-type(31){
+        max-width: 126px;
+    }
+    .tickerSlider li:nth-of-type(32){
+        max-width: 111px;
+    }
+    .tickerSlider li:nth-of-type(33){
+        max-width: 92px;
+    }
+    .tickerSlider li:nth-of-type(34){
+        max-width: 208px;
+    }
+    .tickerSlider li:nth-of-type(35){
+        max-width: 68px;
+    }
+    .tickerSlider li:nth-of-type(36){
+        max-width: 66px;
+    }
+    .tickerSlider li:nth-of-type(37){
+        max-width: 74px;
+    }
+    .tickerSlider li:nth-of-type(38){
+        max-width: 138px;
+    }
+    .tickerSlider li:nth-of-type(39){
+        max-width: 174px;
+    }
+    .tickerSlider li:nth-of-type(40){
+        max-width: 168px;
+    }
+    .tickerSlider li:nth-of-type(41){
+        max-width: 182px;
+    }
+    .tickerSlider li:nth-of-type(42){
+        max-width: 142px;
+    }
+    .slideBox .bx-wrapper{
+        max-width: 1625px !important; margin-left: auto;
+    }
+    .slideBox .bx-wrapper .bx-controls-direction a{
+        background-color: rgba(195, 195, 195, 0.2); width: 80px; height: 80px; border-radius: 50px; margin-top: 0px; top: 43%; position: absolute; z-index: 100;
+    }
+    .slideBox .bx-wrapper .bx-controls-direction .bx-prev{
+        background: url('../images/icon_wLeftArrow.png'), rgba(195, 195, 195, 0.2); background-repeat: no-repeat; background-position: center;
+    }
+    .slideBox .bx-wrapper .bx-controls-direction .bx-next{
+        background: url('../images/icon_wRightArrow.png'), rgba(195, 195, 195, 0.2); background-repeat: no-repeat; background-position: center;
+    }
+    .slideBox .wayCarousel li{
+        position: relative; transition: transform .3s ease-out;
+    }
+    .slideBox .wayCarousel li:not(.active){
+        transform: scale(0.85);
+    }
+    .slideBox .wayCarousel li figure figcaption{
+        position: absolute; width: 45%; right: 0; top: 0; padding: var(--sp60) 5%; min-width: 604px;
+        box-sizing: border-box; box-shadow: 3px 0.2px 25px 0.5px rgba(0, 0, 0, 0.2); border-radius: 0 0 0 15px; background-repeat: no-repeat;
+    }
+    .slideBox .wayCarousel .slide01 figure figcaption{
+        background-color: rgba(245, 232, 222, 0.9);
+    }
+    .slideBox .wayCarousel .slide02 figure figcaption{
+        background-color: rgba(166, 218, 245, 0.9);
+    }
+    .slideBox .wayCarousel .slide03 figure figcaption{
+        background-color: rgba(255, 235, 215, 0.9);
+    }
+    .slideBox .wayCarousel .slide04 figure figcaption{
+        background-color: rgba(157, 178, 195, 0.9);
+    }
+    .slideBox .wayCarousel .slide05 figure figcaption{
+        background-color: rgba(236, 195, 175, 0.5);
+    }
+    .slideBox .wayCarousel .slide06 figure figcaption{
+        background-color: rgba(166, 175, 226, 0.5);
+    }
+    .slideBox .wayCarousel .slide07 figure figcaption{
+        background-color: rgba(210, 228, 238, 0.5);
+    }
+    .slideBox .wayCarousel .slide08 figure figcaption{
+        background-color: rgba(230, 240, 250, 0.5);
+    }
+    .slideBox .wayCarousel li figure figcaption dl dt{
+        margin-bottom: var(--sp30);
+    }
+    .vertiCardslotBox{
+        max-width: 1440px; margin: 0 auto; display: flex; flex-wrap: nowrap; justify-content: space-between;
+    }
+    .vertiCardslotBox .tImgDesc{
+        list-style: none;
+    }
+    .vertiCardslotBox .tImgDesc:not(:first-of-type){
+        margin-left: 1.5%;
+    }
+    .vertiCardslotBox .tImgDesc img{
+        margin-bottom: var(--sp20); width: 100%;
+    }
+    .vertiCardslotBox .tImgDesc dl{
+        padding: var(--sp50) 9%; min-height: 345px; box-sizing: border-box;
+    }
+    .vertiCardslotBox .tImgDesc .pt2,
+    .vertiCardslotBox .tImgDesc .pt4,
+    .vertiCardslotBox .tImgDesc .pt5,
+    .vertiCardslotBox .tImgDesc .pt6{
+        color: var(--gs02);
+    }
+    .vertiCardslotBox .tImgDesc .sc3{
+        color: var(--gs10);
+    }
+    .vertiCardslotBox .tImgDesc dl dt{
+        margin-bottom: var(--sp25);
+    }
+    .vertiCardslotBox .tImgDesc dl dt small{
+        display: block; padding-bottom: var(--sp25);
+    }
+    .loyalty{
+        position: relative; margin-bottom: var(--sp55);
+    }
+    .loyalty .gs1{
+        position: absolute; width: 35%; padding: var(--sp55) 3.125%; bottom: -55px; min-width: 666px; box-sizing: border-box; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
+    }
+    .loyalty .gs1 h3{
+        margin-bottom: var(--sp25); color: var(--gs10);
+    }
+    .loyalty .gs1 p{
+        margin-bottom: var(--sp40); line-height: 23px; color: var(--gs07);
+    }
+    .loyalty .gs1 a{
+        display: block;
+    }
+    .loyalty .gs1 a:first-of-type{
+        width: 30%; min-width: 201px; margin-bottom: var(--sp20); padding: var(--sp15) 6%; background-color: var(--gs04); color: var(--gs10); text-align: center;
+    }
+    .loyalty .gs1 a:first-of-type:hover{
+        background-color: var(--sc01); color: var(--gs02);
+    }
+    .loyalty .gs1 a:last-of-type{
+        color: var(--sc05); letter-spacing: 1px;
+    }
+    .horiCardslotBox{
+        max-width: 1440px; margin: 0 auto;
+    }
+    .horiCardslotBox ul li{
+        display: flex; flex-wrap: nowrap; justify-content: space-between; min-height: 420px;
+    }
+    .horiCardslotBox ul li:not(:last-of-type){
+        margin-bottom: var(--sp60);
+    }
+    .horiCardslotBox ul li img{
+        max-width: 710px; width: 49%;
+    }
+    .horiCardslotBox ul li div{
+        width: 49%; max-width: 710px; padding: var(--sp100) 5%; box-sizing: border-box;
+    }
+    .horiCardslotBox ul li div dl dt{
+        margin-bottom: var(--sp40);
+    }
+    .horiCardslotBox ul li div dl dt small{
+        display: block; padding-bottom: var(--sp30);
+    }
+    .horiCardslotBox ul li div dl dd:last-of-type{
+        margin-bottom: var(--sp25);
+    }
+    .horiCardslotBox ul li .pt4,
+    .horiCardslotBox ul li .pt5,
+    .horiCardslotBox ul li .pt6,
+    .horiCardslotBox ul li .pt7{
+        color: var(--gs02);
+    }
+    .horiCardslotBox ul li .sc3{
+        color: var(--gs10);
+    }
+    .horiCardslotBox ul li div a{
+        color: inherit;
+    }
+    .twoDescCardslotBox{
+        max-width: 1440px; margin: 0 auto;
+    }
+    .twoDescCardslotBox div img{
+        width: 100%; margin-bottom: var(--sp25);
+    }
+    .twoDescCardslotBox div{
+        display: flex; flex-wrap: wrap; justify-content: space-between;
+    }
+    .twoDescCardslotBox div dl{
+        width: 49%; box-sizing: border-box; min-height: 300px; padding: var(--sp65) 4.5%;
+    }
+    .twoDescCardslotBox div dl:last-of-type{
+        margin-left: 2%;
+    }
+    .twoDescCardslotBox div dl dt{
+        margin-bottom: var(--sp35);
+    }
+    .twoDescCardslotBox div dl dt small{
+        display: block; padding-bottom: var(--sp25);
+    }
+    .globalCardslotBox{
+        max-width: 1440px; margin: 0 auto;
+    }
+    .globalCardslotBox ul{
+        display: flex; flex-flow: row wrap; justify-content: space-between; align-content: space-between; align-items: stretch; list-style: none;
+    }
+    .globalCardslotBox ul li{
+        color: var(--gs01); box-sizing: border-box;
+    }
+    .globalCardslotBox ul .hTextDesc,
+    .globalCardslotBox ul .hImgDesc{
+        width: 24.72%; flex: 1 auto; max-width: 356px;
+    }
+    .globalCardslotBox ul .fTextDesc,
+    .globalCardslotBox ul .fImgDesc{
+        width: 49.8%; flex: 2 auto; max-width: 717px;
+    }
+    .globalCardslotBox ul li.hTextDesc,
+    .globalCardslotBox ul li.fTextDesc{
+        padding: var(--sp70) var(--sp65);
+    }
+    .globalCardslotBox ul li dl{
+        margin-bottom: var(--sp35);
+    }
+    .globalCardslotBox ul li dl dt{
+        margin-bottom: var(--sp25);
+    }
+    .globalCardslotBox ul li:nth-of-type(1),
+    .globalCardslotBox ul li:nth-of-type(2),
+    .globalCardslotBox ul li:nth-of-type(3){
+        margin-bottom: var(--sp05);
     }
 }

@@ -119,6 +119,11 @@ img,video{
     footer>div:last-of-type ul:last-of-type li:last-of-type{
         margin: 0 auto;
     }
+    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li,
+    footer>div:first-of-type div:last-of-type span a:first-of-type,
+    footer>div:last-of-type div:last-of-type p{
+        margin-bottom: var(--sp15);
+    }
     header>div#fnbPanel>div:first-of-type div b.mui+ul,
     header>div#fnbPanel>div#reservation form fieldset>div>ul,
     header>div#fnbPanel>div#reservation form fieldset>div>ul>li label small{
@@ -161,12 +166,12 @@ img,video{
     header>div:first-of-type div ul>li:first-of-type.active,
     header>div:first-of-type div ul>li:last-of-type,
     header>div:first-of-type div ul>li:nth-of-type(2):hover a,
+    header>div#fnbPanel,
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
     header>div#fnbPanel>div#reservation form fieldset>div,
     footer>div:first-of-type{
         background-color: var(--gs01);
     }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
     header>div#fnbPanel>div#reservation form fieldset>div ul>li input:not(input[type='reset']),
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) button,
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) span select,
@@ -323,7 +328,7 @@ img,video{
         transition: all .3s ease-out;
     }
     header>div#fnbPanel{
-        position: fixed; height: 100%; background-color: white; left: 0; padding: var(--sp40) 3% 0 3%; top: 50px;
+        position: fixed; height: 100%; left: 0; padding: var(--sp40) 3% 0 3%; top: 50px;
     }
     header>div#fnbPanel>div:first-of-type div{
         right: 10%; top: 0; padding-top: 45px;
@@ -400,9 +405,6 @@ img,video{
     header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect{
         padding: var(--sp15) 5%; border: 1px solid var(--gs10); top: 67px; z-index: 1;
     }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li{
-        margin-bottom: var(--sp15);
-    }
     header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li .countComponent{
         padding-top: var(--sp10);
     }
@@ -464,9 +466,6 @@ img,video{
     }
     footer>div:first-of-type div:last-of-type a{
         text-decoration: none;
-    }
-    footer>div:first-of-type div:last-of-type span a:first-of-type{
-        margin-bottom: var(--sp15);
     }
     footer>div:first-of-type div:last-of-type mark{
         margin-bottom: var(--sp45); background-color: transparent;
@@ -572,9 +571,6 @@ img,video{
     }
     footer>div:last-of-type div:last-of-type{
         clear: both; padding-top: var(--sp90); color: var(--gs08);
-    }
-    footer>div:last-of-type div:last-of-type p{
-        margin-bottom: var(--sp15);
     }
 }
 @media screen and (max-width: 767px) and (orientation: landscape){
@@ -747,11 +743,11 @@ img,video{
     header>div#fnbPanel,
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn:hover,
     header>div#fnbPanel>div#reservation form fieldset>div,
+    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
     footer>div:first-of-type{
         background-color: var(--gs01);
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul>li input:not(input[type='reset']),
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) button,
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) span select,
     footer>div:first-of-type div:first-of-type form input:first-of-type{
@@ -1107,9 +1103,9 @@ img,video{
         clear: both; padding-top: var(--sp45); color: var(--gs08);
     }
 }
-@media screen and (min-width: 768px){
+/* @media screen and (min-width: 768px){
     
-}
+} */
 /* ? tablet + mobile */
 @media screen and (min-width: 1280px){
     header,
@@ -1603,7 +1599,7 @@ img,video{
         clear: both; padding-top: 80px; color: var(--gs08);
     }
 }
-@media screen and (min-width: 768px){
+/* @media screen and (min-width: 768px){
     
-}
+} */
 /* ? desktop + tablet */
