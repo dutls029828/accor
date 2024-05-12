@@ -44,6 +44,13 @@ div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:afte
 div[class*='detailContainer']>.termsPopup+div span::after{
     width: 100%;
 }
+section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li a,
+section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 a,
+section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 a,
+section[class*='termsContainer'].general .accordionBox li:nth-of-type(10) .L316 a,
+section[class*='termsContainer'].general>div a{
+    color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
+}
 @media screen and (max-width: 767px){
     .indexContainer,
     .allBrandContainer,
@@ -54,6 +61,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='accomContainer'],
     div[class*='loyaltyContainer'],
     div[class*='offersContainer'],
+    section[class*='diningContainer'],
     div[class*='diningContainer'],
     div[class*='businessContainer'],
     div[class*='detailContainer'],
@@ -83,7 +91,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='offersContainer'].year>div:nth-of-type(2)>div .bannerBoxR .gs1::after,
     div[class*='diningContainer'].service div:nth-of-type(2) .tileSlider li::after,
     .diningSeasonFancy ul:first-of-type li::after,
-    div[class*='diningContainer'].flavours .tileBox:after,
+    section[class*='diningContainer'].flavours .tileBox:after,
     div[class*='businessContainer'].tailoredEvents div:first-of-type ul::after,
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:first-of-type .gs9::after,
     .businessDetailContainer.meeting .horiCardslotBox ul li div dl::after,
@@ -1215,32 +1223,32 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .diningSeasonFancy>div[id^='fancy'] div p:first-of-type{
         margin-bottom: var(--sp25);
     }
-    div[class*='diningContainer'].flavours .imgCenterTitle{
+    section[class*='diningContainer'].flavours .imgCenterTitle{
         background: url('../images/diningWorld_headline.png') no-repeat center / cover; width: 100%; min-height: 300px; text-align: center; color: var(--gs01);
         margin-bottom: var(--sp40); padding: 130px 0; line-height: 40px; box-sizing: border-box;
     }
-    div[class*='diningContainer'].flavours .tileBox{
+    section[class*='diningContainer'].flavours .tileBox{
         max-width: 1440px; margin: 0 auto; list-style: none;
     }
-    div[class*='diningContainer'].flavours .tileBox li{
+    section[class*='diningContainer'].flavours .tileBox li{
         float: left; display: block; width: 48.5%; position: relative;
     }
-    div[class*='diningContainer'].flavours .tileBox li:nth-of-type(2n){
+    section[class*='diningContainer'].flavours .tileBox li:nth-of-type(2n){
         margin-left: 3%;
     }
-    div[class*='diningContainer'].flavours .tileBox li:not(:nth-last-child(-n+2)){
+    section[class*='diningContainer'].flavours .tileBox li:not(:nth-last-child(-n+2)){
         margin-bottom: var(--sp10);
     }
-    div[class*='diningContainer'].flavours .tileBox li a img{
+    section[class*='diningContainer'].flavours .tileBox li a img{
         width: 100%;
     }
-    div[class*='diningContainer'].flavours .tileBox li a img{
+    section[class*='diningContainer'].flavours .tileBox li a img{
         filter: brightness(0.7); transition: transform .3s linear;
     }
-    div[class*='diningContainer'].flavours .tileBox li a:hover img{
+    section[class*='diningContainer'].flavours .tileBox li a:hover img{
         transform: scale(1.03);
     }
-    div[class*='diningContainer'].flavours .tileBox li a mark{
+    section[class*='diningContainer'].flavours .tileBox li a mark{
         position: absolute; display: inline-block; top: 45%; text-align: center; width: 100%; color: var(--gs02);
         background-color: transparent; font-style: normal; font-size: 1.5vh; font-weight: inherit;
     }
@@ -1846,7 +1854,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         position: absolute; opacity: 1; top: 45%; width: 100%; text-align: center; transition: all .1s ease-in-out; font-size: 16px;
     }
     .detailContainer04>div ul li p{
-        position: absolute; opacity: 0; width: 80%; text-align: center; left: 10%; line-height: 21px; font-size: 3vw;
+        position: absolute; opacity: 0; width: 80%; text-align: center; left: 10%; font-size: 3vw;
     }
     .detailContainer04>div ul li p{
         top: 40%;
@@ -3389,10 +3397,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li ul{
         list-style: none;
     }
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li ul li a,
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li div.L316 a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
-    }
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li ul li:not(:last-of-type){
         margin-bottom: var(--sp15);
     }
@@ -3621,11 +3625,11 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         margin-bottom: var(--sp55); text-align: center;
     }
     .bookarideContainer>div:last-of-type span{
-        background: url('../images/icon_wCheck.png') no-repeat left 5px / 18px;
+        background: url('../images/icon_wCheck.png') no-repeat left 5px / 18px; 
         margin-bottom: var(--sp55); display: block; padding-left: 10%; line-height: 21px;
     }
     .bookarideContainer>div:last-of-type span small{
-        color: var(--gs05); padding-top: var(--sp10); display: block; line-height: 16px;
+        color: var(--gs05); padding-top: var(--sp10); display: block;
     }
     .bookarideContainer>div:last-of-type a{
         background-image: url('../images/arrow_greyRight.png'); border-color: var(--gs04);
@@ -3743,7 +3747,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         display: inline;
     }
     section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 a{
-        display: inline; text-decoration: underline; text-underline-offset: 5px; color: var(--sc01);
+        display: inline;
     }
     section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 p:nth-of-type(2){
         margin: var(--sp35) 0;
@@ -3779,9 +3783,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 div{
         line-height: 22px;
-    }
-    section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
     }
     section[class*='termsContainer'].general .accordionBox li .L316 .roman,
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(2) .L316 li:not(:last-of-type),
@@ -3832,14 +3833,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(10) .L316{
         line-height: 22px;
     }
-    section[class*='termsContainer'].general .accordionBox li:nth-of-type(10) .L316 a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
-    }
     section[class*='termsContainer'].general>div{
         max-width: 1340px; margin: 0 auto; color: var(--gs08); text-align: center; line-height: 22px;
-    }
-    section[class*='termsContainer'].general>div a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
     }
     section[class*='termsContainer'].adagio .accordionBox li:first-of-type ul>li,
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(18) ul>li{
@@ -4154,7 +4149,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='offersContainer'].year .horiCardslotBox .termsPopup.active{
         padding: 15% 6.25%;
     }
-    div[class*='diningContainer'].flavours .tileBox li a mark,
+    section[class*='diningContainer'].flavours .tileBox li a mark,
     div[class*='diningContainer'].service div:nth-of-type(2) .bx-wrapper .bx-viewport .tileSlider li a mark{
         font-size: 3vw;
     }
@@ -4338,6 +4333,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='loyaltyContainer'],
     div[class*='offersContainer'],
     div[class*='diningContainer'],
+    section[class*='diningContainer'],
     div[class*='businessContainer'].tailoredEvents .imgCenterTitle,
     div[class*='businessContainer'].meetingPlanning,
     div[class*='businessDetailContainer'],
@@ -4366,7 +4362,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='offersContainer'].year>div:nth-of-type(2)>div .bannerBoxR .gs1::after,
     div[class*='diningContainer'].service div:nth-of-type(2) .tileSlider li::after,
     .diningSeasonFancy ul:first-of-type li::after,
-    div[class*='diningContainer'].flavours .tileBox:after,
+    section[class*='diningContainer'].flavours .tileBox:after,
     div[class*='businessContainer'].tailoredEvents div:first-of-type ul::after,
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:first-of-type .gs9::after,
     .businessDetailContainer.meeting .horiCardslotBox ul li div dl::after,
@@ -4567,7 +4563,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         margin-bottom: var(--sp35); color: var(--gs01); line-height: 42px;
     }
     .indexContainer .bannerBox div p{
-        color: var(--gs01); margin-bottom: var(--sp30); line-height: 21px;
+        color: var(--gs01); margin-bottom: var(--sp30);
     }
     .indexContainer .bannerBox div a{
         display: inline-block; color: var(--sc03); border: 1px solid var(--sc03); padding: var(--sp15) 2.6%; box-sizing: border-box; min-width: 180px; text-align: center;
@@ -4653,9 +4649,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='accomContainer'] .headlineContent div:last-of-type dl dt{
         margin-bottom: var(--sp30);
     }
-    div[class*='accomContainer'] .headlineContent div:last-of-type dl dd{
-        line-height: 21px;
-    }
     div[class*='accomContainer'] .headlineContent div:last-of-type a{
         position: relative; display: block; text-align: right; color: var(--sc01); margin-left: auto;
     }
@@ -4692,9 +4685,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
     div[class*='accomContainer'] .vertiCardslotBox .tImgDesc .bTextDesc dt{
         margin-bottom: var(--sp25);
-    }
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc .bTextDesc dd{
-        line-height: 21px;
     }
     div[class*='accomContainer'] .vertiCardslotBox .tImgDesc dl dt small{
         display: block; padding-bottom: var(--sp25);
@@ -4792,9 +4782,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type h3{
         margin-bottom: var(--sp30);
     }
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type p{
-        margin-bottom: var(--sp25); line-height: 21px;
-    }
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a{
         position: relative; display: block; text-align: right; color: var(--sc01); margin-left: auto;
     }
@@ -4816,9 +4803,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc dl{
         padding: 0 0; min-height: 0;
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc dl dd{
-        line-height: 21px;
     }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(2) .bTextDesc dl,
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(3) .bTextDesc dl{
@@ -4865,7 +4849,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs01); line-height: 42px;
     }
     div[class*='loyaltyContainer'].discoverProgram .bannerBox div p{
-        color: var(--gs05); line-height: 21px;
+        color: var(--gs05);
     }
     div[class*='loyaltyContainer'].discoverProgram .bannerBox div h2,
     div[class*='loyaltyContainer'].discoverProgram .bannerBox div p{
@@ -4909,7 +4893,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         margin-bottom: 4.5vh;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dd{
-        padding-left: 5%; color: var(--gs11); line-height: 21px;
+        padding-left: 5%; color: var(--gs11);
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox span{
         display: block; text-align: center; padding-top: var(--sp15); color: var(--gs07);
@@ -5093,7 +5077,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs01); line-height: 42px;
     }
     div[class*='loyaltyContainer'].earnRewards .bannerBox div p{
-        color: var(--gs05); line-height: 21px;
+        color: var(--gs05);
     }
     div[class*='loyaltyContainer'].earnRewards .bannerBox div h2,
     div[class*='loyaltyContainer'].earnRewards .bannerBox div p{
@@ -5143,7 +5127,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs01); line-height: 42px;
     }
     div[class*='loyaltyContainer'].useRewards .bannerBox div p{
-        color: var(--gs05); line-height: 21px;
+        color: var(--gs05);
     }
     div[class*='loyaltyContainer'].useRewards .bannerBox div h2,
     div[class*='loyaltyContainer'].useRewards .bannerBox div p{
@@ -5215,16 +5199,13 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         content: 'BY PHONE';
     }
     div[class*='offersContainer'].member .bannerBox div{
-        padding: var(--sp60) 3.125%;
-        box-sizing: border-box;
+        padding: var(--sp60) 3.125%; box-sizing: border-box;
     }
     div[class*='offersContainer'].member .bannerBox div h2{
-        color: var(--gs01);
-        line-height: 42px;
+        color: var(--gs01); line-height: 42px;
     }
     div[class*='offersContainer'].member .bannerBox div p{
         color: var(--gs05);
-        line-height: 21px;
     }
     div[class*='offersContainer'].member .bannerBox div h2,
     div[class*='offersContainer'].member .bannerBox div p{
@@ -5281,7 +5262,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         margin-bottom: var(--sp25);
     }
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3) div p{
-        margin-bottom: var(--sp35); line-height: 21px;
+        margin-bottom: var(--sp35);
     }
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(4){
         margin-bottom: var(--sp10);
@@ -5293,7 +5274,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         color: var(--gs01); line-height: 42px;
     }
     div[class*='offersContainer'].latest .bannerBox div p{
-        color: var(--gs05); line-height: 21px;
+        color: var(--gs05);
     }
     div[class*='offersContainer'].latest .bannerBox div h2,
     div[class*='offersContainer'].latest .bannerBox div p{
@@ -5318,7 +5299,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         display: block; padding-bottom: var(--sp30);
     }
     div[class*='offersContainer'].year .horiCardslotBox ul li div p{
-        line-height: 21px; margin-bottom: var(--sp25);
+        margin-bottom: var(--sp25);
     }
     div[class*='offersContainer'].year .horiCardslotBox ul li div span{
         position: relative; display: block; text-align: right; margin-left: auto;
@@ -5389,9 +5370,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
     div[class*='offersContainer'].year>div:nth-of-type(2)>div .bannerBoxR .gs1 dl dt small{
         display: block; padding-bottom: var(--sp30);
-    }
-    div[class*='offersContainer'].year>div:nth-of-type(2)>div .bannerBoxR .gs1 dl dd{
-        line-height: 21px;
     }
     div[class*='offersContainer'].year>div:nth-of-type(2)>div .bannerBoxR .gs1 a{
         display: block; float: left; padding: var(--sp15) 6%; text-indent: -9999px; box-sizing: border-box; transition-duration: .3s; overflow-x: hidden; min-width: 180px; width: 32%; text-align: center;
@@ -5538,32 +5516,32 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .diningSeasonFancy>div[id^='fancy'] div p:first-of-type{
         margin-bottom: var(--sp40);
     }
-    div[class*='diningContainer'].flavours .imgCenterTitle{
+    section[class*='diningContainer'].flavours .imgCenterTitle{
         background: url('../images/diningWorld_headline.png') no-repeat center / cover;
         width: 100%; min-height: 800px; text-align: center; line-height: 800px; color: var(--gs01); margin-bottom: var(--sp100);
     }
-    div[class*='diningContainer'].flavours .tileBox{
+    section[class*='diningContainer'].flavours .tileBox{
         max-width: 1440px; margin: 0 auto; list-style: none;
     }
-    div[class*='diningContainer'].flavours .tileBox li{
+    section[class*='diningContainer'].flavours .tileBox li{
         float: left; display: block; width: 48.5%; position: relative;
     }
-    div[class*='diningContainer'].flavours .tileBox li:nth-of-type(2n){
+    section[class*='diningContainer'].flavours .tileBox li:nth-of-type(2n){
         margin-left: 3%;
     }
-    div[class*='diningContainer'].flavours .tileBox li:not(:nth-last-child(-n+2)){
+    section[class*='diningContainer'].flavours .tileBox li:not(:nth-last-child(-n+2)){
         margin-bottom: var(--sp40);
     }
-    div[class*='diningContainer'].flavours .tileBox li a img{
+    section[class*='diningContainer'].flavours .tileBox li a img{
         width: 100%;
     }
-    div[class*='diningContainer'].flavours .tileBox li a img{
+    section[class*='diningContainer'].flavours .tileBox li a img{
         filter: brightness(0.7); transition: transform .3s linear;
     }
-    div[class*='diningContainer'].flavours .tileBox li a:hover img{
+    section[class*='diningContainer'].flavours .tileBox li a:hover img{
         transform: scale(1.03);
     }
-    div[class*='diningContainer'].flavours .tileBox li a mark{
+    section[class*='diningContainer'].flavours .tileBox li a mark{
         position: absolute; display: inline-block; top: 45%; text-align: center; width: 100%; color: var(--gs02); background-color: transparent;
         font-style: normal; font-size: 28px; font-weight: inherit;
     }
@@ -5672,9 +5650,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc h4 small{
         display: block; padding-bottom: var(--sp25);
-    }
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc p{
-        line-height: 21px;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a{
         color: inherit; padding-top: var(--sp30); display: inline-block; position: relative;
@@ -6099,7 +6074,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
     .detailContainer08>ul:first-of-type .halfDesc ul li,
     .detailContainer12>ul:first-of-type .halfDesc ul li{
-        padding: 0; line-height: 21px;
+        padding: 0;
     }
     .detailContainer08>ul:first-of-type .halfDesc ul li:not(:last-of-type),
     .detailContainer12>ul:first-of-type .halfDesc ul li:not(:last-of-type){
@@ -6109,13 +6084,13 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         margin-bottom: var(--sp25);
     }
     div[class*='detailContainer']>ul:first-of-type li p{
-        line-height: 21px; margin-bottom: var(--sp15);
+        margin-bottom: var(--sp15);
     }
     div[class*='detailContainer']>ul:first-of-type li span{
         display: block; line-height: 21px;
     }
     div[class*='detailContainer']>ul:first-of-type li b{
-        line-height: 21px; font-weight: 500;
+        font-weight: 500;
     }
     div[class*='detailContainer']>ul:first-of-type li a{
         padding-top: var(--sp10); color: var(--sc03); position: relative; display: inline-block;
@@ -7761,10 +7736,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li ul{
         list-style: none;
     }
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li ul li a,
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li div.L316 a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
-    }
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li ul li:not(:last-of-type){
         margin-bottom: var(--sp15);
     }
@@ -8112,7 +8083,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         display: inline;
     }
     section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 a{
-        display: inline; text-decoration: underline; text-underline-offset: 5px; color: var(--sc01);
+        display: inline;
     }
     section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 p:nth-of-type(2){
         margin: var(--sp35) 0;
@@ -8148,9 +8119,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 div{
         line-height: 22px;
-    }
-    section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
     }
     section[class*='termsContainer'].general .accordionBox li .L316 .roman,
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(2) .L316 li:not(:last-of-type),
@@ -8201,14 +8169,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(10) .L316{
         line-height: 22px;
     }
-    section[class*='termsContainer'].general .accordionBox li:nth-of-type(10) .L316 a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
-    }
     section[class*='termsContainer'].general>div{
         max-width: 1340px; margin: 0 auto; color: var(--gs08); text-align: center; line-height: 22px;
-    }
-    section[class*='termsContainer'].general>div a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
     }
     section[class*='termsContainer'].adagio .accordionBox li:first-of-type ul>li{
         line-height: 22px;
@@ -8597,6 +8559,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='loyaltyContainer'],
     div[class*='offersContainer'],
     div[class*='diningContainer'],
+    section[class*='diningContainer'],
     div[class*='businessContainer'].tailoredEvents .imgCenterTitle,
     div[class*='businessContainer'].meetingPlanning,
     div[class*='businessDetailContainer'],
@@ -8614,7 +8577,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     div[class*='offersContainer'].year>div:nth-of-type(2)>div .bannerBoxR .gs1::after,
     div[class*='diningContainer'].service div:nth-of-type(2) .tileSlider li::after,
     .diningSeasonFancy ul:first-of-type li::after,
-    div[class*='diningContainer'].flavours .tileBox:after,
+    section[class*='diningContainer'].flavours .tileBox:after,
     div[class*='businessContainer'].tailoredEvents div:first-of-type ul::after,
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage:first-of-type .gs9::after,
     .businessDetailContainer.meeting .horiCardslotBox ul li div dl::after,
@@ -9839,32 +9802,32 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     .diningSeasonFancy>div[id^='fancy'] div p:first-of-type{
         margin-bottom: var(--sp40);
     }
-    div[class*='diningContainer'].flavours .imgCenterTitle{
+    section[class*='diningContainer'].flavours .imgCenterTitle{
         background: url('../images/diningWorld_headline.png') no-repeat center / cover;
         width: 100%; min-height: 800px; text-align: center; line-height: 800px; color: var(--gs01); margin-bottom: var(--sp100);
     }
-    div[class*='diningContainer'].flavours .tileBox{
+    section[class*='diningContainer'].flavours .tileBox{
         max-width: 1440px; margin: 0 auto; list-style: none;
     }
-    div[class*='diningContainer'].flavours .tileBox li{
+    section[class*='diningContainer'].flavours .tileBox li{
         float: left; display: block; width: 48.5%; position: relative;
     }
-    div[class*='diningContainer'].flavours .tileBox li:nth-of-type(2n){
+    section[class*='diningContainer'].flavours .tileBox li:nth-of-type(2n){
         margin-left: 3%;
     }
-    div[class*='diningContainer'].flavours .tileBox li:not(:nth-last-child(-n+2)){
+    section[class*='diningContainer'].flavours .tileBox li:not(:nth-last-child(-n+2)){
         margin-bottom: var(--sp40);
     }
-    div[class*='diningContainer'].flavours .tileBox li a img{
+    section[class*='diningContainer'].flavours .tileBox li a img{
         width: 100%; transition-duration: .3s;
     }
-    div[class*='diningContainer'].flavours .tileBox li a:hover img{
+    section[class*='diningContainer'].flavours .tileBox li a:hover img{
         filter: brightness(0.7);
     }
-    div[class*='diningContainer'].flavours .tileBox li a mark{
+    section[class*='diningContainer'].flavours .tileBox li a mark{
         display: none;
     }
-    div[class*='diningContainer'].flavours .tileBox li a:hover mark{
+    section[class*='diningContainer'].flavours .tileBox li a:hover mark{
         position: absolute; display: inline-block; top: 45%; text-align: center; width: 100%; color: var(--gs02); background-color: transparent;
         font-style: normal; font-size: 34px; font-weight: inherit;
     }
@@ -12068,11 +12031,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li ul{
         list-style: none;
     }
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li ul li a,
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li div.L316 a,
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
-    }
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li ul li:not(:last-of-type){
         margin-bottom: var(--sp15);
     }
@@ -12419,7 +12377,7 @@ div[class*='detailContainer']>.termsPopup+div span::after{
         display: inline;
     }
     section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 a{
-        display: inline; text-decoration: underline; text-underline-offset: 5px; color: var(--sc01);
+        display: inline;
     }
     section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 p:nth-of-type(2){
         margin: var(--sp35) 0;
@@ -12455,9 +12413,6 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     }
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 div{
         line-height: 22px;
-    }
-    section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
     }
     section[class*='termsContainer'].general .accordionBox li .L316 .roman,
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(2) .L316 li:not(:last-of-type),
@@ -12508,14 +12463,8 @@ div[class*='detailContainer']>.termsPopup+div span::after{
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(10) .L316{
         line-height: 22px;
     }
-    section[class*='termsContainer'].general .accordionBox li:nth-of-type(10) .L316 a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
-    }
     section[class*='termsContainer'].general>div{
         max-width: 1340px; margin: 0 auto; color: var(--gs08); text-align: center; line-height: 22px;
-    }
-    section[class*='termsContainer'].general>div a{
-        color: var(--sc01); text-decoration: underline; text-underline-offset: 5px;
     }
     section[class*='termsContainer'].adagio .accordionBox li:first-of-type ul>li,
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(18) ul>li{
