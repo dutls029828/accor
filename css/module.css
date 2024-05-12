@@ -112,6 +112,21 @@
         position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; right: 0; bottom: 0;
         background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
     }
+    .bannerBox div{
+        padding: var(--sp40) 5%; box-sizing: border-box;
+    }
+    .bannerBox div h2{
+        margin-bottom: var(--sp30); color: var(--gs01); line-height: 4vh; font-size: 3vh;
+    }
+    .bannerBox div p{
+        margin-bottom: var(--sp30); color: var(--gs05); 
+    }
+    .bannerBox div a{
+        display: block; width: 100%; color: var(--sc03); border: 1px solid var(--sc03); padding: var(--sp15) 2.6%; box-sizing: border-box; text-align: center; transition: all .3s ease-out;
+    }
+    .bannerBox div a:hover{
+        background-color: var(--sc03); color: var(--gs10);
+    }
     .bannerBoxR img{
         width: 100%;
     }
@@ -518,6 +533,21 @@
         position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; right: 0; bottom: 0;
         background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
     }
+    .bannerBox div{
+        padding: var(--sp60) 5%; box-sizing: border-box;
+    }
+    .bannerBox div h2{
+        margin-bottom: var(--sp35); color: var(--gs01); line-height: 42px;
+    }
+    .bannerBox div p{
+        color: var(--gs05); margin-bottom: var(--sp30);
+    }
+    .bannerBox div a{
+        display: inline-block; color: var(--sc03); border: 1px solid var(--sc03); padding: var(--sp15) 2.6%; box-sizing: border-box; min-width: 190px; text-align: center; transition: all .3s ease-out;
+    }
+    .bannerBox div a:hover{
+        background-color: var(--sc03); color: var(--gs10);
+    }
     .bannerBoxR img{
         width: 100%;
     }
@@ -915,6 +945,21 @@
     mark.rBottomLabel{
         position: absolute; width: max-content; max-width: 100%; padding: 12px 15px; right: 0; bottom: 0;
         background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
+    }
+    .bannerBox div{
+        padding: var(--sp60) 3.125%; box-sizing: border-box;
+    }
+    .bannerBox div h2{
+        margin-bottom: var(--sp35); color: var(--gs01); line-height: 42px;
+    }
+    .bannerBox div p{
+        color: var(--gs05); margin-bottom: var(--sp30);
+    }
+    .bannerBox div a{
+        display: inline-block; color: var(--sc03); border: 1px solid var(--sc03); padding: var(--sp15) 2.6%; box-sizing: border-box; min-width: 190px; text-align: center; transition: all .3s ease-out;
+    }
+    .bannerBox div a:hover{
+        background-color: var(--sc03); color: var(--gs10);
     }
     .bannerBoxR{
         position: relative;
