@@ -24,11 +24,15 @@ div[class*='offersContainer'].latest .horiCardslotBox ul li div a,
 div[class*='offersContainer'].year .horiCardslotBox ul li div span,
 div[class*='diningContainer'].service .bannerBoxR .gs1 a,
 div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a,
-div[class*='detailContainer'] .termsPopup+div{
+div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox a,
+div[class*='detailContainer'] .termsPopup+div,
+div[class*='detailContainer']>ul:first-of-type li a,
+div[class*='brandSubContainer'] .allBrandCarousel>a,
+div[class*='rsvnContainer'].myaccount>ul li div a{
     width: fit-content; word-break: keep-all;
 }
-div[class*='accomContainer'] .globalCardslotBox ul li a::before,
 div[class*='accomContainer'] .headlineContent div:last-of-type a::before,
+div[class*='accomContainer'] .globalCardslotBox ul li a::before,
 div[class*='brandSubContainer'] .allBrandCarousel>a:after,
 div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a::before,
 div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a::before,
@@ -38,10 +42,14 @@ div[class*='loyaltyContainer'].useRewards .horiCardslotBox li div a::before,
 div[class*='loyaltyContainer'].useRewards .bannerBoxR>div a::before,
 div[class*='offersContainer'].member .horiCardslotBox ul li div a::before,
 div[class*='offersContainer'].latest .horiCardslotBox ul li div a::before,
-div[class*='offersContainer'].year .horiCardslotBox ul li div span::after,
-div[class*='diningContainer'].service .bannerBoxR .gs1 a::after,
-div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:after,
-div[class*='detailContainer']>.termsPopup+div span::after{
+div[class*='offersContainer'].year .horiCardslotBox ul li div span::before,
+div[class*='diningContainer'].service .bannerBoxR .gs1 a::before,
+div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a::before,
+div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox a::before,
+div[class*='detailContainer']>.termsPopup+div span::after,
+div[class*='detailContainer']>ul:first-of-type li a::before,
+div[class*='brandSubContainer'] .allBrandCarousel>a::before,
+div[class*='rsvnContainer'].myaccount>ul li div a::before{
     width: 100%;
 }
 section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li a,
@@ -161,6 +169,7 @@ section[class*='termsContainer'].general>div a{
     }
     .indexContainer .globalCardslotBox ul>.fTextDesc.pt2 a::after,
     .indexContainer .globalCardslotBox ul>.hTextDesc.pt3 a::after,
+    div[class*='accomContainer'] .globalCardslotBox ul li a::before,
     div[class*='offersContainer'] .globalCardslotBox ul .fTextDesc.pt7 a:after,
     div[class*='offersContainer'] .globalCardslotBox ul .hTextDesc.pt3 a:after{
         background-color: var(--sc03);
@@ -182,58 +191,96 @@ section[class*='termsContainer'].general>div a{
         width: 100%;
     }
     div[class*='accomContainer'] .headlineContent div:last-of-type a,
+    div[class*='accomContainer'] .globalCardslotBox ul li a,
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a,
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a,
-    div[class*='loyaltyContainer'].benefits .bannerBoxR>div a,
-    div[class*='loyaltyContainer'].earnRewards .bannerBoxR>div a,
-    div[class*='loyaltyContainer'].useRewards .bannerBoxR>div a,
+    div[class*='loyaltyContainer'] .bannerBoxR>div a,
     div[class*='loyaltyContainer'] .horiCardslotBox li div a,
-    div[class*='offersContainer'] .horiCardslotBox ul li div a{
+    div[class*='offersContainer'] .horiCardslotBox ul li div a,
+    div[class*='offersContainer'].year .horiCardslotBox ul li div span,
+    div[class*='diningContainer'].service .bannerBoxR .gs1 a,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a,
+    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a,
+    div[class*='detailContainer']>ul:first-of-type li a,
+    div[class*='brandSubContainer'] .allBrandCarousel>a,
+    div[class*='rsvnContainer'].myaccount>ul li div a{
         position: relative; display: block; text-align: center; margin-left: auto;
     }
     div[class*='accomContainer'] .headlineContent div:last-of-type a,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a{
+    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a,
+    div[class*='diningContainer'].service .bannerBoxR .gs1 a,
+    div[class*='brandSubContainer'] .allBrandCarousel>a,
+    div[class*='rsvnContainer'].myaccount>ul li div a{
         color: var(--sc01);
     }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.pt4 a{
+    div[class*='accomContainer'] .globalCardslotBox ul li a,
+    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.pt4 a,
+    div[class*='detailContainer']>ul:first-of-type li a{
         color: var(--sc03);
     }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.sc3 a{
         color: var(--gs10);
     }
     div[class*='accomContainer'] .headlineContent div:last-of-type a::before,
+    div[class*='accomContainer'] .globalCardslotBox ul li a:before,
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a::before,
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a::before,
     div[class*='loyaltyContainer'] .bannerBoxR>div a::before,
     div[class*='loyaltyContainer'] .horiCardslotBox li div a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li div a::before{
+    div[class*='offersContainer'] .horiCardslotBox ul li div a::before,
+    div[class*='offersContainer'].year .horiCardslotBox ul li div span::before,
+    div[class*='diningContainer'].service .bannerBoxR .gs1 a::before,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a::before,
+    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:before,
+    div[class*='detailContainer']>ul:first-of-type li a:before,
+    div[class*='brandSubContainer'] .allBrandCarousel>a::before,
+    div[class*='rsvnContainer'].myaccount>ul li div a:before{
         content: ''; position: absolute; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
     }
     div[class*='accomContainer'] .headlineContent div:last-of-type a::before,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a::before{
+    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a::before,
+    div[class*='diningContainer'].service .bannerBoxR .gs1 a::before,
+    div[class*='brandSubContainer'] .allBrandCarousel>a::before,
+    div[class*='rsvnContainer'].myaccount>ul li div a::before{
         background-color: var(--sc01);
     }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(3) .bTextDesc div a::before{
+    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(3) .bTextDesc div a::before,
+    div[class*='detailContainer']>ul:first-of-type li a::before{
         background-color: var(--sc03);
     }
     div[class*='offersContainer'].member .horiCardslotBox ul li:nth-of-type(1) div a::before,
     div[class*='offersContainer'].member .horiCardslotBox ul li:nth-of-type(3) div a::before,
     div[class*='loyaltyContainer'].earnRewards .horiCardslotBox li div a::before,
-    div[class*='loyaltyContainer'].useRewards .horiCardslotBox li div a:before{
+    div[class*='loyaltyContainer'].useRewards .horiCardslotBox li div a:before,
+    div[class*='offersContainer'].year .horiCardslotBox ul li .pt5 span::before,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .gs9 a::before,
+    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt7 a::before,
+    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt5 a::before{
         background-color: var(--gs02);
     }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(2) .bTextDesc div a::before,
     div[class*='offersContainer'].member .horiCardslotBox ul li:nth-of-type(2) div a::before,
     div[class*='loyaltyContainer'].earnRewards .horiCardslotBox li:nth-of-type(3) div a:before,
-    div[class*='loyaltyContainer'].useRewards .horiCardslotBox li:nth-of-type(3) div a:before{
+    div[class*='loyaltyContainer'].useRewards .horiCardslotBox li:nth-of-type(3) div a:before,
+    div[class*='offersContainer'].year .horiCardslotBox ul li .sc3 span::before,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .sc3 a::before,
+    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .sc3 a:before{
         background-color: var(--gs10);
     }
     div[class*='accomContainer'] .headlineContent div:last-of-type a:hover::before,
+    div[class*='accomContainer'] .globalCardslotBox ul li a:hover::before,
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a:hover::before,
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a:hover::before,
     div[class*='loyaltyContainer'] .bannerBoxR>div a:hover::before,
     div[class*='loyaltyContainer'] .horiCardslotBox li div a:hover::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li div a:hover::before{
+    div[class*='offersContainer'] .horiCardslotBox ul li div a:hover::before,
+    div[class*='offersContainer'].year .horiCardslotBox ul li div span:hover::before,
+    div[class*='diningContainer'].service .bannerBoxR .gs1 a:hover::before,
+    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a:hover::before,
+    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:hover::before,
+    div[class*='detailContainer']>ul:first-of-type li a:hover::before,
+    div[class*='brandSubContainer'] .allBrandCarousel>a:hover::before,
+    div[class*='rsvnContainer'].myaccount>ul li div a:hover::before{
         transform: scaleX(0.5);
     }
 
@@ -453,26 +500,23 @@ section[class*='termsContainer'].general>div a{
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(6){
         position: relative;
     }
+    div[class*='accomContainer'] .globalCardslotBox ul li{
+        background-repeat: no-repeat; background-position: center; background-size: cover;
+    }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(1){
-        background: url('../images/cardContent_10.png') no-repeat center / cover;
+        background-image: url('../images/cardContent_10.png');
     }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(3){
-        background: url('../images/cardContent_11.png') no-repeat center / cover;
+        background-image: url('../images/cardContent_11.png');
     }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(4){
-        background: url('../images/cardContent_12.png') no-repeat center / cover;
+        background-image: url('../images/cardContent_12.png');
     }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(6){
-        background: url('../images/cardContent_13.png') no-repeat center / cover;
+        background-image: url('../images/cardContent_13.png');
     }
     div[class*='accomContainer'] .globalCardslotBox ul li a{
-        position: relative; display: block; color: var(--sc03);
-    }
-    div[class*='accomContainer'] .globalCardslotBox ul li a::before{
-        position: absolute; left: 0; bottom: -5px; content: ''; height: 1px; background-color: var(--sc03); transform: scaleX(1); transition-duration: .3s;
-    }
-    div[class*='accomContainer'] .globalCardslotBox ul li a:hover::before{
-        transform: scaleX(0.5);
+        margin-left: 0;
     }
     .allBrandContainer{
         max-width: 1279px; margin: 0 auto var(--sp60); text-align: center; padding: 0 3%;
@@ -889,21 +933,6 @@ section[class*='termsContainer'].general>div a{
     div[class*='offersContainer'].year .horiCardslotBox ul li div p{
         margin-bottom: var(--sp25);
     }
-    div[class*='offersContainer'].year .horiCardslotBox ul li div span{
-        position: relative; display: block; text-align: right; margin-left: auto;
-    }
-    div[class*='offersContainer'].year .horiCardslotBox ul li div span::after{
-        position: absolute; width: 100%; height: 1px; content: ''; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out; transform-origin: right;
-    }
-    div[class*='offersContainer'].year .horiCardslotBox ul li div span:hover:after{
-        transform: scaleX(0.5);
-    }
-    div[class*='offersContainer'].year .horiCardslotBox ul li .pt5 span::after{
-        background-color: var(--gs02);
-    }
-    div[class*='offersContainer'].year .horiCardslotBox ul li .sc3 span::after{
-        background-color: var(--gs10);
-    }
     div[class*='offersContainer'].year .horiCardslotBox ul li div span input{
         background-color: transparent; color: inherit; cursor: pointer; border: none; padding: 0;
     }
@@ -975,15 +1004,6 @@ section[class*='termsContainer'].general>div a{
     }
     div[class*='offersContainer'].year>div:nth-of-type(2) .vertiCardslotBox .tImgDesc div{
         position: relative;
-    }
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a{
-        color: var(--sc01); position: relative; display: block; text-align: right; margin-left: auto;
-    }
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a::after{
-        position: absolute; height: 1px; right: 0; bottom: -5px; background-color: var(--sc01); content: ''; transform: scaleX(1); transition: transform .3s ease-out; transform-origin: right;
-    }
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a:hover:after{
-        transform: scaleX(0.5);
     }
     div[class*='diningContainer'].service div:nth-of-type(2) .bx-wrapper .bx-viewport{
         max-width: 1440px; margin: 0 auto;
@@ -1123,9 +1143,6 @@ section[class*='termsContainer'].general>div a{
         position: absolute; display: inline-block; top: 45%; text-align: center; width: 100%; color: var(--gs02);
         background-color: transparent; font-style: normal; font-size: 1.5vh; font-weight: inherit;
     }
-    div[class*='businessContainer'].tailoredEvents :not(.imgCenterTitle){
-        max-width: 767px; margin: 0 auto;
-    }
     div[class*='businessContainer'].tailoredEvents .imgCenterTitle{
         background: url('../images/business_tailoredEvents_headline.png') no-repeat center / cover;
         width: 100%; min-height: 300px; text-align: center; padding: 130px 0; line-height: 40px; box-sizing: border-box; color: #c2a044;
@@ -1220,41 +1237,16 @@ section[class*='termsContainer'].general>div a{
         display: block; padding-bottom: var(--sp25);
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a{
-        color: inherit; padding-top: var(--sp30); display: inline-block; position: relative;
+        color: inherit; padding-top: var(--sp30); display: inline-block;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a:nth-of-type(2){
         margin-left: 5%;
-    }
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a:after{
-        content: '';  display: block;  position: absolute;  height: 1px;  left: 0;  bottom: -5px;  width: 100%; transform: scaleX(1); transition: transform .3s ease-out;
-    }
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a:hover::after{
-        transform: scaleX(0.5);
-    }
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .sc3 a:after{
-        background-color: var(--gs10);
-    }
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .gs9 a:after{
-        background-color: var(--gs02);
     }
     div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div dl dt{
         margin-bottom: var(--sp40);
     }
     div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a{
-        position: relative; display: block; text-align: right; margin: var(--sp25) 0 0 auto;
-    }
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:after{
-        position: absolute; content: ''; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out; transform-origin: right;
-    }
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:hover:after{
-        transform: scaleX(0.5);
-    }
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt7 a::after,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt5 a::after{
-        background-color: var(--gs02);
-    }
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .sc3 a:after{
-        background-color: var(--gs10);
+        margin-top: var(--sp25);
     }
     div[class*='businessContainer'].meetingPlanning .headlineSlider li{
         position: relative;
@@ -1639,13 +1631,7 @@ section[class*='termsContainer'].general>div a{
         font-weight: 500;
     }
     div[class*='detailContainer']>ul:first-of-type li a{
-        padding-top: var(--sp10); color: var(--sc03); position: relative; display: inline-block;
-    }
-    div[class*='detailContainer']>ul:first-of-type li a:after{
-        content: ''; position: absolute; left: 0; bottom: -5px; height: 1px; width: 100%; background-color: var(--sc03); transform: scaleX(1); transition: transform .3s ease-out;
-    }
-    div[class*='detailContainer']>ul:first-of-type li a:hover:after{
-        transform: scaleX(0.5);
+        padding-top: var(--sp10); display: inline-block;
     }
     div[class*='detailContainer'] .termsPopup{
         height: 0; overflow-y: hidden; transition: all .5s ease-in-out; margin-bottom: var(--sp30); position: fixed; padding: 0 6.25%; z-index: 1000; width: 100%; max-width: 1279px; box-sizing: border-box;
@@ -1954,13 +1940,7 @@ section[class*='termsContainer'].general>div a{
         max-width: 767px; margin: 0 auto;
     }
     div[class*='brandSubContainer'] .allBrandCarousel>a{
-        color: var(--sc01); right: 1%; width: fit-content; word-break: keep-all; position: relative; display: block; text-align: center; margin: 0 0 var(--sp15) auto;
-    }
-    div[class*='brandSubContainer'] .allBrandCarousel>a:after{
-        content: ''; width: 100%; height: 1px; position: absolute; bottom: -5px; right: 0; background-color: var(--sc01); transition: transform .3s ease-out; transform: scaleX(1);
-    }
-    div[class*='brandSubContainer'] .allBrandCarousel>a:hover:after{
-        transform: scaleX(0.5);
+        margin-bottom: var(--sp15); right: 1%;
     }
     div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li a{
         display: block;
@@ -2986,13 +2966,10 @@ section[class*='termsContainer'].general>div a{
         color: #9a9a9a; line-height: 22px;
     }
     div[class*='rsvnContainer'].myaccount>ul li div a{
-        display: inline-block; margin-top: var(--sp40); color: var(--sc01); position: relative;
+        display: inline-block; margin-top: var(--sp40);
     }
     div[class*='rsvnContainer'].myaccount>ul li div a:before{
-        content: ''; position: absolute; width: 100%; height: 1px; left: 0; bottom: -5px; background-color: var(--sc01); transform: scaleX(1); transition: transform .3s ease-out; transform-origin: left;
-    }
-    div[class*='rsvnContainer'].myaccount>ul li div a:hover::before{
-        transform: scaleX(0.5);
+        transform-origin: left;
     }
     div[class*='rsvnContainer'].myaccount>ul li ul{
         border: 1px solid var(--gs04); border-radius: 10px;
@@ -4313,7 +4290,21 @@ section[class*='termsContainer'].general>div a{
     .bookarideContainer>div:last-of-type a:hover:after{
         width: 100%;
     }
-
+    div[class*='accomContainer'] .headlineContent div:last-of-type a{
+        position: relative; display: block; text-align: center; margin-left: auto;
+    }
+    div[class*='accomContainer'] .headlineContent div:last-of-type a{
+        color: var(--sc01);
+    }
+    div[class*='accomContainer'] .headlineContent div:last-of-type a::before{
+        content: ''; position: absolute; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
+    }
+    div[class*='accomContainer'] .headlineContent div:last-of-type a::before{
+        background-color: var(--sc01);
+    }
+    div[class*='accomContainer'] .headlineContent div:last-of-type a:hover::before{
+        transform: scaleX(0.5);
+    }
     .indexContainer>.globalCardslotBox ul li:not(:nth-last-child(-n+2)){
         margin-bottom: var(--sp10);
     }
@@ -4497,15 +4488,6 @@ section[class*='termsContainer'].general>div a{
     div[class*='accomContainer'] .headlineContent div:last-of-type dl dt{
         margin-bottom: var(--sp30);
     }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a{
-        position: relative; display: block; text-align: right; color: var(--sc01); margin-left: auto;
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a::before{
-        content: ''; position: absolute; height: 1px; right: 0; bottom: -5px; background-color: var(--sc01); transform: scaleX(1); transition: transform .3s ease-out;
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a:hover::before{
-        transform: scaleX(0.5);
-    }
     div[class*='accomContainer'] .vertiCardslotBox .tImgDesc>div,
     div[class*='accomContainer'] .vertiCardslotBox .tImgDesc>div:first-of-type,
     div[class*='accomContainer'] .loyalty,
@@ -4552,23 +4534,26 @@ section[class*='termsContainer'].general>div a{
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(6){
         position: relative;
     }
+    div[class*='accomContainer'] .globalCardslotBox ul li{
+        background-repeat: no-repeat; background-position: center; background-size: cover;
+    }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(1){
-        background: url('../images/cardContent_10.png') no-repeat center / cover;
+        background-image: url('../images/cardContent_10.png');
     }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(3){
-        background: url('../images/cardContent_11.png') no-repeat center / cover;
+        background-image: url('../images/cardContent_11.png');
     }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(4){
-        background: url('../images/cardContent_12.png') no-repeat center / cover;
+        background-image: url('../images/cardContent_12.png');
     }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(6){
-        background: url('../images/cardContent_13.png') no-repeat center / cover;
+        background-image: url('../images/cardContent_13.png');
     }
     div[class*='accomContainer'] .globalCardslotBox ul li a{
         position: relative; display: block; color: var(--sc03);
     }
     div[class*='accomContainer'] .globalCardslotBox ul li a::before{
-        position: absolute; left: 0; bottom: -5px; content: ''; height: 1px; background-color: var(--sc03); transform: scaleX(1); transition-duration: 0.25s;
+        position: absolute; left: 0; bottom: -5px; content: ''; height: 1px; background-color: var(--sc03); transform: scaleX(1); transition-duration: .3s;
     }
     div[class*='accomContainer'] .globalCardslotBox ul li a:hover::before{
         transform: scaleX(0.5);
@@ -9063,9 +9048,6 @@ section[class*='termsContainer'].general>div a{
     }
     div[class*='loyaltyContainer'].earnRewards .horiCardslotBox ul li:last-of-type div{
         color: var(--gs10);
-    }
-    div[class*='loyaltyContainer'].earnRewards .bannerBox div a:hover{
-        background-color: var(--sc03); color: var(--gs10);
     }
     div[class*='loyaltyContainer'].useRewards .bannerBoxR>div a{
         position: relative; display: inline-block; text-align: center; color: var(--sc05);
