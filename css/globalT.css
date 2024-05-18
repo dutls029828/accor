@@ -774,10 +774,10 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         transform: rotate(90deg);
     }
     header>div#fnbPanel>div:first-of-type div b.mui+ul{
-        height: 0; opacity: 0; overflow-y: hidden; padding-right: 25%; transition-property: height, opacity; transition-duration: .3s;
+        height: 0; opacity: 0; overflow-y: hidden; padding-right: 30%; transition-property: height, opacity; transition-duration: .3s;
     }
     header>div#fnbPanel>div:first-of-type div b.mui.active+ul{
-        opacity: 1; margin-bottom: var(--sp50); width: 75%;
+        opacity: 1; margin-bottom: var(--sp50); width: 70%;
     }
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn{
         padding: var(--sp15) 20%; transition-duration: .3s; min-width: 180px; background-color: var(--sc01);
