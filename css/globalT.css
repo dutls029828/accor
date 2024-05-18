@@ -17,37 +17,72 @@ img,video{
 .bx-wrapper .bx-viewport ul:after{
     content: ''; display: block; clear: both;
 }
-
+header,
+header>div#fnbPanel,
+header>div#fnbPanel>div:first-of-type div,
+header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
+header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) button,
+header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) span select,
+footer>div:first-of-type{
+    width: 100%; box-sizing: border-box;
+}
+header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
+header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(1) input,
+header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2)>input,
+header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent>input,
+header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect>input[type='reset']{
+    width: 100%;
+}
+header>div:first-of-type div ul li,
+header>div:first-of-type div ul>li:first-of-type.active,
+header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
+header>div#fnbPanel>div:first-of-type div ul li a.mapBtn:hover,
+header>div#fnbPanel>div#reservation form fieldset,
+header>div#fnbPanel>div#reservation form fieldset>div,
+header>div#fnbPanel>div#reservation form fieldset>div ul>li input:not(input[type='reset']),
+footer>div:last-of-type div:first-of-type>span{
+    box-sizing: border-box;
+}
+header>div:first-of-type h1 a,
+header>div:first-of-type div ul li a,
+header>div:first-of-type div ul>li:first-of-type.active~li,
+header>div#fnbPanel>div#reservation form fieldset>div>ul>li label small,
+header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2) label div,
+header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
+header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li,
+header>div#fnbPanel>div#reservation form fieldset>div ul>li label:not(.compSelect ol li label),
+header>div#fnbPanel>div#reservation form fieldset>div>input,
+footer>div:first-of-type div:first-of-type form input,
+footer>div:first-of-type div:last-of-type span,
+footer>div:first-of-type div:last-of-type span a,
+footer>div:first-of-type div:last-of-type mark a,
+footer>div:first-of-type div:last-of-type mark+a{
+    display: block;
+}
+header>div:first-of-type,
+header>div#fnbPanel>div:first-of-type div b.mui,
+header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn),
+header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3),
+header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button,
+header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li .countComponent{
+    position: relative;
+}
+header>div:first-of-type div ul,
+header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
+header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button::after,
+header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
+header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent span,
+header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button']{
+    position: absolute;
+}
 /* A / U  */
 @media screen and (max-width: 767px){
-    header,
-    header>div#fnbPanel,
-    header>div#fnbPanel>div:first-of-type div,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) button,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) span select,
-    footer>div:first-of-type,
     footer>div:first-of-type div:first-of-type form input:first-of-type{
         width: 100%; box-sizing: border-box;
     }
     header>div:first-of-type nav,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
-    header>div#fnbPanel>div#reservation form fieldset legend,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(1) input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2)>input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent>input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect>input[type='reset']{
+    header>div#fnbPanel>div#reservation form fieldset legend{
         width: 100%;
-    }
-    header>div:first-of-type div ul li,
-    header>div:first-of-type div ul>li:first-of-type.active,
-    header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
-    header>div#fnbPanel>div:first-of-type div ul li a.mapBtn:hover,
-    header>div#fnbPanel>div#reservation form fieldset,
-    header>div#fnbPanel>div#reservation form fieldset>div,
-    header>div#fnbPanel>div#reservation form fieldset>div ul>li input:not(input[type='reset']),
-    footer>div:last-of-type div:first-of-type>span{
-        box-sizing: border-box;
     }
     header>div:first-of-type>nav ul,
     header>div:first-of-type div ul>li:not(:first-of-type),
@@ -59,27 +94,12 @@ img,video{
     footer>div:last-of-type ul:nth-of-type(2) li:last-of-type{
         display: none;
     }
-    header>div:first-of-type h1 a,
     header>div:first-of-type div span,
-    header>div:first-of-type div ul li a,
-    header>div:first-of-type div ul>li:first-of-type.active~li,
     header>div#fnbPanel.active,
     header>div#fnbPanel>div:first-of-type div b.mui,
     header>div#fnbPanel div:first-of-type div ul li,
     header>div#fnbPanel>div#reservation form fieldset legend,
-    header>div#fnbPanel>div#reservation form fieldset>div>ul li,
-    header>div#fnbPanel>div#reservation form fieldset>div>ul>li label small,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2) label div,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li,
-    header>div#fnbPanel>div#reservation form fieldset>div ul>li label:not(.compSelect ol li label),
-    header>div#fnbPanel>div#reservation form fieldset>div>input,
-    footer>div:first-of-type div:first-of-type form input,
-    footer>div:first-of-type div:last-of-type span,
-    footer>div:first-of-type div:last-of-type span a,
     footer>div:first-of-type div:last-of-type mark,
-    footer>div:first-of-type div:last-of-type mark a,
-    footer>div:first-of-type div:last-of-type mark+a,
     footer>div:last-of-type>b,
     footer>div:last-of-type>strong,
     footer>div:last-of-type ul:last-of-type li:last-of-type,
@@ -87,12 +107,6 @@ img,video{
     footer>div:last-of-type div:first-of-type>span{
         display: block;
     }
-    header>div:first-of-type,
-    header>div#fnbPanel>div:first-of-type div b.mui,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn),
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3),
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li .countComponent,
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent,
     footer,
     footer>div:last-of-type>strong{
@@ -101,14 +115,8 @@ img,video{
     header>div:first-of-type nav,
     header>div:first-of-type div .menuBar,
     header>div:first-of-type div .menuBar.active span,
-    header>div:first-of-type div ul,
     header>div#fnbPanel>div:first-of-type div,
     header>div#fnbPanel>div:first-of-type div b.mui:after,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button::after,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent span,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button'],
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent:after,
     footer>div:last-of-type>strong:after{
         position: absolute;
@@ -369,82 +377,6 @@ img,video{
     header>div#fnbPanel div:first-of-type div ul li:not(:last-of-type){
         margin-bottom: var(--sp40);
     }
-    header>div#fnbPanel>div#reservation form fieldset{
-        box-shadow: 0px 5px 25px -10px rgba(93, 88, 89, 0.4); display: flex; flex-direction: column; width: 50%;
-    }
-    header>div#fnbPanel>div#reservation form fieldset legend{
-        background: url('../images/pattern_rsvn.jpg') no-repeat center / cover; padding: var(--sp15) 0;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div{
-        padding: var(--sp20) 5%;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div>ul>li label small{
-        padding-top: var(--sp10);
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul>li input:not(input[type='reset']){
-        padding: var(--sp15);
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2) label div{
-        float: right;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2)>div input{
-        width: 48.4%;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2)>div span{
-        width: 2.5%;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button{
-        font-size: 11px; font-weight: 300;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button::after{
-        background: url('../images/arrow_expand_small.png') no-repeat 95% center; content: ''; width: 14px; height: 8px; right: 5%; top: 18px;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button:after{
-        transform: rotate(180deg);
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect{
-        padding: var(--sp15) 5%; border: 1px solid var(--gs10); top: 67px; z-index: 1;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li .countComponent{
-        padding-top: var(--sp10);
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul>li label:not(.compSelect ol li label){
-        margin-bottom: var(--sp10);
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent span{
-        width: 60%; top: 27.5px; left: 4%;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button']{
-        width: 10%; top: 11px; text-indent: -9999px; border: none; 
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button']:first-of-type{
-        right: 10%; background: url('../images/icon_minus_count.png') no-repeat center left / 70%;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button']:last-of-type{
-        right: 3%; background: url('../images/icon_add_count.png') no-repeat center right / 70%;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) button,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) span select{
-        padding: var(--sp15); text-align: left;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent:after{
-        background: url('../images/arrow_expand_small.png') no-repeat 95% center; content: ''; width: 14px; height: 8px; right: 5%; top: 5px;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent.active:after{
-        transform: rotate(180deg);
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent select{
-        -moz-appearance: none; -webkit-appearance: none; appearance: none;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div>input{
-        margin-left: auto; font-size: 12px; transition: color .3s ease-out;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li input:focus{
-        font-weight: 500;
-    }
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect>input[type='reset']{
-        color: var(--sc05); text-align: right;
-    }
     footer{
         margin: var(--sp40) auto 0; max-width: 767px; padding: 0 3% var(--sp20) 3%;
     }
@@ -468,14 +400,10 @@ img,video{
         text-decoration: none;
     }
     footer>div:first-of-type div:last-of-type mark{
-        margin-bottom: var(--sp45); background-color: transparent;
+        margin-bottom: var(--sp45); background-color: transparent; font-style: normal;
     }
     footer>div:first-of-type div:last-of-type mark a{
         padding-top: var(--sp15);
-    }
-    footer>div:first-of-type div:last-of-type mark,
-    footer>div:first-of-type div:last-of-type mark a{
-        color: var(--sc05); font-style: normal;
     }
     footer>div:first-of-type div:last-of-type mark+a:hover{
         filter: brightness(92%);
@@ -579,32 +507,10 @@ img,video{
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
-    header,
-    header>div#fnbPanel>div:first-of-type div,
-    header>div#fnbPanel,
-    header>div#fnbPanel>div#reservation form fieldset legend,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) button,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) span select,
-    footer>div:first-of-type{
+    header>div#fnbPanel>div#reservation form fieldset legend{
         width: 100%; box-sizing: border-box;
     }
-    header>div:first-of-type div ul li,
-    header>div:first-of-type div ul>li:first-of-type.active,
-    header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
-    header>div#fnbPanel>div:first-of-type div ul li a.mapBtn:hover,
-    header>div#fnbPanel>div#reservation form fieldset>div,
-    header>div#fnbPanel>div#reservation form fieldset>div ul>li input:not(input[type='reset']),
-    footer>div:first-of-type div:first-of-type form input:first-of-type,
-    footer>div:last-of-type div:first-of-type>span{
-        box-sizing: border-box;
-    }
     header>div:first-of-type nav,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(1) input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2)>input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent>input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect>input[type='reset'],
     footer>div:last-of-type>ul:nth-of-type(2)>li:last-of-type span,
     footer>div:last-of-type>ul:nth-of-type(2)>li:last-of-type em{
         width: 100%;
@@ -619,27 +525,13 @@ img,video{
     footer>div:last-of-type>ul:last-of-type{
         display: none;
     }
-    header>div:first-of-type h1 a,
     header>div:first-of-type div span,
-    header>div:first-of-type div ul li a,
-    header>div:first-of-type div ul>li:first-of-type.active~li,
     header>div#fnbPanel.active,
     header>div#fnbPanel>div:first-of-type div b.mui,
     header>div#fnbPanel div:first-of-type div ul li,
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
     header>div#fnbPanel>div#reservation form fieldset legend,
     header>div#fnbPanel>div#reservation form fieldset>div>ul li,
-    header>div#fnbPanel>div#reservation form fieldset>div>ul>li label small,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2) label div,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li,
-    header>div#fnbPanel>div#reservation form fieldset>div ul>li label:not(.compSelect ol li label),
-    header>div#fnbPanel>div#reservation form fieldset>div>input,
-    footer>div:first-of-type div:first-of-type form input,
-    footer>div:first-of-type div:last-of-type span,
-    footer>div:first-of-type div:last-of-type span a,
-    footer>div:first-of-type div:last-of-type mark a,
-    footer>div:first-of-type div:last-of-type mark+a,
     footer>div:last-of-type>ul,
     footer>div:last-of-type div:nth-of-type(1),
     footer>div:last-of-type ul li a,
@@ -647,12 +539,6 @@ img,video{
     footer>div:last-of-type div:first-of-type>span a{
         display: block;
     }
-    header>div:first-of-type,
-    header>div#fnbPanel>div:first-of-type div b.mui,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn),
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3),
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li .countComponent,
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent,
     footer,
     footer>div:last-of-type div:first-of-type>span{
@@ -661,14 +547,7 @@ img,video{
     header>div:first-of-type nav,
     header>div:first-of-type div .menuBar,
     header>div:first-of-type div .menuBar.active span,
-    header>div:first-of-type div ul,
     header>div#fnbPanel>div:first-of-type div,
-    header>div#fnbPanel>div:first-of-type div b.mui:after,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button::after,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent span,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button'],
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3)>span.selectComponent:after,
     footer>div:last-of-type div:first-of-type>span a{
         position: absolute;
@@ -1025,14 +904,10 @@ img,video{
         width: 55%;
     }
     footer>div:first-of-type div:last-of-type mark{
-        width: 45%; float: right; background-color: transparent;
+        width: 45%; float: right; background-color: transparent; font-style: normal;
     }
     footer>div:first-of-type div:last-of-type mark a{
         padding-top: var(--sp15);
-    }
-    footer>div:first-of-type div:last-of-type mark,
-    footer>div:first-of-type div:last-of-type mark a{
-        color: var(--sc05); font-style: normal;
     }
     footer>div:first-of-type div:last-of-type mark+a{
         clear: both; padding: var(--sp15) 0; max-width: 180px; transition: filter .3s ease-out;
@@ -1108,31 +983,13 @@ img,video{
 } */
 /* ? tablet + mobile */
 @media screen and (min-width: 1280px){
-    header,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) button,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) span select,
-    footer>div:first-of-type{
-        width: 100%; box-sizing: border-box;
-    }
-    header>div#fnbPanel,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(1) input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2)>input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent>input,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect>input[type='reset'],
     footer>div:last-of-type>ul:nth-of-type(2)>li:last-of-type span{
         width: 100%;
     }
     header>div:first-of-type nav,
     header>div#fnbPanel>div:first-of-type div,
-    header>div:first-of-type div ul li,
-    header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
     header>div#fnbPanel>div#reservation form fieldset legend,
-    header>div#fnbPanel>div#reservation form fieldset>div,
-    header>div#fnbPanel>div#reservation form fieldset>div ul>li input:not(input[type='reset']),
-    footer>div:first-of-type div:first-of-type form input:first-of-type,
-    footer>div:last-of-type div:first-of-type>span{
+    footer>div:first-of-type div:first-of-type form input:first-of-type{
         box-sizing: border-box;
     }
     header>div:first-of-type nav .menuBar,
@@ -1145,20 +1002,6 @@ img,video{
     footer>div:last-of-type>ul:last-of-type{
         display: none;
     }
-    header>div:first-of-type div ul li a,
-    header>div:first-of-type h1 a,
-    header>div:first-of-type div ul>li:first-of-type.active~li,
-    header>div#fnbPanel>div#reservation form fieldset>div>ul>li label small,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(2) label div,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li,
-    header>div#fnbPanel>div#reservation form fieldset>div ul>li label:not(.compSelect ol li label),
-    header>div#fnbPanel>div#reservation form fieldset>div>input,
-    footer>div:first-of-type div:first-of-type form input,
-    footer>div:first-of-type div:last-of-type span,
-    footer>div:first-of-type div:last-of-type span a,
-    footer>div:first-of-type div:last-of-type mark a,
-    footer>div:first-of-type div:last-of-type mark+a,
     footer>div:last-of-type>ul,
     footer>div:last-of-type div:nth-of-type(1),
     footer>div:last-of-type ul li a,
@@ -1175,21 +1018,10 @@ img,video{
     footer>div:first-of-type::after{
         content: ''; display: block; clear: both;
     }
-    header>div:first-of-type,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn),
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3),
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li .countComponent,
     footer{
         position: relative;
     }
-    header>div:first-of-type div ul,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
     header>div#fnbPanel>div#reservation,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect button::after,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active button+.compSelect,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent span,
-    header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button'],
     header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) span.selectComponent::after,
     footer>div:first-of-type{
         position: absolute;
@@ -1517,14 +1349,10 @@ img,video{
         width: 49%;
     }
     footer>div:first-of-type div:last-of-type mark{
-        width: 51%; background-color: transparent; float: left;
+        width: 51%; background-color: transparent; float: left; font-style: normal;
     }
     footer>div:first-of-type div:last-of-type mark a{
         padding-top: var(--sp15);
-    }
-    footer>div:first-of-type div:last-of-type mark,
-    footer>div:first-of-type div:last-of-type mark a{
-        color: var(--sc05); font-style: normal;
     }
     footer>div:first-of-type div:last-of-type mark+a{
         clear: both; padding: var(--sp15) 0; max-width: 180px; transition: filter .3s ease-out;

@@ -65,6 +65,9 @@
 [class*='gs4']{background-color: var(--gs04);}
 [class*='gs9']{background-color: var(--gs09);}
 [class*='sc3']{background-color: var(--sc03);}
+[class*='sc01']{color: var(--sc01);}
+[class*='sc03']{color: var(--sc03);}
+[class*='sc05']{color: var(--sc05);}
 
 [class*='btn']{cursor: pointer; transition-duration: .3s;}
 
