@@ -28,8 +28,8 @@ $(function(){
     brandCarousel();
 
     accordionTab01(".accordionBox ul:first-of-type li");
-    accordionTab02(".accordionBox ul.R422 li");
-    accordionTab03(".rsvnContainer.mybooking div:last-of-type ul.R422 li");
+    accordionTab02(".accordionBox ul.R4.floatContainer.22 li");
+    accordionTab03(".rsvnContainer.mybooking div:last-of-type ul.R4.floatContainer.22 li");
     accordionBox(".accordionBox ul:not(:first-of-type) li strong");
     accordionBox(".accordionBox ol li strong");
     accordionBox("section[class*='termsContainer'] .accordionBox li strong");
@@ -244,7 +244,7 @@ function accordionTab02(tabBtn){
     var accordionVal = $(this).attr("data-tab");
     var tabTarget = $("#" + accordionVal);
 
-    $(".accordionBox > ul.R422 li:first-of-type").addClass("active");
+    $(".accordionBox > ul.R4.floatContainer.22 li:first-of-type").addClass("active");
     $(".accordionBox > ol:first-of-type").addClass("active");
 
     $(tabBtn).click(function(){

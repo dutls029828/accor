@@ -446,7 +446,7 @@ img,video{
         color: var(--sc05); text-align: right;
     }
     footer{
-        margin: var(--sp60) auto 0; max-width: 767px; padding: 0 3% var(--sp20) 3%;
+        margin: var(--sp40) auto 0; max-width: 767px; padding: 0 3% var(--sp20) 3%;
     }
     footer>div:first-of-type div{
         padding: var(--sp70) 10vw; box-shadow: 1px 1px 25px 0.3px rgba(0, 0, 0, 0.2);
@@ -895,10 +895,10 @@ img,video{
         transform: rotate(90deg);
     }
     header>div#fnbPanel>div:first-of-type div b.mui+ul{
-        height: 0; opacity: 0; overflow-y: hidden; padding-right: 30%; transition-property: height, opacity; transition-duration: .3s;
+        height: 0; opacity: 0; overflow-y: hidden; padding-right: 25%; transition-property: height, opacity; transition-duration: .3s;
     }
     header>div#fnbPanel>div:first-of-type div b.mui.active+ul{
-        opacity: 1; margin-bottom: var(--sp50);
+        opacity: 1; margin-bottom: var(--sp50); width: 75%;
     }
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn{
         padding: var(--sp15) 20%; transition-duration: .3s; min-width: 180px; background-color: var(--sc01);
