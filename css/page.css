@@ -138,79 +138,6 @@ section[class*='termsContainer'].general>div a{
     }
     /* line arrow button end */
 
-    /* underline btn st */
-    .uLineBtn{
-        position: relative; display: block; text-align: center; margin-left: auto; font-size: 10px; font-weight: 500; width: fit-content; word-break: keep-all; cursor: pointer;
-    }
-    .uLineBtn:before{
-        content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
-    }
-    .uLineBtn:hover::before{
-        transform: scaleX(0.5);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a,
-    div[class*='loyaltyContainer'].earnRewards .horiCardslotBox li div a,
-    div[class*='loyaltyContainer'].useRewards .horiCardslotBox li div a,
-    div[class*='offersContainer'].member .horiCardslotBox ul li div a,
-    div[class*='offersContainer'].latest .horiCardslotBox ul li div a,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a{
-        margin-top: var(--sp25);
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a,
-    div[class*='brandSubContainer'] .allBrandCarousel>a,
-    div[class*='rsvnContainer'].myaccount>ul li div a,
-    div[class*='detailContainer']>.termsPopup+div span{
-        color: var(--sc01);
-    }
-    div[class*='accomContainer'] .globalCardslotBox ul li a,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.pt4 a,
-    div[class*='detailContainer']>ul:first-of-type li a{
-        color: var(--sc03);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.sc3 a{
-        color: var(--gs10);
-    }
-    div[class*='loyaltyContainer'] .horiCardslotBox li div a::before,
-    div[class*='offersContainer'].member .horiCardslotBox ul li div a::before,
-    div[class*='offersContainer'].latest .horiCardslotBox ul li div a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:before{
-        transform-origin: right;
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a::before,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a::before,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a::before,
-    div[class*='brandSubContainer'] .allBrandCarousel>a::before,
-    div[class*='rsvnContainer'].myaccount>ul li div a::before,
-    div[class*='detailContainer']>.termsPopup+div span::before{
-        background-color: var(--sc01);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(3) .bTextDesc div a::before,
-    div[class*='detailContainer']>ul:first-of-type li a::before{
-        background-color: var(--sc03);
-    }
-    div[class*='offersContainer'].member .horiCardslotBox ul li:nth-of-type(1) div a::before,
-    div[class*='offersContainer'].member .horiCardslotBox ul li:nth-of-type(3) div a::before,
-    div[class*='loyaltyContainer'].earnRewards .horiCardslotBox li div a::before,
-    div[class*='loyaltyContainer'].useRewards .horiCardslotBox li div a:before,
-    div[class*='offersContainer'].year .horiCardslotBox ul li .pt5 span::before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .gs9 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt7 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt5 a::before{
-        background-color: var(--gs02);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(2) .bTextDesc div a::before,
-    div[class*='offersContainer'].member .horiCardslotBox ul li:nth-of-type(2) div a::before,
-    div[class*='loyaltyContainer'].earnRewards .horiCardslotBox li:nth-of-type(3) div a::before,
-    div[class*='loyaltyContainer'].useRewards .horiCardslotBox li:nth-of-type(3) div a::before,
-    div[class*='offersContainer'].year .horiCardslotBox ul li .sc3 span::before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .sc3 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .sc3 a::before{
-        background-color: var(--gs10);
-    }
-    /* underline button */
-
     /* all use part */
 
     .indexContainer>.bx-wrapper .bx-pager,
@@ -326,7 +253,7 @@ section[class*='termsContainer'].general>div a{
         display: block; padding-bottom: var(--sp30); color: var(--gs09);
     }
     .indexContainer .propBox .propSlider li div:nth-of-type(2) p{
-        margin-bottom: var(--sp40); line-height: 23px; color: var(--gs07);
+        margin-bottom: var(--sp40); color: var(--gs07);
     }
     .indexContainer>.propBox .bx-wrapper .bx-controls-direction a{
         padding: var(--sp15); background: var(--sc03); text-indent: -9999px; height: 45px; width: 45px; box-sizing: border-box;
@@ -376,9 +303,6 @@ section[class*='termsContainer'].general>div a{
     div[class*='accomContainer'].villas .headlineContent div:last-of-type{
         background: url('../images/villas_headline.png') no-repeat left top; background-size: 500%; filter: saturate(0.8) brightness(1.4);
     }
-    div[class*='accomContainer'] .headlineContent div:last-of-type dl{
-        margin-bottom: var(--sp25);
-    }
     div[class*='accomContainer'] .headlineContent div:last-of-type dl dt{
         margin-bottom: var(--sp30);
     }
@@ -400,18 +324,8 @@ section[class*='termsContainer'].general>div a{
     div[class*='accomContainer'].studio .vertiCardslotBox>div:first-of-type{
         margin-bottom: var(--sp30);
     }
-    div[class*='accomContainer'].hotelresort .headlineContent div:last-of-type dl dt,
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc .bTextDesc.sc3{
+    div[class*='accomContainer'].hotelresort .headlineContent div:last-of-type dl dt{
         color: var(--gs10);
-    }
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc .bTextDesc.pt4{
-        color: var(--gs02);
-    }
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc .bTextDesc dt{
-        margin-bottom: var(--sp25);
-    }
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc dl dt small{
-        display: block; padding-bottom: var(--sp25);
     }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(3),
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(5){
@@ -499,18 +413,8 @@ section[class*='termsContainer'].general>div a{
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type h3{
         margin-bottom: var(--sp30);
     }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.sc3{
-        color: var(--gs10);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc{
-        padding: var(--sp30) 5%; box-sizing: border-box;
-    }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc dl{
         padding: 0 0; min-height: 0;
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(2) .bTextDesc dl,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(3) .bTextDesc dl{
-        margin-bottom: var(--sp20);
     }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a{
         display: inline-block;
@@ -812,9 +716,6 @@ section[class*='termsContainer'].general>div a{
     div[class*='offersContainer'].year .horiCardslotBox ul li div h3 small{
         display: block; padding-bottom: var(--sp25);
     }
-    div[class*='offersContainer'].year .horiCardslotBox ul li div p{
-        margin-bottom: var(--sp25);
-    }
     div[class*='offersContainer'].year .horiCardslotBox ul li div span input{
         background-color: transparent; color: inherit; cursor: pointer; border: none; padding: 0;
     }
@@ -1055,7 +956,7 @@ section[class*='termsContainer'].general>div a{
         padding: var(--sp30) 5%;
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 h4{
-        color: var(--gs02); margin-bottom: var(--sp20); line-height: 22px;
+        color: var(--gs02); margin-bottom: var(--sp20);
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage .gs9 p{
         color: var(--gs05); margin-bottom: var(--sp30);
@@ -1117,7 +1018,7 @@ section[class*='termsContainer'].general>div a{
         display: block; padding-bottom: var(--sp25);
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a{
-        color: inherit; padding-top: var(--sp30); display: inline-block;
+        color: inherit; display: inline-block;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a:nth-of-type(2){
         margin-left: 5%;
@@ -1522,7 +1423,7 @@ section[class*='termsContainer'].general>div a{
         font-weight: 500;
     }
     div[class*='detailContainer']>ul:first-of-type li a{
-        padding-top: var(--sp10); display: inline-block;
+        display: inline-block; font-size: 10px; font-weight: 300;
     }
     div[class*='detailContainer'] .termsPopup{
         height: 0; overflow-y: hidden; transition: all .5s ease-in-out; margin-bottom: var(--sp30); position: fixed; padding: 0 6.25%; z-index: 1000; width: 100%; max-width: 1279px; box-sizing: border-box;
@@ -2816,7 +2717,7 @@ section[class*='termsContainer'].general>div a{
         color: var(--gs09); margin-bottom: var(--sp45);
     }
     div[class*='rsvnContainer'].myaccount>ul li div p{
-        color: #9a9a9a; line-height: 22px;
+        color: #9a9a9a;
     }
     div[class*='rsvnContainer'].myaccount>ul li div a{
         display: inline-block; margin-top: var(--sp40);
@@ -3069,7 +2970,7 @@ section[class*='termsContainer'].general>div a{
         transform: rotate(180deg);
     }
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li> :nth-child(2){
-        display: none; background-color: var(--gs02); padding: var(--sp55) 3.5%; line-height: 22px;
+        display: none; background-color: var(--gs02); padding: var(--sp55) 3.5%;
     }
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li .L316{
         color: var(--gs09);
@@ -3392,18 +3293,11 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'] .accordionBox li ol{
         list-style: none;
     }
-    section[class*='termsContainer'] .accordionBox li p{
-        line-height: 22px;
-    }
     section[class*='termsContainer'] .accordionBox li .L316{
         display: none; padding: var(--sp55) 3.5%; background-color: var(--gs02);
     }
     section[class*='termsContainer'] .accordionBox li .L316 b{
-        margin-bottom: var(--sp30); display: block; line-height: 22px;
-    }
-    section[class*='termsContainer'] .accordionBox li .L316 ul li,
-    section[class*='termsContainer'] .accordionBox li .L316 ol li{
-        line-height: 22px;
+        margin-bottom: var(--sp30); display: block;
     }
     section[class*='termsContainer'] .accordionBox li .L316 ol.decimal li:not(:last-of-type){
         margin-bottom: var(--sp15);
@@ -3431,12 +3325,7 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].cookies .accordionBox li:nth-of-type(2) .L316 ul{
         margin-bottom: var(--sp35);
     }
-    section[class*='termsContainer'].cookies .accordionBox li:nth-of-type(2) .L316>div{
-        line-height: 22px;
-    }
-    section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 p:first-of-type{
-        display: inline;
-    }
+    section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 p:first-of-type,
     section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 a{
         display: inline;
     }
@@ -3456,9 +3345,6 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 :not(:last-child){
         margin-bottom: var(--sp35);
     }
-    section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(3) .L316 div{
-        line-height: 22px;
-    }
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(5) .L316 .L3.disc{
         padding-top: var(--sp25);
     }
@@ -3472,9 +3358,6 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(7) .L316 b:last-of-type{
         margin-bottom: 0;
     }
-    section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 div{
-        line-height: 22px;
-    }
     section[class*='termsContainer'].general .accordionBox li .L316 .roman,
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(2) .L316 li:not(:last-of-type),
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(3) .L316>ol,
@@ -3484,9 +3367,6 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(6) p,
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(7) ul{
         margin-bottom: var(--sp35);
-    }
-    section[class*='termsContainer'].general .accordionBox li .L316 li{
-        line-height: 22px;
     }
     section[class*='termsContainer'].general .accordionBox li .L316 .roman li:not(:first-of-type){
         margin-top: var(--sp15);
@@ -3507,7 +3387,7 @@ section[class*='termsContainer'].general>div a{
         padding-top: var(--sp15);
     }
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(3) .L316>div{
-        line-height: 22px; margin-bottom: var(--sp35);
+        margin-bottom: var(--sp35);
     }
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(4) .L316 li>ol{
         padding: var(--sp10) 0 0 2%;
@@ -3521,11 +3401,8 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(9) .L316 ul{
         margin-bottom: var(--sp15);
     }
-    section[class*='termsContainer'].general .accordionBox li:nth-of-type(10) .L316{
-        line-height: 22px;
-    }
     section[class*='termsContainer'].general>div{
-        max-width: 1340px; margin: 0 auto; color: var(--gs08); text-align: center; line-height: 22px;
+        max-width: 1340px; margin: 0 auto; color: var(--gs08); text-align: center;
     }
     section[class*='termsContainer'].adagio .accordionBox li:first-of-type ul>li,
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(18) ul>li{
@@ -3569,20 +3446,12 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(4) .L316>small{
         margin-bottom: var(--sp15);
     }
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(5) .L316>small{
-        margin-bottom: var(--sp25);
-    }
+    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(5) .L316>small,
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(6) .L316>small{
         margin-bottom: var(--sp25);
     }
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(8) .L316>ul{
         margin-bottom: var(--sp35);
-    }
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(11) .L316 div,
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(15) .L316 div,
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(17) .L316,
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(18) .L316{
-        line-height: 22px;
     }
     .mapContainer>h2{
         background-position: center top; padding-top: var(--sp65);
@@ -3913,15 +3782,6 @@ section[class*='termsContainer'].general>div a{
     } */
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
-    .uLineBtn{
-        position: relative; display: block; text-align: center; margin-left: auto; font-size: 13px; font-weight: 500; width: fit-content; word-break: keep-all;
-    }
-    .uLineBtn:before{
-        content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
-    }
-    .uLineBtn:hover::before{
-        transform: scaleX(0.5);
-    }
     .indexContainer,
     .allBrandContainer,
     .mapContainer,
@@ -4020,119 +3880,6 @@ section[class*='termsContainer'].general>div a{
     div[class*='rsvnContainer']>div:first-of-type>a:hover:after,
     .bookarideContainer>div:last-of-type a:hover:after{
         width: 100%;
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a,
-    div[class*='accomContainer'] .globalCardslotBox ul li a,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a,
-    div[class*='loyaltyContainer'] .bannerBoxR>div a,
-    div[class*='loyaltyContainer'] .horiCardslotBox li div a,
-    div[class*='offersContainer'] .horiCardslotBox ul li div a,
-    div[class*='offersContainer'].year .horiCardslotBox ul li div span,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a,
-    div[class*='detailContainer']>ul:first-of-type li a,
-    div[class*='detailContainer'] .termsPopup+div span,
-    div[class*='brandSubContainer'] .allBrandCarousel>a,
-    div[class*='rsvnContainer'].myaccount>ul li div a{
-        position: relative; display: block; text-align: center; margin-left: auto;
-    }
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a,
-    div[class*='loyaltyContainer'].earnRewards .horiCardslotBox li div a,
-    div[class*='loyaltyContainer'].useRewards .horiCardslotBox li div a,
-    div[class*='offersContainer'].member .horiCardslotBox ul li div a,
-    div[class*='offersContainer'].latest .horiCardslotBox ul li div a,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a{
-        margin-top: var(--sp25);
-    }
-    .horiCardslotBox li div a::before{
-        transform-origin: right;
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a,
-    div[class*='detailContainer'] .termsPopup+div span,
-    div[class*='brandSubContainer'] .allBrandCarousel>a,
-    div[class*='rsvnContainer'].myaccount>ul li div a{
-        color: var(--sc01);
-    }
-    div[class*='accomContainer'] .globalCardslotBox ul li a,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(3) .bTextDesc div a,
-    div[class*='detailContainer']>ul:first-of-type li a{
-        color: var(--sc03);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(2) .bTextDesc div a,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .sc3 a{
-        color: var(--gs10);
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a::before,
-    div[class*='accomContainer'] .globalCardslotBox ul li a::before,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a::before,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(2) .bTextDesc div a::before,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(3) .bTextDesc div a::before,
-    div[class*='loyaltyContainer'] .bannerBoxR>div a::before,
-    div[class*='loyaltyContainer'] .horiCardslotBox li div a::before,
-    div[class*='loyaltyContainer'].useRewards .bannerBoxR>div a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li div a::before,
-    div[class*='offersContainer'].year .horiCardslotBox ul li div span::before,
-    div[class*='diningContainer'].service .bannerBoxR div a::before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:before,
-    div[class*='detailContainer']>ul:first-of-type li a::before,
-    div[class*='detailContainer']>.termsPopup+div span::before,
-    div[class*='brandSubContainer'] .allBrandCarousel>a::before,
-    div[class*='rsvnContainer'].myaccount>ul li div a:before{
-        content: ''; position: absolute; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a::before,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a::before,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a::before,
-    div[class*='detailContainer'] .termsPopup+div span::before,
-    div[class*='brandSubContainer'] .allBrandCarousel>a::before,
-    div[class*='rsvnContainer'].myaccount>ul li div a::before{
-        background-color: var(--sc01);
-    }
-    div[class*='accomContainer'] .globalCardslotBox ul li a::before,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(3) .bTextDesc div a::before,
-    div[class*='detailContainer']>ul:first-of-type li a:before{
-        background-color: var(--sc03);
-    }
-    div[class*='loyaltyContainer'] .horiCardslotBox li:nth-of-type(1) div a:before,
-    div[class*='loyaltyContainer'] .horiCardslotBox li:nth-of-type(2) div a:before,
-    div[class*='offersContainer'] .horiCardslotBox ul li:nth-of-type(1) div a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li:nth-of-type(3) div a::before,
-    div[class*='offersContainer'].year .horiCardslotBox ul li .pt5 span::before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .gs9 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt7 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt5 a::before{
-        background-color: var(--gs02);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(2) .bTextDesc div a::before,
-    div[class*='loyaltyContainer'] .horiCardslotBox li:nth-of-type(3) div a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li:nth-of-type(2) div a::before,
-    div[class*='offersContainer'].year .horiCardslotBox ul li .sc3 span::before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .sc3 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .sc3 a::before{
-        background-color: var(--gs10);
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a:hover::before,
-    div[class*='accomContainer'] .globalCardslotBox ul li a:hover::before,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a:hover::before,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a:hover::before,
-    div[class*='loyaltyContainer'] .bannerBoxR>div a:hover::before,
-    div[class*='loyaltyContainer'] .horiCardslotBox li div a:hover::before,
-    div[class*='loyaltyContainer'].useRewards .bannerBoxR>div a:hover::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li div a:hover::before,
-    div[class*='offersContainer'].year .horiCardslotBox ul li div span:hover::before,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a:hover::before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a:hover::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:hover::before,
-    div[class*='detailContainer']>ul:first-of-type li a:hover::before,
-    div[class*='detailContainer']>.termsPopup+div span:hover::before,
-    div[class*='brandSubContainer'] .allBrandCarousel>a:hover::before,
-    div[class*='rsvnContainer'].myaccount>ul li div a:hover::before{
-        transform: scaleX(0.5);
     }
     .indexContainer>.globalCardslotBox ul li:not(:nth-last-child(-n+2)){
         margin-bottom: var(--sp10);
@@ -4258,7 +4005,7 @@ section[class*='termsContainer'].general>div a{
         display: block; padding-bottom: var(--sp30); color: var(--gs09);
     }
     .indexContainer .propBox .propSlider li div:nth-of-type(2) p{
-        margin-bottom: var(--sp40); line-height: 23px; color: var(--gs07);
+        margin-bottom: var(--sp40); color: var(--gs07);
     }
     .indexContainer>.propBox .bx-wrapper .bx-controls-direction a{
         padding: var(--sp15); background: var(--sc03); text-indent: -9999px; height: 45px; width: 45px; box-sizing: border-box; display: block;
@@ -4311,9 +4058,6 @@ section[class*='termsContainer'].general>div a{
     div[class*='accomContainer'].villas .headlineContent div:last-of-type{
         background: url('../images/villas_headline.png') no-repeat left top; background-size: 500%; filter: saturate(0.8) brightness(1.4);
     }
-    div[class*='accomContainer'] .headlineContent div:last-of-type dl{
-        margin-bottom: var(--sp25);
-    }
     div[class*='accomContainer'] .headlineContent div:last-of-type dl dt{
         margin-bottom: var(--sp30);
     }
@@ -4335,18 +4079,8 @@ section[class*='termsContainer'].general>div a{
     div[class*='accomContainer'].studio .vertiCardslotBox>div:first-of-type{
         margin-bottom: var(--sp30);
     }
-    div[class*='accomContainer'].hotelresort .headlineContent div:last-of-type dl dt,
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc .bTextDesc.sc3{
+    div[class*='accomContainer'].hotelresort .headlineContent div:last-of-type dl dt{
         color: var(--gs10);
-    }
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc .bTextDesc.pt4{
-        color: var(--gs02);
-    }
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc .bTextDesc dt{
-        margin-bottom: var(--sp25);
-    }
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc dl dt small{
-        display: block; padding-bottom: var(--sp25);
     }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(3),
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(5){
@@ -4435,9 +4169,6 @@ section[class*='termsContainer'].general>div a{
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type h3{
         margin-bottom: var(--sp30);
     }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc{
-        padding: var(--sp50) 9%; box-sizing: border-box;
-    }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc dl{
         padding: 0 0; min-height: 0;
     }
@@ -4448,8 +4179,8 @@ section[class*='termsContainer'].general>div a{
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a{
         display: inline-block;
     }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a:not(:first-of-type){
-        margin-left: 3%;
+    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a:nth-of-type(2){
+        margin: 0 6.5%;
     }
     div[class*='loyaltyContainer'].discoverProgram .horiCardslotBox{
         margin-bottom: var(--sp40);
@@ -4752,9 +4483,6 @@ section[class*='termsContainer'].general>div a{
     }
     div[class*='offersContainer'].year .horiCardslotBox ul li div h3 small{
         display: block; padding-bottom: var(--sp30);
-    }
-    div[class*='offersContainer'].year .horiCardslotBox ul li div p{
-        margin-bottom: var(--sp25);
     }
     div[class*='offersContainer'].year .horiCardslotBox ul li div span input{
         background-color: transparent; color: inherit; cursor: pointer; border: none; padding: 0;
@@ -5080,7 +4808,7 @@ section[class*='termsContainer'].general>div a{
         display: block; padding-bottom: var(--sp25);
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a{
-        color: inherit; padding-top: var(--sp30); display: inline-block; margin-left: 0;
+        color: inherit; display: inline-block; margin-left: 0;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a:nth-of-type(2){
         margin-left: 5%;
@@ -5497,9 +5225,6 @@ section[class*='termsContainer'].general>div a{
     div[class*='detailContainer']>ul:first-of-type li h3{
         margin-bottom: var(--sp25);
     }
-    div[class*='detailContainer']>ul:first-of-type li p{
-        margin-bottom: var(--sp15);
-    }
     div[class*='detailContainer']>ul:first-of-type li span{
         display: block; line-height: 21px;
     }
@@ -5507,7 +5232,7 @@ section[class*='termsContainer'].general>div a{
         font-weight: 500;
     }
     div[class*='detailContainer']>ul:first-of-type li a{
-        padding-top: var(--sp10); display: inline-block;
+        display: inline-block; font-weight: 300;
     }
     div[class*='detailContainer'] .termsPopup{
         height: 0; overflow-y: hidden; transition: all .5s ease-in-out; margin-bottom: var(--sp30); position: fixed; padding: 0 6.25%; z-index: 1000; width: 100%; max-width: 1279px; box-sizing: border-box;
@@ -5801,7 +5526,7 @@ section[class*='termsContainer'].general>div a{
         margin-bottom: var(--sp25); text-align: center;
     }
     div[class*='brandSubContainer'] .hotelSelection ul li .gs3 p{
-        line-height: 22px; text-align: center;
+        text-align: center;
     }
     div[class*='brandSubContainer'] .allBrandCarousel{
         max-width: 1279px; margin: 0 auto var(--sp90);
@@ -6833,7 +6558,7 @@ section[class*='termsContainer'].general>div a{
         color: var(--gs09); margin-bottom: var(--sp45);
     }
     div[class*='rsvnContainer'].myaccount>ul li div p{
-        color: #9a9a9a; line-height: 22px;
+        color: #9a9a9a;
     }
     div[class*='rsvnContainer'].myaccount>ul li div a{
         display: inline-block; margin: var(--sp40) auto 0;
@@ -7077,7 +6802,7 @@ section[class*='termsContainer'].general>div a{
         transform: rotate(180deg);
     }
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li> :nth-child(2){
-        display: none; background-color: var(--gs02); padding: var(--sp55) 3.5%; line-height: 22px;
+        display: none; background-color: var(--gs02); padding: var(--sp55) 3.5%;
     }
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li .L316{
         color: var(--gs09);
@@ -7149,8 +6874,7 @@ section[class*='termsContainer'].general>div a{
     }
     section[class*='helpFaqContainer'].all div:nth-of-type(2) .accordionBox #statusBenefits>li:nth-of-type(10) div.L316 small,
     section[class*='helpFaqContainer'].account div:nth-of-type(2) .accordionBox ol li:nth-of-type(9) .L316 small{
-        margin-bottom: var(--sp25);
-        display: block;
+        margin-bottom: var(--sp25); display: block;
     }
     section[class*='helpFaqContainer'].all div:nth-of-type(2) .accordionBox #statusBenefits>li:nth-of-type(7) div.L316>ol li>ul li{
         padding-top: var(--sp15);
@@ -7398,18 +7122,11 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'] .accordionBox li ol{
         list-style: none;
     }
-    section[class*='termsContainer'] .accordionBox li p{
-        line-height: 22px;
-    }
     section[class*='termsContainer'] .accordionBox li .L316{
         display: none; padding: var(--sp55) 3.5%; background-color: var(--gs02);
     }
     section[class*='termsContainer'] .accordionBox li .L316 b{
-        margin-bottom: var(--sp30); display: block; line-height: 22px;
-    }
-    section[class*='termsContainer'] .accordionBox li .L316 ul li,
-    section[class*='termsContainer'] .accordionBox li .L316 ol li{
-        line-height: 22px;
+        margin-bottom: var(--sp30); display: block;
     }
     section[class*='termsContainer'] .accordionBox li .L316 ol.decimal li:not(:last-of-type){
         margin-bottom: var(--sp15);
@@ -7437,12 +7154,7 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].cookies .accordionBox li:nth-of-type(2) .L316 ul{
         margin-bottom: var(--sp35);
     }
-    section[class*='termsContainer'].cookies .accordionBox li:nth-of-type(2) .L316>div{
-        line-height: 22px;
-    }
-    section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 p:first-of-type{
-        display: inline;
-    }
+    section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 p:first-of-type,
     section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 a{
         display: inline;
     }
@@ -7462,9 +7174,6 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 :not(:last-child){
         margin-bottom: var(--sp35);
     }
-    section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(3) .L316 div{
-        line-height: 22px;
-    }
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(5) .L316 .L3.disc{
         padding-top: var(--sp25);
     }
@@ -7478,9 +7187,6 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(7) .L316 b:last-of-type{
         margin-bottom: 0;
     }
-    section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 div{
-        line-height: 22px;
-    }
     section[class*='termsContainer'].general .accordionBox li .L316 .roman,
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(2) .L316 li:not(:last-of-type),
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(3) .L316>ol,
@@ -7490,9 +7196,6 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(6) p,
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(7) ul{
         margin-bottom: var(--sp35);
-    }
-    section[class*='termsContainer'].general .accordionBox li .L316 li{
-        line-height: 22px;
     }
     section[class*='termsContainer'].general .accordionBox li .L316 .roman li:not(:first-of-type){
         margin-top: var(--sp15);
@@ -7513,7 +7216,7 @@ section[class*='termsContainer'].general>div a{
         padding-top: var(--sp15);
     }
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(3) .L316>div{
-        line-height: 22px; margin-bottom: var(--sp35);
+        margin-bottom: var(--sp35);
     }
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(4) .L316 li>ol{
         padding: var(--sp10) 0 0 2%;
@@ -7527,14 +7230,8 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(9) .L316 ul{
         margin-bottom: var(--sp15);
     }
-    section[class*='termsContainer'].general .accordionBox li:nth-of-type(10) .L316{
-        line-height: 22px;
-    }
     section[class*='termsContainer'].general>div{
-        max-width: 1340px; margin: 0 auto; color: var(--gs08); text-align: center; line-height: 22px;
-    }
-    section[class*='termsContainer'].adagio .accordionBox li:first-of-type ul>li{
-        line-height: 22px;
+        max-width: 1340px; margin: 0 auto; color: var(--gs08); text-align: center;
     }
     section[class*='termsContainer'].adagio .accordionBox li:first-of-type ul>li,
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(18) ul>li{
@@ -7578,20 +7275,12 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(4) .L316>small{
         margin-bottom: var(--sp15);
     }
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(5) .L316>small{
-        margin-bottom: var(--sp25);
-    }
+    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(5) .L316>small,
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(6) .L316>small{
         margin-bottom: var(--sp25);
     }
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(8) .L316>ul{
         margin-bottom: var(--sp35);
-    }
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(11) .L316 div,
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(15) .L316 div,
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(17) .L316,
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(18) .L316{
-        line-height: 22px;
     }
     .mapContainer>h2{
         background-position: center top; padding-top: var(--sp65);
@@ -7858,19 +7547,16 @@ section[class*='termsContainer'].general>div a{
         min-height: 400px;
     }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc{
-        min-height: 348px;
+        min-height: 370px;
     }
-    div[class*='loyaltyContainer'].earnRewards .vertiCardslotBox .tImgDesc dl{
+    div[class*='loyaltyContainer'].earnRewards .vertiCardslotBox .tImgDesc .bTextDesc{
         min-height: 359px;
     }
-    div[class*='offersContainer'].year .vertiCardslotBox .tImgDesc dl{
+    div[class*='offersContainer'].year .vertiCardslotBox .tImgDesc .bTextDesc{
         min-height: 322px;
     }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a:last-of-type{
         margin-top: var(--sp15);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a:nth-of-type(2){
-        margin-left: 6.5%;
     }
     .businessDetailContainer>div:first-child div p{
         max-width: 540px;
@@ -7899,7 +7585,7 @@ section[class*='termsContainer'].general>div a{
     div[class*='loyaltyContainer'].useRewards .vertiCardslotBox .tImgDesc{
         width: 100%;
     }
-    div[class*='loyaltyContainer'].useRewards .vertiCardslotBox .tImgDesc dl{
+    div[class*='loyaltyContainer'].useRewards .vertiCardslotBox .tImgDesc .bTextDesc{
         min-height: 200px;
     }
     div[class*='accomContainer'].privatehome .vertiCardslotBox div,
@@ -8001,136 +7687,6 @@ section[class*='termsContainer'].general>div a{
         width: 100%;
     }
     /* line arrow button */
-    .uLineBtn{
-        position: relative; display: block; text-align: center; margin-left: auto; font-size: 13px; font-weight: 500; width: fit-content; word-break: keep-all;
-    }
-    .uLineBtn:before{
-        content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
-    }
-    .uLineBtn:hover::before{
-        transform: scaleX(0.5);
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a,
-    div[class*='accomContainer'] .globalCardslotBox ul li a,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a,
-    div[class*='loyaltyContainer'] .bannerBoxR>div a,
-    div[class*='loyaltyContainer'] .horiCardslotBox li div a,
-    div[class*='offersContainer'] .horiCardslotBox ul li div a,
-    div[class*='offersContainer'].year .horiCardslotBox ul li div span,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a,
-    div[class*='detailContainer']>ul:first-of-type li a,
-    div[class*='detailContainer']>.termsPopup+div span,
-    div[class*='brandSubContainer'] .allBrandCarousel>a,
-    div[class*='rsvnContainer'].myaccount>ul li div a{
-        position: relative; display: block; text-align: center; margin-left: auto;
-    }
-    .horiCardslotBox li div a::before{
-        transform-origin: right;
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a,
-    div[class*='detailContainer']>.termsPopup+div span,
-    div[class*='brandSubContainer'] .allBrandCarousel>a,
-    div[class*='rsvnContainer'].myaccount>ul li div a{
-        color: var(--sc01);
-    }
-    div[class*='accomContainer'] .globalCardslotBox ul li a,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.pt4 a,
-    div[class*='detailContainer']>ul:first-of-type li a{
-        color: var(--sc03);
-    }
-    div[class*='loyaltyContainer'].earnRewards .horiCardslotBox ul li .pt7 a,
-    div[class*='loyaltyContainer'].earnRewards .horiCardslotBox ul li .pt4 a,
-    div[class*='offersContainer'] .horiCardslotBox ul li .pt5 a,
-    div[class*='offersContainer'] .horiCardslotBox ul li .pt6 a,
-    div[class*='offersContainer'] .horiCardslotBox ul li .pt7 a,
-    div[class*='offersContainer'] .horiCardslotBox ul li .pt5 span,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .gs9 a,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt7 a,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt5 a{
-        color: var(--gs02);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.sc3 a,
-    div[class*='loyaltyContainer'].earnRewards .horiCardslotBox ul li .sc3 a,
-    div[class*='offersContainer'] .horiCardslotBox ul li .sc3 a,
-    div[class*='offersContainer'] .horiCardslotBox ul li .sc3 span,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .sc3 a,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .sc3 a::before{
-        color: var(--gs10);
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a::before,
-    div[class*='accomContainer'] .globalCardslotBox ul li a::before,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a::before,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a::before,
-    div[class*='loyaltyContainer'] .bannerBoxR>div a::before,
-    div[class*='loyaltyContainer'] .horiCardslotBox li div a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li div a::before,
-    div[class*='offersContainer'].year .horiCardslotBox ul li div span::before,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a:before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a::before,
-    div[class*='detailContainer']>ul:first-of-type li a::before,
-    div[class*='detailContainer']>.termsPopup+div span:before,
-    div[class*='brandSubContainer'] .allBrandCarousel>a:before,
-    div[class*='rsvnContainer'].myaccount>ul li div a::before{
-        content: ''; position: absolute; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a::before,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a::before,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a::before,
-    div[class*='detailContainer']>.termsPopup+div span::before,
-    div[class*='brandSubContainer'] .allBrandCarousel>a:before,
-    div[class*='rsvnContainer'].myaccount>ul li div a:before{
-        background-color: var(--sc01);
-    }
-    div[class*='accomContainer'] .globalCardslotBox ul li a::before,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.pt4 a:before,
-    div[class*='detailContainer']>ul:first-of-type li a::before{
-        background-color: var(--sc03);
-    }
-    div[class*='loyaltyContainer'] .horiCardslotBox ul li .pt4 a::before,
-    div[class*='loyaltyContainer'] .horiCardslotBox ul li .pt5 a::before,
-    div[class*='loyaltyContainer'] .horiCardslotBox ul li .pt6 a::before,
-    div[class*='loyaltyContainer'] .horiCardslotBox ul li .pt7 a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li .pt5 a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li .pt6 a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li .pt7 a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li .pt5 span::before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .gs9 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt7 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt5 a::before{
-        background-color: var(--gs02);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.sc3 a:before,
-    div[class*='loyaltyContainer'] .horiCardslotBox ul li .sc3 a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li .sc3 a::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li .sc3 span:before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .sc3 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .sc3 a::before{
-        background-color: var(--gs10);
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a:hover::before,
-    div[class*='accomContainer'] .globalCardslotBox ul li a:hover::before,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a:hover:before,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc div a:hover::before,
-    div[class*='loyaltyContainer'] .bannerBoxR>div a:hover::before,
-    div[class*='loyaltyContainer'] .horiCardslotBox li div a:hover::before,
-    div[class*='offersContainer'] .horiCardslotBox ul li div a:hover::before,
-    div[class*='offersContainer'].year .horiCardslotBox ul li div span:hover::before,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a:hover::before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .bTextDesc a:hover::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:hover::before,
-    div[class*='detailContainer']>ul:first-of-type li a:hover::before,
-    div[class*='detailContainer']>.termsPopup+div span:hover::before,
-    div[class*='brandSubContainer'] .allBrandCarousel>a:hover::before,
-    div[class*='rsvnContainer'].myaccount>ul li div a:hover::before{
-        transform: scaleX(0.5);
-    }
-    /* underline button */
 
     .indexContainer>.bx-wrapper .bx-pager,
     .indexContainer>.bx-wrapper .bx-controls-auto{
@@ -8256,7 +7812,7 @@ section[class*='termsContainer'].general>div a{
         display: block; padding-bottom: var(--sp30); color: var(--gs09);
     }
     .indexContainer .propBox .propSlider li div:nth-of-type(2) p{
-        margin-bottom: var(--sp40); line-height: 23px; color: var(--gs07);
+        margin-bottom: var(--sp40); color: var(--gs07);
     }
     .indexContainer>.propBox .bx-wrapper .bx-controls-direction a{
         padding: var(--sp15); background: var(--sc03); text-indent: -9999px; height: 45px; width: 45px; box-sizing: border-box; display: block; top: auto; margin-top: 0; left: 12.5%; bottom: 380px;
@@ -8317,9 +7873,6 @@ section[class*='termsContainer'].general>div a{
     div[class*='accomContainer'].villas .headlineContent div:last-of-type{
         background: url('../images/villas_headline.png') no-repeat left top; background-size: 500%;
         filter: saturate(0.8) brightness(1.4);
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type dl{
-        margin-bottom: var(--sp25);
     }
     div[class*='accomContainer'] .headlineContent div:last-of-type dl dt{
         margin-bottom: var(--sp30);
@@ -8480,9 +8033,6 @@ section[class*='termsContainer'].general>div a{
     }
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type h3{
         margin-bottom: var(--sp30);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type p{
-        margin-bottom: var(--sp25);
     }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox{
         max-width: 1440px; margin: 0 auto;
@@ -8816,9 +8366,6 @@ section[class*='termsContainer'].general>div a{
     }
     div[class*='offersContainer'].year .horiCardslotBox ul li div h3 small{
         display: block; padding-bottom: var(--sp30);
-    }
-    div[class*='offersContainer'].year .horiCardslotBox ul li div p{
-        margin-bottom: var(--sp25);
     }
     div[class*='offersContainer'].year .horiCardslotBox ul li div span input{
         background-color: transparent; color: inherit; cursor: pointer; border: none; padding: 0;
@@ -9604,7 +9151,7 @@ section[class*='termsContainer'].general>div a{
         font-weight: 500;
     }
     div[class*='detailContainer']>ul:first-of-type li a{
-        padding-top: var(--sp10); display: inline-block;
+        display: inline-block; font-size: 15px; font-weight: 300;
     }
     div[class*='detailContainer'] .termsPopup{
         height: 0; overflow-y: hidden; transition: all .5s ease-in-out; margin-bottom: var(--sp30); position: fixed; padding: 0 6.25%; z-index: 1000; width: 100%; max-width: 1440px;
@@ -9729,8 +9276,8 @@ section[class*='termsContainer'].general>div a{
     .detailContainer12>.termsPopup ul li:nth-of-type(3) div dl dd{
         background-image: url('../images/icon_check_circle_gold.png');
     }
-    div[class*='detailContainer']>.termsPopup+div{
-        margin: 0 auto; text-align: center;
+    div[class*='detailContainer']>.termsPopup+div span{
+        margin: 0 auto;
     }
     div[class*='detailContainer']>.termsPopup+div span input{
         background-color: transparent; color: var(--sc01); cursor: pointer; border: none; display: block; padding: 0;
@@ -9898,7 +9445,7 @@ section[class*='termsContainer'].general>div a{
         margin-bottom: var(--sp25);
     }
     div[class*='brandSubContainer'] .hotelSelection ul li .gs3 p{
-        line-height: 22px; text-align: center;
+        text-align: center;
     }
     div[class*='brandSubContainer'] .allBrandCarousel{
         max-width: 1310px; margin: 0 auto var(--sp150);
@@ -10929,7 +10476,7 @@ section[class*='termsContainer'].general>div a{
         color: var(--gs09); margin-bottom: var(--sp45);
     }
     div[class*='rsvnContainer'].myaccount>ul li div p{
-        color: #9a9a9a; line-height: 22px;
+        color: #9a9a9a;
     }
     div[class*='rsvnContainer'].myaccount>ul li div a{
         display: inline-block; margin-top: var(--sp40);
@@ -11177,7 +10724,7 @@ section[class*='termsContainer'].general>div a{
         transform: rotate(180deg);
     }
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li> :nth-child(2){
-        display: none; background-color: var(--gs02); padding: var(--sp55) 3.5%; line-height: 22px;
+        display: none; background-color: var(--gs02); padding: var(--sp55) 3.5%;
     }
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox ol li .L316{
         color: var(--gs09);
@@ -11497,18 +11044,11 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'] .accordionBox li ol{
         list-style: none;
     }
-    section[class*='termsContainer'] .accordionBox li p{
-        line-height: 22px;
-    }
     section[class*='termsContainer'] .accordionBox li .L316{
         display: none; padding: var(--sp55) 3.5%; background-color: var(--gs02);
     }
     section[class*='termsContainer'] .accordionBox li .L316 b{
-        margin-bottom: var(--sp30); display: block; line-height: 22px;
-    }
-    section[class*='termsContainer'] .accordionBox li .L316 ul li,
-    section[class*='termsContainer'] .accordionBox li .L316 ol li{
-        line-height: 22px;
+        margin-bottom: var(--sp30); display: block;
     }
     section[class*='termsContainer'] .accordionBox li .L316 ol.decimal li:not(:last-of-type){
         margin-bottom: var(--sp15);
@@ -11536,12 +11076,7 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].cookies .accordionBox li:nth-of-type(2) .L316 ul{
         margin-bottom: var(--sp35);
     }
-    section[class*='termsContainer'].cookies .accordionBox li:nth-of-type(2) .L316>div{
-        line-height: 22px;
-    }
-    section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 p:first-of-type{
-        display: inline;
-    }
+    section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 p:first-of-type,
     section[class*='termsContainer'].cookies .accordionBox li:last-of-type .L316 a{
         display: inline;
     }
@@ -11561,9 +11096,6 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 :not(:last-child){
         margin-bottom: var(--sp35);
     }
-    section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(3) .L316 div{
-        line-height: 22px;
-    }
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(5) .L316 .L3.disc{
         padding-top: var(--sp25);
     }
@@ -11577,9 +11109,6 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(7) .L316 b:last-of-type{
         margin-bottom: 0;
     }
-    section[class*='termsContainer'].privacyPolicy .accordionBox li:nth-of-type(11) .L316 div{
-        line-height: 22px;
-    }
     section[class*='termsContainer'].general .accordionBox li .L316 .roman,
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(2) .L316 li:not(:last-of-type),
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(3) .L316>ol,
@@ -11589,9 +11118,6 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(6) p,
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(7) ul{
         margin-bottom: var(--sp35);
-    }
-    section[class*='termsContainer'].general .accordionBox li .L316 li{
-        line-height: 22px;
     }
     section[class*='termsContainer'].general .accordionBox li .L316 .roman li:not(:first-of-type){
         margin-top: var(--sp15);
@@ -11612,7 +11138,7 @@ section[class*='termsContainer'].general>div a{
         padding-top: var(--sp15);
     }
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(3) .L316>div{
-        line-height: 22px; margin-bottom: var(--sp35);
+        margin-bottom: var(--sp35);
     }
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(4) .L316 li>ol{
         padding: var(--sp10) 0 0 2%;
@@ -11626,11 +11152,8 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].general .accordionBox li:nth-of-type(9) .L316 ul{
         margin-bottom: var(--sp15);
     }
-    section[class*='termsContainer'].general .accordionBox li:nth-of-type(10) .L316{
-        line-height: 22px;
-    }
     section[class*='termsContainer'].general>div{
-        max-width: 1340px; margin: 0 auto; color: var(--gs08); text-align: center; line-height: 22px;
+        max-width: 1340px; margin: 0 auto; color: var(--gs08); text-align: center;
     }
     section[class*='termsContainer'].adagio .accordionBox li:first-of-type ul>li,
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(18) ul>li{
@@ -11674,20 +11197,12 @@ section[class*='termsContainer'].general>div a{
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(4) .L316>small{
         margin-bottom: var(--sp15);
     }
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(5) .L316>small{
-        margin-bottom: var(--sp25);
-    }
+    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(5) .L316>small,
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(6) .L316>small{
         margin-bottom: var(--sp25);
     }
     section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(8) .L316>ul{
         margin-bottom: var(--sp35);
-    }
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(11) .L316 div,
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(15) .L316 div,
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(17) .L316,
-    section[class*='termsContainer'].adagio .accordionBox li:nth-of-type(18) .L316{
-        line-height: 22px;
     }
     .mapContainer>h2{
         background-position: center top; padding-top: var(--sp65); margin-bottom: var(--sp50);

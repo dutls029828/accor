@@ -66,14 +66,16 @@
 [class*='gs9']{background-color: var(--gs09); color: var(--gs02);}
 [class*='sc3']{background-color: var(--sc03); color: var(--gs10);}
 
-[class*='sc01']{color: var(--sc01);}
-[class*='sc05']{color: var(--sc05);}
+[class*='g10s']{color: var(--gs10);}
+[class*='s01c']{color: var(--sc01);}
+[class*='s03c']{color: var(--sc03);}
+[class*='s05c']{color: var(--sc05);}
 
 [class*='btn']{cursor: pointer; transition-duration: .3s;}
 
 @media screen and (max-width: 767px){
     [class$='55']{font-size: 25px; color: var(--gs01); font-weight: 100; line-height: 31px;}
-    [class$='34']{font-size: 24px;}
+    [class$='34']{font-size: 24px; line-height: 30px;}
     [class$='32']{font-size: 24px;}
     [class$='22']{font-size: 16px;}
     [class$='16']{font-size: 10px; line-height: 16px;}
@@ -109,66 +111,31 @@
         background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
     }
     .uLineBtn{
-        position: relative; display: block; text-align: center; margin-left: auto; font-size: 10px; font-weight: 500; width: fit-content; word-break: keep-all; cursor: pointer;
+        position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 10px; font-weight: 500; width: fit-content; word-break: keep-all; cursor: pointer;
     }
     .uLineBtn:before{
         content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
     }
-    .uLineBtn:hover::before{
-        transform: scaleX(0.5);
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a,
-    div[class*='brandSubContainer'] .allBrandCarousel>a,
-    div[class*='rsvnContainer'].myaccount>ul li div a,
-    div[class*='detailContainer']>.termsPopup+div span{
-        color: var(--sc01);
-    }
-    div[class*='accomContainer'] .globalCardslotBox ul li a,
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.pt4 a,
-    div[class*='detailContainer']>ul:first-of-type li a{
-        color: var(--sc03);
-    }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc.sc3 a{
-        color: var(--gs10);
-    }
-    div[class*='loyaltyContainer'] .horiCardslotBox li div a::before,
-    div[class*='offersContainer'].member .horiCardslotBox ul li div a::before,
-    div[class*='offersContainer'].latest .horiCardslotBox ul li div a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li div a:before{
-        transform-origin: right;
-    }
-    div[class*='accomContainer'] .headlineContent div:last-of-type a::before,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type a::before,
-    div[class*='diningContainer'].service .bannerBoxR .gs1 a::before,
-    div[class*='brandSubContainer'] .allBrandCarousel>a::before,
-    div[class*='rsvnContainer'].myaccount>ul li div a::before,
-    div[class*='detailContainer']>.termsPopup+div span::before{
+    .uLineBtn.s01c::before{
         background-color: var(--sc01);
     }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(3) .bTextDesc div a::before,
-    div[class*='detailContainer']>ul:first-of-type li a::before{
+    .uLineBtn.s03c::before{
         background-color: var(--sc03);
     }
-    div[class*='offersContainer'].member .horiCardslotBox ul li:nth-of-type(1) div a::before,
-    div[class*='offersContainer'].member .horiCardslotBox ul li:nth-of-type(3) div a::before,
-    div[class*='loyaltyContainer'].earnRewards .horiCardslotBox li div a::before,
-    div[class*='loyaltyContainer'].useRewards .horiCardslotBox li div a:before,
-    div[class*='offersContainer'].year .horiCardslotBox ul li .pt5 span::before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .gs9 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt7 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .pt5 a::before{
+    .uLineBtn.s05c::before{
+        background-color: var(--sc05);
+    }
+    .pt3 .uLineBtn:before,
+    .pt5 .uLineBtn::before,
+    .pt6 .uLineBtn::before,
+    .pt7 .uLineBtn::before{
         background-color: var(--gs02);
     }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc:nth-of-type(2) .bTextDesc div a::before,
-    div[class*='offersContainer'].member .horiCardslotBox ul li:nth-of-type(2) div a::before,
-    div[class*='loyaltyContainer'].earnRewards .horiCardslotBox li:nth-of-type(3) div a::before,
-    div[class*='loyaltyContainer'].useRewards .horiCardslotBox li:nth-of-type(3) div a::before,
-    div[class*='offersContainer'].year .horiCardslotBox ul li .sc3 span::before,
-    div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) .horiTextslotBox .sc3 a::before,
-    div[class*='businessContainer'].tailoredEvents .horiCardslotBox ul li .sc3 a::before{
+    .sc3 .uLineBtn::before{
         background-color: var(--gs10);
+    }
+    .uLineBtn:hover::before{
+        transform: scaleX(0.5);
     }
     /* underline button */
     .bannerBox div{
@@ -404,17 +371,14 @@
     .vertiCardslotBox .tImgDesc img{
         margin-bottom: var(--sp10); width: 100%;
     }
-    .vertiCardslotBox .tImgDesc dl{
+    .vertiCardslotBox .tImgDesc .bTextDesc{
         padding: var(--sp30) 5%; box-sizing: border-box;
     }
-    .vertiCardslotBox .tImgDesc dl dt{
+    .vertiCardslotBox .tImgDesc .bTextDesc dt{
         margin-bottom: var(--sp20);
     }
-    .vertiCardslotBox .tImgDesc dl dt small{
+    .vertiCardslotBox .tImgDesc .bTextDesc dt small{
         display: block; padding-bottom: var(--sp20);
-    }
-    .vertiCardslotBox .tImgDesc dl dd{
-        line-height: 16px;
     }
     .loyalty,
     .loyalty div:first-of-type{
@@ -485,6 +449,9 @@
     .horiCardslotBox ul li span{
         color: inherit;
     }
+    .horiCardslotBox li div a::before{
+        transform-origin: right;
+    }
     .twoDescCardslotBox{
         max-width: 1440px; margin: 0 auto;
     }
@@ -540,7 +507,7 @@
     .ebg24.ita{color: var(--gs02);}
 
     [class$='55']{font-size: 40px; color: var(--gs01); font-weight: 100; line-height: 50px;}
-    [class$='34']{font-size: 28px;}
+    [class$='34']{font-size: 28px; line-height: 34px;}
     [class$='32']{font-size: 26px;}
     [class$='22']{font-size: 16px;}
     [class$='16']{font-size: 16px; line-height: 21px;}
@@ -569,6 +536,33 @@
     mark.rBottomLabel{
         position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; right: 0; bottom: 0;
         background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
+    }
+    .uLineBtn{
+        position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 13px; font-weight: 500; width: fit-content; word-break: keep-all; cursor: pointer;
+    }
+    .uLineBtn:before{
+        content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
+    }
+    .uLineBtn.s01c::before{
+        background-color: var(--sc01);
+    }
+    .uLineBtn.s03c::before{
+        background-color: var(--sc03);
+    }
+    .uLineBtn.s05c::before{
+        background-color: var(--sc05);
+    }
+    .pt3 .uLineBtn:before,
+    .pt5 .uLineBtn::before,
+    .pt6 .uLineBtn::before,
+    .pt7 .uLineBtn::before{
+        background-color: var(--gs02);
+    }
+    .sc3 .uLineBtn::before{
+        background-color: var(--gs10);
+    }
+    .uLineBtn:hover::before{
+        transform: scaleX(0.5);
     }
     .bannerBox div{
         padding: var(--sp60) 5%; box-sizing: border-box;
@@ -790,16 +784,13 @@
     .slideBox .wayCarousel li figure figcaption dl dt{
         margin-bottom: var(--sp30);
     }
-    .vertiCardslotBox .tImgDesc dl{
+    .vertiCardslotBox .tImgDesc .bTextDesc{
         padding: var(--sp50) 9%; box-sizing: border-box;
     }
-    .vertiCardslotBox .tImgDesc dl{
-        padding: var(--sp50) 7%; box-sizing: border-box;
-    }
-    .vertiCardslotBox .tImgDesc dl dt{
+    .vertiCardslotBox .tImgDesc .bTextDesc dt{
         margin-bottom: var(--sp25);
     }
-    .vertiCardslotBox .tImgDesc dl dt small{
+    .vertiCardslotBox .tImgDesc .bTextDesc dt small{
         display: block; padding-bottom: var(--sp25);
     }
     .loyalty{
@@ -872,6 +863,9 @@
     .horiCardslotBox ul li span{
         color: inherit;
     }
+    .horiCardslotBox li div a::before{
+        transform-origin: right;
+    }
     .twoDescCardslotBox{
         max-width: 1440px; margin: 0 auto;
     }
@@ -931,7 +925,7 @@
     .ebg24.ita{color: var(--gs02);}
 
     [class$='55']{font-size: 55px; color: var(--gs01); font-weight: 100; line-height: 65px;}
-    [class$='34']{font-size: 34px;}
+    [class$='34']{font-size: 34px; line-height: 40px;}
     [class$='32']{font-size: 32px;}
     [class$='22']{font-size: 22px;}
     [class$='16']{font-size: 16px; line-height: 21px;}
@@ -960,6 +954,33 @@
     mark.rBottomLabel{
         position: absolute; width: max-content; max-width: 100%; padding: 12px 15px; right: 0; bottom: 0;
         background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
+    }
+    .uLineBtn{
+        position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 13px; font-weight: 500; width: fit-content; word-break: keep-all; cursor: pointer;
+    }
+    .uLineBtn::before{
+        content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
+    }
+    .uLineBtn.s01c::before{
+        background-color: var(--sc01);
+    }
+    .uLineBtn.s03c::before{
+        background-color: var(--sc03);
+    }
+    .uLineBtn.s05c::before{
+        background-color: var(--sc05);
+    }
+    .pt3 .uLineBtn::before,
+    .pt5 .uLineBtn::before,
+    .pt6 .uLineBtn::before,
+    .pt7 .uLineBtn::before{
+        background-color: var(--gs02);
+    }
+    .sc3 .uLineBtn::before{
+        background-color: var(--gs10);
+    }
+    .uLineBtn:hover::before{
+        transform: scaleX(0.5);
     }
     .bannerBox div{
         padding: var(--sp60) 3.125%; box-sizing: border-box;
@@ -1199,13 +1220,13 @@
     .vertiCardslotBox .tImgDesc img{
         margin-bottom: var(--sp20); width: 100%;
     }
-    .vertiCardslotBox .tImgDesc dl{
+    .vertiCardslotBox .tImgDesc .bTextDesc{
         padding: var(--sp50) 9%; min-height: 345px; box-sizing: border-box;
     }
-    .vertiCardslotBox .tImgDesc dl dt{
+    .vertiCardslotBox .tImgDesc .bTextDesc dt{
         margin-bottom: var(--sp25);
     }
-    .vertiCardslotBox .tImgDesc dl dt small{
+    .vertiCardslotBox .tImgDesc .bTextDesc dt small{
         display: block; padding-bottom: var(--sp25);
     }
     .loyalty{
@@ -1259,6 +1280,9 @@
     .horiCardslotBox ul li a,
     .horiCardslotBox ul li span{
         color: inherit;
+    }
+    .horiCardslotBox li div a::before{
+        transform-origin: right;
     }
     .twoDescCardslotBox{
         max-width: 1440px; margin: 0 auto;
