@@ -329,14 +329,20 @@ function miniBoxUI(miniBoxBtn){
 }
 
 function pagerCustomSlider(){
-    $("div[class*='businessContainer'].meetingPlanning .headlineSlider").bxSlider({
-        controls: true,
+    var slider = $("div[class*='businessContainer'].meetingPlanning .headlineSlider").bxSlider({
         auto: true,
+        loop: false,
         pause: 6000,
         speed: 800,
+        controls: true,
         pager: true,
         pagerType: 'full',
         mode: 'fade'
+    }); 
+    $("a[class^='bx']").click(function(){
+        var current = slider.getCurrentSlide();
+        current = parseInt(current) + 1;
+        $(".countBox .currentIndex").text("0" + current);
     });
 }
 

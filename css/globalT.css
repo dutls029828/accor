@@ -52,11 +52,9 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li .roomSelect.active b
 header>div#fnbPanel>div#reservation form fieldset>div ul li button+.compSelect ol li,
 header>div#fnbPanel>div#reservation form fieldset>div ul>li label:not(.compSelect ol li label),
 header>div#fnbPanel>div#reservation form fieldset>div>input,
-footer>div:first-of-type div:first-of-type form input,
 footer>div:first-of-type div:last-of-type span,
 footer>div:first-of-type div:last-of-type span a,
-footer>div:first-of-type div:last-of-type mark a,
-footer>div:first-of-type div:last-of-type mark+a{
+footer>div:first-of-type div:last-of-type mark a{
     display: block;
 }
 header>div:first-of-type,
@@ -122,8 +120,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         position: absolute;
     }
     header>div:first-of-type,
-    footer>div:first-of-type div:first-of-type form input,
-    footer>div:first-of-type div:last-of-type mark+a,
     footer>div:last-of-type ul:last-of-type li:last-of-type{
         margin: 0 auto;
     }
@@ -158,7 +154,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     footer>div:first-of-type div:first-of-type,
     footer>div:first-of-type div h2,
     footer>div:first-of-type div:last-of-type,
-    footer>div:first-of-type div:last-of-type mark+a,
     footer>div:last-of-type>b,
     footer>div:last-of-type div>h3,
     footer>div:last-of-type div:first-of-type>span,
@@ -192,9 +187,7 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         background-color: var(--sc01);
     }
     header>div:first-of-type div span,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
-    footer>div:first-of-type div:first-of-type form input:last-of-type,
-    footer>div:first-of-type div:last-of-type mark+a{
+    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before{
         background-color: var(--sc03);
     }
     header>div:first-of-type nav,
@@ -230,8 +223,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul li input:focus,
     footer>div:first-of-type div h2,
-    footer>div:first-of-type div:first-of-type form input:last-of-type,
-    footer>div:first-of-type div:last-of-type mark+a,
     footer>div:last-of-type>b,
     footer>div:last-of-type>strong,
     footer>div:last-of-type ul li span,
@@ -386,16 +377,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     footer>div:first-of-type div:first-of-type form input:first-of-type{
         padding: var(--sp15) 10% var(--sp15) var(--sp15); margin-bottom: var(--sp45);
     }
-    footer>div:first-of-type div:first-of-type form input:last-of-type{
-        border: none;
-    }
-    footer>div:first-of-type div:first-of-type form input:last-of-type,
-    footer>div:first-of-type div:last-of-type mark+a{
-        padding: var(--sp15) 0; min-width: 180px; transition: filter .3s ease-out;
-    }
-    footer>div:first-of-type div:first-of-type form input:last-of-type:hover{
-        filter: brightness(92%);
-    }
     footer>div:first-of-type div:last-of-type a{
         text-decoration: none;
     }
@@ -404,9 +385,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     }
     footer>div:first-of-type div:last-of-type mark a{
         padding-top: var(--sp15);
-    }
-    footer>div:first-of-type div:last-of-type mark+a:hover{
-        filter: brightness(92%);
     }
     footer>div:last-of-type{
         padding-top: var(--sp60);
@@ -583,7 +561,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
     header>div#fnbPanel>div#reservation form fieldset legend,
     footer>div:first-of-type div:first-of-type,
-    footer>div:first-of-type div:last-of-type mark+a,
     footer>div:last-of-type div:last-of-type{
         text-align: center;
     }
@@ -610,9 +587,7 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         background-color: var(--sc01);
     }
     header>div:first-of-type div span,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
-    footer>div:first-of-type div:first-of-type form input[type='submit'],
-    footer>div:first-of-type div:last-of-type mark+a{
+    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before{
         background-color: var(--sc03);
     }
     header,
@@ -665,8 +640,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul li input:focus,
     footer>div:first-of-type div h2,
-    footer>div:first-of-type div:first-of-type form input[type='submit'],
-    footer>div:first-of-type div:last-of-type mark+a,
     footer>div:last-of-type ul li a,
     footer>div:last-of-type ul li span,
     footer>div:last-of-type>div>h3{
@@ -889,10 +862,7 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         padding: var(--sp15) 10% var(--sp15) var(--sp15); width: 335px;
     }
     footer>div:first-of-type div:first-of-type form input[type='submit']{
-        padding: var(--sp15) 0; min-width: 180px; border: none; transition: filter .3s ease-out;
-    }
-    footer>div:first-of-type div:first-of-type form input:last-of-type:hover{
-        filter: brightness(92%);
+        border: none;
     }
     footer>div:first-of-type div:last-of-type span{
         float: left;
@@ -910,10 +880,7 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         padding-top: var(--sp15);
     }
     footer>div:first-of-type div:last-of-type mark+a{
-        clear: both; padding: var(--sp15) 0; max-width: 180px; transition: filter .3s ease-out;
-    }
-    footer>div:first-of-type div:last-of-type mark+a:hover{
-        filter: brightness(92%);
+        clear: both; margin-left: 0;
     }
     footer>div:last-of-type{
         padding-top: var(--sp60);
@@ -1042,7 +1009,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     header>div#fnbPanel>div:first-of-type div ul,
     header>div:first-of-type div ul li,
     header>div#fnbPanel>div#reservation form fieldset legend,
-    footer>div:first-of-type div:last-of-type mark+a,
     footer>div:last-of-type div:last-of-type{
         text-align: center;
     }
@@ -1105,8 +1071,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     }
     header>div#fnbPanel>div#reservation form fieldset>div ul li input:focus,
     footer>div:first-of-type div h2,
-    footer>div:first-of-type div:first-of-type form input:last-of-type,
-    footer>div:first-of-type div:last-of-type mark+a,
     footer>div:last-of-type ul li a,
     footer>div:last-of-type ul li span,
     footer>div:last-of-type>div>h3{
@@ -1125,9 +1089,7 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         background-color: var(--sc01);
     }
     header>div:first-of-type div ul>li:first-of-type,
-    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before,
-    footer>div:first-of-type div:first-of-type form input:last-of-type,
-    footer>div:first-of-type div:last-of-type mark+a{
+    header>div#fnbPanel>div:first-of-type div ul li a:not(.mapBtn):before{
         background-color: var(--sc03);
     }
     header>div:first-of-type div ul>li:first-of-type::after,
@@ -1333,12 +1295,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     footer>div:first-of-type div:first-of-type form input:first-of-type{
         padding: var(--sp15) 10% var(--sp15) var(--sp15); width: 335px;
     }
-    footer>div:first-of-type div:first-of-type form input:last-of-type{
-        padding: var(--sp15) 0; min-width: 180px; margin-bottom: var(--sp70); border: none; transition: filter .3s ease-out;
-    }
-    footer>div:first-of-type div:first-of-type form input:last-of-type:hover{
-        filter: brightness(92%);
-    }
     footer>div:first-of-type div:last-of-type span{
         float: left;
     }
@@ -1355,10 +1311,7 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         padding-top: var(--sp15);
     }
     footer>div:first-of-type div:last-of-type mark+a{
-        clear: both; padding: var(--sp15) 0; max-width: 180px; transition: filter .3s ease-out;
-    }
-    footer>div:first-of-type div:last-of-type mark+a:hover{
-        filter: brightness(92%);
+        clear: both;
     }
     footer>div:last-of-type{
         padding-top: 380px;
