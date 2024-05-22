@@ -778,9 +778,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     .diningSeasonFancy ul:first-of-type li div h4{
         margin-bottom: var(--sp35);
     }
-    .diningSeasonFancy ul:first-of-type li div p{
-        line-height: 28px;
-    }
     .diningSeasonFancy ul:first-of-type li:hover,
     .diningSeasonFancy ul:first-of-type li.active{
         box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
@@ -908,7 +905,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         margin-bottom: var(--sp70);
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div span{
-        margin-bottom: var(--sp70); line-height: 28px; padding-left: 8%; background: url('../images/icon_wCheck.png') no-repeat left center / 14px;
+        margin-bottom: var(--sp70); padding-left: 8%; background: url('../images/icon_wCheck.png') no-repeat left center / 14px;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a:after{
         content: 'ENROL YOUR COMPANY';
@@ -1238,9 +1235,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     }
     div[class*='detailContainer']{
         max-width: 767px; margin: 0 auto; position: relative; padding: 65px 3% 3%;
-    }
-    div[class*='detailContainer'] .historyBack{
-        position: absolute; color: var(--gs02); padding: var(--sp15) 10px; background: url('../images/arrow_back.png') no-repeat 8px bottom / 30px;
     }
     div[class*='detailContainer'] h2{
         margin-bottom: var(--sp20); padding: var(--sp200) 0; text-align: center; background-repeat: no-repeat; background-position: center; background-size: cover;
@@ -1761,23 +1755,12 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer']{
         max-width: 1279px; margin: 0 auto var(--sp60); padding: 59px 3% 0 3%; position: relative;
     }
-    section[class*='accountContainer'] .historyBack{
-        position: absolute; color: var(--sc01); padding: var(--sp15) 5px; 
-        background: url('../images/arrow_back_blue.png') no-repeat 5% bottom / 30px;
-    }
-    section[class*='accountContainer'] h2{
-        padding-top: var(--sp50); text-align: center; margin-bottom: var(--sp30); color: var(--gs10);
-    }
-    section[class*='accountContainer'] h2 span{
-        display: block; padding-top: var(--sp20); color: var(--gs07);
-    }
-    section[class*='accountContainer'] div,
-    section[class*='accountContainer'] .formPackage{
+    section[class*='accountContainer'] .formPackage,
+    section[class*='accountContainer'] span.floatContainer{
         margin: 0 auto; max-width: 600px;
     }
-    section[class*='accountContainer'] input[type="submit"],
-    section[class*='accountContainer'] input[type="reset"]{
-        cursor: pointer;
+    section[class*='accountContainer'] .formPackage form input:not([class*='Btn']){
+        border: 1px solid var(--gs05); padding: var(--sp20) 3%; width: 100%; max-width: 600px; border-radius: 3px; box-sizing: border-box;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div label{
         transition: all .2s linear;
@@ -1826,8 +1809,8 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone'] input:invalid{
         padding-left: 2.7%;
     }
-    section[class*='accountContainer'].signIn .formPackage form input{
-        padding: var(--sp20) 3%; width: 94%; max-width: 600px; border-radius: 3px;
+    section[class*='accountContainer'].signIn .formPackage form input:not([class*='Btn']){
+        padding: var(--sp20) 3%; width: 100%; max-width: 600px; border-radius: 3px; box-sizing: border-box;
     }
     section[class*='accountContainer'].signIn .formPackage form *{
         display: block;
@@ -1841,7 +1824,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].signIn .formPackage form label[for="userEmail"]+span{
         opacity: 0; line-height: 20px; float: right; color: var(--sc04);
     }
-    section[class*='accountContainer'].signIn .formPackage form input{
+    section[class*='accountContainer'].signIn .formPackage form input:not([class*='Btn']){
         border: 1px solid var(--gs08);
     }
     section[class*='accountContainer'].signIn .formPackage form input#userEmail{
@@ -1882,12 +1865,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].signIn div:nth-of-type(2) b{
         border-top: 1px solid var(--gs04); display: block; padding-top: var(--sp35); color: var(--gs09); margin-bottom: var(--sp35);
     }
-    section[class*='accountContainer'].signIn div:nth-of-type(2) a{
-        padding: var(--sp20) 0; color: var(--gs10); border-radius: 25px; border: 1px solid var(--sc01); display: block; transition: all .3s ease-out; box-sizing: border-box;
-    }
-    section[class*='accountContainer'].signIn div:nth-of-type(2) a:hover{
-        color: var(--gs02); background-color: var(--sc01); border-color: var(--sc01);
-    }
     section[class*='accountContainer'].signUp .formPackage{
         margin-bottom: var(--sp40);
     }
@@ -1903,7 +1880,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         content: '*'; margin-left: 3px; color: var(--sc04);
     }
     section[class*='accountContainer'].signUp .formPackage form input{
-        margin-bottom: var(--sp30); border: 1px solid var(--gs05); padding: var(--sp20) 3%; width: 100%; max-width: 600px; border-radius: 3px; box-sizing: border-box;
+        margin-bottom: var(--sp30);
     }
     section[class*='accountContainer'].signUp .formPackage form input#userEmail{
         border-color: var(--sc01); background: url('../images/icon_check_circle_classic.png') no-repeat 97% center / 20px;
@@ -1915,6 +1892,9 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         margin-bottom: var(--sp10);
     }
     section[class*='accountContainer'].signUp .formPackage form input#userPW+div{
+        margin-bottom: var(--sp30);
+    }
+    section[class*='accountContainer'].signUp .formPackage form #personalInfo{
         margin-bottom: var(--sp30);
     }
     section[class*='accountContainer'].signUp .formPackage form div:first-of-type small{
@@ -1946,7 +1926,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         text-align: center; max-width: 75%; line-height: 16px;
     }
     section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-of-type) a{
-        text-decoration: underline;
+        text-decoration: underline; color: var(--sc01);
     }
     section[class*='accountContainer'].signUp .formPackage form div.L310:nth-last-child(5){
         color: var(--gs09);
@@ -1961,14 +1941,8 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].signUp .formPackage form div.L310:nth-last-child(2){
         margin-top: var(--sp15);
     }
-    section[class*='accountContainer'].signUp .formPackage form div.L310:nth-last-child(-n+3) a{
-        color: inherit;
-    }
     section[class*='accountContainer'].signUp .formPackage form input[type="submit"]{
-        border: none; background-color: var(--sc03); width: 100%; border-radius: 25px; transition: all .3s ease-out; margin: var(--sp30) 0 var(--sp25);
-    }
-    section[class*='accountContainer'].signUp .formPackage form input[type="submit"]:hover{
-        background-color: var(--sc01); color: var(--gs01);
+        margin: var(--sp30) 0 var(--sp25);
     }
     section[class*='accountContainer'].signUp>div:last-of-type{
         text-align: center; padding-top: var(--sp35); border-top: 1px solid var(--gs04);
@@ -2036,12 +2010,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].notyetbefore>div:last-of-type b{
         color: var(--gs09); margin-bottom: var(--sp35); display: block;
     }
-    section[class*='accountContainer'].notyetbefore>div:last-of-type a{
-        padding: var(--sp20) 0; color: var(--gs10); border-radius: 25px; border: 1px solid var(--sc01); display: block; transition: all .3s ease-out; box-sizing: border-box;
-    }
-    section[class*='accountContainer'].notyetbefore>div:last-of-type a:hover{
-        color: var(--gs02); background-color: var(--sc01); border-color: var(--sc01);
-    }
     section[class*='accountContainer'].notyetafter .formPackage form div span{
         display: none; line-height: 20px; float: right; color: var(--sc04);
     }
@@ -2067,24 +2035,15 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         margin-bottom: var(--sp20);
     }
     section[class*='accountContainer'].notyetafter .formPackage form div:last-of-type input[type="button"]{
-        clear: both; border: 1px solid var(--sc01); width: 100%; background-color: var(--gs01); color: var(--gs10); transition: all .3s ease-out;
-        border-radius: 25px; cursor: pointer;
-    }
-    section[class*='accountContainer'].notyetafter .formPackage form div:last-of-type input[type="button"]:hover{
-        background-color: var(--sc01); color: var(--gs02);
+        clear: both;
     }
     section[class*='accountContainer'].signupmsg p,
     section[class*='accountContainer'].subBusinessMsg p{
-        max-width: 685px; margin: 0 auto var(--sp75); text-align: center; line-height: 28px;
+        max-width: 685px; margin-bottom: var(--sp40); text-align: center; line-height: 22px;
     }
-    section[class*='accountContainer'].signupmsg a:not(.historyBack),
-    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack){
-        display: block; background-color: var(--sc03); border: none; max-width: 600px; padding: var(--sp20) 0; transition: all .3s ease-out;
-        margin-bottom: var(--sp50); margin: 0 auto; border-radius: 25px; text-align: center; color: var(--gs10);
-    }
-    section[class*='accountContainer'].signupmsg a:not(.historyBack):hover,
-    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack):hover{
-        background-color: var(--sc01); color: var(--gs02);
+    section[class*='accountContainer'].signupmsg a:not([class*='historyBack']),
+    section[class*='accountContainer'].subBusinessMsg a:not([class*='historyBack']){
+        margin-bottom: var(--sp50);
     }
     section[class*='accountContainer'].forgotPw .formPackage form *{
         display: block;
@@ -2102,10 +2061,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         clear: both; margin-bottom: var(--sp50);
     }
     section[class*='accountContainer'].forgotPw .formPackage form input[type="submit"]{
-        border: none; background-color: var(--sc03); color: var(--gs10); transition: all .3s ease-out; border-radius: 25px; width: 100%;
-    }
-    section[class*='accountContainer'].forgotPw .formPackage form input[type="submit"]:hover{
-        background-color: var(--sc01); color: var(--gs02);
+        border: none;
     }
     section[class*='accountContainer'].forgotPw .formPackage form label[for='userEmail']::after{
         content: '*'; margin-left: 3px; color: var(--sc04);
@@ -2113,12 +2069,8 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].forgotPwMsg p{
         max-width: 775px; text-align: center; margin-bottom: var(--sp40); line-height: 22px;
     }
-    section[class*='accountContainer'].forgotPwMsg a:not(.historyBack){
-        display: block; background-color: var(--sc03); border: none; max-width: 600px; padding: var(--sp20) 0; transition: all .3s ease-out;
-        margin-bottom: var(--sp50); margin: 0 auto; border-radius: 25px; text-align: center; color: var(--gs10);
-    }
-    section[class*='accountContainer'].forgotPwMsg a:not(.historyBack):hover{
-        background-color: var(--sc01); color: var(--gs02);
+    section[class*='accountContainer'].forgotPwMsg a:not([class*='historyBack']){
+        margin-bottom: var(--sp50);
     }
     section[class*='accountContainer'].subAccor .formPackage form *{
         display: block;
@@ -2126,27 +2078,23 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].subAccor .formPackage form label{
         margin-bottom: var(--sp15);
     }
-    section[class*='accountContainer'].subAccor .formPackage form input{
-        max-width: 600px; box-sizing: border-box;
+    section[class*='accountContainer'].subAccor .formPackage form label::after{
+        content: '*'; margin-left: 3px; color: var(--sc04);
     }
     section[class*='accountContainer'].subAccor .formPackage form input[type="email"]{
-        margin-bottom: var(--sp50); border: 1px solid var(--gs05); padding: var(--sp20) 3%; border-radius: 3px; width: 100%;
+        margin-bottom: var(--sp50); border: 1px solid var(--gs05); padding: var(--sp20) 3%; border-radius: 3px; width: 100%; box-sizing: border-box;
     }
     section[class*='accountContainer'].subAccor .formPackage form input[type="submit"]{
-        display: block; background-color: var(--sc03); border: none; width: 100%; padding: var(--sp20) 0; transition: background-color .3s ease-out;
-        margin-bottom: var(--sp50); margin: 0 auto; cursor: pointer; text-align: center; color: var(--gs10);
-    }
-    section[class*='accountContainer'].subAccor .formPackage form input[type="submit"]:hover{
-        background-color: #ceaba4;
+        margin-bottom: var(--sp50);
     }
     section[class*='accountContainer'].subAccorNext div p{
-        max-width: 775px; text-align: center; margin-bottom: var(--sp80); line-height: 28px;
+        max-width: 600px; text-align: center; margin-bottom: var(--sp40);
     }
-    section[class*='accountContainer'].subAccorNext div a:not(.historyBack){
+    section[class*='accountContainer'].subAccorNext div a:not([class*='historyBack']){
         display: block; background-color: var(--sc03); border: none; padding: var(--sp20) 0; color: var(--gs10); transition: all .3s ease-out;
         margin-bottom: var(--sp50); margin: 0 auto; text-align: center;
     }
-    section[class*='accountContainer'].subAccorNext div a:not(.historyBack):hover{
+    section[class*='accountContainer'].subAccorNext div a:not([class*='historyBack']):hover{
         background-color: var(--sc01); color: var(--gs02);
     }
     section[class*='accountContainer'].accountPW .formPackage form *{
@@ -2182,45 +2130,14 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].accountPW .formPackage form div ul li{
         padding-left: 8%; line-height: 16px; background: url('../images/icon_check_circle_classic.png') no-repeat 1% center / 12px;
     }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='submit'],
-    section[class*='accountContainer'].accountPW .formPackage form input[type='reset']{
-        padding: var(--sp20) 0; float: left; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px; border-style: solid; transition: all .3s ease-out;
-    }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='submit']{
-        background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='reset']{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='submit']:hover,
-    section[class*='accountContainer'].accountPW .formPackage form input[type='reset']:hover{
-        background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01);
-    }
     section[class*='accountContainer'].accountPWnext{
         max-width: 600px;
     }
     section[class*='accountContainer'].accountPWnext div{
-        text-align: center; color: var(--gs09); margin-bottom: var(--sp70);
+        text-align: center; color: var(--gs09); margin-bottom: var(--sp40); line-height: 22px;
     }
     section[class*='accountContainer'].accountPWnext div a{
         text-decoration: underline; color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPWnext a{
-        line-height: 20px; box-sizing: border-box; text-align: center;
-    }
-    section[class*='accountContainer'].accountPWnext a.L314{
-        display: block; padding: var(--sp20) 0; width: 49%; border-radius: 25px; color: var(--gs10);
-        border-width: 1px; border-style: solid; transition: all .3s ease-out; float: left;
-    }
-    section[class*='accountContainer'].accountPWnext a.L314:first-of-type{
-        color: var(--gs10); background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPWnext a.L314:last-of-type{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPWnext a.L314:first-of-type:hover,
-    section[class*='accountContainer'].accountPWnext a.L314:last-of-type:hover{
-        background-color: var(--sc01);  color: var(--gs02);
     }
     section[class*='accountContainer'].accountPrivacy .formPackage form *{
         display: block;
@@ -2304,35 +2221,10 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     }
     section[class*='accountContainer'].accountPrivacy .formPackage input[type='submit'],
     section[class*='accountContainer'].accountPrivacy .formPackage input[type='reset']{
-        display: block; padding: var(--sp20) 0; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px;
-        border-style: solid; transition: all .3s ease-out; float: left;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='submit']{
-        color: var(--gs10); background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='reset']{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='submit']:hover,
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='reset']:hover{
-        background-color: var(--sc01); color: var(--gs02);
+        width: 49%; float: left;
     }
     section[class*='accountContainer'].accountPrivacyNext div{
-        text-align: center; color: var(--gs09); margin-bottom: var(--sp40);
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314{
-        display: block; padding: var(--sp20) 0; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px; border-style: solid;
-        transition: all .3s ease-out; float: left; text-align: center; box-sizing: border-box;
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:first-of-type{
-        color: var(--gs10); background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:last-of-type{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:first-of-type:hover,
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:last-of-type:hover{
-        background-color: var(--sc01); color: var(--gs02);
+        text-align: center; color: var(--gs09); margin-bottom: var(--sp40); line-height: 22px;
     }
     section[class*='accountContainer'].checkout .formPackage fieldset:last-of-type{
         margin-bottom: var(--sp40);
@@ -2353,8 +2245,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         width: 100%;
     }
     section[class*='accountContainer'].checkout .formPackage fieldset:first-of-type input[type='text']{
-        color: var(--gs10); border-color: var(--sc01);font-size: 10px;
-        background: url('../images/icon_check_circle_classic.png') no-repeat 97% center / 20px;
+        color: var(--gs10); border-color: var(--sc01);font-size: 10px; background: url('../images/icon_check_circle_classic.png') no-repeat 97% center / 20px;
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset div[class='dateComp']{
         float: left; width: 49%;
@@ -2527,20 +2418,10 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:last-of-type input[value='RESET']{
         margin-left: 8%; background-color: transparent; color: var(--gs10);
     }
-    section[class*='accountContainer'].checkout .formPackage form>input[type='submit']{
-        border: none; padding: var(--sp20) 3%; width: 100%; border-radius: 25px; background-color: var(--sc03); color: var(--gs10); transition: all .3s ease-out;
-    }
-    section[class*='accountContainer'].checkout .formPackage form>input[type='submit']:hover{
-        background: var(--sc01); color: var(--gs02);
-    }
     section[class*='accountContainer'].checkoutNext p{
-        max-width: 630px; margin: 0 auto; text-align: center; margin-bottom: var(--sp75);
+        max-width: 630px; margin: 0 auto; text-align: center; margin-bottom: var(--sp40); line-height: 22px;
     }
-    section[class*='accountContainer'].checkoutNext a:not(.historyBack){
-        max-width: 600px; display: block; margin: 0 auto; background-color: var(--sc03); color: var(--gs10); transition: all .3s ease-out;
-        padding: var(--sp20) 0; border-radius: 25px; text-align: center;
-    }
-    section[class*='accountContainer'].checkoutNext a:not(.historyBack):hover{
+    section[class*='accountContainer'].checkoutNext a:not([class*='historyBack']):hover{
         background-color: var(--sc01); color: var(--gs02);
     }
     .subBusiness .formPackage form fieldset label:not(label[for='checkAgree']){
@@ -2559,12 +2440,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     }
     .subBusiness .formPackage form fieldset span:not(.selectComponent){
         color: var(--sc04);
-    }
-    .subBusiness .formPackage form fieldset input[type='submit']{
-        border: none; border-radius: 25px; background-color: var(--sc03); color: var(--gs10); transition: all .3s ease-out;
-    }
-    .subBusiness .formPackage form fieldset input[type='submit']:hover{
-        background-color: var(--sc01); color: var(--gs02);
     }
     .subBusiness.after .formPackage form fieldset>div:not(#personalInfo) label,
     .subBusiness.after .formPackage form fieldset>div:not(#personalInfo) input{
@@ -3714,6 +3589,11 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     div[class*='detailContainer'] .termsPopup+div span{
         display: inline-block;
     }
+    section[class*=accountContainer].subAccor,
+    section[class*=accountContainer].forgotPw > :not([class*='historyBack']),
+    section[class*=accountContainer].forgotPwMsg > :not([class*='historyBack']){
+        max-width: 600px;
+    }
     .indexContainer>.globalCardslotBox ul li:not(:nth-last-child(-n+2)){
         margin-bottom: var(--sp10);
     }
@@ -4462,9 +4342,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     .diningSeasonFancy ul:first-of-type li div h4{
         margin-bottom: var(--sp35);
     }
-    .diningSeasonFancy ul:first-of-type li div p{
-        line-height: 28px;
-    }
     .diningSeasonFancy ul:first-of-type li:hover,
     .diningSeasonFancy ul:first-of-type li.active{
         box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
@@ -4957,10 +4834,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     .businessDetailContainer .privateEventBox .miniBoxthumbPager li:hover,
     .businessDetailContainer .privateEventBox .miniBoxthumbPager li.active{
         filter: none;
-    }
-    div[class*='detailContainer'] .historyBack{
-        position: absolute; color: var(--gs02); padding: var(--sp05) 10px var(--sp20) 2%; top: 82px;
-        background: url('../images/arrow_back.png') no-repeat 15px bottom / 64%;
     }
     div[class*='detailContainer'] h2{
         margin-bottom: var(--sp20); padding: 380px 0; text-align: center; background-repeat: no-repeat; background-position: center; background-size: cover;
@@ -5495,16 +5368,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         bottom: var(--sp15);
     }
     section[class*='accountContainer']{
-        max-width: 600px; margin: 0 auto; padding: 59px 3% var(--sp60) 3%; position: relative;
-    }
-    section[class*='accountContainer'] .historyBack{
-        position: absolute; color: var(--sc01); padding: var(--sp25) 8px 25px 5%; background: url('../images/arrow_back_blue.png') no-repeat 5% center / 30px;
-    }
-    section[class*='accountContainer'] h2{
-        padding-top: var(--sp70); text-align: center; margin-bottom: var(--sp55); color: var(--gs10);
-    }
-    section[class*='accountContainer'] h2 span{
-        display: block; padding-top: var(--sp20); color: var(--gs07);
+        margin: 0 auto; padding: 59px 3% var(--sp60) 3%; position: relative;
     }
     section[class*='accountContainer'] div,
     section[class*='accountContainer'] .formPackage{
@@ -5806,15 +5670,15 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     }
     section[class*='accountContainer'].signupmsg p,
     section[class*='accountContainer'].subBusinessMsg p{
-        max-width: 685px; margin: 0 auto var(--sp75); text-align: center; line-height: 28px;
+        max-width: 600px; margin: 0 auto var(--sp75); text-align: center;
     }
-    section[class*='accountContainer'].signupmsg a:not(.historyBack),
-    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack){
+    section[class*='accountContainer'].signupmsg a:not([class*='historyBack']),
+    section[class*='accountContainer'].subBusinessMsg a:not([class*='historyBack']){
         display: block; background-color: var(--sc03); border: none; max-width: 600px; padding: var(--sp20) 0; transition: all .3s ease-out;
         margin-bottom: var(--sp50); margin: 0 auto; border-radius: 25px; text-align: center; color: var(--gs10);
     }
-    section[class*='accountContainer'].signupmsg a:not(.historyBack):hover,
-    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack):hover{
+    section[class*='accountContainer'].signupmsg a:not([class*='historyBack']):hover,
+    section[class*='accountContainer'].subBusinessMsg a:not([class*='historyBack']):hover{
         background-color: var(--sc01); color: var(--gs02);
     }
     section[class*='accountContainer'].forgotPw .formPackage form *{
@@ -5827,16 +5691,10 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         opacity: 0; line-height: 20px; float: right; color: var(--sc04);
     }
     section[class*='accountContainer'].forgotPw .formPackage form input{
-        margin-bottom: var(--sp30); border: 1px solid var(--gs05); padding: var(--sp20) 3%; width: 100%; max-width: 600px; border-radius: 3px; box-sizing: border-box;
+        border: 1px solid var(--gs05); padding: var(--sp20) 3%; width: 100%; max-width: 600px; border-radius: 3px; box-sizing: border-box;
     }
     section[class*='accountContainer'].forgotPw .formPackage form input[type="email"]{
         clear: both; margin-bottom: var(--sp50);
-    }
-    section[class*='accountContainer'].forgotPw .formPackage form input[type="submit"]{
-        border: none; background-color: var(--sc03); color: var(--gs10); transition: all .3s ease-out; border-radius: 25px; width: 100%;
-    }
-    section[class*='accountContainer'].forgotPw .formPackage form input[type="submit"]:hover{
-        background-color: var(--sc01); color: var(--gs02);
     }
     section[class*='accountContainer'].forgotPw .formPackage form label[for='userEmail']::after{
         content: '*'; margin-left: 3px; color: var(--sc04);
@@ -5845,23 +5703,19 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         margin: 0 auto;
     }
     section[class*='accountContainer'].forgotPwMsg h2{
-        margin-bottom: var(--sp55);
+        margin-bottom: var(--sp60);
     }
     section[class*='accountContainer'].forgotPwMsg p{
-        max-width: 775px; text-align: center; margin-bottom: var(--sp80); line-height: 28px;
-    }
-    section[class*='accountContainer'].forgotPwMsg a:not(.historyBack){
-        display: block; background-color: var(--sc03); border: none; max-width: 600px; padding: var(--sp20) 0; transition: all .3s ease-out;
-        margin-bottom: var(--sp50); margin: 0 auto; border-radius: 25px; text-align: center; color: var(--gs10);
-    }
-    section[class*='accountContainer'].forgotPwMsg a:not(.historyBack):hover{
-        background-color: var(--sc01); color: var(--gs02);
+        max-width: 600px; text-align: center; margin-bottom: var(--sp70);
     }
     section[class*='accountContainer'].subAccor .formPackage form *{
         display: block;
     }
     section[class*='accountContainer'].subAccor .formPackage form label{
         margin-bottom: var(--sp15);
+    }
+    section[class*='accountContainer'].subAccor .formPackage form label::after{
+        content: '*'; margin-left: 3px; color: var(--sc04);
     }
     section[class*='accountContainer'].subAccor .formPackage form input{
         max-width: 600px; box-sizing: border-box;
@@ -5870,20 +5724,16 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         margin-bottom: var(--sp50); border: 1px solid var(--gs05); padding: var(--sp20) 3%; border-radius: 3px; width: 100%;
     }
     section[class*='accountContainer'].subAccor .formPackage form input[type="submit"]{
-        display: block; background-color: var(--sc03); border: none; width: 100%; padding: var(--sp20) 0; transition: background-color .3s ease-out;
-        margin-bottom: var(--sp50); margin: 0 auto; cursor: pointer; text-align: center; color: var(--gs10);
-    }
-    section[class*='accountContainer'].subAccor .formPackage form input[type="submit"]:hover{
-        background-color: #ceaba4;
+        width: 100%;
     }
     section[class*='accountContainer'].subAccorNext div p{
-        max-width: 775px; text-align: center; margin-bottom: var(--sp80); line-height: 28px;
+        text-align: center; margin-bottom: var(--sp70); line-height: 22px;
     }
-    section[class*='accountContainer'].subAccorNext div a:not(.historyBack){
+    section[class*='accountContainer'].subAccorNext div a:not([class*='historyBack']){
         display: block; background-color: var(--sc03); border: none; padding: var(--sp20) 0; color: var(--gs10); transition: all .3s ease-out;
         margin-bottom: var(--sp50); margin: 0 auto; text-align: center;
     }
-    section[class*='accountContainer'].subAccorNext div a:not(.historyBack):hover{
+    section[class*='accountContainer'].subAccorNext div a:not([class*='historyBack']):hover{
         background-color: var(--sc01); color: var(--gs02);
     }
     section[class*='accountContainer'].accountPW .formPackage form *{
@@ -5919,20 +5769,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].accountPW .formPackage form div ul li{
         padding-left: 4%; line-height: 16px; background: url('../images/icon_check_circle_classic.png') no-repeat 1% center / 12px;
     }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='submit'],
-    section[class*='accountContainer'].accountPW .formPackage form input[type='reset']{
-        padding: var(--sp20) 0; float: left; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px; border-style: solid; transition: all .3s ease-out;
-    }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='submit']{
-        background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='reset']{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='submit']:hover,
-    section[class*='accountContainer'].accountPW .formPackage form input[type='reset']:hover{
-        background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01);
-    }
     section[class*='accountContainer'].accountPrivacyNext div,
     section[class*='accountContainer'].accountPWnext div{
         text-align: center; color: var(--gs09); margin-bottom: var(--sp70);
@@ -5940,27 +5776,9 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].accountPWnext div a{
         text-decoration: underline; color: var(--sc01);
     }
-    section[class*='accountContainer'].accountPrivacyNext a,
-    section[class*='accountContainer'].accountPWnext a{
-        line-height: 20px; box-sizing: border-box; text-align: center;
-    }
     section[class*='accountContainer'].accountPrivacyNext span,
     section[class*='accountContainer'].accountPWnext span{
         display: block; max-width: 600px; margin: 0 auto;
-    }
-    section[class*='accountContainer'].accountPrivacyNext a.L314,
-    section[class*='accountContainer'].accountPWnext a.L314{
-        display: block; padding: var(--sp20) 0; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px; border-style: solid; transition: all .3s ease-out; float: left;
-    }
-    section[class*='accountContainer'].accountPWnext a.L314:first-of-type{
-        color: var(--gs10); background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPWnext a.L314:last-of-type{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPWnext a.L314:first-of-type:hover,
-    section[class*='accountContainer'].accountPWnext a.L314:last-of-type:hover{
-        background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01);
     }
     section[class*='accountContainer'].accountPrivacy .formPackage form *{
         display: block;
@@ -6044,36 +5862,13 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     }
     section[class*='accountContainer'].accountPrivacy .formPackage input[type='submit'],
     section[class*='accountContainer'].accountPrivacy .formPackage input[type='reset']{
-        display: block; padding: var(--sp20) 0; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px; border-style: solid; transition: all .3s ease-out; float: left;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='submit']{
-        color: var(--gs10); background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='reset']{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='submit']:hover,
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='reset']:hover{
-        background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01);
+        padding: var(--sp20) 0; width: 49%;
     }
     section[class*='accountContainer'].accountPrivacyNext div{
         text-align: center; color: var(--gs09);
     }
     section[class*='accountContainer'].accountPrivacyNext span{
          max-width: 600px;
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314{
-        display: block; padding: var(--sp20) 0; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px; border-style: solid; transition: all .3s ease-out; float: left;
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:first-of-type{
-        color: var(--gs10); background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:last-of-type{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:first-of-type:hover,
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:last-of-type:hover{
-        background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01);
     }
     section[class*='accountContainer'].checkout .formPackage fieldset:last-of-type{
         margin-bottom: var(--sp40);
@@ -6276,11 +6071,11 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].checkoutNext p{
         max-width: 630px; margin: 0 auto; text-align: center; margin-bottom: var(--sp75);
     }
-    section[class*='accountContainer'].checkoutNext a:not(.historyBack){
+    section[class*='accountContainer'].checkoutNext a:not([class*='historyBack']){
         max-width: 600px; display: block; margin: 0 auto; background-color: var(--sc03); color: var(--gs10); transition: all .3s ease-out;
         padding: var(--sp20) 0; border-radius: 25px; text-align: center;
     }
-    section[class*='accountContainer'].checkoutNext a:not(.historyBack):hover{
+    section[class*='accountContainer'].checkoutNext a:not([class*='historyBack']):hover{
         background-color: var(--sc01); color: var(--gs02);
     }
     .subBusiness .formPackage form fieldset label:not(label[for='checkAgree']){
@@ -6428,7 +6223,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         max-width: 1100px; margin: 0 auto; text-align: center; display: block;
     }
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) #noRsvn p{
-        margin-bottom: var(--sp70); line-height: 28px;
+        margin-bottom: var(--sp70);
     }
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) #noRsvn a{
         padding: var(--sp20) 0; display: block; max-width: 550px; margin: 0 auto; color: var(--gs10); background-color: var(--sc03); border-radius: 25px; transition: all .3s ease-out;
@@ -8261,9 +8056,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     .diningSeasonFancy ul:first-of-type li div h4{
         margin-bottom: var(--sp35);
     }
-    .diningSeasonFancy ul:first-of-type li div p{
-        line-height: 28px;
-    }
     .diningSeasonFancy ul:first-of-type li:hover,
     .diningSeasonFancy ul:first-of-type li.active{
         box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
@@ -8406,7 +8198,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         margin-bottom: var(--sp70);
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div span{
-        margin-bottom: var(--sp70); background: url('../images/icon_wCheck.png') no-repeat left center / 14px; line-height: 28px; padding-left: 4%;
+        margin-bottom: var(--sp70); background: url('../images/icon_wCheck.png') no-repeat left center / 14px; padding-left: 4%;
     }
     div[class*='businessContainer'].tailoredEvents div:nth-of-type(2) div a{
         margin: 0 auto; max-width: 250px;
@@ -8771,9 +8563,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     }
     div[class*='detailContainer']:not(.detailContainer04){
         margin-bottom: var(--sp150);
-    }
-    div[class*='detailContainer'] .historyBack{
-        position: absolute; color: var(--gs02); padding: var(--sp25) 8px 25px 1.7%; background: url('../images/arrow_back.png') no-repeat right bottom / 70%;
     }
     div[class*='detailContainer'] h2{
         margin-bottom: var(--sp20); padding: 380px 0; text-align: center; background-repeat: no-repeat; background-position: center; background-size: cover;
@@ -9330,22 +9119,9 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     .businessSubscribeContainer{
         max-width: 1440px; margin: 0 auto var(--sp150); padding-top: 140px; position: relative;
     }
-    section[class*='accountContainer'] .historyBack{
-        position: absolute; color: var(--sc01); padding: var(--sp25) 8px 25px 6%; background: url('../images/arrow_back_blue.png') no-repeat center / 30px;
-    }
-    section[class*='accountContainer'] h2{
-        padding-top: var(--sp70); text-align: center; margin-bottom: var(--sp70); color: var(--gs10);
-    }
-    section[class*='accountContainer'] h2 span{
-        display: block; padding-top: var(--sp20); color: var(--gs07);
-    }
     section[class*='accountContainer'] div,
     section[class*='accountContainer'] .formPackage{
         margin: 0 auto; max-width: 600px;
-    }
-    section[class*='accountContainer'] input[type="submit"],
-    section[class*='accountContainer'] input[type="reset"]{
-        cursor: pointer;
     }
     section[class*='accountContainer']:not(.checkout) .formPackage form #personalInfo{
         margin-bottom: var(--sp30);
@@ -9398,7 +9174,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         padding-left: 2.7%;
     }
     section[class*='accountContainer'].signIn .formPackage form input{
-        padding: var(--sp20) 3%; width: 94%; max-width: 600px; border-radius: 3px;
+        padding: var(--sp20) 3%; width: 100%; max-width: 600px; border-radius: 3px; box-sizing: border-box;
     }
     section[class*='accountContainer'].signIn .formPackage form *{
         display: block;
@@ -9428,10 +9204,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         width: 3%; float: left; margin-bottom: var(--sp45);
     }
     section[class*='accountContainer'].signIn .formPackage form input[type="submit"]{
-        clear: both; border: none; background-color: rgba(228, 190, 182, 0.8); width: 100%; border-radius: 25px; transition: background-color .3s ease-out; margin-bottom: var(--sp60);
-    }
-    section[class*='accountContainer'].signIn .formPackage form input[type="submit"]:hover{
-        background-color: rgba(228, 190, 182, 1);
+        clear: both; border: none; width: 100%; margin-bottom: var(--sp60);
     }
     section[class*='accountContainer'].signIn .formPackage form div{
         text-align: center; max-width: 290px; margin: 0 auto; line-height: 16px;
@@ -9645,15 +9418,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     }
     section[class*='accountContainer'].signupmsg p,
     section[class*='accountContainer'].subBusinessMsg p{
-        max-width: 685px; margin: 0 auto var(--sp75); text-align: center; line-height: 28px;
-    }
-    section[class*='accountContainer'].signupmsg a:not(.historyBack),
-    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack){
-        display: block; background-color: var(--sc03); border: none; max-width: 600px; padding: var(--sp20) 0; transition: all .3s ease-out; margin-bottom: var(--sp50); margin: 0 auto; border-radius: 25px; text-align: center; color: var(--gs10);
-    }
-    section[class*='accountContainer'].signupmsg a:not(.historyBack):hover,
-    section[class*='accountContainer'].subBusinessMsg a:not(.historyBack):hover{
-        background-color: var(--sc01); color: var(--gs02);
+        max-width: 685px; margin: 0 auto var(--sp75); text-align: center;
     }
     section[class*='accountContainer'].forgotPw .formPackage form *{
         display: block;
@@ -9686,13 +9451,13 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         margin-bottom: var(--sp70);
     }
     section[class*='accountContainer'].forgotPwMsg p{
-        max-width: 775px; text-align: center; margin-bottom: var(--sp80); line-height: 28px;
+        max-width: 600px; text-align: center; margin-bottom: var(--sp80);
     }
-    section[class*='accountContainer'].forgotPwMsg a:not(.historyBack){
+    section[class*='accountContainer'].forgotPwMsg a:not([class*='historyBack']){
         display: block; background-color: var(--sc03); border: none; max-width: 600px; padding: var(--sp20) 0; transition: all .3s ease-out;
         margin-bottom: var(--sp50); margin: 0 auto; border-radius: 25px; text-align: center; color: var(--gs10);
     }
-    section[class*='accountContainer'].forgotPwMsg a:not(.historyBack):hover{
+    section[class*='accountContainer'].forgotPwMsg a:not([class*='historyBack']):hover{
         background-color: var(--sc01); color: var(--gs02);
     }
     section[class*='accountContainer'].subAccor .formPackage form *{
@@ -9701,6 +9466,9 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].subAccor .formPackage form label{
         margin-bottom: var(--sp15);
     }
+    section[class*='accountContainer'].subAccor .formPackage form label::after{
+        content: '*'; margin-left: 3px; color: var(--sc04);
+    }
     section[class*='accountContainer'].subAccor .formPackage form input{
         max-width: 600px; box-sizing: border-box;
     }
@@ -9708,19 +9476,15 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         margin-bottom: var(--sp50); border: 1px solid var(--gs05); padding: var(--sp20) 3%; border-radius: 3px; width: 100%;
     }
     section[class*='accountContainer'].subAccor .formPackage form input[type="submit"]{
-        display: block; background-color: var(--sc03); border: none; width: 100%; padding: var(--sp20) 0; transition: background-color .3s ease-out;
-        margin-bottom: var(--sp50); margin: 0 auto; cursor: pointer; text-align: center; color: var(--gs10);
-    }
-    section[class*='accountContainer'].subAccor .formPackage form input[type="submit"]:hover{
-        background-color: #ceaba4;
+        display: block; width: 100%; padding: var(--sp20) 3%;
     }
     section[class*='accountContainer'].subAccorNext div p{
-        max-width: 775px; text-align: center; margin-bottom: var(--sp80); line-height: 28px;
+        max-width: 600px; text-align: center; margin-bottom: var(--sp80);
     }
-    section[class*='accountContainer'].subAccorNext div a:not(.historyBack){
+    section[class*='accountContainer'].subAccorNext div a:not([class*='historyBack']){
         display: block; background-color: var(--sc03); border: none; padding: var(--sp20) 0; color: var(--gs10); transition: all .3s ease-out; margin-bottom: var(--sp50); margin: 0 auto; text-align: center;
     }
-    section[class*='accountContainer'].subAccorNext div a:not(.historyBack):hover{
+    section[class*='accountContainer'].subAccorNext div a:not([class*='historyBack']):hover{
         background-color: var(--sc01); color: var(--gs02);
     }
     section[class*='accountContainer'].accountPW .formPackage form *{
@@ -9756,22 +9520,12 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].accountPW .formPackage form div ul li{
         padding-left: 4%; line-height: 16px; background: url('../images/icon_check_circle_classic.png') no-repeat 1% center / 12px;
     }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='submit'],
-    section[class*='accountContainer'].accountPW .formPackage form input[type='reset']{
-        padding: var(--sp20) 0; float: left; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px; border-style: solid; transition: all .3s ease-out;
-    }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='submit']{
-        background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPW .formPackage form input[type='reset']{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
     section[class*='accountContainer'].accountPW .formPackage form input[type='submit']:hover,
     section[class*='accountContainer'].accountPW .formPackage form input[type='reset']:hover{
         background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01);
     }
-    section[class*='accountContainer'].accountPWnext{
-        max-width: 600px;
+    section[class*='accountContainer'].accountPWnext span.floatContainer{
+        display: block; max-width: 600px; margin: 0 auto;
     }
     section[class*='accountContainer'].accountPWnext div{
         text-align: center; color: var(--gs09); margin-bottom: var(--sp70);
@@ -9781,19 +9535,6 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     }
     section[class*='accountContainer'].accountPWnext a{
         line-height: 20px; box-sizing: border-box; text-align: center;
-    }
-    section[class*='accountContainer'].accountPWnext a.L314{
-        display: block; padding: var(--sp20) 0; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px; border-style: solid; transition: all .3s ease-out; float: left;
-    }
-    section[class*='accountContainer'].accountPWnext a.L314:first-of-type{
-        color: var(--gs10); background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPWnext a.L314:last-of-type{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPWnext a.L314:first-of-type:hover,
-    section[class*='accountContainer'].accountPWnext a.L314:last-of-type:hover{
-        background-color: var(--sc01); color: var(--gs02);
     }
     section[class*='accountContainer'].accountPrivacy .formPackage form *{
         display: block;
@@ -9877,36 +9618,13 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     }
     section[class*='accountContainer'].accountPrivacy .formPackage input[type='submit'],
     section[class*='accountContainer'].accountPrivacy .formPackage input[type='reset']{
-        display: block; padding: var(--sp20) 0; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px; border-style: solid; transition: all .3s ease-out; float: left;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='submit']{
-        color: var(--gs10); background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='reset']{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='submit']:hover,
-    section[class*='accountContainer'].accountPrivacy .formPackage input[type='reset']:hover{
-        background-color: var(--sc01); color: var(--gs02);
+        width: 49%;
     }
     section[class*='accountContainer'].accountPrivacyNext div{
-        text-align: center; color: var(--gs09);
+        text-align: center; color: var(--gs09); margin-bottom: var(--sp70);
     }
-    section[class*='accountContainer'].accountPrivacyNext span{
-        max-width: 600px;
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314{
-        display: block; padding: var(--sp20) 0; width: 49%; border-radius: 25px; color: var(--gs10); border-width: 1px; border-style: solid; transition: all .3s ease-out; float: left;
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:first-of-type{
-        color: var(--gs10); background-color: var(--sc03); border-color: var(--sc03);
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:last-of-type{
-        margin-left: 2%; background-color: var(--gs01); border-color: var(--sc01);
-    }
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:first-of-type:hover,
-    section[class*='accountContainer'].accountPrivacyNext span a.L314:last-of-type:hover{
-        background-color: var(--sc01); color: var(--gs02);
+    section[class*='accountContainer'].accountPrivacyNext span.floatContainer{
+        display: block; max-width: 600px; margin: 0 auto;
     }
     section[class*='accountContainer'].checkout .formPackage fieldset:last-of-type{
         margin-bottom: var(--sp40);
@@ -10109,10 +9827,10 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
     section[class*='accountContainer'].checkoutNext p{
         max-width: 630px; margin: 0 auto; text-align: center; margin-bottom: var(--sp75);
     }
-    section[class*='accountContainer'].checkoutNext a:not(.historyBack){
+    section[class*='accountContainer'].checkoutNext a:not([class*='historyBack']){
         max-width: 600px; display: block; margin: 0 auto; background-color: var(--sc03); color: var(--gs10); transition: all .3s ease-out; padding: var(--sp20) 0; border-radius: 25px; text-align: center;
     }
-    section[class*='accountContainer'].checkoutNext a:not(.historyBack):hover{
+    section[class*='accountContainer'].checkoutNext a:not([class*='historyBack']):hover{
         background-color: var(--sc01); color: var(--gs02);
     }
     .subBusiness .formPackage form fieldset label:not(label[for='checkAgree']){
@@ -10256,7 +9974,7 @@ div[class*='rsvnContainer'].myaccount>ul li div a,
         max-width: 1100px; margin: 0 auto; text-align: center; display: block;
     }
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) #noRsvn p{
-        margin-bottom: var(--sp70); line-height: 28px;
+        margin-bottom: var(--sp70);
     }
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) #noRsvn a{
         padding: var(--sp20) 0; display: block; max-width: 550px; margin: 0 auto; color: var(--gs10); background-color: var(--sc03); border-radius: 25px; transition: all .3s ease-out;

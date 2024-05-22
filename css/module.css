@@ -213,7 +213,7 @@
     [class$='55']{font-size: 25px; color: var(--gs01); font-weight: 100; line-height: 31px;}
     [class$='34']{font-size: 24px; line-height: 30px;}
     [class$='32']{font-size: 24px;}
-    [class$='22']{font-size: 16px;}
+    [class$='22']{font-size: 16px; line-height: 22px;}
     [class$='16']{font-size: 10px; line-height: 16px;}
     [class$='15']{font-size: 10px; line-height: 16px;}
     [class$='14']{font-size: 12px;}
@@ -236,6 +236,12 @@
     }
     .imgCenterTitle{
         background-repeat: no-repeat; background-position: center; background-size: cover; max-width: 767px; margin: 0 auto; width: 100%; min-height: 300px; text-align: center; padding: var(--sp130) 3%; box-sizing: border-box;
+    }
+    .accountTitle{
+        max-width: 600px; padding-top: var(--sp50); text-align: center; margin: 0 auto var(--sp30); color: var(--gs10);
+    }
+    .accountTitle span{
+        display: block; padding-top: var(--sp20); color: var(--gs07);
     }
     mark.lBottomLabel{
         position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; left: 0; bottom: 0;
@@ -302,11 +308,41 @@
         transform: scaleX(0.5);
     }
     .shadowBtn{
-        display: block; padding: var(--sp15) 0; width: 100%; transition: filter .3s ease-out; background-color: var(--sc03); color: var(--gs10); 
+        display: block; padding: var(--sp20) 3%; width: 100%; transition: filter .3s ease-out; background-color: var(--sc03); color: var(--gs10); 
         box-sizing: border-box; border: none; text-align: center; margin: 0 auto;
     }
     .shadowBtn:hover{
         filter: brightness(92%);
+    }
+    [class*='RoundBtn']{
+        display: block; width: 100%; max-width: 600px; padding: var(--sp20) 3%; transition: all .3s ease-out; margin: 0 auto; border-radius: 25px !important; text-align: center;
+        border-width: 1px; border-style: solid; border-color: transparent; box-sizing: border-box; font-size: 12px; font-weight: 300;
+    }
+    [class*='fRoundBtn']{
+        width: 100%;
+    }
+    [class*='hRoundBtn']{
+        width: 49%; float: left;
+    }
+    [class*='hRoundBtnb']{
+        margin-left: 2%;
+    }
+    .fRoundBtnp,
+    .hRoundBtnp{
+        background-color: var(--sc03); color: var(--gs10); border-color: var(--sc03) !important;
+    }
+    .fRoundBtnb,
+    .hRoundBtnb{
+        background-color: var(--gs01); color: var(--gs10); border-color: var(--sc01) !important;
+    }
+    [class*='RoundBtn']:hover{
+        background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01) !important;
+    }
+    [class*='historyBackBlue']{
+        position: absolute; color: var(--sc01); padding: var(--sp15) 5px; background: url('../images/arrow_back_blue.png') no-repeat 5% bottom / 30px;
+    }
+    [class*='historyBackWhite']{
+        position: absolute; color: var(--gs02); padding: var(--sp15) 10px; background: url('../images/arrow_back.png') no-repeat 8px bottom / 30px;
     }
     .bannerBox div{
         padding: var(--sp40) 5%; box-sizing: border-box;
@@ -543,7 +579,7 @@
     [class$='55']{font-size: 40px; color: var(--gs01); font-weight: 100; line-height: 50px;}
     [class$='34']{font-size: 28px; line-height: 34px;}
     [class$='32']{font-size: 26px;}
-    [class$='22']{font-size: 16px;}
+    [class$='22']{font-size: 16px; line-height: 22px;}
     [class$='16']{font-size: 16px; line-height: 21px;}
     [class$='15']{font-size: 15px; line-height: 21px;}
     [class$='14']{font-size: 14px;}
@@ -561,6 +597,12 @@
     }
     .imgCenterTitle{
         background-repeat: no-repeat; background-position: center; background-size: cover; max-width: 1279px; margin: 0 auto; width: 100%; text-align: center; padding: var(--sp200) 3%; box-sizing: border-box;
+    }
+    .accountTitle{
+        max-width: 600px; padding-top: var(--sp70); text-align: center; margin: 0 auto var(--sp55); color: var(--gs10);
+    }
+    .accountTitle span{
+        display: block; padding-top: var(--sp20); color: var(--gs07);
     }
     mark.lBottomLabel{
         position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; left: 0; bottom: 0;
@@ -627,11 +669,41 @@
         transform: scaleX(0.5);
     }
     .shadowBtn{
-        display: block; padding: var(--sp15) 0; width: 180px; transition: filter .3s ease-out; background-color: var(--sc03); color: var(--gs10); 
+        display: block; padding: var(--sp20) 0; width: 180px; transition: filter .3s ease-out; background-color: var(--sc03); color: var(--gs10); 
         box-sizing: border-box; border: none; text-align: center; margin: 0 auto;
     }
     .shadowBtn:hover{
         filter: brightness(92%);
+    }
+    [class*='RoundBtn']{
+        display: block; width: 100%; max-width: 600px; padding: var(--sp20) 0; transition: all .3s ease-out; margin: 0 auto; border-radius: 25px !important; text-align: center;
+        border-width: 1px; border-style: solid; border-color: transparent; box-sizing: border-box; font-size: 14px; font-weight: 300;
+    }
+    [class*='fRoundBtn']{
+        width: 100%;
+    }
+    [class*='hRoundBtn']{
+        width: 49%; float: left;
+    }
+    [class*='hRoundBtnb']{
+        margin-left: 2%;
+    }
+    .fRoundBtnp,
+    .hRoundBtnp{
+        background-color: var(--sc03); color: var(--gs10); border-color: var(--sc03) !important;
+    }
+    .fRoundBtnb,
+    .hRoundBtnb{
+        background-color: var(--gs01); color: var(--gs10); border-color: var(--sc01) !important;
+    }
+    [class*='RoundBtn']:hover{
+        background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01) !important;
+    }
+    [class*='historyBackBlue']{
+        position: absolute; color: var(--sc01); padding: var(--sp25) 8px 25px 5%; background: url('../images/arrow_back_blue.png') no-repeat 5% center / 30px;
+    }
+    [class*='historyBackWhite']{
+        position: absolute; color: var(--gs02); padding: var(--sp05) 10px var(--sp20) 2%; top: 82px; background: url('../images/arrow_back.png') no-repeat 15px bottom / 64%;
     }
     .bannerBox div{
         padding: var(--sp60) 5%; box-sizing: border-box;
@@ -861,7 +933,7 @@
     [class$='55']{font-size: 55px; color: var(--gs01); font-weight: 100; line-height: 65px;}
     [class$='34']{font-size: 34px; line-height: 40px;}
     [class$='32']{font-size: 32px;}
-    [class$='22']{font-size: 22px;}
+    [class$='22']{font-size: 22px; line-height: 28px;}
     [class$='16']{font-size: 16px; line-height: 21px;}
     [class$='15']{font-size: 15px; line-height: 21px;}
     [class$='14']{font-size: 14px;}
@@ -879,6 +951,12 @@
     }
     .imgCenterTitle{
         background-repeat: no-repeat; background-position: center; background-size: cover; margin: 0 auto; width: 100%; text-align: center; padding: 370px 3%; box-sizing: border-box;
+    }
+    .accountTitle{
+        max-width: 600px; padding-top: var(--sp70); text-align: center; margin: 0 auto var(--sp70); color: var(--gs10);
+    }
+    .accountTitle span{
+        display: block; padding-top: var(--sp20); color: var(--gs07);
     }
     mark.lBottomLabel{
         position: absolute; width: max-content; max-width: 100%; padding: 12px 15px; left: 0; bottom: 0;
@@ -951,9 +1029,36 @@
     .shadowBtn:hover{
         filter: brightness(92%);
     }
-    /* .hRoundBtn{
-
-    } */
+    [class*='RoundBtn']{
+        display: block; width: 100%; max-width: 600px; padding: var(--sp20) 3%; transition: all .3s ease-out; margin: 0 auto; border-radius: 25px !important; text-align: center;
+        border-width: 1px; border-style: solid; border-color: transparent; box-sizing: border-box; font-size: 14px; font-weight: 300;
+    }
+    [class*='fRoundBtn']{
+        width: 100%;
+    }
+    [class*='hRoundBtn']{
+        width: 49%; float: left;
+    }
+    [class*='hRoundBtnb']{
+        margin-left: 2%;
+    }
+    .fRoundBtnp,
+    .hRoundBtnp{
+        background-color: var(--sc03); color: var(--gs10); border-color: var(--sc03) !important;
+    }
+    .fRoundBtnb,
+    .hRoundBtnb{
+        background-color: var(--gs01); color: var(--gs10); border-color: var(--sc01) !important;
+    }
+    [class*='RoundBtn']:hover{
+        background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01) !important;
+    }
+    [class*='historyBackBlue']{
+        position: absolute; color: var(--sc01); padding: var(--sp25) 8px 25px 6%; background: url('../images/arrow_back_blue.png') no-repeat center / 30px;
+    }
+    [class*='historyBackWhite']{
+        position: absolute; color: var(--gs02); padding: var(--sp25) 8px 25px 1.7%; background: url('../images/arrow_back.png') no-repeat right bottom / 70%;
+    }
     .bannerBox div{
         padding: var(--sp60) 3.125%; box-sizing: border-box;
     }

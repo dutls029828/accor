@@ -151,7 +151,6 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     header>div:first-of-type div ul li,
     header>div#fnbPanel>div:first-of-type div ul li a.mapBtn,
     header>div#fnbPanel>div#reservation form fieldset legend,
-    footer>div:first-of-type div:first-of-type,
     footer>div:first-of-type div h2,
     footer>div:first-of-type div:last-of-type,
     footer>div:last-of-type>b,
@@ -376,6 +375,10 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     }
     footer>div:first-of-type div:first-of-type form input:first-of-type{
         padding: var(--sp15) 10% var(--sp15) var(--sp15); margin-bottom: var(--sp45);
+    }
+    footer>div:first-of-type div:first-of-type form input:last-of-type,
+    footer>div:first-of-type div:last-of-type mark+a{
+        padding: var(--sp15) 3%;
     }
     footer>div:first-of-type div:last-of-type a{
         text-decoration: none;
@@ -861,6 +864,10 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     footer>div:first-of-type div:first-of-type form input:first-of-type{
         padding: var(--sp15) 10% var(--sp15) var(--sp15); width: 335px;
     }
+    footer>div:first-of-type div:first-of-type form input:last-of-type,
+    footer>div:first-of-type div:last-of-type mark+a{
+        padding: var(--sp15) 3%;
+    }
     footer>div:first-of-type div:first-of-type form input[type='submit']{
         border: none;
     }
@@ -1294,6 +1301,10 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     }
     footer>div:first-of-type div:first-of-type form input:first-of-type{
         padding: var(--sp15) 10% var(--sp15) var(--sp15); width: 335px;
+    }
+    footer>div:first-of-type div:first-of-type form input:last-of-type,
+    footer>div:first-of-type div:last-of-type mark+a{
+        padding: var(--sp15) 3%;
     }
     footer>div:first-of-type div:last-of-type span{
         float: left;

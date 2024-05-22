@@ -48,7 +48,7 @@ $(function(){
     mainScrollAct();
     mapEvent();
     mainPopup();
-    backBtn(".historyBack");
+    backBtn("[class*='historyBack']");
 
 });
 function mainPopup(){
