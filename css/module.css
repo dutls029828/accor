@@ -73,13 +73,23 @@
 [class*='s05c']{color: var(--sc05);}
 
 [class*='Btn']{cursor: pointer;}
-[class*='disc'] ::before{content: '•'; width: 1px; height: 1px;}
-[class*='dash'] ::before{content: '-'; width: 1px; height: 1px;}
+[class$='disc'] ::before{content: '•'; width: 1px; height: 1px;}
+[class$='dash'] ::before{content: '-'; width: 1px; height: 1px;}
 [class*='requiredSign']:after{content: '*'; margin-left: 3px; color: var(--sc04);}
 
 [class*='textUnder']{color: var(--sc01); text-decoration: underline;}
 [class*='textUnderOffset']{text-underline-offset: 3px;}
 
+mark[class*='BottomLabel']{
+    position: absolute; width: max-content; max-width: 100%; padding: 12px var(--sp15); bottom: 0; line-height: 16px;
+    background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
+}
+mark.lBottomLabel{
+    left: 0;
+}
+mark.rBottomLabel{
+    right: 0;
+}
 .tickerSlider li:not(:first-of-type){
     margin-left: 100px;
 }
@@ -248,14 +258,6 @@
     }
     .accountTitle span{
         display: block; padding-top: var(--sp20); color: var(--gs07);
-    }
-    mark.lBottomLabel{
-        position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; left: 0; bottom: 0;
-        background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
-    }
-    mark.rBottomLabel{
-        position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; right: 0; bottom: 0;
-        background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
     }
     .aLineBtn{
         position: relative; display: block; padding: var(--sp15) 3.125%; border-width: 1px; border-style: solid; color: var(--gs10);
@@ -634,14 +636,6 @@
     .accountTitle span{
         display: block; padding-top: var(--sp20); color: var(--gs07);
     }
-    mark.lBottomLabel{
-        position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; left: 0; bottom: 0;
-        background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
-    }
-    mark.rBottomLabel{
-        position: absolute; width: max-content; max-width: 100%; padding: 12px 1.38%; right: 0; bottom: 0;
-        background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
-    }
     .aLineBtn{
         position: relative; display: block; max-width: 185px; padding: var(--sp15) 3.125%; border-width: 1px; border-style: solid; color: var(--gs10);
         background-repeat: no-repeat; background-position: 90% center; background-size: 14px; transition-duration: .3s; font-size: 15px; font-weight: 300; line-height: 21px;
@@ -1011,14 +1005,6 @@
     }
     .accountTitle span{
         display: block; padding-top: var(--sp20); color: var(--gs07);
-    }
-    mark.lBottomLabel{
-        position: absolute; width: max-content; max-width: 100%; padding: 12px 15px; left: 0; bottom: 0;
-        background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
-    }
-    mark.rBottomLabel{
-        position: absolute; width: max-content; max-width: 100%; padding: 12px 15px; right: 0; bottom: 0;
-        background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
     }
     .aLineBtn{
         position: relative; display: block; max-width: 185px; padding: var(--sp15) 3.125%; border-width: 1px; border-style: solid; color: var(--gs10);

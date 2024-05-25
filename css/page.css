@@ -180,18 +180,8 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp15); background: var(--sc03); text-indent: -9999px; height: 45px; width: 45px; box-sizing: border-box;
         display: block; top: auto; margin-top: 0; left: 12.5%; bottom: 380px;
     }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1),
     .indexContainer .propBox .propSlider li div a:nth-of-type(2){
-        display: block;
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1){
-        margin-bottom: var(--sp20); padding: var(--sp15) 6%; background-color: var(--gs04); color: var(--gs10); text-align: center; display: block; min-width: 180px;
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1):hover{
-        background-color: var(--sc01); color: var(--gs02);
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(2){
-        letter-spacing: 1px; max-width: 160px; margin-left: auto; text-align: right;
+        display: block; letter-spacing: 1px; width: fit-content; margin-left: auto; text-align: right;
     }
     div[class*='accomContainer'] .headlineContent,
     div[class*='accomContainer'] .headlineImage{
@@ -3496,21 +3486,8 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp15); background: var(--sc03); text-indent: -9999px; height: 45px; width: 45px; box-sizing: border-box; display: block;
         top: auto; margin-top: 0; left: 12.5%; bottom: 380px;
     }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1),
     .indexContainer .propBox .propSlider li div a:nth-of-type(2){
-        display: block;
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1){
-        width: 27%;
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1){
-        margin-bottom: var(--sp20); padding: var(--sp15) 6%; background-color: var(--gs04); color: var(--gs10); text-align: center;
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1):hover{
-        background-color: var(--sc01); color: var(--gs02);
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(2){
-        letter-spacing: 1px;
+        display: block; letter-spacing: 1px; width: fit-content;
     }
     div[class*='accomContainer'] .headlineContent,
     div[class*='accomContainer'] .headlineImage{
@@ -6884,21 +6861,8 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     .indexContainer>.propBox .bx-wrapper .bx-controls-direction a{
         padding: var(--sp15); background: var(--sc03); text-indent: -9999px; height: 45px; width: 45px; box-sizing: border-box; display: block; top: auto; margin-top: 0; left: 12.5%; bottom: 380px;
     }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1),
     .indexContainer .propBox .propSlider li div a:nth-of-type(2){
-        display: block;
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1){
-        width: 27%;
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1){
-        margin-bottom: var(--sp20); padding: var(--sp15) 6%; background-color: var(--gs04); color: var(--gs10); text-align: center;
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(1):hover{
-        background-color: var(--sc01); color: var(--gs02);
-    }
-    .indexContainer .propBox .propSlider li div a:nth-of-type(2){
-        letter-spacing: 1px;
+        display: block; width: fit-content; letter-spacing: 1px;
     }
     .indexContainer .loyalty div{
         left: 12.5%;
