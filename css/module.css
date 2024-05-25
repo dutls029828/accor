@@ -73,15 +73,17 @@
 [class*='s05c']{color: var(--sc05);}
 
 [class*='Btn']{cursor: pointer;}
+[class*='positionRe']{position: relative;}
+
 [class$='disc'] ::before{content: '•'; width: 1px; height: 1px;}
 [class$='dash'] ::before{content: '-'; width: 1px; height: 1px;}
-[class*='requiredSign']:after{content: '*'; margin-left: 3px; color: var(--sc04);}
+[class*='requiredSign']::after{content: '*'; margin-left: 3px; color: var(--sc04);}
 
 [class*='textUnder']{color: var(--sc01); text-decoration: underline;}
 [class*='textUnderOffset']{text-underline-offset: 3px;}
 
 mark[class*='BottomLabel']{
-    position: absolute; width: max-content; max-width: 100%; padding: 12px var(--sp15); bottom: 0; line-height: 16px;
+    position: absolute; width: max-content; max-width: 100%; padding: var(--sp10) var(--sp15); bottom: 0; line-height: 16px;
     background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
 }
 mark.lBottomLabel{
@@ -287,11 +289,11 @@ mark.rBottomLabel{
     .uLineBtn{
         position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 10px; font-weight: 500; width: fit-content; word-break: keep-all; cursor: pointer;
     }
-    .uLineBtn:before{
+    .uLineBtn::before{
         content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
     }
-    .pt3 .uLineBtn:before, .pt5 .uLineBtn::before,
-    .pt6 .uLineBtn::before, .pt7 .uLineBtn::before{
+    .pt3 .uLineBtn::before, .pt4 .uLineBtn::before,
+    .pt5 .uLineBtn::before, .pt6 .uLineBtn::before, .pt7 .uLineBtn::before{
         background-color: var(--gs02);
     }
     .sc3 .uLineBtn::before{
@@ -340,10 +342,16 @@ mark.rBottomLabel{
     [class*='RoundBtn']:hover{
         background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01) !important;
     }
-    .colorBtn{
-        display: block; margin-bottom: var(--sp20); padding: var(--sp15) 6%; background-color: var(--gs04); color: var(--gs10); text-align: center; transition-duration: .3s;
+    [class*='colorBtn']{
+        display: block; margin-bottom: var(--sp20); padding: var(--sp15) 6%; color: var(--gs10); text-align: center; transition-duration: .3s;
     }
-    .colorBtn:hover{
+    .colorBtng{
+        background-color: var(--gs04);
+    }
+    .colorBtnp{
+        background-color: var(--sc03);
+    }
+    [class*='colorBtn']:hover{
         background-color: var(--sc01); color: var(--gs01);
     }
     [class*='historyBackBlue']{
@@ -549,14 +557,13 @@ mark.rBottomLabel{
         display: flex; flex-flow: column nowrap; justify-content: space-between; align-content: space-between; align-items: stretch; list-style: none;
     }
     .globalCardslotBox ul li{
-        color: var(--gs01); box-sizing: border-box; background-repeat: no-repeat; background-position: center; background-size: cover;
+        color: var(--gs01); box-sizing: border-box;
+    }
+    .globalCardslotBox ul li[class*='ImgDesc']{
+        position: relative; padding: 180px 0; background-repeat: no-repeat; background-position: center; background-size: cover;
     }
     .globalCardslotBox ul li:not(:last-of-type){
         margin-bottom: var(--sp10);
-    }
-    .globalCardslotBox ul .fImgDesc,
-    .globalCardslotBox ul .hImgDesc{
-        padding: 180px 0;
     }
     .globalCardslotBox ul li.hTextDesc,
     .globalCardslotBox ul li.fTextDesc{
@@ -568,19 +575,25 @@ mark.rBottomLabel{
     .globalCardslotBox ul li dl dt{
         margin-bottom: var(--sp25);
     }
-    .accordionBox strong{
+    .accordionBox .noCategory{
+        position: relative; display: block; padding-bottom: var(--sp55); text-align: center;  color: var(--sc01);
+    }
+    .accordionBox .noCategory:after{
+        content: ''; width: 100%; height: 3px; position: absolute; left: 0; bottom: -2px; background-color: var(--sc01);
+    }
+    .accordionBox li strong{
         position: relative; display: block; padding: var(--sp35) 10% var(--sp35) 3.5%; border-bottom: 1px solid var(--gs04); 
         font-size: 16px; line-height: 22px; font-weight: 400; cursor: pointer; color: var(--gs10);
     }
-    .accordionBox strong:hover,
-    .accordionBox strong.active{
+    .accordionBox li strong:hover,
+    .accordionBox li strong.active{
         color: var(--sc01);
     }
-    .accordionBox strong::after{
+    .accordionBox li strong::after{
         position: absolute; content: ''; width: 16px; height: 10px; right: 3.5%; top: 43px; transform: rotate(0deg); transition: transform .3s ease-out;
         background: url('../images/arrow_expand_big.png') no-repeat center / 100%;
     }
-    .accordionBox strong.active::after{
+    .accordionBox li strong.active::after{
         transform: rotate(180deg);
     }
     .termsPopup{
@@ -664,11 +677,11 @@ mark.rBottomLabel{
     .uLineBtn{
         position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 13px; font-weight: 500; width: fit-content; word-break: keep-all; cursor: pointer;
     }
-    .uLineBtn:before{
+    .uLineBtn::before{
         content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
     }
-    .pt3 .uLineBtn:before, .pt5 .uLineBtn::before,
-    .pt6 .uLineBtn::before, .pt7 .uLineBtn::before{
+    .pt3 .uLineBtn::before, .pt4 .uLineBtn::before,
+    .pt5 .uLineBtn::before, .pt6 .uLineBtn::before, .pt7 .uLineBtn::before{
         background-color: var(--gs02);
     }
     .sc3 .uLineBtn::before{
@@ -717,10 +730,16 @@ mark.rBottomLabel{
     [class*='RoundBtn']:hover{
         background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01) !important;
     }
-    .colorBtn{
-        display: block; width: 30%; min-width: 180px; max-width: 201px; margin-bottom: var(--sp20); padding: var(--sp15) 6%; background-color: var(--gs04); color: var(--gs10); text-align: center; transition-duration: .3s;
+    [class*='colorBtn']{
+        display: block; width: 30%; min-width: 180px; max-width: 201px; margin-bottom: var(--sp20); padding: var(--sp15) 6%; color: var(--gs10); text-align: center; transition-duration: .3s;
     }
-    .colorBtn:hover{
+    .colorBtng{
+        background-color: var(--gs04);
+    }
+    .colorBtnp{
+        background-color: var(--sc03);
+    }
+    [class*='colorBtn']:hover{
         background-color: var(--sc01); color: var(--gs01);
     }
     [class*='historyBackBlue']{
@@ -915,7 +934,10 @@ mark.rBottomLabel{
         display: flex; flex-flow: row wrap; justify-content: space-between; align-content: space-between; align-items: stretch; list-style: none;
     }
     .globalCardslotBox ul li{
-        color: var(--gs01); box-sizing: border-box; background-repeat: no-repeat; background-position: center; background-size: cover;
+        color: var(--gs01); box-sizing: border-box;
+    }
+    .globalCardslotBox ul li[class*='ImgDesc']{
+        position: relative; padding: 180px 0; background-repeat: no-repeat; background-position: center; background-size: cover;
     }
     .globalCardslotBox ul .hTextDesc,
     .globalCardslotBox ul .hImgDesc{
@@ -924,9 +946,6 @@ mark.rBottomLabel{
     .globalCardslotBox ul .fTextDesc,
     .globalCardslotBox ul .fImgDesc{
         width: 100%; flex: 2 auto;
-    }
-    .globalCardslotBox ul .fImgDesc{
-        padding: 180px 0;
     }
     .globalCardslotBox ul li.hTextDesc,
     .globalCardslotBox ul li.fTextDesc{
@@ -938,19 +957,25 @@ mark.rBottomLabel{
     .globalCardslotBox ul li dl dt{
         margin-bottom: var(--sp25);
     }
-    .accordionBox strong{
+    .accordionBox .noCategory{
+        position: relative; display: block; padding-bottom: var(--sp55); text-align: center;  color: var(--sc01);
+    }
+    .accordionBox .noCategory:after{
+        content: ''; width: 100%; height: 3px; position: absolute; left: 0; bottom: -2px; background-color: var(--sc01);
+    }
+    .accordionBox li strong{
         position: relative; display: block; padding: var(--sp40) 9% var(--sp40) 3.5%; border-bottom: 1px solid var(--gs04); 
         font-size: 22px; line-height: 28px; font-weight: 400; cursor: pointer; color: var(--gs10);
     }
-    .accordionBox strong:hover,
-    .accordionBox strong.active{
+    .accordionBox li strong:hover,
+    .accordionBox li strong.active{
         color: var(--sc01);
     }
-    .accordionBox strong::after{
+    .accordionBox li strong::after{
         position: absolute; content: ''; width: 24px; height: 15px; right: 3.5%; top: 43px; transform: rotate(0deg); transition: transform .3s ease-out;
         background: url('../images/arrow_expand_big.png') no-repeat center / 100%;
     }
-    .accordionBox strong.active::after{
+    .accordionBox li strong.active::after{
         transform: rotate(180deg);
     }
     .termsPopup{
@@ -1037,8 +1062,8 @@ mark.rBottomLabel{
     .uLineBtn::before{
         content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
     }
-    .pt3 .uLineBtn::before, .pt5 .uLineBtn::before,
-    .pt6 .uLineBtn::before, .pt7 .uLineBtn::before{
+    .pt3 .uLineBtn::before, .pt4 .uLineBtn::before,
+    .pt5 .uLineBtn::before, .pt6 .uLineBtn::before, .pt7 .uLineBtn::before{
         background-color: var(--gs02);
     }
     .sc3 .uLineBtn::before{
@@ -1087,10 +1112,16 @@ mark.rBottomLabel{
     [class*='RoundBtn']:hover{
         background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01) !important;
     }
-    .colorBtn{
-        display: block; min-width: 180px; width: fit-content; margin-bottom: var(--sp20); padding: var(--sp15) 6%; background-color: var(--gs04); color: var(--gs10); text-align: center; transition-duration: .3s;
+    [class*='colorBtn']{
+        display: block; min-width: 180px; width: fit-content; margin-bottom: var(--sp20); padding: var(--sp15) 6%; color: var(--gs10); text-align: center; transition-duration: .3s;
     }
-    .colorBtn:hover{
+    .colorBtng{
+        background-color: var(--gs04);
+    }
+    .colorBtnp{
+        background-color: var(--sc03);
+    }
+    [class*='colorBtn']:hover{
         background-color: var(--sc01); color: var(--gs02);
     }
     [class*='historyBackBlue']{
@@ -1285,7 +1316,10 @@ mark.rBottomLabel{
         display: flex; flex-flow: row wrap; justify-content: space-between; align-content: space-between; align-items: stretch; list-style: none;
     }
     .globalCardslotBox ul li{
-        color: var(--gs01); box-sizing: border-box; background-repeat: no-repeat; background-position: center; background-size: cover;
+        color: var(--gs01); box-sizing: border-box;
+    }
+    .globalCardslotBox ul li[class*='ImgDesc']{
+        position: relative; background-repeat: no-repeat; background-position: center; background-size: cover;
     }
     .globalCardslotBox ul .hTextDesc,
     .globalCardslotBox ul .hImgDesc{
@@ -1310,19 +1344,25 @@ mark.rBottomLabel{
     .globalCardslotBox ul li:nth-of-type(3){
         margin-bottom: var(--sp05);
     }
-    .accordionBox strong{
+    .accordionBox .noCategory{
+        position: relative; display: block; padding-bottom: var(--sp55); text-align: center;  color: var(--sc01);
+    }
+    .accordionBox .noCategory:after{
+        content: ''; width: 100%; height: 3px; position: absolute; left: 0; bottom: -2px; background-color: var(--sc01);
+    }
+    .accordionBox li strong{
         position: relative; display: block; padding: var(--sp40) 9% var(--sp40) 3.5%; border-bottom: 1px solid var(--gs04); 
         font-size: 22px; line-height: 28px; font-weight: 400; cursor: pointer; color: var(--gs10);
     }
-    .accordionBox strong:hover,
-    .accordionBox strong.active{
+    .accordionBox li strong:hover,
+    .accordionBox li strong.active{
         color: var(--sc01);
     }
-    .accordionBox strong::after{
+    .accordionBox li strong::after{
         position: absolute; content: ''; width: 24px; height: 15px; right: 3.5%; top: 43px; transform: rotate(0deg); transition: transform .3s ease-out;
         background: url('../images/arrow_expand_big.png') no-repeat center / 100%;
     }
-    .accordionBox strong.active::after{
+    .accordionBox li strong.active::after{
         transform: rotate(180deg);
     }
     .termsPopup{
