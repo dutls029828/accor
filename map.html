@@ -190,7 +190,7 @@
                 <form action="checkout.html">
                     <div>
                         <label for="hotelCountry" class="M511">Country</label>
-                        <span class="mapSelect">
+                        <span class="mapSelect positionRe">
                             <select id="hotelCountry" class="alx L313">
                                 <option>Select Country</option>
                                 <option>Republic of Korea</option>
@@ -199,7 +199,7 @@
                     </div>
                     <div>
                         <label for="hotelRegion" class="M511">Region</label>
-                        <span class="mapSelect">
+                        <span class="mapSelect positionRe">
                             <select  id="hotelRegion" class="alx L313" disabled>
                                 <option>Select Region</option>
                                 <option>Seoul</option>
@@ -208,7 +208,7 @@
                     </div>
                     <div>
                         <label for="hotelCity" class="M511">City</label>
-                        <span class="mapSelect">
+                        <span class="mapSelect positionRe">
                              <select id="hotelCity" class="alx L313" disabled>
                                 <option>Select City</option>
                                 <option>Yeongdeungpo-gu</option>
@@ -217,8 +217,8 @@
                     </div>
                 </form>
             </div>
-            <div id="map">
-                <div class="miniHotelBox">
+            <div id="map" class="positionRe">
+                <div class="miniHotelBox positionAb">
                     <input type="button" value="Back" class="M5 iosFix 15">
                     <h3 class="M515">South Korea, Fairmont Ambassador Seoul</h3>
                     <figure>
@@ -236,10 +236,10 @@
                     <gmp-advanced-marker position="48.83858108520508,2.3784594535827637" title="My location"></gmp-advanced-marker>
                 </gmp-map>
             </div>
-            <div class="mapPopup" id="mapPopup">
-                <div class="gs1">
+            <div class="mapPopup positionAb" id="mapPopup">
+                <div class="gs1 positionRe">
                     <h3 class="L322">EXPLORE OUR HOTELS &amp; RESORTS</h3>
-                    <input type="button" value="close" class="btn_close">
+                    <input type="button" value="close" class="positionAb btn_close">
                     <form>
                         <div>
                             <ul>
@@ -264,39 +264,39 @@
                                 <li>
                                     <div class="roomSelect">
                                         <label for="roomCount" class="M511">Rooms &amp; Guests</label>
-                                        <button type="button" class="alxL311">1 Room, 1 Adult, 0 Children</button>
-                                        <div class="compSelect">
+                                        <button type="button" class="alx positionRe L311">1 Room, 1 Adult, 0 Children</button>
+                                        <div class="compSelect positionAb">
                                             <ol>
                                                 <li>
                                                     <label for="roomCount" class="L310">Room(s)</label>
-                                                    <div class="countComponent">
+                                                    <div class="countComponent positionRe">
                                                         <input type="number" class="alxL311" id="roomCount">
-                                                        <span class="L310">Room(s)</span>
+                                                        <span class="positionAb L310">Room(s)</span>
                                                         <div>
-                                                            <input type="button" class="alxL311" value="minus">
-                                                            <input type="button" class="alxL311" value="plus">
+                                                            <input type="button" class="alx positionAb L311" value="minus">
+                                                            <input type="button" class="alx positionAb L311" value="plus">
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <label for="adultsCount" class="L310">Adults (Maximum : 6 Guests/Room)</label>
-                                                    <div class="countComponent">
+                                                    <div class="countComponent positionRe">
                                                         <input type="number" class="alxL311" id="adultsCount">
-                                                        <span class="L310">Adult Per Room</span>
+                                                        <span class="positionAb L310">Adult Per Room</span>
                                                         <div>
-                                                            <input type="button" class="alxL311" value="minus">
-                                                            <input type="button" class="alxL311" value="plus">
+                                                            <input type="button" class="alx positionAb L311" value="minus">
+                                                            <input type="button" class="alx positionAb L311" value="plus">
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <label for="childCount" class="L310">Children (Maximum : 6 Guests/Room)</label>
-                                                    <div class="countComponent">
+                                                    <div class="countComponent positionRe">
                                                         <input type="number" class="alxL311" id="childCount">
-                                                        <span class="L310">Children Per Room</span>
+                                                        <span class="positionAb L310">Children Per Room</span>
                                                         <div>
-                                                            <input type="button" class="alxL311" value="minus">
-                                                            <input type="button" class="alxL311" value="plus">
+                                                            <input type="button" class="alx positionAb L311" value="minus">
+                                                            <input type="button" class="alx positionAb L311" value="plus">
                                                         </div>
                                                     </div>
                                                 </li>
@@ -306,7 +306,7 @@
                                 </li>
                                 <li>
                                     <label for="specialCode" class="M511">Special Rates or Promotion Code</label>
-                                    <span class="specialComponent">
+                                    <span class="specialComponent positionRe">
                                         <select id="specialCode" class="alxL311">
                                             <option>None</option>
                                             <option>AAA / CAA Member</option>

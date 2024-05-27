@@ -45,117 +45,38 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         max-width: 767px; padding-top: 65px;
     }
     .helpCenterFaq,
+    .mapContainer .mapContent,
     .allBrandContainer .allBrandArrange,
+    .allsafeContainer>div:last-of-type>div,
     div[class*='loyaltyContainer'].benefits .statusLevelBox,
     section[class*='diningDetailContainer'] .imgHoverList ul,
     div[class*='rsvnContainer'],
-    section[class*='helpFaqContainer'] div:nth-of-type(2),
-    .allsafeContainer>div:last-of-type>div,
-    .mapContainer .mapContent{
+    section[class*='helpFaqContainer'] div:nth-of-type(2){
         max-width: 767px; margin: 0 auto;
     }
-    .offersHeadline,
-    .propBox .propSlider,
-    .propBox .propSlider li div:first-of-type,
-    .detailContainer04>div ul li,
     .allBrandContainer>.allBrandTab li,
-    .bannerBox .adcbBg,
-    .diningSeasonFancy,
-    .diningSeasonFancy>div[id^='fancy'] div,
-    .allsafeContainer h2+div div,
-    .bookarideContainer h2+div div,
-    .mapContainer .mapContent .hotelInform form div span,
-    .mapContainer .mapContent #map,
-    .mapContainer .mapPopup .gs1,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .roomSelect button,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(4) span,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) button+.compSelect ol li .countComponent,
     .mainPopup.active .mainPopupContent,
-    div[class*='accomContainer'] .headlineContent,
-    div[class*='accomContainer'] .headlineImage,
-    div[class*='accomContainer'] .headlineContent div:first-of-type,
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc>div,
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc>div:first-of-type,
-    div[class*='accomContainer'] .loyalty,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:first-of-type,
-    div[class*='loyaltyContainer'].benefits .statusLevelBox,
-    div[class*='loyaltyContainer'].benefits .accordionBox ul:first-of-type li,
-    div[class*='offersContainer'].year .horiCardslotBox,
-    div[class*='offersContainer'].year>div:nth-of-type(2)>div .businessCardBg,
-    div[class*='offersContainer'].year>div:nth-of-type(2) .vertiCardslotBox .tImgDesc div,
-    div[class*='diningContainer'].service div:nth-of-type(2) .tileSlider li a,
-    div[class*='diningContainer'].service .bx-wrapper .bx-controls-direction,
-    section[class*='diningContainer'] .tileBox li,
-    section[class*='diningDetailContainer'] .imgHoverList ul li,
-    div[class*='businessContainer'].tailoredEvents div:first-of-type,
-    div[class*='businessContainer'].meetingPlanning>div:first-of-type,
-    div[class*='businessContainer'].meetingPlanning div:first-of-type .headlineSlider li,
-    div[class*='businessDetailContainer'] .businessImgText div,
-    div[class*='businessDetailContainer'] .privateEventBox .miniBoxSlider,
-    div[class*='businessDetailContainer'] .privateEventBox .miniBoxSlider li,
     div[class*='detailContainer'],
     div[class*='detailContainer'] .termsPopup.active .gs3,
-    div[class*='brandSubContainer'],
-    div[class*='brandSubContainer'] .allBrandCarousel .bx-wrapper .bx-pager.bx-default-pager a,
-    section[class*='accountContainer'],
-    section[class*='accountContainer'] .selectComponent,
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'],
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone'],
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'],
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5),
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:first-of-type,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li div[class$='Element'],
-    div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li,
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox>ul li{
+    div[class*='diningContainer'].service .bx-wrapper .bx-controls-direction,
+    div[class*='brandSubContainer'] .allBrandCarousel .bx-wrapper .bx-pager.bx-default-pager a{
         position: relative;
     }
-    .indexContainer ul.headlineSlider li figure figcaption,
-    .indexContainer ul.headlineSlider li figure figcaption dl dd:first-of-type,
-    .offersHeadline figcaption,
-    .offersHeadline figcaption dl dd:first-of-type,
     .allBrandContainer>.allBrandTab li::after,
-    .bannerBox .adcbBg img,
-    .diningSeasonFancy>div[id^='fancy'] div input,
-    .detailContainer04>div ul li h3,
-    .detailContainer04>div ul li p,
     .allsafeContainer h2+div div.active p,
-    .bookarideContainer h2+div div h3,
-    .bookarideContainer h2+div div ul,
     .mapContainer .mapContent .hotelInform form div span::after,
-    .mapContainer .mapContent #map .miniHotelBox,
-    .mapContainer .mapPopup,
-    .mapContainer .mapPopup .gs1 input[value="close"],
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .roomSelect button::after,
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(4) span::after,
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .roomSelect button::after,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .roomSelect.active button+.compSelect,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .compSelect ol li .countComponent span,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button'],
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) span.selectComponent::after,
-    .mainPopup.active .mainPopupContent .popupClose,
     div[class*='loyaltyContainer'].benefits .accordionBox ul:first-of-type li::after,
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) div,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3) div,
-    div[class*='offersContainer'].year>div:nth-of-type(2)>div .businessCardBg a,
     div[class*='diningContainer'].service div:nth-of-type(2) .bx-wrapper .bx-viewport .tileSlider li a mark,
-    section[class*='diningContainer'] .tileBox li a mark,
-    section[class*='diningDetailContainer'] .imgHoverList ul li strong,
-    section[class*='diningDetailContainer'] .imgHoverList ul li span,
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage,
     div[class*='businessContainer'].meetingPlanning div:first-of-type>.bx-wrapper .bx-pager,
-    div[class*='businessContainer'].meetingPlanning>div:first-of-type .countBox,
+    div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li::after,
+    section[class*='diningContainer'] .tileBox li a mark,
     section[class*='accountContainer'] .selectComponent::after,
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input+label,
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone'] input+label,
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'] label,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) legend,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) legend+input[type='button'],
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:first-of-type::after,
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard.active,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li div[class$='Element'] label,
-    div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li::after,
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox>ul li::after{
         position: absolute;
     }
@@ -210,7 +131,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     .indexContainer ul.headlineSlider li figure figcaption dl dd:first-of-type,
     .offersHeadline figcaption dl dd:first-of-type{
-        color: var(--gs01); width: 100%; top: -20%; font-size: 1.3vh !important;
+        color: var(--gs01); width: 100%; top: -22%; font-size: 1.3vh !important; line-height: 14px;
     }
     .indexContainer ul.headlineSlider li figure figcaption dl dd:last-of-type,
     .offersHeadline figcaption dl dd:last-of-type{
@@ -423,22 +344,22 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp15) var(--sp25) var(--sp35); box-sizing: border-box;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .bx-wrapper .bx-viewport .statusLevelCarousel li{
-        padding: var(--sp20); box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.1); box-sizing: border-box; min-height: 47vh;
+        padding: var(--sp20); box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.1); box-sizing: border-box; min-height: 440px;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure img{
         max-width: 410px; width: 100%;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl{
-        padding: 3vh 4% 0; box-sizing: border-box;
+        padding: var(--sp20) 4%; box-sizing: border-box;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dt{
         color: var(--sc01);
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dt{
-        margin-bottom: var(--sp30);
+        margin-bottom: var(--sp20);
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dd:not(:last-of-type){
-        margin-bottom: 3.5vh;
+        margin-bottom: var(--sp25);
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dd{
         padding-left: 5%; color: var(--gs11);
@@ -1297,7 +1218,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='detailContainer']>ul:first-of-type li{
         padding: var(--sp30) 3.5%; display: block; box-sizing: border-box; width: 100%;
     }
-    div[class*='detailContainer']>ul:first-of-type li:first-of-type{
+    div[class*='detailContainer']>ul:first-of-type li:not(:last-of-type){
         margin-bottom: var(--sp20);
     }
     div[class*='detailContainer']>ul:first-of-type .sc3{
@@ -1385,16 +1306,16 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp40);
     }
     .detailContainer04>div ul li h3{
-        opacity: 1; top: 45%; width: 100%; text-align: center; transition: all .1s ease-in-out; font-size: 16px;
+        opacity: 1; top: 45%; width: 100%; text-align: center; transition: all .1s ease-in-out;
     }
     .detailContainer04>div ul li p{
-        opacity: 0; width: 80%; text-align: center; left: 10%; font-size: 3vw;
+        opacity: 0; width: 80%; text-align: center; left: 10%; line-height: 3vh; font-size: 3vw;
     }
     .detailContainer04>div ul li p{
-        top: 40%;
+        top: 38%;
     }
     .detailContainer04>div ul li:nth-of-type(2) p{
-        top: 30%;
+        top: 25%;
     }
     .detailContainer04>div ul li:hover h3{
         opacity: 0; height: 0;
@@ -1767,7 +1688,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         transition: all .2s linear;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo input{
-        background-color: var(--gs02); width: 100%; margin-bottom: 0;
+        background-color: var(--gs02); margin-bottom: 0;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc']{
         width: 49%; float: left; margin-bottom: var(--sp10);
@@ -1783,7 +1704,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         font-size: 12px;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div input{
-        font-size: 12px; color: var(--gs10); padding-top: 37px; max-height: 57px;
+        font-size: 12px; color: var(--gs10); padding-top: 37px; max-height: 57px; box-sizing: border-box;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input+label{
         left: 5%;
@@ -1799,7 +1720,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding-left: 5%;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone']{
-        clear: both; margin-top: var(--sp10);
+        clear: both;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone'] input+label{
         left: 2.7%;
@@ -2050,20 +1971,11 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='accountContainer'].accountPrivacy .formPackage #personalInfo{
         margin: var(--sp20) 0 var(--sp30) 0;
     }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead']{
+    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class*='ComponentRead']:last-of-type{
         margin-bottom: var(--sp10);
     }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc']{
-        width: 49%; float: left;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputPhone']{
-        clear: both;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc']:nth-of-type(2){
-        margin-left: 2%;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'] label{
-        top: 10px; color: var(--gs08);
+    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class*='ComponentRead'] label{
+        top: 15px; color: var(--gs08);
     }
     section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc'] label{
         left: 5%;
@@ -2071,11 +1983,8 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputPhone'] label{
         left: 3%;
     }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'] input{
-        max-height: 57px; color: var(--gs10); background-color: var(--gs02); padding: var(--sp35) 0 var(--sp20);
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc'] input{
-        padding-left: 5%;
+    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class*='ComponentRead'] input{
+        max-height: 57px; color: var(--gs10); background-color: var(--gs02); box-sizing: border-box;
     }
     section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputPhone'] input{
         padding-left: 3%;
@@ -2265,13 +2174,13 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp10) 2%; border: 0; cursor: pointer;
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:last-of-type input[value='REGISTER']{
-        background-color: rgba(213, 213, 213, 0.4); border-radius: 15px; color: var(--gs05); transition: color .15s ease-out;
+        background-color: rgba(213, 213, 213, 0.4); border-radius: 15px; color: var(--gs05); transition: color .15s ease-out; width: 20%;
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:last-of-type input[value='REGISTER']:hover{
         color: var(--gs10);
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:last-of-type input[value='RESET']{
-        margin-left: 8%; background-color: transparent; color: var(--gs10);
+        margin-left: 5%; background-color: transparent; color: var(--gs10); width: 10%;
     }
     section[class*='accountContainer'].checkoutNext p{
         max-width: 600px; margin: 0 auto; text-align: center; margin-bottom: var(--sp40);
@@ -2365,7 +2274,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li{
         float: left; width: 33.33%; text-align: center; color: var(--gs04); cursor: pointer; display: block; box-sizing: border-box; 
-        padding-bottom: var(--sp30); transition: all .2s ease-out; font-size: 1.5vh;
+        padding-bottom: var(--sp30); transition: all .3s ease-out; font-size: 1.5vh;
     }
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li:hover,
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li.active{
@@ -3094,7 +3003,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         display: block; float: right;
     }
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(2) div input{
-        width: 45.5%;
+        width: 47%;
     }
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(2) label div span{
         padding: 0 3px;
@@ -3173,13 +3082,12 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         display: none;
     }
     .mainPopup.active{
-        display: flex; flex-flow: row wrap; align-content: center; position: fixed; left: 0; top: 0; background-color: rgba(0, 0, 0, 0.5);
+        display: flex; flex-flow: row wrap; align-content: center; position: fixed; left: 0; top: 0; background-color: rgba(0, 0, 0, 0.75);
         width: 100%; height: 100%; z-index: 9998; overflow-y: scroll; box-sizing: border-box;
     }
     .mainPopup.active .mainPopupContent{
         background: url('../images/pattern_03.jpg') no-repeat center / cover; margin: 0 auto;
-        width: 85%; border-radius: 20px; padding: 40px 3%; box-sizing: border-box;
-        text-align: center;
+        width: 85%; border-radius: 20px; padding: 40px 3%; box-sizing: border-box; text-align: center;
     }
     .mainPopup.active .mainPopupContent h2{
         color: var(--gs03); margin-bottom: 4vw; font-size: 2.4vw;
@@ -3207,11 +3115,17 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     .allBrandContainer .allBrandArrange li.active{
         border-radius: 20px; display: block; width: 100%; margin: 0 auto;
     }
+    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(2) div input{
+        width: 45.5%;
+    }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .bx-wrapper .bx-viewport .statusLevelCarousel li{
-        min-height: 510px !important; padding: var(--sp20) var(--sp20) var(--sp30);
+        min-height: 500px; padding: var(--sp20) var(--sp20) var(--sp30); box-sizing: border-box;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .bx-wrapper .bx-viewport{
         padding: var(--sp15) var(--sp25) var(--sp25); box-sizing: border-box;
+    }
+    div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dd:not(:last-of-type){
+        margin-bottom: var(--sp20);
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:last-of-type{
         display: none;
@@ -3290,19 +3204,23 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     .bookarideContainer h2+div div ul li:not(:last-of-type){
         margin-bottom: 3.5vh;
     }
-    /* .mainPopup.active .mainPopupContent{
-        background: url('../images/pattern_03.jpg') no-repeat center / cover; position: fixed; top: 30%; left: 50%;
-        transform: translateX(-50%); width: 260px; height: 260px; border-radius: 20px; padding: 40px 2%; box-sizing: border-box; z-index: 9999; box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5); text-align: center;
-    }
     .mainPopup.active .mainPopupContent h2{
-        margin-bottom: var(--sp20);
+        margin-bottom: var(--sp25); font-size: 16px;
+    }
+    .mainPopup.active .mainPopupContent p{
+        font-size: 10px;
     }
     .mainPopup.active .mainPopupContent p:first-of-type{
-        margin-bottom: var(--sp15);
+        margin-bottom: var(--sp10); line-height: 22px;
     }
     .mainPopup.active .mainPopupContent p:last-of-type{
-        margin-bottom: var(--sp20);
-    } */
+        margin-bottom: var(--sp25); line-height: 16px; 
+    }
+}
+@media screen and (max-width: 516px){
+    div[class*='loyaltyContainer'].benefits .statusLevelBox .bx-wrapper .bx-viewport .statusLevelCarousel li{
+        min-height: 405px !important;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
     .indexContainer,
@@ -3328,116 +3246,36 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         max-width: 1279px; padding-top: 69px;
     }
     .helpCenterFaq,
+    .mapContainer .mapContent,
     .allBrandContainer .allBrandArrange,
+    .allsafeContainer>div:last-of-type>div,
     div[class*='loyaltyContainer'].benefits .statusLevelBox,
     div[class*='detailContainer'],
-    section[class*='diningDetailContainer'] .imgHoverList ul,
     div[class*='rsvnContainer'],
-    section[class*='helpFaqContainer'] div:nth-of-type(2),
-    .allsafeContainer>div:last-of-type>div,
-    .mapContainer .mapContent{
+    section[class*='diningDetailContainer'] .imgHoverList ul,
+    section[class*='helpFaqContainer'] div:nth-of-type(2){
         max-width: 1279px; margin: 0 auto;
     }
-    .propBox .propSlider,
-    .propBox .propSlider li div:first-of-type,
-    .allBrandContainer>.allBrandTab li,
-    .bannerBox .adcbBg,
-    .offersHeadline,
-    .diningSeasonFancy,
-    .diningSeasonFancy>div[id^='fancy'] div,
-    .detailContainer04>div ul li,
-    .allsafeContainer h2+div div,
-    .bookarideContainer h2+div div,
-    .mapContainer .mapContent .hotelInform form div span,
     .mapContainer .mapContent,
-    .mapContainer .mapContent #map,
-    .mapContainer .mapPopup .gs1,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .roomSelect button,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(4) span,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) button+.compSelect ol li .countComponent,
-    .mainPopup.active .mainPopupContent,
-    div[class*='accomContainer'] .headlineContent,
-    div[class*='accomContainer'] .headlineImage,
-    div[class*='accomContainer'] .headlineContent div:first-of-type,
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc>div,
-    div[class*='accomContainer'] .vertiCardslotBox .tImgDesc>div:first-of-type,
-    div[class*='accomContainer'] .loyalty,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:first-of-type,
-    div[class*='loyaltyContainer'].benefits .statusLevelBox,
-    div[class*='loyaltyContainer'].benefits .accordionBox ul:first-of-type li,
-    div[class*='offersContainer'].year .horiCardslotBox,
-    div[class*='offersContainer'].year>div:nth-of-type(2)>div .businessCardBg,
-    div[class*='offersContainer'].year>div:nth-of-type(2) .vertiCardslotBox .tImgDesc div,
-    div[class*='diningContainer'].service div:nth-of-type(2) .tileSlider li a,
-    div[class*='diningContainer'].service .bx-wrapper .bx-controls-direction,
-    section[class*='diningContainer'] .tileBox li,
-    div[class*='businessContainer'].tailoredEvents div:first-of-type,
-    div[class*='businessContainer'].meetingPlanning>div:first-of-type,
-    div[class*='businessContainer'].meetingPlanning>div:first-of-type .headlineSlider li,
-    div[class*='businessDetailContainer'] .businessImgText div,
-    div[class*='businessDetailContainer'] .privateEventBox .miniBoxSlider,
-    div[class*='businessDetailContainer'] .privateEventBox .miniBoxSlider li,
+    .allBrandContainer>.allBrandTab li,
     div[class*='detailContainer'] .termsPopup.active .gs3,
-    div[class*='brandSubContainer'],
-    div[class*='brandSubContainer'] .allBrandCarousel .bx-wrapper .bx-pager.bx-default-pager a,
-    section[class*='diningDetailContainer'] .imgHoverList ul li,
-    section[class*='accountContainer'],
-    section[class*='accountContainer'] .selectComponent,
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'],
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone'],
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'],
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5),
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:first-of-type,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li div[class$='Element'],
-    div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li,
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox>ul li{
+    div[class*='diningContainer'].service .bx-wrapper .bx-controls-direction,
+    div[class*='brandSubContainer'] .allBrandCarousel .bx-wrapper .bx-pager.bx-default-pager a{
         position: relative;
     }
-    .indexContainer ul.headlineSlider li figure figcaption,
-    .indexContainer ul.headlineSlider li figure figcaption dl dd:first-of-type,
-    .offersHeadline figcaption,
-    .offersHeadline figcaption dl dd:first-of-type,
     .allBrandContainer>.allBrandTab li::after,
-    .bannerBox .adcbBg img,
-    .diningSeasonFancy>div[id^='fancy'] div input,
-    .detailContainer04>div ul li h3,
-    .detailContainer04>div ul li p,
     .allsafeContainer h2+div div.active p,
-    .bookarideContainer h2+div div h3,
-    .bookarideContainer h2+div div ul,
     .mapContainer .mapContent .hotelInform form div span::after,
-    .mapContainer .mapContent #map .miniHotelBox,
-    .mapContainer .mapPopup,
-    .mapContainer .mapPopup .gs1 input[value="close"],
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .roomSelect button::after,
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(4) span::after,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .roomSelect.active button+.compSelect,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .compSelect ol li .countComponent span,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button'],
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) span.selectComponent::after,
-    .mainPopup.active .mainPopupContent .popupClose,
     div[class*='loyaltyContainer'].benefits .accordionBox ul:first-of-type li::after,
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) div,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3) div,
-    div[class*='offersContainer'].year>div:nth-of-type(2)>div .businessCardBg a,
     div[class*='diningContainer'].service div:nth-of-type(2) .bx-wrapper .bx-viewport .tileSlider li a mark,
     section[class*='diningContainer'] .tileBox li a mark,
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage,
     div[class*='businessContainer'].meetingPlanning>div:first-of-type>.bx-wrapper .bx-pager,
-    div[class*='businessContainer'].meetingPlanning>div:first-of-type .countBox,
-    section[class*='diningDetailContainer'] .imgHoverList ul li strong,
-    section[class*='diningDetailContainer'] .imgHoverList ul li span,
     section[class*='accountContainer'] .selectComponent::after,
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input+label,
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone'] input+label,
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'] label,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) legend,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) legend+input[type='button'],
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:first-of-type::after,
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard.active,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li div[class$='Element'] label,
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li::after,
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox>ul li::after{
         position: absolute;
@@ -3734,23 +3572,22 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp15) var(--sp25) var(--sp35); box-sizing: border-box; height: 700px;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .bx-wrapper .bx-viewport .statusLevelCarousel li{
-        padding: var(--sp20); box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.1); box-sizing: border-box; min-height: 530px;
+        padding: var(--sp20); box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.1); box-sizing: border-box; height: 520px;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure img{
         max-width: 410px; width: 100%;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl{
-        padding: 4.5vh 4% 0; box-sizing: border-box;
+        padding: var(--sp20) 4%; box-sizing: border-box;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dt{
-        color: var(--sc01);
-    }
-    div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dt,
-    div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dd:not(:last-of-type){
-        margin-bottom: 4.5vh;
+        color: var(--sc01); margin-bottom: var(--sp25);
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dd{
         padding-left: 5%; color: var(--gs11);
+    }
+    div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dd:not(:last-of-type){
+        margin-bottom: var(--sp30);
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox span{
         display: block; text-align: center; padding-top: var(--sp15); color: var(--gs07);
@@ -3959,8 +3796,8 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         background-image: url('../images/cardContent_47.png');
     }
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3){
-        background-image: url('../images/cardContent_48.png'); background-repeat: no-repeat; background-position: center; background-size: cover;
-        color: var(--gs02); text-align: center; margin: var(--sp10) 0; min-height: 360px; display: flex; justify-content: center; align-items: center;
+        background-image: url('../images/cardContent_48.png'); color: var(--gs02); text-align: center; margin: var(--sp10) 0; min-height: 360px; 
+        display: flex; justify-content: center; align-items: center;
     }
     div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(5){
         background-image: url('../images/cardContent_49.png');
@@ -4689,7 +4526,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='detailContainer']>ul:first-of-type li{
         padding: var(--sp50) 3.5%; display: block; box-sizing: border-box; width: 100%;
     }
-    div[class*='detailContainer']>ul:first-of-type li:first-of-type{
+    div[class*='detailContainer']>ul:first-of-type li:not(:last-of-type){
         margin-bottom: var(--sp20);
     }
     div[class*='detailContainer']>ul:first-of-type .sc3{
@@ -4784,28 +4621,28 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp40);
     }
     .detailContainer04>div ul li h3{
-        opacity: 1; top: 46%; width: 100%; text-align: center; transition: all .1s ease-in-out;
+        opacity: 1; top: 45%; width: 100%; text-align: center; transition: all .1s ease-in-out; font-size: 2.5vw;
     }
     .detailContainer04>div ul li p{
-        opacity: 0; width: 80%; text-align: center; left: 10%; line-height: 40px; font-size: 1.25vw;
+        opacity: 0; width: 80%; text-align: center; left: 10%; line-height: 2vw; font-size: 1.25vw;
     }
     .detailContainer04>div ul li:nth-of-type(1):hover p{
-        top: 40%;
+        top: 45%;
     }
     .detailContainer04>div ul li:nth-of-type(2):hover p{
-        top: 30%;
+        top: 39%;
     }
     .detailContainer04>div ul li:nth-of-type(3):hover p{
-        top: 40%;
+        top: 48%;
     }
     .detailContainer04>div ul li:nth-of-type(4):hover p{
-        top: 40%;
+        top: 44%;
     }
     .detailContainer04>div ul li:nth-of-type(5):hover p{
-        top: 40%;
+        top: 46%;
     }
     .detailContainer04>div ul li:nth-of-type(6):hover p{
-        top: 40%;
+        top: 43%;
     }
     .detailContainer04>div ul li:hover h3{
         opacity: 0; height: 0;
@@ -5196,7 +5033,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         font-size: 14px;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div input{
-        font-size: 12px; color: var(--gs10); padding-top: 37px; max-height: 57px;
+        font-size: 12px; color: var(--gs10); padding-top: 40px; max-height: 57px; box-sizing: border-box;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input+label{
         left: 5%;
@@ -5207,6 +5044,9 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='accountContainer'] .formPackage form #personalInfo div input:focus:invalid+label,
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input:invalid+label{
         left: 5%; top: 22px;
+    }
+    section[class*='accountContainer'] .formPackage form #personalInfo div input:focus:invalid+label{
+        top: 20px;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input:invalid{
         padding-left: 5%;
@@ -5462,20 +5302,11 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='accountContainer'].accountPrivacy .formPackage #personalInfo{
         margin: var(--sp20) 0 var(--sp30) 0;
     }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead']{
+    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class*='ComponentRead']{
         margin-bottom: var(--sp10);
     }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc']{
-        width: 49%; float: left;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputPhone']{
-        clear: both;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc']:nth-of-type(2){
-        margin-left: 2%;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'] label{
-        top: 10px; color: var(--gs08);
+    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class*='ComponentRead'] label{
+        top: 15px; color: var(--gs08);
     }
     section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc'] label{
         left: 5%;
@@ -5483,11 +5314,8 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputPhone'] label{
         left: 3%;
     }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'] input{
-        max-height: 57px; color: var(--gs10); background-color: var(--gs02); padding: var(--sp35) 0 var(--sp20);
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc'] input{
-        padding-left: 5%;
+    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class*='ComponentRead'] input{
+        max-height: 57px; color: var(--gs10); background-color: var(--gs02);
     }
     section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputPhone'] input{
         padding-left: 3%;
@@ -5679,13 +5507,13 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp10) 2%; border: 0; cursor: pointer;
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:last-of-type input[value='REGISTER']{
-        background-color: rgba(213, 213, 213, 0.4); border-radius: 15px; color: var(--gs05); transition: color .15s ease-out;
+        background-color: rgba(213, 213, 213, 0.4); border-radius: 15px; color: var(--gs05); transition: color .15s ease-out; width: 20%;
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:last-of-type input[value='REGISTER']:hover{
         color: var(--gs10);
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:last-of-type input[value='RESET']{
-        margin-left: 8%; background-color: transparent; color: var(--gs10);
+        margin-left: 5%; background-color: transparent; color: var(--gs10); width: 10%;
     }
     section[class*='accountContainer'].checkout .formPackage form>input[type='submit']{
         border: none; padding: var(--sp20) 3%; width: 100%; border-radius: 25px; background-color: var(--sc03); color: var(--gs10); transition: all .3s ease-out;
@@ -5799,7 +5627,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp90) 0; text-align: center;
     }
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li{
-        float: left; width: 33.33%; text-align: center; color: var(--gs04); cursor: pointer; display: block; box-sizing: border-box; padding-bottom: var(--sp45); transition: all .2s ease-out;
+        float: left; width: 33.33%; text-align: center; color: var(--gs04); cursor: pointer; display: block; box-sizing: border-box; padding-bottom: var(--sp45); transition: all .3s ease-out;
     }
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li:hover,
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li.active{
@@ -6594,6 +6422,9 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(4) span select{
         appearance: none; border: none; width: 100%; background-color: transparent;
     }
+    .mapContainer .mapPopup .gs1 a{
+        width: 100%; margin-top: var(--sp50);
+    }
     .mainPopup{
         display: none;
     }
@@ -6652,6 +6483,9 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='accomContainer'].studio .vertiCardslotBox div{
         max-width: 940px; margin: 0 auto;
     }
+    div[class*='accomContainer'].villas .vertiCardslotBox .tImgDesc dl{
+        min-height: 365px;
+    }
     div[class*='accomContainer'].hotelresort .vertiCardslotBox .tImgDesc dl,
     div[class*='accomContainer'].aparthotels .vertiCardslotBox .tImgDesc dl{
         min-height: 400px;
@@ -6670,9 +6504,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     div[class*='businessDetailContainer']>div:first-child div p{
         max-width: 540px;
-    }
-    div[class*='loyaltyContainer'].benefits .statusLevelBox .bx-wrapper .bx-viewport .statusLevelCarousel li{
-        min-height: 64vh;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 949px){
@@ -6731,119 +6562,38 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='termsContainer']{
         max-width: 1920px; padding-top: 140px;
     }
-    .propBox .propSlider,
-    .propBox .propSlider li div:first-of-type,
+    .bannerBox .adcbBg,
     .indexContainer .brandSlider,
     .allBrandContainer>ul:first-of-type li,
-    .bannerBox .adcbBg,
-    .offersHeadline,
-    .diningSeasonFancy,
-    .diningSeasonFancy>div[id^='fancy'] div,
-    .detailContainer04>div ul li,
     .businessSubscribeContainer,
-    .allsafeContainer h2+div div,
-    .bookarideContainer h2+div div,
     .mapContainer .mapContent,
-    .mapContainer .mapContent .hotelInform form div span,
-    .mapContainer .mapContent #map,
-    .mapContainer .mapPopup .gs1,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .roomSelect button,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(4) span,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) button+.compSelect ol li .countComponent,
     .mainPopup.active .mainPopupContent,
-    div[class*='accomContainer'] .headlineContent,
-    div[class*='accomContainer'] .headlineImage,
-    div[class*='accomContainer'] .headlineContent div:first-of-type,
-    div[class*='accomContainer'].privatehome .vertiCardslotBox .tImgDesc,
-    div[class*='accomContainer'].bungalow .vertiCardslotBox .tImgDesc,
-    div[class*='accomContainer'].roomsuite .vertiCardslotBox .tImgDesc,
-    div[class*='accomContainer'].studio .vertiCardslotBox .tImgDesc,
-    div[class*='accomContainer'] .loyalty,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent,
-    div[class*='loyaltyContainer'].discoverProgram .headlineContent div:first-of-type,
-    div[class*='loyaltyContainer'].benefits .statusLevelBox,
-    div[class*='loyaltyContainer'].benefits .accordionBox ul:first-of-type li,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3),
-    div[class*='offersContainer'].year .horiCardslotBox,
-    div[class*='offersContainer'].year>div:nth-of-type(2)>div .businessCardBg,
-    div[class*='offersContainer'].year>div:nth-of-type(2) .vertiCardslotBox .tImgDesc div,
-    div[class*='diningContainer'].service div:nth-of-type(2) .tileSlider li a,
-    div[class*='diningContainer'].service .bx-wrapper .bx-controls-direction,
-    section[class*='diningContainer'] .tileBox li,
-    div[class*='businessContainer'].tailoredEvents div:first-of-type,
-    div[class*='businessContainer'].meetingPlanning>div:first-of-type,
-    div[class*='businessContainer'].meetingPlanning>div:first-of-type .headlineSlider li,
-    div[class*='businessDetailContainer'] .businessImgText div,
-    div[class*='businessDetailContainer'] .privateEventBox .miniBoxSlider,
-    div[class*='businessDetailContainer'] .privateEventBox .miniBoxSlider li,
     div[class*='detailContainer'],
     div[class*='detailContainer'] .termsPopup.active .gs3,
-    div[class*='brandSubContainer'],
-    div[class*='brandSubContainer'] .allBrandCarousel .bx-wrapper .bx-pager.bx-default-pager a,
-    section[class*='diningDetailContainer'] .imgHoverList ul li,
-    section[class*='accountContainer'],
-    section[class*='accountContainer'] .selectComponent,
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'],
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone'],
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'],
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5),
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:first-of-type,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li div[class$='Element'],
-    div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li,
-    section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox>ul li{
+    div[class*='diningContainer'].service .bx-wrapper .bx-controls-direction,
+    div[class*='brandSubContainer'] .allBrandCarousel .bx-wrapper .bx-pager.bx-default-pager a{
         position: relative;
     }
-    .indexContainer ul.headlineSlider li figure figcaption,
-    .indexContainer ul.headlineSlider li figure figcaption dl dd:first-of-type,
     .indexContainer .propBox .propSlider li div:nth-of-type(2),
     .indexContainer .brandSlider li:not(:first-of-type),
-    .offersHeadline figcaption,
-    .offersHeadline figcaption dl dd:first-of-type,
     .allBrandContainer>ul:first-of-type li::after,
-    .bannerBox .adcbBg img,
-    .diningSeasonFancy>div[id^='fancy'] div input,
-    .detailContainer04>div ul li h3,
-    .detailContainer04>div ul li p,
     .allsafeContainer h2+div div:hover p,
-    .bookarideContainer h2+div div h3,
-    .bookarideContainer h2+div div ul,
     .mapContainer .mapContent .hotelInform,
     .mapContainer .mapContent .hotelInform form div span::after,
-    .mapContainer .mapContent #map .miniHotelBox,
-    .mapContainer .mapPopup,
-    .mapContainer .mapPopup .gs1 input[value="close"],
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .roomSelect button::after,
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(4) span::after,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .roomSelect.active button+.compSelect,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .compSelect ol li .countComponent span,
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) .compSelect ol li .countComponent div input[type='button'],
-    .mainPopup.active .mainPopupContent .popupClose,
     .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(3) span.selectComponent::after,
     div[class*='accomContainer'] .headlineContent div:last-of-type,
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type,
     div[class*='loyaltyContainer'].benefits .statusLevelBox span,
     div[class*='loyaltyContainer'].benefits .accordionBox ul:first-of-type li::after,
-    div[class*='offersContainer'].member .globalCardslotBox ul li:nth-of-type(3) div,
-    div[class*='offersContainer'].latest .globalCardslotBox ul li:nth-of-type(3) div,
-    div[class*='offersContainer'].year>div:nth-of-type(2)>div .businessCardBg a,
-    div[class*='diningContainer'].service div:nth-of-type(2) .bx-wrapper .bx-viewport .tileSlider li a:hover mark,
-    section[class*='diningContainer'] .tileBox li a:hover mark,
-    div[class*='businessContainer'].tailoredEvents div:first-of-type .tabPage,
     div[class*='businessContainer'].meetingPlanning>div:first-of-type .bx-wrapper .bx-pager,
-    div[class*='businessContainer'].meetingPlanning>div:first-of-type .countBox,
-    section[class*='diningDetailContainer'] .imgHoverList ul li strong,
-    section[class*='diningDetailContainer'] .imgHoverList ul li span,
+    div[class*='diningContainer'].service div:nth-of-type(2) .bx-wrapper .bx-viewport .tileSlider li a:hover mark,
+    div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li::after,
+    section[class*='diningContainer'] .tileBox li a:hover mark,
     section[class*='accountContainer'] .selectComponent::after,
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input+label,
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone'] input+label,
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'] label,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) legend,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) legend+input[type='button'],
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard ol li:first-of-type::after,
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard.active,
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li div[class$='Element'] label,
-    div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li::after,
     section[class*='helpFaqContainer'] div:nth-of-type(2) .accordionBox>ul li::after{
         position: absolute;
     }
@@ -7078,16 +6828,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='accomContainer'].villas .vertiCardslotBox .tImgDesc img{
         margin-bottom: var(--sp15);
     }
-    div[class*='accomContainer'].privatehome .vertiCardslotBox .tImgDesc mark{
-        bottom: 320px;
-    }
-    div[class*='accomContainer'].roomsuite .vertiCardslotBox .tImgDesc mark{
-        bottom: 325px;
-    }
-    div[class*='accomContainer'].studio .vertiCardslotBox .tImgDesc mark,
-    div[class*='accomContainer'].villas .vertiCardslotBox .tImgDesc mark{
-        bottom: 365px;
-    }
     div[class*='accomContainer'].privatehome .vertiCardslotBox .tImgDesc dl{
         min-height: 305px;
     }
@@ -7205,20 +6945,22 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp15) var(--sp25) var(--sp35); box-sizing: border-box;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .bx-wrapper .bx-viewport .statusLevelCarousel li{
-        padding: var(--sp20); box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.1); box-sizing: border-box; min-height: 67vh;
+        padding: var(--sp20); box-shadow: 0 5px 15px 3px rgba(0, 0, 0, 0.1); box-sizing: border-box; height: 590px;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure img{
         max-width: 410px; width: 100%;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl{
-        padding: 4.5vh 4% 0; box-sizing: border-box;
+        padding: var(--sp30) 4%; box-sizing: border-box;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dt{
         color: var(--sc01);
     }
-    div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dt,
+    div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dt{
+        margin-bottom: var(--sp30);
+    }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dd:not(:last-of-type){
-        margin-bottom: 4.5vh;
+        margin-bottom: var(--sp35);
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .statusLevelCarousel li figure figcaption dl dd{
         padding-left: 5%; color: var(--gs11);
@@ -7558,7 +7300,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         display: none;
     }
     div[class*='diningContainer'].service div:nth-of-type(2) .bx-wrapper .bx-viewport .tileSlider li a:hover mark{
-        top: 45%; text-align: center; width: 100%; color: var(--gs02); background-color: transparent; font-style: normal; font-size: 34px; font-weight: inherit;
+        display: block; top: 45%; text-align: center; width: 100%; color: var(--gs02); background-color: transparent; font-style: normal; font-size: 34px; font-weight: inherit;
     }
     div[class*='diningContainer'].service .bx-wrapper .bx-controls-direction{
         width: 65%; margin: 0 auto;
@@ -8696,12 +8438,13 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         transition: all .2s linear;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo input{
-        background-color: var(--gs02); width: 100%; margin-bottom: 0;
+        background-color: var(--gs02); margin-bottom: 0;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc']{
         width: 49%; float: left; margin-bottom: var(--sp10);
     }
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc']:nth-of-type(2){
+    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc']:nth-of-type(2),
+    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc']:nth-of-type(2){
         margin-left: 2%;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div input:focus:invalid+label,
@@ -8712,7 +8455,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         font-size: 14px;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div input{
-        font-size: 12px; color: var(--gs10); padding-top: 37px; max-height: 57px;
+        font-size: 12px; color: var(--gs10); padding-top: 40px; max-height: 57px; box-sizing: border-box;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input+label{
         left: 5%;
@@ -8724,7 +8467,8 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input:invalid+label{
         left: 5%; top: 22px;
     }
-    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input:invalid{
+    section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputAcc'] input:invalid,
+    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc'] label{
         padding-left: 5%;
     }
     section[class*='accountContainer'] .formPackage form #personalInfo div[class^='inputPhone']{
@@ -9015,35 +8759,17 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='accountContainer'].accountPrivacy .formPackage #personalInfo{
         margin: var(--sp20) 0 var(--sp30) 0;
     }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead']{
+    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class*='ComponentRead']:last-of-type{
         margin-bottom: var(--sp10);
     }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc']{
-        width: 49%; float: left;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputPhone']{
-        clear: both;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc']:nth-of-type(2){
-        margin-left: 2%;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'] label{
-        top: 10px; color: var(--gs08);
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc'] label{
-        left: 5%;
+    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class*='ComponentRead'] label{
+        top: 15px; color: var(--gs08);
     }
     section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputPhone'] label{
-        left: 3%;
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class$='ComponentRead'] input{
-        max-height: 57px; color: var(--gs10); background-color: var(--gs02); padding: var(--sp35) 0 var(--sp20);
-    }
-    section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputAcc'] input{
-        padding-left: 5%;
+        left: 2.5%;
     }
     section[class*='accountContainer'].accountPrivacy .formPackage form #personalInfo div[class^='inputPhone'] input{
-        padding-left: 3%;
+        padding-left: 2.5%;
     }
     section[class*='accountContainer'].accountPrivacy .formPackage #personalInfo span,
     section[class*='accountContainer'].accountPrivacy .formPackage #personalInfo a{
@@ -9230,13 +8956,13 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp10) 2%; border: 0; cursor: pointer;
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:last-of-type input[value='REGISTER']{
-        background-color: rgba(213, 213, 213, 0.4); border-radius: 15px; color: var(--gs05); transition: color .15s ease-out;
+        background-color: rgba(213, 213, 213, 0.4); border-radius: 15px; color: var(--gs05); transition: color .15s ease-out; width: 20%;
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:last-of-type input[value='REGISTER']:hover{
         color: var(--gs10);
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:last-of-type input[value='RESET']{
-        margin-left: 8%; background-color: transparent; color: var(--gs10);
+        margin-left: 5%; background-color: transparent; color: var(--gs10); width: 10%;
     }
     section[class*='accountContainer'].checkoutNext p{
         max-width: 600px; margin: 0 auto; text-align: center; margin-bottom: var(--sp70);
@@ -9341,7 +9067,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp90) 0; text-align: center;
     }
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li{
-        float: left; width: 33.33%; text-align: center; color: var(--gs04); cursor: pointer; display: block; box-sizing: border-box; padding-bottom: var(--sp45); transition: all .2s ease-out;
+        float: left; width: 33.33%; text-align: center; color: var(--gs04); cursor: pointer; display: block; box-sizing: border-box; padding-bottom: var(--sp45); transition: all .3s ease-out;
     }
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li:hover,
     div[class*='rsvnContainer'].mybooking div:nth-of-type(2) ul li.active{
@@ -10145,10 +9871,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         appearance: none; border: none; width: 100%; background-color: transparent;
     }
     .mapContainer .mapPopup .gs1>a{
-        display: block; border: none; background-color: var(--sc03); padding: var(--sp15) 0; width: 100%; margin-top: var(--sp50); cursor: pointer; transition: filter .3s ease-out; text-align: center; color: var(--gs10);
-    }
-    .mapContainer .mapPopup .gs1>a:hover{
-        filter: brightness(92%);
+        width: 100%; margin-top: var(--sp50);
     }
     .mainPopup{
         display: none;
@@ -10198,16 +9921,13 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         font-size: 1.5vw !important;
     }
     div[class*='loyaltyContainer'].benefits .statusLevelBox .bx-wrapper .bx-viewport .statusLevelCarousel li{
-        min-height: 370px;
+        min-height: 540px !important;
     }
     div[class*='loyaltyContainer'].benefits .helpCenterFaq div{
         background-size: 99%;
     }
     .mapContainer .mapPopup.active{
         height: 100%; padding: 250px 0 500px;
-    }
-    .mapContainer .mapPopup .gs1 form div ul li:nth-of-type(2) div input{
-        width: 47.5%;
     }
     div[class*='offersContainer'].year .horiCardslotBox .termsPopup.active{
         padding: 15% 6.25%;

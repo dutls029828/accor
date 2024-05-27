@@ -74,6 +74,7 @@
 
 [class*='Btn']{cursor: pointer;}
 [class*='positionRe']{position: relative;}
+[class*='positionAb']{position: absolute;}
 
 [class$='disc'] ::before{content: '•'; width: 1px; height: 1px;}
 [class$='dash'] ::before{content: '-'; width: 1px; height: 1px;}
@@ -241,7 +242,7 @@ mark.rBottomLabel{
     [class$='10']{font-size: 9px;}
 
     .ebg50{font-size: 20px; color: var(--gs01);}
-    .ebg34{font-size: 24px; color: var(--gs03); font-weight: 400;}
+    .ebg34{font-size: 24px; color: var(--gs03);}
     .ebg24{font-size: 14px; color: var(--gs10);}
     .ebg24.ita{color: var(--gs02);}
 
@@ -287,7 +288,7 @@ mark.rBottomLabel{
         width: 100%;
     }
     .uLineBtn{
-        position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 10px; font-weight: 500; width: fit-content; word-break: keep-all; cursor: pointer;
+        position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 10px; font-weight: 500; width: fit-content; word-break: keep-all;
     }
     .uLineBtn::before{
         content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
@@ -596,28 +597,28 @@ mark.rBottomLabel{
     .accordionBox li strong.active::after{
         transform: rotate(180deg);
     }
-    .termsPopup{
+    .termsPopup.normal{
         position: absolute; width: 100%; height: 0; overflow-y: hidden; transition: all .5s ease-out; padding: 0 6.25%; z-index: 10;
     }
-    .termsPopup.active{
+    .termsPopup.normal.active{
         left: 0; background-color: rgba(28, 28, 28, 0.9); box-sizing: border-box; z-index: 10;
     }
-    .termsPopup.active .gs3{
+    .termsPopup.normal.active .gs3{
         padding: var(--sp55) 3.125%; max-width: 767px; margin: 0 auto; border-radius: 10px;
     }
-    .termsPopup article input,
-    .termsPopup .gs3 input{
+    .termsPopup.normal article input,
+    .termsPopup.normal .gs3 input{
         position: absolute; width: 12px; height: 12px; background-color: transparent; border: none; text-indent: -9999px;  cursor: pointer;
         transition: transform .3s ease-in-out; background: url('../images/icon_close_popup.png') no-repeat center 100%; transform: rotate(0deg);
     }
-    .termsPopup article input:hover,
-    .termsPopup .gs3 input:hover{
+    .termsPopup.normal article input:hover,
+    .termsPopup.normal .gs3 input:hover{
         transform: rotate(180deg);
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
     .ebg50{font-size: 40px; color: var(--gs01);}
-    .ebg34{font-size: 24px; color: var(--gs03); font-weight: 400;}
+    .ebg34{font-size: 24px; color: var(--gs03);}
     .ebg24{font-size: 24px; color: var(--gs10);}
     .ebg24.ita{color: var(--gs02);}
 
@@ -675,7 +676,7 @@ mark.rBottomLabel{
         width: 100%;
     }
     .uLineBtn{
-        position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 13px; font-weight: 500; width: fit-content; word-break: keep-all; cursor: pointer;
+        position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 13px; font-weight: 500; width: fit-content; word-break: keep-all;
     }
     .uLineBtn::before{
         content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
@@ -978,22 +979,22 @@ mark.rBottomLabel{
     .accordionBox li strong.active::after{
         transform: rotate(180deg);
     }
-    .termsPopup{
+    .termsPopup.normal{
         position: absolute; width: 100%; height: 0; overflow-y: hidden; transition: all .5s ease-out; padding: 0 6.25%; z-index: 10;
     }
-    .termsPopup.active{
+    .termsPopup.normal.active{
         left: 0; padding: var(--sp65) 6.25%; background-color: rgba(28, 28, 28, 0.9); box-sizing: border-box; z-index: 10;
     }
-    .termsPopup.active .gs3{
+    .termsPopup.normal.active .gs3{
         padding: var(--sp55) 3.125%; max-width: 1279px; margin: 0 auto; border-radius: 10px;
     }
-    .termsPopup article input,
-    .termsPopup .gs3 input{
+    .termsPopup.normal article input,
+    .termsPopup.normal .gs3 input{
         position: absolute; width: 12px; height: 12px; background-color: transparent; border: none; text-indent: -9999px;  cursor: pointer;
         transition: transform .3s ease-in-out; background: url('../images/icon_close_popup.png') no-repeat center 100%; transform: rotate(0deg);
     }
-    .termsPopup article input:hover,
-    .termsPopup .gs3 input:hover{
+    .termsPopup.normal article input:hover,
+    .termsPopup.normal .gs3 input:hover{
         transform: rotate(180deg);
     }
 }
@@ -1057,7 +1058,7 @@ mark.rBottomLabel{
         width: 100%;
     }
     .uLineBtn{
-        position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 13px; font-weight: 500; width: fit-content; word-break: keep-all; cursor: pointer;
+        position: relative; display: block; text-align: center; margin: var(--sp25) 0 0 auto; font-size: 13px; font-weight: 500; width: fit-content; word-break: keep-all;
     }
     .uLineBtn::before{
         content: ''; position: absolute; width: 100%; height: 1px; right: 0; bottom: -5px; transform: scaleX(1); transition: transform .3s ease-out;
@@ -1365,22 +1366,22 @@ mark.rBottomLabel{
     .accordionBox li strong.active::after{
         transform: rotate(180deg);
     }
-    .termsPopup{
+    .termsPopup.normal{
         position: absolute; max-width: 1440px; width: 100%; height: 0; overflow-y: hidden; transition: all .5s ease-out; padding: 0 6.25%; z-index: 10;
     }
-    .termsPopup.active{
+    .termsPopup.normal.active{
         padding: var(--sp65) 6.25%; background-color: rgba(28, 28, 28, 0.9); box-sizing: border-box; z-index: 10;
     }
-    .termsPopup.active .gs3{
+    .termsPopup.normal.active .gs3{
         padding: var(--sp55) 3.125%; max-width: 1440px; margin: 0 auto; border-radius: 10px;
     }
-    .termsPopup article input,
-    .termsPopup .gs3 input{
+    .termsPopup.normal article input,
+    .termsPopup.normal .gs3 input{
         position: absolute; width: 12px; height: 12px; background-color: transparent; border: none; text-indent: -9999px; cursor: pointer;
         transition: transform .3s ease-in-out; background: url('../images/icon_close_popup.png') no-repeat center 100%; transform: rotate(0deg);
     }
-    .termsPopup article input:hover,
-    .termsPopup .gs3 input:hover{
+    .termsPopup.normal article input:hover,
+    .termsPopup.normal .gs3 input:hover{
         transform: rotate(180deg);
     }
 }
