@@ -83,6 +83,8 @@
 [class*='textUnder']{color: var(--sc01); text-decoration: underline;}
 [class*='textUnderOffset']{text-underline-offset: 3px;}
 
+img,video{width: 100%; display: block;}
+
 mark[class*='BottomLabel']{
     position: absolute; width: max-content; max-width: 100%; padding: var(--sp10) var(--sp15); bottom: 0; line-height: 16px;
     background-color: rgba(33, 33, 32, 0.8); color: var(--gs01); font-style: normal; font-size: 10px; font-weight: 300;
@@ -376,9 +378,6 @@ mark.rBottomLabel{
     .bannerBox div a:hover{
         background-color: var(--sc03); color: var(--gs10);
     }
-    .bannerBoxR img{
-        width: 100%;
-    }
     .bannerBoxR>div{
         box-sizing: border-box; padding: var(--sp30) 5%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
     }
@@ -504,9 +503,6 @@ mark.rBottomLabel{
     }
     .horiCardslotBox ul li:not(:last-of-type){
         margin-bottom: var(--sp30);
-    }
-    .horiCardslotBox ul li img{
-        width: 100%;
     }
     .horiCardslotBox ul .fullImgDesc img{
         margin-bottom: var(--sp15);
@@ -765,9 +761,6 @@ mark.rBottomLabel{
     .bannerBox div a:hover{
         background-color: var(--sc03); color: var(--gs10);
     }
-    .bannerBoxR img{
-        width: 100%;
-    }
     .bannerBoxR>div{
         box-sizing: border-box; padding: var(--sp55) 3.125%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
     }
@@ -879,9 +872,6 @@ mark.rBottomLabel{
     }
     .horiCardslotBox ul li:not(:last-of-type){
         margin-bottom: var(--sp30);
-    }
-    .horiCardslotBox ul li img{
-        width: 100%;
     }
     .horiCardslotBox ul .fullImgDesc img{
         margin-bottom: var(--sp15);
@@ -1150,9 +1140,6 @@ mark.rBottomLabel{
     }
     .bannerBoxR{
         position: relative;
-    }
-    .bannerBoxR img{
-        width: 100%;
     }
     .bannerBoxR>div{
         position: absolute; right: 12.5%; bottom: -50px; width: 35%; min-width: 666px; box-sizing: border-box; padding: var(--sp55) 3.125%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);

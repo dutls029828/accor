@@ -1,9 +1,6 @@
 a{
     text-decoration: none;
 }
-img,video{
-    width: 100%; display: block;
-}
 [data-scroll="transform"]{
     transition-duration: 1s; transform: translateY(50px); opacity: 0;
 }
@@ -216,9 +213,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='accomContainer'] .headlineContent,
     div[class*='accomContainer'] .headlineImage{
         margin-bottom: var(--sp60);
-    }
-    div[class*='accomContainer'] .headlineContent img{
-        width: 100%;
     }
     div[class*='accomContainer'] .headlineContent div:last-of-type{
         box-sizing: border-box; padding: var(--sp55) 3.125%;
@@ -720,9 +714,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     .diningSeasonFancy>div[id^='fancy'].active{
         visibility: visible; opacity: 1;
     }
-    .diningSeasonFancy>div[id^='fancy'] img{
-        width: 100%;
-    }
     .diningSeasonFancy>div[id^='fancy'] div{
         padding: var(--sp30) 9%;
     }
@@ -756,9 +747,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     section[class*='diningContainer'] .tileBox li:not(:nth-last-child(-n+2)){
         margin-bottom: var(--sp10);
-    }
-    section[class*='diningContainer'] .tileBox li a img{
-        width: 100%;
     }
     section[class*='diningContainer'] .tileBox li a img{
         filter: brightness(0.7); transition: transform .3s linear;
@@ -901,9 +889,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     div[class*='businessContainer'].meetingPlanning>.businessMeetingList ul li a{
         display: block;
-    }
-    div[class*='businessContainer'].meetingPlanning>.businessMeetingList ul li a img{
-        width: 100%;
     }
     div[class*='businessContainer'].meetingPlanning>.businessMeetingList ul li a mark{
         display: block; padding: var(--sp30) 0; text-align: center; background-color: transparent; font-style: normal; color: var(--gs02);
@@ -1515,9 +1500,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li a{
         display: block;
     }
-    div[class*='brandSubContainer'] .allBrandCarousel .brandCarousel li a img{
-        width: 100%;
-    }
     div[class*='brandSubContainer'] .allBrandCarousel>.bx-wrapper .bx-controls-direction a{
         width: 40px; height: 40px; border-radius: 50px; margin-top: 0px; top: 43%; z-index: 100;
     }
@@ -2118,9 +2100,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:first-of-type span{
         display: block; background-color: var(--gs03); float: left; width: 15%; padding: var(--sp15) 2.5%; min-height: 57px; box-sizing: border-box;
-    }
-    section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:first-of-type span img{
-        width: 100%;
     }
     section[class*='accountContainer'].checkout .formPackage form fieldset:nth-of-type(5) .addToCard #createCard li:first-of-type input{
         float: left; min-height: 57px; box-sizing: border-box; border: none;
@@ -3414,9 +3393,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='accomContainer'] .headlineImage{
         margin-bottom: var(--sp60);
     }
-    div[class*='accomContainer'] .headlineContent img{
-        width: 100%;
-    }
     div[class*='accomContainer'] .headlineContent div:last-of-type{
         box-sizing: border-box; padding: var(--sp55) 3.125%;
     }
@@ -3975,9 +3951,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     .diningSeasonFancy>div[id^='fancy'].active{
         visibility: visible; opacity: 1;
     }
-    .diningSeasonFancy>div[id^='fancy'] img{
-        width: 100%;
-    }
     .diningSeasonFancy>div[id^='fancy'] div{
         padding: var(--sp90) 9%;
     }
@@ -4011,9 +3984,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     section[class*='diningContainer'] .tileBox li:not(:nth-last-child(-n+2)){
         margin-bottom: var(--sp40);
-    }
-    section[class*='diningContainer'] .tileBox li a img{
-        width: 100%;
     }
     section[class*='diningContainer'] .tileBox li a img{
         filter: brightness(0.7); transition: transform .3s linear;
@@ -4177,9 +4147,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     div[class*='businessContainer'].meetingPlanning>.businessMeetingList ul li a{
         display: block;
-    }
-    div[class*='businessContainer'].meetingPlanning>.businessMeetingList ul li a img{
-        width: 100%;
     }
     div[class*='businessContainer'].meetingPlanning>.businessMeetingList ul li a mark{
         display: block; padding: var(--sp30) 0; text-align: center; background-color: transparent; font-style: normal; color: var(--gs02);
@@ -6621,10 +6588,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     .indexContainer>.bx-wrapper .bx-controls-direction .bx-next{
         background: url('../images/icon_wRightArrow.png'), rgba(195, 195, 195, 0.2); background-repeat: no-repeat; background-position: center; right: 12.5%;
     }
-    .indexContainer ul.headlineSlider li figure img,
-    .offersHeadline img{
-        width: 100%;
-    }
     .indexContainer ul.headlineSlider li figure figcaption,
     .offersHeadline figcaption{
         width: 75%; top: 30%; margin-bottom: var(--sp70); max-width: 1440px; left: 12.5%;
@@ -6730,9 +6693,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='accomContainer'] .headlineContent,
     div[class*='accomContainer'] .headlineImage{
         margin-bottom: var(--sp90);
-    }
-    div[class*='accomContainer'] .headlineContent img{
-        width: 100%;
     }
     div[class*='accomContainer'] .headlineContent div:last-of-type{
         right: 12.5%; bottom: -55px; width: 35%; min-width: 666px; box-sizing: border-box; padding: var(--sp55) 3.125%;
@@ -7358,9 +7318,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     .diningSeasonFancy>div[id^='fancy'].active{
         visibility: visible; opacity: 1;
     }
-    .diningSeasonFancy>div[id^='fancy'] img{
-        width: 100%;
-    }
     .diningSeasonFancy>div[id^='fancy'] div{
         padding: var(--sp90) 9%;
     }
@@ -7570,9 +7527,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     div[class*='businessContainer'].meetingPlanning>.businessMeetingList ul li a{
         display: block;
-    }
-    div[class*='businessContainer'].meetingPlanning>.businessMeetingList ul li a img{
-        width: 100%;
     }
     div[class*='businessContainer'].meetingPlanning>.businessMeetingList ul li a mark{
         display: block; padding: var(--sp30) 0; text-align: center; background-color: transparent; font-style: normal; color: var(--gs02);
