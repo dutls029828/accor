@@ -2551,7 +2551,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='helpCall'] ul{
         list-style: none; padding: 0 3%;
     }
-    section[class*='helpCall'] ul li{
+    section[class*='helpCall'] > ul li{
         margin-bottom: var(--sp50);
     }
     section[class*='helpCall'] ul li h3{
@@ -5887,7 +5887,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='helpCall'] ul{
         list-style: none;
     }
-    section[class*='helpCall'] ul li{
+    section[class*='helpCall'] > ul li{
         margin-bottom: var(--sp50);
     }
     section[class*='helpCall'] ul li h3{
@@ -9316,7 +9316,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='helpCall'] ul{
         list-style: none;
     }
-    section[class*='helpCall'] ul li{
+    section[class*='helpCall'] > ul li{
         margin-bottom: var(--sp50);
     }
     section[class*='helpCall'] ul li h3{
