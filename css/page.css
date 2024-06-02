@@ -1924,7 +1924,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp45);
     }
     section[class*='accountContainer'].accountPW .formPackage form div small{
-        margin-bottom: var(--sp05);
+        margin-bottom: var(--sp05); display: block;
     }
     section[class*='accountContainer'].accountPW .formPackage form div ul li{
         padding-left: 8%; line-height: 16px; background: url('../images/icon_check_circle_classic.png') no-repeat 1% center / 12px;
@@ -8677,7 +8677,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp45);
     }
     section[class*='accountContainer'].accountPW .formPackage form div small{
-        margin-bottom: var(--sp05);
+        margin-bottom: var(--sp05); display: block;
     }
     section[class*='accountContainer'].accountPW .formPackage form div ul li{
         padding-left: 4%; line-height: 16px; background: url('../images/icon_check_circle_classic.png') no-repeat 1% center / 12px;
@@ -8685,9 +8685,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='accountContainer'].accountPWnext span.floatContainer,
     section[class*='accountContainer'].accountPrivacyNext span.floatContainer{
         display: block; max-width: 600px; margin: 0 auto;
-    }
-    section[class*='accountContainer'].accountPWnext a{
-        padding: var(--sp20) 3%;
     }
     section[class*='accountContainer'].accountPrivacy .formPackage form label{
         display: block;
