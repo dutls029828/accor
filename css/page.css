@@ -4236,10 +4236,10 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         background-position: center left; align-content: flex-end; padding-right: 3%;
     }
     div[class*='businessDetailContainer']>div:first-child div h3{
-        margin-bottom: var(--sp50); color: var(--gs11); max-width: 600px;
+        margin-bottom: var(--sp35); color: var(--gs11); max-width: 600px;
     }
     div[class*='businessDetailContainer']>div:first-child div p{
-        margin-bottom: var(--sp40); line-height: 21px; color: var(--gs07); max-width: 450px;
+        margin-bottom: var(--sp35); color: var(--gs07); max-width: 450px;
     }
     div[class*='businessDetailContainer'].convention div:first-child div h3,
     div[class*='businessDetailContainer'].reception div:first-child div h3,
@@ -4390,6 +4390,9 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     div[class*='businessDetailContainer'] .horiCardslotBox ul li div dl dd:not(:last-of-type){
         margin-bottom: var(--sp15);
+    }
+    div[class*='businessDetailContainer'] .horiCardslotBox ul li div dl dd:last-of-type{
+        margin: 0;
     }
     div[class*='businessDetailContainer'].meeting .horiCardslotBox ul li .pt6 dl dd,
     div[class*='businessDetailContainer'].seminar .horiCardslotBox ul li .pt6 dl dd,
@@ -7772,6 +7775,9 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     div[class*='businessDetailContainer'] .horiCardslotBox ul li div dl dd:not(:last-of-type){
         margin-bottom: var(--sp15);
+    }
+    div[class*='businessDetailContainer'] .horiCardslotBox ul li div dl dd:last-of-type{
+        margin: 0;
     }
     div[class*='businessDetailContainer'].meeting .horiCardslotBox ul li .pt6 dl dd,
     div[class*='businessDetailContainer'].seminar .horiCardslotBox ul li .pt6 dl dd,
