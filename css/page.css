@@ -2728,10 +2728,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*='termsContainer'].general .accordionBox{
         margin-bottom: var(--sp60);
     }
-    section[class*='termsContainer'] .accordionBox li ul,
-    section[class*='termsContainer'] .accordionBox li ol{
-        list-style: none;
-    }
     section[class*='termsContainer'] .accordionBox li .L316{
         display: none; padding: var(--sp55) 3.5%; background-color: var(--gs02);
     }
@@ -6065,10 +6061,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     section[class*='termsContainer'].general .accordionBox{
         margin-bottom: var(--sp60);
-    }
-    section[class*='termsContainer'] .accordionBox li ul,
-    section[class*='termsContainer'] .accordionBox li ol{
-        list-style: none;
     }
     section[class*='termsContainer'] .accordionBox li .L316{
         display: none; padding: var(--sp55) 3.5%; background-color: var(--gs02);
@@ -9497,10 +9489,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     section[class*='termsContainer'].general .accordionBox{
         margin-bottom: var(--sp60);
-    }
-    section[class*='termsContainer'] .accordionBox li ul,
-    section[class*='termsContainer'] .accordionBox li ol{
-        list-style: none;
     }
     section[class*='termsContainer'] .accordionBox li .L316{
         display: none; padding: var(--sp55) 3.5%; background-color: var(--gs02);

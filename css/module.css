@@ -76,8 +76,8 @@
 [class*='positionRe']{position: relative;}
 [class*='positionAb']{position: absolute;}
 
-[class$='disc'] ::before{content: '•'; width: 1px; height: 1px;}
-[class$='dash'] ::before{content: '-'; width: 1px; height: 1px;}
+[class$='disc'] > ::before{content: '•'; width: 1px; height: 1px;}
+[class$='dash'] > ::before{content: '-'; width: 1px; height: 1px;}
 [class*='requiredSign']::after{content: '*'; margin-left: 3px; color: var(--sc04);}
 
 [class*='textUnder']{color: var(--sc01); text-decoration: underline;}
