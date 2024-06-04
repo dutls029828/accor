@@ -215,7 +215,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp60);
     }
     div[class*='accomContainer'] .headlineContent div:last-of-type{
-        box-sizing: border-box; padding: var(--sp55) 3.125%;
+        box-sizing: border-box; padding: var(--sp40) 5%;
     }
     div[class*='accomContainer'].hotelresort .headlineContent div:last-of-type{
         background: url('../images/hotel_resort_headline.png') no-repeat left top / 800%;
@@ -3390,7 +3390,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp60);
     }
     div[class*='accomContainer'] .headlineContent div:last-of-type{
-        box-sizing: border-box; padding: var(--sp55) 3.125%;
+        box-sizing: border-box; padding: var(--sp60) 5%;
     }
     div[class*='accomContainer'].hotelresort .headlineContent div:last-of-type{
         background: url('../images/hotel_resort_headline.png') no-repeat left top / 800%;
@@ -3504,7 +3504,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     }
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type{
         background: url('../images/loyalty_headline_content.png') no-repeat left top / 100%;
-        box-sizing: border-box; padding: var(--sp55) 3.125%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box; padding: var(--sp60) 5%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
     }
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type h3{
         margin-bottom: var(--sp30);

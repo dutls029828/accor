@@ -379,7 +379,7 @@ mark.rBottomLabel{
         background-color: var(--sc03); color: var(--gs10);
     }
     .bannerBoxR>div{
-        box-sizing: border-box; padding: var(--sp30) 5%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box; padding: var(--sp40) 5%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
     }
     .bannerBoxR>div h2{
         color: var(--gs10); margin-bottom: var(--sp30);
@@ -729,7 +729,7 @@ mark.rBottomLabel{
         background-color: var(--sc01); color: var(--gs02); border-color: var(--sc01) !important;
     }
     [class*='colorBtn']{
-        display: block; width: 30%; min-width: 180px; max-width: 201px; margin-bottom: var(--sp20); padding: var(--sp15) 6%; color: var(--gs10); text-align: center; transition-duration: .3s;
+        display: block; width: 40%; min-width: 180px; max-width: 201px; margin-bottom: var(--sp20); padding: var(--sp15) 6%; color: var(--gs10); text-align: center; transition-duration: .3s;
     }
     .colorBtng{
         background-color: var(--gs04);
@@ -762,7 +762,7 @@ mark.rBottomLabel{
         background-color: var(--sc03); color: var(--gs10);
     }
     .bannerBoxR>div{
-        box-sizing: border-box; padding: var(--sp55) 3.125%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box; padding: var(--sp60) 5%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
     }
     .bannerBoxR>div h2{
         color: var(--gs10); margin-bottom: var(--sp30);
@@ -1142,7 +1142,7 @@ mark.rBottomLabel{
         position: relative;
     }
     .bannerBoxR>div{
-        position: absolute; right: 12.5%; bottom: -50px; width: 35%; min-width: 666px; box-sizing: border-box; padding: var(--sp55) 3.125%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
+        position: absolute; right: 12.5%; bottom: -50px; width: 35%; min-width: 666px; box-sizing: border-box; padding: var(--sp60) 3.125%; box-shadow: 1px 1px 15px 0.3px rgba(0, 0, 0, 0.3);
     }
     .bannerBoxR>div h2{
         color: var(--gs10); margin-bottom: var(--sp30);
