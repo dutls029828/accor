@@ -4794,7 +4794,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp20); width: 100%;
     }
     div[class*='brandSubContainer'] .hotelSelection ul li .gs3{
-        padding: var(--sp55) 9%; box-sizing: border-box;
+        padding: var(--sp60) 5%; box-sizing: border-box;
     }
     div[class*='brandSubContainer'] .hotelSelection ul li .gs3 h3{
         margin-bottom: var(--sp25); text-align: center;
@@ -7348,7 +7348,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp40);
     }
     section[class*='diningContainer'] .tileBox li a img{
-        width: 100%; transition-duration: .3s;
+        transition-duration: .3s;
     }
     section[class*='diningContainer'] .tileBox li a:hover img{
         filter: brightness(0.7);
@@ -7357,7 +7357,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         display: none;
     }
     section[class*='diningContainer'] .tileBox li a:hover mark{
-        top: 45%; text-align: center; width: 100%; color: var(--gs02); background-color: transparent; font-style: normal; font-size: 34px; font-weight: inherit;
+        display: block; top: 45%; text-align: center; width: 100%; color: var(--gs02); background-color: transparent; font-style: normal; font-size: 34px; font-weight: inherit;
     }
     div[class*='businessContainer'].tailoredEvents :not(.imgCenterTitle){
         max-width: 1440px;
