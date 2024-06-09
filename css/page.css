@@ -1474,7 +1474,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         bottom: -65px;
     }
     div[class*='brandSubContainer'] .bannerBoxR .gs1 h3{
-        margin-bottom: var(--sp30);
+        margin-bottom: var(--sp25);
     }
     div[class*='brandSubContainer'] .hotelSelection ul{
         padding-top: var(--sp20);
@@ -1489,7 +1489,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp30) 5%; box-sizing: border-box;
     }
     div[class*='brandSubContainer'] .hotelSelection ul li .gs3 h3{
-        margin-bottom: var(--sp25); text-align: center;
+        margin-bottom: var(--sp20); text-align: center;
     }
     div[class*='brandSubContainer'] .hotelSelection ul li .gs3 p{
         text-align: center;
@@ -4779,7 +4779,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         bottom: -65px;
     }
     div[class*='brandSubContainer'] .bannerBoxR .gs1 h3{
-        margin-bottom: var(--sp30);
+        margin-bottom: var(--sp25);
     }
     div[class*='brandSubContainer'] .hotelSelection{
         max-width: 1440px; margin: 0 auto;
