@@ -927,7 +927,7 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         background: url('../images/sns_04.png') no-repeat center / cover;
     }
     footer>div:last-of-type>ul:nth-of-type(2)>li:last-of-type em{
-        background: url('../images/sns_05.png') no-repeat center / cover;
+        background: url('../images/sns_05.png') no-repeat left center / cover;
     }
     footer>div:last-of-type>ul:nth-of-type(2)>li:last-of-type a:not(:first-of-type){
         margin-left: 4%;
@@ -1358,7 +1358,7 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         background: url('../images/sns_04.png') no-repeat center / cover;
     }
     footer>div:last-of-type>ul:nth-of-type(2)>li:last-of-type em{
-        background: url('../images/sns_05.png') no-repeat center / cover;
+        background: url('../images/sns_05.png') no-repeat 1% center / cover;
     }
     footer>div:last-of-type>ul:nth-of-type(2)>li:last-of-type a:not(:first-of-type),
     footer>div:last-of-type>ul:nth-of-type(2)>li:last-of-type em{
