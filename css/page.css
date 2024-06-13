@@ -4838,7 +4838,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         height: 3px; margin-top: -1px; background-color: var(--gs09); border-radius: 3px;
     }
     section[class*='diningDetailContainer'] .imgCenterTitle{
-        margin-bottom: var(--sp60);
+        margin-bottom: var(--sp40);
     }
     section[class*='diningDetailContainer'] .imgCenterTitle small{
         display: block; padding-bottom: var(--sp50);
@@ -4904,7 +4904,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         max-width: 1440px; margin: 0 auto; display: flex; flex-wrap: nowrap; list-style: none; flex-direction: column;
     }
     section[class*='diningDetailContainer'] ul.textSlotBox li{
-        width: 100%; padding: var(--sp50) 3.5%; box-sizing: border-box;
+        width: 100%; padding: var(--sp50) 5%; box-sizing: border-box;
     }
     section[class*='diningDetailContainer'] ul.textSlotBox li:not(:last-of-type){
         margin-bottom: var(--sp20);
@@ -4918,7 +4918,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         color: var(--gs10);
     }
     section[class*='diningDetailContainer'] ul.textSlotBox li h4{
-        margin-bottom: var(--sp30);
+        margin-bottom: var(--sp25);
     }
     section[class*='diningDetailContainer'] .imgHoverList ul{
         padding-top: var(--sp20); display: flex; flex-wrap: wrap; color: var(--gs01); justify-content: center;
