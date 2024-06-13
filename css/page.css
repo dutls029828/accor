@@ -3883,7 +3883,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         transform: scale(1.03);
     }
     div[class*='diningContainer'].service div:nth-of-type(2) .bx-wrapper .bx-viewport .tileSlider li a mark{
-        top: 45%; text-align: center; width: 100%; color: var(--gs02); background-color: transparent; font-style: normal; font-size: 28px; font-weight: inherit;
+        top: 42%; text-align: center; width: 100%; color: var(--gs02); background-color: transparent; font-style: normal; font-size: 28px; font-weight: inherit;
     }
     div[class*='diningContainer'].service .bx-wrapper .bx-controls-direction{
         width: 70%; margin: 0 auto;
@@ -4940,7 +4940,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         left: 3%; top: var(--sp15);
     }
     section[class*='diningDetailContainer'] .imgHoverList ul li span{
-        right: 3%;
+        right: 3%; text-align: right;
     }
     section[class*='diningDetailContainer'] .imgHoverList ul li span:first-of-type{
         bottom: var(--sp40);
