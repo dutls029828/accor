@@ -4921,7 +4921,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp25);
     }
     section[class*='diningDetailContainer'] .imgHoverList ul{
-        padding-top: var(--sp20); display: flex; flex-wrap: wrap; color: var(--gs01); justify-content: center;
+        padding-top: var(--sp20); display: flex; flex-wrap: wrap; color: var(--gs01); justify-content: center; width: 94%;
     }
     section[class*='diningDetailContainer'] .imgHoverList ul li{
         width: 48.5%; box-sizing: border-box; display: block; border-radius: 10px;
