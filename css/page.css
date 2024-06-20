@@ -1530,7 +1530,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp40);
     }
     section[class*='diningDetailContainer'] .imgCenterTitle small{
-        display: block; padding-bottom: var(--sp30);
+        display: block; padding-bottom: var(--sp30); text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
     }
     section[class*='diningDetailContainer'].arab .imgCenterTitle{
         background-image: url('../images/diningArabEmirates_headline.png');
@@ -4841,7 +4841,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp40);
     }
     section[class*='diningDetailContainer'] .imgCenterTitle small{
-        display: block; padding-bottom: var(--sp50);
+        display: block; padding-bottom: var(--sp50); text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
     }
     section[class*='diningDetailContainer'].arab .imgCenterTitle{
         background-image: url('../images/diningArabEmirates_headline.png');
@@ -4937,7 +4937,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         text-shadow: 1px 1px 1px #000000;
     }
     section[class*='diningDetailContainer'] .imgHoverList ul li strong{
-        left: 3%; top: var(--sp15);
+        left: 3%; top: var(--sp15); width: 90%;
     }
     section[class*='diningDetailContainer'] .imgHoverList ul li span{
         right: 3%; text-align: right;
@@ -8241,7 +8241,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp90);
     }
     section[class*='diningDetailContainer'] .imgCenterTitle small{
-        display: block; padding-bottom: var(--sp60);
+        display: block; padding-bottom: var(--sp60); text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
     }
     section[class*='diningDetailContainer'].arab .imgCenterTitle{
         background-image: url('../images/diningArabEmirates_headline.png');
