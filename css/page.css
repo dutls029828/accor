@@ -3942,7 +3942,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
     }
     .diningSeasonFancy>div[id^='fancy']{
-        position: fixed; visibility: hidden; opacity: 0; transition: all .3s ease-in-out; z-index: 100; width: 100%; height: 100%; overflow-y: scroll; left: 0; top: 70px;
+        position: fixed; visibility: hidden; opacity: 0; transition: all .3s ease-in-out; z-index: 100; width: 90%; height: 95%; overflow-y: scroll; left: 5%; top: 68px;
     }
     .diningSeasonFancy>div[id^='fancy'].active{
         visibility: visible; opacity: 1;
@@ -3958,13 +3958,13 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         transform: rotate(180deg);
     }
     .diningSeasonFancy>div[id^='fancy'] div h4{
-        margin-bottom: var(--sp40); color: var(--gs03);
+        margin-bottom: var(--sp30); color: var(--gs03);
     }
     .diningSeasonFancy>div[id^='fancy'] div p{
         line-height: 30px; color: var(--gs04);
     }
     .diningSeasonFancy>div[id^='fancy'] div p:first-of-type{
-        margin-bottom: var(--sp40);
+        margin-bottom: var(--sp25);
     }
     section[class*='diningContainer'].flavours .imgCenterTitle{
         background-image: url('../images/diningWorld_headline.png'); margin-bottom: var(--sp100);
