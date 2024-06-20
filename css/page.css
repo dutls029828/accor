@@ -3942,16 +3942,16 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.2);
     }
     .diningSeasonFancy>div[id^='fancy']{
-        position: fixed; visibility: hidden; opacity: 0; transition: all .3s ease-in-out; z-index: 100; width: 90%; height: 100%; overflow-y: scroll; left: 5%; top: 70px;
+        position: fixed; visibility: hidden; opacity: 0; transition: all .3s ease-in-out; z-index: 100; width: 100%; height: 100%; overflow-y: scroll; left: 0; top: 70px;
     }
     .diningSeasonFancy>div[id^='fancy'].active{
         visibility: visible; opacity: 1;
     }
     .diningSeasonFancy>div[id^='fancy'] div{
-        padding: var(--sp90) 9%;
+        padding: var(--sp55) 9%;
     }
     .diningSeasonFancy>div[id^='fancy'] div input{
-        background-color: transparent; border: none; text-indent: -9999px; right: 9%; top: var(--sp100);
+        background-color: transparent; border: none; text-indent: -9999px; right: 9%; top: 60px;
         background: url('../images/icon_close_popup_white.png') no-repeat center / cover; transform: rotate(0deg); transition: transform .3s ease-out;
     }
     .diningSeasonFancy>div[id^='fancy'] div input:hover{
