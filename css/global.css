@@ -329,7 +329,7 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
         right: 10%; top: 0; padding-top: 45px;
     }
     header>div#fnbPanel>div:first-of-type div b.mui{
-        font-size: inherit; font-weight: inherit; text-align: right; padding-right: 20%;
+        font-size: inherit; font-weight: inherit; text-align: center; padding-left: 20%;
     }
     header>div#fnbPanel>div:first-of-type div b.mui:after{
         background: url('../images/arrow_nav_right.png') no-repeat right center / 9px; right: 0; width: 9px; height: 14px; content: '';
