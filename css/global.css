@@ -393,14 +393,14 @@ header>div#fnbPanel>div#reservation form fieldset>div ul li:nth-of-type(3) .comp
     footer>div:last-of-type>strong{
         font-size: 10px; font-weight: inherit; padding: 0 3%;
     }
-    footer>div:last-of-type>strong:nth-of-type(2){
-        margin-top: var(--sp40);
-    }
     footer>div:last-of-type>strong:after{
-        background: url('../images/arrow_nav_right.png') no-repeat right top / 7px; right: 3%;
+        background: url('../images/arrow_footer_right.png') no-repeat right top / 7px; right: 3%; width: 7px; height: 12px; content: '';
     }
     footer>div:last-of-type>strong.active:after{
         transform: rotate(90deg);
+    }
+    footer>div:last-of-type>strong:nth-of-type(2){
+        margin-top: var(--sp40);
     }
     footer>div:last-of-type>b{
         margin: var(--sp55) 0 var(--sp10);

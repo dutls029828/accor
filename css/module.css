@@ -511,7 +511,7 @@ mark.rBottomLabel{
         margin-top: var(--sp15);
     }
     .horiCardslotBox ul li div{
-        padding: var(--sp30) 5%; box-sizing: border-box;
+        padding: var(--sp30) 9%; box-sizing: border-box;
     }
     .horiCardslotBox ul li div dl dt{
         margin-bottom: var(--sp20);
