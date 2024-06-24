@@ -980,7 +980,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp30); color: var(--gs03); text-align: center;
     }
     div[class*='businessDetailContainer']>div:first-child div p{
-        margin-bottom: var(--sp20); line-height: 16px; color: var(--gs04);
+        margin-bottom: var(--sp20); color: var(--gs04);
     }
     div[class*='businessDetailContainer'] div:first-child div a{
         width: 80%; margin: 0 auto;
@@ -7615,7 +7615,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         margin-bottom: var(--sp50); color: var(--gs11); max-width: 600px;
     }
     div[class*='businessDetailContainer']>div:first-child div p{
-        margin-bottom: var(--sp40); line-height: 21px; color: var(--gs07); max-width: 600px;
+        margin-bottom: var(--sp40); color: var(--gs07); max-width: 600px;
     }
     div[class*='businessDetailContainer'].convention div:first-child div h3,
     div[class*='businessDetailContainer'].reception div:first-child div h3,
