@@ -6841,7 +6841,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         width: 100%; border-radius: 10px;
     }
     div[class*='loyaltyContainer'].discoverProgram .headlineContent{
-       margin-bottom: var(--sp100);
+       margin-bottom: var(--sp150);
     }
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type{
         background: url('../images/loyalty_headline_content.png') no-repeat left top / 100%;
