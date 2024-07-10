@@ -6850,9 +6850,6 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='loyaltyContainer'].discoverProgram .headlineContent div:last-of-type h3{
         margin-bottom: var(--sp30);
     }
-    div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox{
-        max-width: 1440px; margin: 0 auto;
-    }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc{
         width: 32.33%; max-width: 467px;
     }
