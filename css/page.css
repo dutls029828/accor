@@ -7362,7 +7362,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='businessContainer'].tailoredEvents .imgCenterTitle{
         background-image: url('../images/business_tailoredEvents_headline.png'); color: #c2a044;
     }
-    div[class*='businessContainer'].tailoredEvents div:first-of-type{
+    div[class*='businessContainer'].tailoredEvents > div:first-of-type{
         max-width: 1080px; margin: 0 auto;
     }
     div[class*='businessContainer'].tailoredEvents div:first-of-type ul{
