@@ -6857,7 +6857,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         width: 32.33%; max-width: 467px;
     }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc{
-        padding: var(--sp50) 9%; min-height: 335px; box-sizing: border-box;
+        padding: var(--sp50) 9%; min-height: 340px; box-sizing: border-box;
     }
     div[class*='loyaltyContainer'].discoverProgram .vertiCardslotBox .tImgDesc .bTextDesc dl{
         padding: 0 0; min-height: 0;
