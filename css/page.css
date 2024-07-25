@@ -7206,7 +7206,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         display: block; padding-bottom: var(--sp30);
     }
     div[class*='offersContainer'].year>div:nth-of-type(2)>div .bannerBoxR .gs1 a{
-        display: block; float: left; padding: var(--sp15) 6%; text-indent: -9999px; box-sizing: border-box; transition-duration: .3s; overflow-x: hidden; min-width: 180px; width: 32%; text-align: center;
+        display: block; float: left; padding: var(--sp15) 6%; text-indent: -9999px; box-sizing: border-box; transition-duration: .3s; overflow-x: hidden; min-width: 180px; width: 35%; text-align: center;
     }
     div[class*='offersContainer'].year>div:nth-of-type(2)>div .bannerBoxR .gs1 a:first-of-type{
         background: url('../images/businessCard_ibis.png') no-repeat center / 18%; border-width: 1px; border-style: solid; border-color: #c93d3e #1c97d6 #8ea5ad #96cb39;
