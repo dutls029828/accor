@@ -6743,6 +6743,9 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     div[class*='accomContainer'].villas .vertiCardslotBox .tImgDesc dl{
         padding: var(--sp55) var(--sp50); box-sizing: border-box;
     }
+    div[class*='accomContainer'].hotelresort .vertiCardslotBox .tImgDesc dl{
+        min-height: 371px;
+    }
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(3),
     div[class*='accomContainer'] .globalCardslotBox ul li:nth-of-type(5){
         margin-left: 0.35%;
