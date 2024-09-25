@@ -3,10 +3,10 @@ $(function(){
     slider(".indexContainer .propBox .propSlider",false,false,true,4000,400,false,false,'fade');
     slider(".indexContainer .brandSlider",false,false,true,8000,1000,false,false,'fade');
     slider(".tickerBox .tickerSlider",true,true,false,0,500000,false,false,'horizontal');
-    slider(".diningServiceContainer .tileSlider",false,false,false,0,500,true,true,"fade");
+    slider("div[class*='diningContainer'].service .tileSlider",false,false,false,0,500,true,true,"fade");
     pagerCustomSlider();
 
-    termsPopup(".offersYearContainer .horiCardslotBox ul li div span input",".btn_close");
+    termsPopup("div[class*='offersContainer'].year .horiCardslotBox ul li div span input",".btn_close");
     termsPopup("#diningSeasonFestive ul li","#diningSeasonFestive > div .btn_close");
     termsPopup("div[class*='detailContainer'] > .termsPopup+div span input", ".btn_close");
     termsPopup(".mapPopup",".btn_close");
@@ -28,8 +28,8 @@ $(function(){
     brandCarousel();
 
     accordionTab01(".accordionBox ul:first-of-type li");
-    accordionTab02(".accordionBox ul.R422 li");
-    accordionTab03(".rsvnContainer.mybooking div:last-of-type ul.R422 li");
+    accordionTab02(".accordionBox ul.R4.floatContainer.22 li");
+    accordionTab03(".rsvnContainer.mybooking div:last-of-type ul.R4.floatContainer.22 li");
     accordionBox(".accordionBox ul:not(:first-of-type) li strong");
     accordionBox(".accordionBox ol li strong");
     accordionBox("section[class*='termsContainer'] .accordionBox li strong");
@@ -48,7 +48,7 @@ $(function(){
     mainScrollAct();
     mapEvent();
     mainPopup();
-    backBtn(".historyBack");
+    backBtn("[class*='historyBack']");
 
 });
 function mainPopup(){
@@ -186,7 +186,6 @@ function wayCarousel(){
         maxSlides: 2,
         moveSlides: 1,
         slideWidth: 1320,
-        // slideMargin: 60,
         pager: false,
         touchEnabled: false
     });
@@ -245,7 +244,7 @@ function accordionTab02(tabBtn){
     var accordionVal = $(this).attr("data-tab");
     var tabTarget = $("#" + accordionVal);
 
-    $(".accordionBox > ul.R422 li:first-of-type").addClass("active");
+    $(".accordionBox > ul.R4.floatContainer.22 li:first-of-type").addClass("active");
     $(".accordionBox > ol:first-of-type").addClass("active");
 
     $(tabBtn).click(function(){
@@ -330,14 +329,20 @@ function miniBoxUI(miniBoxBtn){
 }
 
 function pagerCustomSlider(){
-    $(".businessMeetingContainer .headlineSlider").bxSlider({
-        controls: true,
+    var slider = $("div[class*='businessContainer'].meetingPlanning .headlineSlider").bxSlider({
         auto: true,
+        loop: false,
         pause: 6000,
         speed: 800,
+        controls: true,
         pager: true,
         pagerType: 'full',
         mode: 'fade'
+    }); 
+    $("a[class^='bx']").click(function(){
+        var current = slider.getCurrentSlide();
+        current = parseInt(current) + 1;
+        $(".countBox .currentIndex").text("0" + current);
     });
 }
 

@@ -26,7 +26,7 @@
                     <li><a href="my_booking.html">MY BOOKING</a></li>
                     <li><a href="index.html">SIGN OUT</a></li>
                 </ul> 
-                <div class="menuBar">
+                <div class="btn menuBar">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -180,7 +180,7 @@
     </header>
 
     <section class="alx accountContainer subBusiness after">
-        <h2 class="E234">
+        <h2 class="accountTitle E234">
             SUBSCRIBE TO ACCOR BUSINESS OFFER
             <span class="L315">Up to a 9% reduction on your stays by subscribing to the offer in just a few minutes.</span>
         </h2>
@@ -188,7 +188,7 @@
             <form action="business_subscribe_next_msg.html">
                 <fieldset>
                     <label for="companyTitle" class="alxL314">Title</label>
-                    <span class="selectComponent">
+                    <span class="selectComponent positionRe">
                         <select id="companyTitle" class="alx L314">
                             <option>Select your title</option>
                             <option>Ms</option>
@@ -198,27 +198,25 @@
                             <option>Pro</option>
                         </select>
                     </span>
-                    <label for="personalInfo" class="alxL314">Personal Information</label>
-                    <span>*</span>
+                    <label for="userLastName" class="alx requiredSign L314">Personal Information</label>
                     <div id="personalInfo">
-                        <div class="inputAccComponent">
+                        <div class="inputAccComponent positionRe">
                             <input type="text" id="userLastName" required class="alx L312">
-                            <label for="userLastName" class="L314">LAST NAME</label>
+                            <label for="userLastName" class="positionAb L314">LAST NAME</label>
                         </div>
-                        <div class="inputAccComponent">
+                        <div class="inputAccComponent positionRe">
                             <input type="text" id="userFirstName" required  class="alx L312">
-                            <label for="userFirstName" class="L314">FIRST NAME</label>   
+                            <label for="userFirstName" class="positionAb L314">FIRST NAME</label>   
                         </div>
-                        <div class="inputPhoneComponent">
+                        <div class="inputPhoneComponent positionRe">
                             <input type="tel" id="userPhoneNumb" required class="alx L312">
-                            <label for="userPhoneNumb" class="L314">PHONE NUMBER</label>
+                            <label for="userPhoneNumb" class="positionAb L314">PHONE NUMBER</label>
                         </div>
                     </div>
-                    <label for="companyEmail" class="alxL314">E-mail</label>
-                    <span>*</span>
+                    <label for="companyEmail" class="alx requiredSign L314">E-mail</label>
                     <input type="email" id="companyEmail" placeholder="example@example.com" required class="alx L314">
                     <label for="employeeNumber" class="alxL314">How many employees in your company are likely to use this offer for their business trips</label>
-                    <span class="selectComponent">
+                    <span class="selectComponent positionRe">
                         <select id="employeeNumber" class="alx L314">
                             <option>Select number of employees</option>
                             <option>Less than 50</option>
@@ -227,15 +225,15 @@
                             <option>More than 250</option>
                         </select>
                     </span>
-                    <div>
+                    <div class="floatContainer">
                         <label for="checkAgree" class="alxL310">I agree to receive ALL Business Travel offers, promotions and information for companies and business travellers.</label>
                         <input type="checkbox" id="checkAgree" class="alx L314">
                     </div>
-                    <div>
-                        <label for="checkAccept" class="alxL310">I have read and accept the <a href="https://businesstravel.accor.com/gb/pdf/General_Terms_and_Conditions_Accor_Business_Offer_Auto-enroll_EN.pdf" target="_blank">Membership Terms and Conditions</a> of Use of this offer</label>
+                    <div class="floatContainer">
+                        <label for="checkAccept" class="alxL310">I have read and accept the <a href="https://businesstravel.accor.com/gb/pdf/General_Terms_and_Conditions_Accor_Business_Offer_Auto-enroll_EN.pdf" target="_blank" class="textUnder">Membership Terms and Conditions</a> of Use of this offer</label>
                         <input type="checkbox" id="checkAccept" class="alx L314">
                     </div>
-                    <input type="submit" value="CONFIRM SUBSCRIPTION" class="alx L314">
+                    <input type="submit" value="CONFIRM SUBSCRIPTION" class="alx fRoundBtnp">
                 </fieldset>
             </form>
         </div>
@@ -248,7 +246,7 @@
                 <p class="L313">Subscribe to our newsletter and receive special offers</p>
                 <form action="subscribe_accor.html">
                     <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
-                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                    <input type="submit" class="alx shadowBtn iosFix L314" value="REGISTER">
                 </form>
             </div>
             <div>
@@ -257,11 +255,11 @@
                     <a href="map.html">Reservation Management</a>
                     <a href="helpCenter.html">Support and Inquiries</a>
                 </span>
-                <mark class="btn alxL313">
+                <mark class="btn alx s05c L313">
                     Do you want to ask for questions ?
-                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                    <a href="tel:+61282784515" class="s05c">00798 8521 2018 (**)</a>
                 </mark>
-                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+                <a href="helpCenter.html" class="shadowBtn L314">LEARN MORE</a>
             </div>
         </div>
         <div class="M510">

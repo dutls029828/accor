@@ -26,7 +26,7 @@
                     <li><a href="my_booking.html">MY BOOKING</a></li>
                     <li><a href="index.html">SIGN OUT</a></li>
                 </ul> 
-                <div class="menuBar">
+                <div class="btn menuBar">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -179,20 +179,20 @@
         </div>
     </header>
 
-    <section class="alx accountContainer checkout">
-        <a href="#" class="historyBack M512">Back</a>
-        <h2 class="E234">
+    <section class="alx accountContainer checkout positionRe">
+        <a href="#" class="historyBackBlue M512">Back</a>
+        <h2 class="accountTitle E234">
             SET YOUR RESERVATION IN DETAIL
             <span class="L315">Fill in the blank, especially requiredment selections</span>
         </h2>
-        <div class="formPackage L314">
+        <div class="formPackage floatContainer L314">
             <form action="checkout_next.html">
                 <fieldset>
-                    <legend>Destination, Hotel Name</legend>
+                    <legend class="requiredSign">Destination, Hotel Name</legend>
                     <input type="text" value="South Korea, Fairmont Ambassador Seoul" readonly class="alx L314">
                 </fieldset>
                 <fieldset>
-                    <legend>Dates</legend>
+                    <legend class="requiredSign">Dates</legend>
                     <div class="dateComp">
                         <label for="checkInDates" class="12">Check-In</label>
                         <input type="date" id="checkInDates" value="2023-04-10" class="alx L314">
@@ -203,8 +203,8 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Room Type</legend>
-                    <span class="selectComponent">
+                    <legend class="requiredSign">Room Type</legend>
+                    <span class="selectComponent positionRe">
                         <select class="alx L314">
                             <option>Room Type</option>
                             <option>Diplomatic Suite</option>
@@ -214,31 +214,31 @@
                     </span>
                 </fieldset>
                 <fieldset>
-                    <legend>Personal Information</legend>
+                    <legend class="requiredSign">Personal Information</legend>
                     <div id="personalInfo">
-                        <div class="inputAccComponent">
+                        <div class="inputAccComponent positionRe">
                             <input type="text" id="userLastName" class="alx L312" required>
-                            <label for="userLastName" class="L314">LAST NAME</label>
+                            <label for="userLastName" class="positionAb L314">LAST NAME</label>
                         </div>
-                        <div class="inputAccComponent">
+                        <div class="inputAccComponent positionRe">
                             <input type="text" id="userFirstName" class="alx L312" required>   
-                            <label for="userFirstName" class="L314">FIRST NAME</label>
+                            <label for="userFirstName" class="positionAb L314">FIRST NAME</label>
                         </div>
-                        <div class="inputPhoneComponent">
+                        <div class="inputPhoneComponent positionRe">
                             <input type="tel" id="userPhoneNumb" class="alx L312" required>
-                            <label for="userPhoneNumb" class="L314">PHONE NUMBER</label>
+                            <label for="userPhoneNumb" class="positionAb L314">PHONE NUMBER</label>
                         </div>
                     </div>
                 </fieldset>
-                <fieldset>
-                    <legend>Payment</legend>
-                    <input type="button" value="New" class="L315 btn_open" data-panel="createCard">
-                    <div class="addToCard">
+                <fieldset class="positionRe">
+                    <legend class="requiredSign positionAb">Payment</legend>
+                    <input type="button" value="New" class="positionAb L315 btn_open" data-panel="createCard">
+                    <div class="addToCard positionRe">
                         <ol>
-                            <li class="alx L314">
+                            <li class="alx positionRe L314">
                                 Registered Card
                             </li>
-                            <li>
+                            <li class="floatContainer">
                                 <span>
                                     <small class="R412">CARD NUMBER</small>
                                     <input type="text" placeholder="0000 0000 0000 0000" max="16" numberonly class="alx L312">
@@ -258,7 +258,7 @@
                             </li>
                         </ol>
                         <ul id="createCard">
-                            <li>
+                            <li class="floatContainer">
                                 <span>
                                     <img src="images/icon_checkout_card_grey.png" alt="card">
                                 </span>
@@ -266,30 +266,30 @@
                                 <input type="text" id="valiMMYY" placeholder="MM/YY" max="4" class="alx L314">
                                 <input type="text" id="valiCVC" placeholder="CVC" max="3" class="alx L314">
                             </li>
-                            <li>
-                                <div class="inputAccElement">
-                                    <label for="addtolastName" class="R412">LAST NAME</label>
+                            <li class="floatContainer">
+                                <div class="positionRe inputAccElement">
+                                    <label for="addtolastName" class="positionAb R412">LAST NAME</label>
                                     <input type="text" id="addtolastName" class="alx L312">
                                 </div>
-                                <div class="inputAccElement">
-                                    <label for="addtofirstName" class="R412">FIRST NAME</label>
+                                <div class="positionRe inputAccElement">
+                                    <label for="addtofirstName" class="positionAb R412">FIRST NAME</label>
                                     <input type="text" id="addtofirstName" class="alx L312">   
                                 </div>
                             </li>
                             <li>
-                                <div class="disabledElement">
-                                    <label for="countryData" class="R412">Country / Region</label>
+                                <div class="positionRe disabledElement">
+                                    <label for="countryData" class="positionAb R412">Country / Region</label>
                                     <input type="text" id="countryData" placeholder="Republic of Korea" disabled class="alx L312">
                                 </div>
                             </li>
                             <li>
-                                <input type="button" value="REGISTER" class="alx L312 btn_close">
+                                <input type="button" value="REGISTER" class="alx btn_close L312">
                                 <input type="button" value="RESET" class="alx L312">
                             </li>
                         </ul>
                     </div>
                 </fieldset>
-                <input type="submit" value="RESERVE" class="alx L314">
+                <input type="submit" value="RESERVE" class="alx fRoundBtnp">
             </form>
         </div>
     </section>
@@ -301,7 +301,7 @@
                 <p class="L313">Subscribe to our newsletter and receive special offers</p>
                 <form action="subscribe_accor.html">
                     <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
-                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                    <input type="submit" class="alx shadowBtn iosFix L314" value="REGISTER">
                 </form>
             </div>
             <div>
@@ -310,11 +310,11 @@
                     <a href="map.html">Reservation Management</a>
                     <a href="helpCenter.html">Support and Inquiries</a>
                 </span>
-                <mark class="btn alxL313">
+                <mark class="btn alx s05c L313">
                     Do you want to ask for questions ?
-                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                    <a href="tel:+61282784515" class="s05c">00798 8521 2018 (**)</a>
                 </mark>
-                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+                <a href="helpCenter.html" class="shadowBtn L314">LEARN MORE</a>
             </div>
         </div>
         <div class="M510">

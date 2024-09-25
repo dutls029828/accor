@@ -26,7 +26,7 @@
                     <li><a href="account_signIn.html">SIGN IN AN ACCOUNT</a></li>
                     <li><a href="account_signUp.html">JOIN IN ACCOR</a></li>
                 </ul> 
-                <div class="menuBar">
+                <div class="btn menuBar">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -179,17 +179,17 @@
         </div>
     </header>
 
-    <section class="alx accountContainer signUp">
-        <a href="#" class="historyBack M512">Back</a>
-        <h2 class="E234">
+    <section class="alx accountContainer signUp positionRe">
+        <a href="#" class="historyBackBlue M512">Back</a>
+        <h2 class="accountTitle E234">
             PLEASE ENTER YOUR INFORMATION
             <span class="L315">All fields are mandatory.</span>
         </h2>
         <div class="formPackage">
             <form action="account_signup_msg.html">
-                <label for="userEmail" class="L314">Email Address</label>
+                <label for="userEmail" class="requiredSign L314">Email Address</label>
                 <input type="email" id="userEmail" class="alx L314" readonly placeholder="Goodluck@example.com">
-                <label for="userPW" class="L314">Password</label>
+                <label for="userPW" class="requiredSign L314">Password</label>
                 <input type="password" id="userPW" required minlength="8" maxlength="20">
                 <div class="L310">
                     <small>Please enter must contain</small>
@@ -200,23 +200,23 @@
                         <li>Must contain number or special character (#, @, &amp;, ^...)</li>
                     </ul>
                 </div>
-                <label for="personalInfo" class="L314">Personal Information</label>
+                <label for="personalInfo" class="requiredSign L314">Personal Information</label>
                 <div id="personalInfo">
-                    <div class="inputAccComponent">
+                    <div class="inputAccComponent positionRe">
                         <input type="text" id="userLastName" required class="alx L312">
-                        <label for="userLastName" class="L314">LAST NAME</label>
+                        <label for="userLastName" class="positionAb L314">LAST NAME</label>
                     </div>
-                    <div class="inputAccComponent">
+                    <div class="inputAccComponent positionRe">
                         <input type="text" id="userFirstName" required  class="alx L312">
-                        <label for="userFirstName" class="L314">FIRST NAME</label>   
+                        <label for="userFirstName" class="positionAb L314">FIRST NAME</label>   
                     </div>
-                    <div class="inputPhoneComponent">
+                    <div class="inputPhoneComponent positionRe">
                         <input type="tel" id="userPhoneNumb" required class="alx L312">
-                        <label for="userPhoneNumb" class="L314">PHONE NUMBER</label>
+                        <label for="userPhoneNumb" class="positionAb L314">PHONE NUMBER</label>
                     </div>
                 </div>
                 <label for="designationSelect" class="L314">Designation</label>
-                <span class="selectComponent">
+                <span class="selectComponent positionRe">
                     <select id="designationSelect" class="alx L314">
                         <option>Select your designation</option>
                         <option>Mr.</option>
@@ -227,7 +227,7 @@
                     </select>
                 </span>
                 <label for="countrySelect" class="L314">Country of Residence</label>
-                <span class="selectComponent">
+                <span class="selectComponent positionRe">
                     <select id="countrySelect" class="alx L314">
                         <option>Select your residence</option>
                         <option>Republic of Korea</option>
@@ -235,9 +235,9 @@
                 </span>
                 <div class="L310">
                     By clicking "SIGN UP", I declare that I agree to read the 
-                    <a href="terms_general.html">Membership Terms and Conditions of ALL - Accor Live Limitless and to become a member of the Loyalty Program.</a>
+                    <a href="terms_general.html" class="textUnder">Membership Terms and Conditions of ALL - Accor Live Limitless and to become a member of the Loyalty Program.</a>
                 </div>
-                <input type="submit" value="SIGN UP" class="alx L314">
+                <input type="submit" value="SIGN UP" class="alx fRoundBtnp">
                 <div class="L310">The collected data is processed by Accor SA to manage reservations and accommodations, 
                     to improve customer information, improve service quality and customer experience, and
                         to transmit information about the products and services of the Accor group. The data is
@@ -246,20 +246,20 @@
                     the loyalty points program is shared between Accor group hotels in order to improve the 
                     hotel's quality of service and guest experience. You may object to sharing of information 
                     between hotels in the group at any time by sending an email to 
-                    <a href="mailto:data.privacy@accor.com">data.privacy@accor.com.</a></div>
+                    <a href="mailto:data.privacy@accor.com" class="textUnder">data.privacy@accor.com.</a></div>
                 <div class="L310">The data may be transferred outside the European Union where such data are necessary for 
                     the execution of a reservation or for administering pre-contractual arrangements for the 
                     execution of a reservation, or where appropriate and appropriate safeguards are in place. 
                     You have the right to request access to, rectification and erasure of your data, object to 
                     processing, as well as the right to object to the processing of your data by sending an e-mail 
-                    to <a href="mailto:data.privacy@accor.com">data.privacy@accor.com.</a> We reserve the right to issue instructions on how this 
+                    to <a href="mailto:data.privacy@accor.com" class="textUnder">data.privacy@accor.com.</a> We reserve the right to issue instructions on how this 
                     information will be treated at a later date. For more detailed information regarding the 
-                    protection of personal information, please refer to our <a href="privacy_policy.html">Privacy Charter.</a></div>
+                    protection of personal information, please refer to our <a href="privacy_policy.html" class="textUnder">Privacy Charter.</a></div>
             </form>
         </div>
         <div>
             <b class="R413">Already registered?</b>
-            <a href="account_signIn.html" class="L314">Log In</a>
+            <a href="account_signIn.html" class="fRoundBtnb">Log In</a>
         </div>
     </section>
 
@@ -270,7 +270,7 @@
                 <p class="L313">Subscribe to our newsletter and receive special offers</p>
                 <form action="subscribe_accor.html">
                     <input type="email" class="alxL311" placeholder="e-mail@domain.com" title="Subscribe our newsletter and recieve special offers">
-                    <input type="submit" class="btn iosFix alxL314" value="REGISTER">
+                    <input type="submit" class="alx shadowBtn iosFix L314" value="REGISTER">
                 </form>
             </div>
             <div>
@@ -279,11 +279,11 @@
                     <a href="map.html">Reservation Management</a>
                     <a href="helpCenter.html">Support and Inquiries</a>
                 </span>
-                <mark class="btn alxL313">
+                <mark class="btn alx s05c L313">
                     Do you want to ask for questions ?
-                    <a href="tel:+61282784515">00798 8521 2018 (**)</a>
+                    <a href="tel:+61282784515" class="s05c">00798 8521 2018 (**)</a>
                 </mark>
-                <a href="helpCenter.html" class="btn L314">LEARN MORE</a>
+                <a href="helpCenter.html" class="shadowBtn L314">LEARN MORE</a>
             </div>
         </div>
         <div class="M510">
