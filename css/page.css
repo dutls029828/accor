@@ -6516,7 +6516,7 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
     section[class*=helpFaqContainer],
     div[class*='rsvnContainer'],
     section[class*='termsContainer']{
-        max-width: 1920px; padding-top: 140px;
+        max-width: 1920px; padding-top: 140px; margin: 0 auto;
     }
     .bannerBox .adcbBg,
     .indexContainer .brandSlider,
@@ -7874,10 +7874,10 @@ section[class*='accountContainer'].signUp .formPackage form div.L310:not(:first-
         padding: var(--sp50) 3.5%; display: block; box-sizing: border-box;
     }
     div[class*='detailContainer']>ul:first-of-type .fullDesc{
-        min-width: 42vw; max-width: 954px;
+        /* min-width: 42vw;  */ max-width: 954px;
     }
     div[class*='detailContainer']>ul:first-of-type .halfDesc{
-        min-width: 24vw; max-width: 466px;
+        /* min-width: 24vw;  */ max-width: 466px;
     }
     div[class*='detailContainer']>ul:first-of-type .sc3{
         color: var(--gs10);
